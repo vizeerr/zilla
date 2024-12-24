@@ -50,13 +50,13 @@ useEffect(() => {
   return (
     <div className='bg-[#1B1C1E] sm:w-[985px] w-[88vw] sm:rounded-[66px] rounded-[20px] shadow-[16.21px_16.21px_56.21px_0px_#0000004F]  sm:p-[38px] p-[13px] '>
 
-        <div className=' flex sm:gap-[12px] gap-[9.5px] items-center'>
+        <div className=' flex sm:gap-[12px] gap-[9.5px] items-center justify-center'>
             <motion.div
                 key="5"
                 initial={{ rotateX: 0 }}
                 animate={hoveredCard === 5 ? { rotateX: 180 } : { rotateX: 0 }}
                 transition={{ duration: 0.6 }}
-                 className='card sm:w-[345px] sm:h-[345px] w-[36vw] h-[36vw] bg-[#111111] shadow-[19.3px_19.3px_66.91px_0px_#0000004F] sm:rounded-[33px] rounded-[15px]'>
+                 className='card sm:w-[345px] sm:h-[345px] w-[38vw] h-[38vw] bg-[#111111] shadow-[19.3px_19.3px_66.91px_0px_#0000004F] sm:rounded-[33px] rounded-[15px]'>
                 <div className="card-back" onMouseLeave={() => handleMouseEnter(0)}>
                     <p className='font-montserrat font-[700] text-white text-[22px] text-center px-[20px]'>Shows when the next points-to-tokens airdrop will occur.</p>
                 </div>
@@ -86,7 +86,7 @@ useEffect(() => {
                 </div>
             </motion.div>
 
-            <div className='space-y-4'>
+            <div className='sm:space-y-4 space-y-2'>
 
                 <motion.div
                 key="1"

@@ -60,7 +60,7 @@ const Tabs = () => {
                   <div className={`${btn==0?'bg-white':'bg-transparent'} w-[7px] h-[7px] rounded-full`}>                    
                   </div>
                 </div>
-                <p className={`${btn==0?'opacity-100':'opacity-30'} text-white font-bebasneue font-[400] text-[17px]`}>DESCENDING</p>
+                <p className={`${btn==0?'opacity-100':'opacity-30'} text-white font-bebasneue font-[400] text-[17px]`}>ASCENDING</p>
 
               </div>
               <div  onClick={()=>setBtn(1)} className="flex items-center gap-2 my-1 ps-3">

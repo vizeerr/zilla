@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
 import cross from "@/assets/cross.svg"
 import Image from 'next/image'
@@ -7,10 +7,27 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const SettingModel = ({openSet,setOpenSet}) => {
     const [opt,setOpt] = useState(0);
+    const modalRef = useRef(null);
+    useEffect(() => {
+      const handleClickOutside = (event) => {
+          if (modalRef.current && !modalRef.current.contains(event.target)) {
+              setOpenSet(false);
+          }
+      };
+
+      if (openSet) {
+          document.addEventListener('mousedown', handleClickOutside);
+      }
+
+      return () => {
+          document.removeEventListener('mousedown', handleClickOutside);
+      };
+  }, [openSet, setOpenSet]);
   return (
     <AnimatePresence>
     {openSet&& (
     <motion.div
+    ref={modalRef}
      key="setting-modal"
      initial={{  x: 350,height: 160  }} // Start from left
      animate={{  x: 0 ,height: opt > 1 ? 250 : 160,}} // Move to center when open

@@ -43,10 +43,14 @@ const DetailedRightView = () => {
                         }} className='font-bebasneue text-[24px] font-[400] bg-transparent outline-none' placeholder='Enter amount'/> 
                         <p className=' opacity-30 text-[10px] font-[400]'>User balance : {balance} PROMOTION</p>
                     </div>
+
                     <div className='w-[48.5px] h-[48.5px] rounded-full overflow-hidden'>
                         <Image src={bgwall} alt=''/>
                     </div>
                 </div> 
+                  <div className='flex justify-between mt-[20px] items-center'>
+                    <p className='opacity-40 font-[700] text-[13px]'>≈ 0 USD</p>
+                  </div>
                 
                 <div className='flex justify-between items-center  mt-[60px]'>
                     <div className='flex flex-wrap  gap-[5px]'>

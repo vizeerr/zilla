@@ -14,7 +14,7 @@ import toast from 'react-hot-toast'
 
 const DetailedLefView = ({token}) => {
   const [tokenData,setTokenData] = useState({});
-  const [copiedText,setCopiedText] = useState("REFERRAL DASHBOARD");
+  const [copiedText,setCopiedText] = useState("AWEBFSOIWGERGE....1423404599349");
 
   const fetchToken = async() =>{
     const data = await getToken(token);
@@ -24,9 +24,9 @@ const DetailedLefView = ({token}) => {
 
   const handleCopy = async () => {
       await navigator.clipboard.writeText('AWEBFSOIWGERGE5566544551423404599349');
-      setCopiedText('REFERRAL COPIED')
+      setCopiedText('LINK COPIED')
       setTimeout(()=>{
-      setCopiedText('REFERRAL DASHBOARD')
+      setCopiedText('AWEBFSOIWGERGE....1423404599349')
 
       },2000)
     
@@ -115,10 +115,13 @@ const DetailedLefView = ({token}) => {
 
             <div className='flex justify-between items-start '>
               <p className='text-[#000000] leading-[58px] font-montserrat font-[900] text-[36px] uppercase ps-[20px] pe-[40px]   pt-[5px] mt-5 bg-primary rounded-[0_21px_21px_0]'>Share  &  Earn  with  PumpZilla</p>
-              <p className='bg-[#303236] shadow-[6.35px_6.35px_39.15px_0px_#00000040] w-[350px] anim text-center mt-[16px] me-[16px] text-primary font-[700] text-[24px] py-[13px] px-[18px] rounded-[18px]'>{copiedText}</p>
+              <p className='bg-[#303236] shadow-[6.35px_6.35px_39.15px_0px_#00000040] w-[350px] anim text-center mt-[16px] me-[16px] text-primary font-[700] text-[24px] py-[13px] px-[18px] rounded-[18px]'>REFERRAL DASHBOARD</p>
             </div>
-            <div className='px-[30px] mt-[50px] flex gap-[31px] items-center'>
-              <p className='font-[400] anim bg-[#37393D] py-[10px] px-[35px] rounded-[22px]' onClick={handleCopy}> <span className='font-bebasneue text-[42px] '> YOUR UNIQUE LINK : </span>   <span className='text-primary font-[700] text-[33px]'> AWEBFSOIWGERGE....1423404599349</span> </p>
+            <div className='px-[30px] mt-[50px] flex gap-[31px] items-center justify-center'>
+              <div className=' font-[400] anim bg-[#37393D] py-[10px] px-[35px] rounded-[22px] flex items-center gap-2' onClick={handleCopy}>
+                <p className='font-bebasneue text-[42px] '> YOUR UNIQUE LINK : </p>   
+                <p className='text-primary font-[700] text-[33px]'>{copiedText}</p> 
+              </div>
               <div  className='bg-primary anim  w-[78px] h-[78px] p-[16px] rounded-[22px]'>
 
                 <Image src={xblack} alt='' />

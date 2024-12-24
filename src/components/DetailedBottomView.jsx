@@ -145,7 +145,7 @@ const DetailedBottomView = () => {
                   </div>
                   <p className='text-primary font-[800] text-[14px] pe-8 pt-2 font-montserrat'>21 minutes ago</p>
                 </div>
-                <p className='font-[800] text-[15px] leading-[26px] text-white px-8 my-5 font-montserrat'>SOLANAFIGHTS ⚔️🥊 JOIN liE VERY FIRST TAP-SWAP GAME LIKE HAMSTER KOMBAT ON SOLANA 🔥 TELEGRAM GAME/BOT IS ALREADY LIVE ✅ FAIR LAUNCH IS COMING SOON, DONT MISS IT ➡️ https://t.me/solanafights</p>
+                <p className='font-[800] text-[12px] leading-[26px] text-white px-8 my-5 font-montserrat'>SOLANAFIGHTS ⚔️🥊 JOIN liE VERY FIRST TAP-SWAP GAME LIKE HAMSTER KOMBAT ON SOLANA 🔥 TELEGRAM GAME/BOT IS ALREADY LIVE ✅ FAIR LAUNCH IS COMING SOON, DONT MISS IT ➡️ https://t.me/solanafights</p>
                 
               </div>
               <div className='bg-[#111111] rounded-[24px] pb-4'>
@@ -157,7 +157,7 @@ const DetailedBottomView = () => {
                   </div>
                   <p className='text-primary font-[800] text-[14px] pe-8 pt-2 font-montserrat'>21 minutes ago</p>
                 </div>
-                <p className='font-[800] text-[15px] leading-[26px] text-white px-8 my-5 font-montserrat'>SOLANAFIGHTS ⚔️🥊 JOIN liE VERY FIRST TAP-SWAP GAME LIKE HAMSTER KOMBAT ON SOLANA 🔥 TELEGRAM GAME/BOT IS ALREADY LIVE ✅ FAIR LAUNCH IS COMING SOON, DONT MISS IT ➡️ https://t.me/solanafights</p>
+                <p className='font-[800] text-[12px] leading-[26px] text-white px-8 my-5 font-montserrat'>SOLANAFIGHTS ⚔️🥊 JOIN liE VERY FIRST TAP-SWAP GAME LIKE HAMSTER KOMBAT ON SOLANA 🔥 TELEGRAM GAME/BOT IS ALREADY LIVE ✅ FAIR LAUNCH IS COMING SOON, DONT MISS IT ➡️ https://t.me/solanafights</p>
                 
               </div>
 
@@ -170,7 +170,7 @@ const DetailedBottomView = () => {
                   </div>
                   <p className='text-primary font-[800] text-[14px] pe-8 pt-2 font-montserrat'>21 minutes ago</p>
                 </div>
-                <p className='font-[800] text-[15px] leading-[26px] text-white px-8 my-5 font-montserrat'>SOLANAFIGHTS ⚔️🥊 JOIN liE VERY FIRST TAP-SWAP GAME LIKE HAMSTER KOMBAT ON SOLANA 🔥 TELEGRAM GAME/BOT IS ALREADY LIVE ✅ FAIR LAUNCH IS COMING SOON, DONT MISS IT ➡️ https://t.me/solanafights</p>
+                <p className='font-[800] text-[12px] leading-[26px] text-white px-8 my-5 font-montserrat'>SOLANAFIGHTS ⚔️🥊 JOIN liE VERY FIRST TAP-SWAP GAME LIKE HAMSTER KOMBAT ON SOLANA 🔥 TELEGRAM GAME/BOT IS ALREADY LIVE ✅ FAIR LAUNCH IS COMING SOON, DONT MISS IT ➡️ https://t.me/solanafights</p>
                 
               </div><div className='bg-[#111111] rounded-[24px] pb-4'>
                 <div className='items-center flex justify-between'>
@@ -181,7 +181,7 @@ const DetailedBottomView = () => {
                   </div>
                   <p className='text-primary font-[800] text-[14px] pe-8 pt-2 font-montserrat'>21 minutes ago</p>
                 </div>
-                <p className='font-[800] text-[15px] leading-[26px] text-white px-8 my-5 font-montserrat'>SOLANAFIGHTS ⚔️🥊 JOIN liE VERY FIRST TAP-SWAP GAME LIKE HAMSTER KOMBAT ON SOLANA 🔥 TELEGRAM GAME/BOT IS ALREADY LIVE ✅ FAIR LAUNCH IS COMING SOON, DONT MISS IT ➡️ https://t.me/solanafights</p>
+                <p className='font-[800] text-[12px] leading-[26px] text-white px-8 my-5 font-montserrat'>SOLANAFIGHTS ⚔️🥊 JOIN liE VERY FIRST TAP-SWAP GAME LIKE HAMSTER KOMBAT ON SOLANA 🔥 TELEGRAM GAME/BOT IS ALREADY LIVE ✅ FAIR LAUNCH IS COMING SOON, DONT MISS IT ➡️ https://t.me/solanafights</p>
                 
               </div><div className='bg-[#111111] rounded-[24px] pb-4'>
                 <div className='items-center flex justify-between'>
@@ -192,7 +192,7 @@ const DetailedBottomView = () => {
                   </div>
                   <p className='text-primary font-[800] text-[14px] pe-8 pt-2 font-montserrat'>21 minutes ago</p>
                 </div>
-                <p className='font-[800] text-[15px] leading-[26px] text-white px-8 my-5 font-montserrat'>SOLANAFIGHTS ⚔️🥊 JOIN liE VERY FIRST TAP-SWAP GAME LIKE HAMSTER KOMBAT ON SOLANA 🔥 TELEGRAM GAME/BOT IS ALREADY LIVE ✅ FAIR LAUNCH IS COMING SOON, DONT MISS IT ➡️ https://t.me/solanafights</p>
+                <p className='font-[800] text-[12px] leading-[26px] text-white px-8 my-5 font-montserrat'>SOLANAFIGHTS ⚔️🥊 JOIN liE VERY FIRST TAP-SWAP GAME LIKE HAMSTER KOMBAT ON SOLANA 🔥 TELEGRAM GAME/BOT IS ALREADY LIVE ✅ FAIR LAUNCH IS COMING SOON, DONT MISS IT ➡️ https://t.me/solanafights</p>
                 
               </div>
       

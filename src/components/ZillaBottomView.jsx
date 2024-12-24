@@ -34,7 +34,7 @@ const ZillaBottomView = () => {
                             </div>
                         
                         </div>
-                        <div className='bg-primary rounded-full text-center w-[394px]'>
+                        <div className='bg-primary rounded-full anim text-center w-[394px]'>
                             <p className='round text-[#262626] text-[70px] font-[500] pt-[10px] leading-[100px]'>claim rewards</p>
                         </div>
 

@@ -16,7 +16,9 @@ const TopNavbar = () => {
     <div className="">
       <div className="bg-primary flex items-center justify-between py-3">
         <div className="px-10">
+          <Link href={"/"}>
           <Image className=""  src={logo} alt="" />
+          </Link>
         </div>
         <div className="flex items-center gap-4 pe-4">
           <Link href={"/launch"}>

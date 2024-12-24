@@ -1,16 +1,19 @@
 "use client"
-import React from 'react'
+import React, { useState } from 'react'
 import copy from "@/assets/copy.svg"
 import Image from 'next/image'
 
 const ZillaLeftView  = () =>{
+   const [copiedText,setCopiedText] = useState("0x123...599349");
+  
+
   const handleCopy = async () => {
     await navigator.clipboard.writeText('0x12345697785566544551423404599349');
-    // setCopiedText('REFERRAL COPIED')
-    // setTimeout(()=>{
-    // setCopiedText('REFERRAL DASHBOARD')
+    setCopiedText('COPIED')
+    setTimeout(()=>{
+    setCopiedText('0x123...599349')
 
-    // },2000)
+    },2000)
     };
   return (
 
@@ -45,10 +48,10 @@ const ZillaLeftView  = () =>{
           <div className='w-[330px] ps-[25px] pt-[20px] pb-[13px] bg-[#111111] shadow-[16.21px_16.21px_56.21px_0px_#0000004F] rounded-[20px]'>
         
             <div className='flex gap-3 items-center'>
-              <p className='font-bebasneue text-primary text-[20px] font-[400]'>Contract Address</p>
+              <p className='font-bebasneue text-primary text-[20px] font-[400]'>Contact Address</p>
               <Image src={copy} alt=''onClick={handleCopy}/>
             </div>
-            <p className='font-montserrat font-[800] mt-[5px] text-[20px] text-white'>0x1234...569778            </p>
+            <p className='font-montserrat font-[800] mt-[5px] text-[20px] text-white'>{copiedText}</p>
           </div>
         </div>
 
@@ -74,7 +77,7 @@ const ZillaLeftView  = () =>{
             {[...Array(18)].map((index) => (
               <ul key={index} className='flex justify-around '>
                 <li className='font-bebasneue  w-[230px] text-center font-[400] text-[25px] text-white'>2023-06-15   <span className='text-primary'>14:30</span> </li>
-                <li className='font-bebasneue w-[295px] text-center font-[400] text-[25px] text-white'>500,000   <span className='text-primary'>Pumpzilla</span> </li>
+                <li className='font-bebasneue w-[295px] text-center font-[400] text-[25px] text-white'>500,000   <span className='text-primary'>Zilla</span> </li>
                 <li className='font-bebasneue w-[74px] text-center font-[400] text-[25px] text-white'>$   <span className='text-primary'>1,234</span> </li>
                 <li className='font-bebasneue w-[205px] text-center font-[400] text-[25px] text-white'>1,234 </li>
 

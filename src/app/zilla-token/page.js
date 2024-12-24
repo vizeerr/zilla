@@ -20,7 +20,7 @@ const page = () => {
             <p className='font-[700] text-white text-opacity-45 font-montserrat text-[20px] m-0 p-0 leading-[45px]'>
             The <span className='text-opacity-100 font-[800] text-white'>
             core of our ecosystem </span>, $Zilla drives innovation with unique mechanisms and rewards.
-            Learn more in our <span className='text-opacity-100 text-primary'>documentation</span>.
+            Learn more in our <button className='text-opacity-100 text-primary anim'>Documentation</button>.
             </p>
         </div>
         <div className='w-full '>

@@ -48,23 +48,22 @@ useEffect(() => {
 
 
   return (
-    <div className='bg-[#1B1C1E] w-[985px] rounded-[66px] shadow-[16.21px_16.21px_56.21px_0px_#0000004F]  p-[38px] '>
+    <div className='bg-[#1B1C1E] sm:w-[985px] w-[88vw] sm:rounded-[66px] rounded-[20px] shadow-[16.21px_16.21px_56.21px_0px_#0000004F]  sm:p-[38px] p-[13px] '>
 
-        <div className=' flex gap-[12px] items-center'>
+        <div className=' flex sm:gap-[12px] gap-[9.5px] items-center'>
             <motion.div
                 key="5"
                 initial={{ rotateX: 0 }}
                 animate={hoveredCard === 5 ? { rotateX: 180 } : { rotateX: 0 }}
                 transition={{ duration: 0.6 }}
-                 className='card w-[345px] h-[345px] bg-[#111111] shadow-[19.3px_19.3px_66.91px_0px_#0000004F] rounded-[33px]'>
+                 className='card sm:w-[345px] sm:h-[345px] w-[36vw] h-[36vw] bg-[#111111] shadow-[19.3px_19.3px_66.91px_0px_#0000004F] sm:rounded-[33px] rounded-[15px]'>
                 <div className="card-back" onMouseLeave={() => handleMouseEnter(0)}>
                     <p className='font-montserrat font-[700] text-white text-[22px] text-center px-[20px]'>Shows when the next points-to-tokens airdrop will occur.</p>
                 </div>
                 <div className='card-front'>
-                    <Image src={info} alt="" width={20} height={20} className='float-end mt-[34px] me-[40px]' onMouseEnter={() => handleMouseEnter(5)}/>
+                    <Image src={info} alt=""  className='float-end mt-[34px] me-[40px] sm:w-[20px] sm:h-[20] w-[9px] h-[9px]' onMouseEnter={() => handleMouseEnter(5)}/>
                     <div className='w-full flex justify-center items-center'>
-                    <CircularSlider
-                                                                        
+                    {/* <CircularSlider    
                                                                         labelColor="#ffffff"
                                                                         knobColor="#ffffff"
                                                                         progressColorFrom="#A8FF2F"
@@ -82,7 +81,7 @@ useEffect(() => {
                                                                         valueFontSize={"0rem"}
                                                                         labelFontSize={"2rem"}
                                 
-                                                                    />
+                                                                    /> */}
                     </div>
                 </div>
             </motion.div>
@@ -94,16 +93,16 @@ useEffect(() => {
                 initial={{ rotateX: 0 }}
                 animate={hoveredCard === 1 ? { rotateX: 180 } : { rotateX: 0 }}
                 transition={{ duration: 0.6 }}
-                className=' bg-[#111111] card w-[558px] px-[45px] py-[25px] rounded-[26px] shadow-[19.3px_19.3px_66.91px_0px_#0000004F]'>
+                className=' bg-[#111111] card w-full sm:px-[45px] sm:py-[25px] px-[10px] py-[8.5px] sm:rounded-[26px] rounded-[7px] shadow-[19.3px_19.3px_66.91px_0px_#0000004F]'>
                     <div className="card-front flex justify-between items-center">
                         <div className='flex items-center gap-4'>
-                            <p className='font-bebasneue text-[27px] font-[400] text-primary'>referral uses</p>
-                            <Image src={info} alt="" width={24} height={24} onMouseEnter={() => handleMouseEnter(1)}/>
+                            <p className='font-bebasneue sm:text-[27px] text-[3vw] font-[400] text-primary'>referral uses</p>
+                            <Image src={info} alt="" classname = "sm:w-[24px] sm:h-[24px] w-[5.6vw] h-[5.6vw]" onMouseEnter={() => handleMouseEnter(1)}/>
                         </div>
-                        <p className='font-montserrat text-[36px] text-white font-[800]'>123</p>
+                        <p className='font-montserrat sm:text-[36px] text-[3.5vw] text-white font-[800]'>123</p>
                     </div>
                     <div className="card-back" onMouseLeave={() => handleMouseEnter(0)}>
-                        <p className='font-montserrat font-[800] text-[27px] text-white'>Tracks how many times your referral link has been used.</p>
+                        <p className='font-montserrat font-[800] sm:text-[27px] text-[3vw] text-white'>Tracks how many times your referral link has been used.</p>
                     </div>
                     
                 </motion.div>
@@ -113,16 +112,16 @@ useEffect(() => {
                 initial={{ rotateX: 0 }}
                 animate={hoveredCard === 2 ? { rotateX: 180 } : { rotateX: 0 }}
                 transition={{ duration: 0.6 }}
-                className=' bg-[#111111] card w-[558px] px-[45px] py-[25px] rounded-[26px] shadow-[19.3px_19.3px_66.91px_0px_#0000004F]'>
+                className=' bg-[#111111] card w-full sm:px-[45px] sm:py-[25px] px-[10px] py-[8.5px] sm:rounded-[26px] rounded-[7px] shadow-[19.3px_19.3px_66.91px_0px_#0000004F]'>
                     <div className="card-front flex justify-between items-center">
                         <div className='flex items-center gap-4'>
-                            <p className='font-bebasneue text-[27px] font-[400] text-primary'>your referral points</p>
-                            <Image src={info} alt="" width={24} height={24} onMouseEnter={() => handleMouseEnter(2)}/>
+                            <p className='font-bebasneue sm:text-[27px] text-[3vw] font-[400] text-primary'>your referral points</p>
+                            <Image src={info} alt="" classname = "sm:w-[24px] sm:h-[24px] w-[5.6vw] h-[5.6vw]" onMouseEnter={() => handleMouseEnter(2)}/>
                         </div>
-                        <p className='font-montserrat text-[36px] text-white font-[800]'>123</p>
+                        <p className='font-montserrat sm:text-[36px] text-[3.5vw] text-white font-[800]'>123</p>
                     </div>
                     <div className="card-back" onMouseLeave={() => handleMouseEnter(0)}>
-                        <p className='font-montserrat font-[800] text-[27px] text-white text-center'>Shows the total points you’ve earned from users using your referral links.</p>
+                        <p className='font-montserrat font-[800] sm:text-[27px] text-[3vw] text-white text-center'>Shows the total points you’ve earned from users using your referral links.</p>
                     </div>
                     
                 </motion.div>
@@ -133,16 +132,16 @@ useEffect(() => {
                 initial={{ rotateX: 0 }}
                 animate={hoveredCard === 3 ? { rotateX: 180 } : { rotateX: 0 }}
                 transition={{ duration: 0.6 }}
-                className=' bg-[#111111] card w-[558px] px-[45px] py-[25px] rounded-[26px] shadow-[19.3px_19.3px_66.91px_0px_#0000004F]'>
+                className=' bg-[#111111] card w-full sm:px-[45px] sm:py-[25px] px-[10px] py-[8.5px] sm:rounded-[26px] rounded-[7px] shadow-[19.3px_19.3px_66.91px_0px_#0000004F]'>
                     <div className="card-front flex justify-between items-center">
                         <div className='flex items-center gap-4'>
-                            <p className='font-bebasneue text-[27px] font-[400] text-primary'>referral points</p>
-                            <Image src={info} alt="" width={24} height={24} onMouseEnter={() => handleMouseEnter(3)}/>
+                            <p className='font-bebasneue sm:text-[27px] text-[3vw] font-[400] text-primary'>referral points</p>
+                            <Image src={info} alt="" classname = "sm:w-[24px] sm:h-[24px] w-[5.6vw] h-[5.6vw]" onMouseEnter={() => handleMouseEnter(3)}/>
                         </div>
-                        <p className='font-montserrat text-[36px] text-white font-[800]'>123</p>
+                        <p className='font-montserrat sm:text-[36px] text-[3.5vw] text-white font-[800]'>123</p>
                     </div>
                     <div className="card-back" onMouseLeave={() => handleMouseEnter(0)}>
-                        <p className='font-montserrat font-[800] text-[27px] text-white text-center'>Reflects the 50% bonus points awarded to users who used a referral link to make their purchase.</p>
+                        <p className='font-montserrat font-[800] sm:text-[27px] text-[3vw] text-white text-center'>Reflects the 50% bonus points awarded to users who used a referral link to make their purchase.</p>
                     </div>
                     
                 </motion.div>
@@ -152,13 +151,13 @@ useEffect(() => {
 
             </div>
         </div>
-        <div className='mt-[35px] flex justify-center items-center gap-[24px]'>
-            <div className='bg-[#111111] w-[482px] shadow-[13.13px_13.13px_45.5px_0px_#0000004F] rounded-[23px] text-center py-[25px]'>
-                <p className='capitalize font-bebasneue text-[27px] text-primary'>claimable zilla tokens  :  <span className='text-white'>1,234,567</span></p>
+        <div className='sm:mt-[35px] mt-[29px] flex justify-center items-center sm:gap-[24px] gap-[9px]'>
+            <div className='bg-[#111111] sm:w-[482px] w-[200px] shadow-[13.13px_13.13px_45.5px_0px_#0000004F] sm:rounded-[23px] rounded-[9px] text-center sm:py-[25px] py-[10px]'>
+                <p className='capitalize font-bebasneue sm:text-[27px] text-[3vw] text-primary'>claimable zilla tokens  :  <span className='text-white'>1,234,567</span></p>
             </div>
 
-            <div className='bg-primary w-[194px]  rounded-full text-center'>
-                <p className='round font-[500] text-[#262626] leading-[60px] pt-3 text-[50px]'>claim</p>
+            <div className='bg-primary sm:w-[194px] w-[70px]  rounded-full text-center'>
+                <p className='round font-[500] text-[#262626] sm:leading-[60px] leading-[20px] pt-1 sm:pt-3 sm:text-[50px] text-[4.8vw]'>claim</p>
             </div>
         </div>
     </div>

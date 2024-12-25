@@ -56,7 +56,7 @@ useEffect(() => {
                 initial={{ rotateX: 0 }}
                 animate={hoveredCard === 5 ? { rotateX: 180 } : { rotateX: 0 }}
                 transition={{ duration: 0.6 }}
-                 className='card sm:w-[345px] sm:h-[345px] w-[38vw] h-[38vw] bg-[#111111] shadow-[19.3px_19.3px_66.91px_0px_#0000004F] sm:rounded-[33px] rounded-[15px]'>
+                 className='card sm:w-[345px] sm:h-[345px] w-[35vw] h-[35vw] bg-[#111111] shadow-[19.3px_19.3px_66.91px_0px_#0000004F] sm:rounded-[33px] rounded-[15px]'>
                 <div className="card-back" onMouseLeave={() => handleMouseEnter(0)}>
                     <p className='font-montserrat font-[700] text-white text-[22px] text-center px-[20px]'>Shows when the next points-to-tokens airdrop will occur.</p>
                 </div>
@@ -93,11 +93,14 @@ useEffect(() => {
                 initial={{ rotateX: 0 }}
                 animate={hoveredCard === 1 ? { rotateX: 180 } : { rotateX: 0 }}
                 transition={{ duration: 0.6 }}
-                className=' bg-[#111111] card w-full sm:px-[45px] sm:py-[25px] px-[10px] py-[8.5px] sm:rounded-[26px] rounded-[7px] shadow-[19.3px_19.3px_66.91px_0px_#0000004F]'>
+                className=' bg-[#111111] card sm:w-full w-[42vw] sm:px-[45px] sm:py-[25px] px-[10px] py-[8.5px] sm:rounded-[26px] rounded-[7px] shadow-[19.3px_19.3px_66.91px_0px_#0000004F]'>
                     <div className="card-front flex justify-between items-center">
-                        <div className='flex items-center gap-4'>
+                        <div className='flex items-center sm:gap-4 gap-2'>
                             <p className='font-bebasneue sm:text-[27px] text-[3vw] font-[400] text-primary'>referral uses</p>
-                            <Image src={info} alt="" classname = "sm:w-[24px] sm:h-[24px] w-[5.6vw] h-[5.6vw]" onMouseEnter={() => handleMouseEnter(1)}/>
+                            <div className='w-[8px]'>
+
+                            <Image src={info} alt=""  style={{ width: '100vw'}} onMouseEnter={() => handleMouseEnter(1)}/>
+                            </div>
                         </div>
                         <p className='font-montserrat sm:text-[36px] text-[3.5vw] text-white font-[800]'>123</p>
                     </div>
@@ -114,9 +117,12 @@ useEffect(() => {
                 transition={{ duration: 0.6 }}
                 className=' bg-[#111111] card w-full sm:px-[45px] sm:py-[25px] px-[10px] py-[8.5px] sm:rounded-[26px] rounded-[7px] shadow-[19.3px_19.3px_66.91px_0px_#0000004F]'>
                     <div className="card-front flex justify-between items-center">
-                        <div className='flex items-center gap-4'>
+                        <div className='flex items-center sm:gap-4 gap-2'>
                             <p className='font-bebasneue sm:text-[27px] text-[3vw] font-[400] text-primary'>your referral points</p>
-                            <Image src={info} alt="" classname = "sm:w-[24px] sm:h-[24px] w-[5.6vw] h-[5.6vw]" onMouseEnter={() => handleMouseEnter(2)}/>
+                            <div className='w-[8px]'>
+
+                            <Image src={info} alt=""  style={{ width: '100vw'}} onMouseEnter={() => handleMouseEnter(1)}/>
+                            </div>
                         </div>
                         <p className='font-montserrat sm:text-[36px] text-[3.5vw] text-white font-[800]'>123</p>
                     </div>
@@ -134,9 +140,12 @@ useEffect(() => {
                 transition={{ duration: 0.6 }}
                 className=' bg-[#111111] card w-full sm:px-[45px] sm:py-[25px] px-[10px] py-[8.5px] sm:rounded-[26px] rounded-[7px] shadow-[19.3px_19.3px_66.91px_0px_#0000004F]'>
                     <div className="card-front flex justify-between items-center">
-                        <div className='flex items-center gap-4'>
+                        <div className='flex items-center sm:gap-4 gap-2'>
                             <p className='font-bebasneue sm:text-[27px] text-[3vw] font-[400] text-primary'>referral points</p>
-                            <Image src={info} alt="" classname = "sm:w-[24px] sm:h-[24px] w-[5.6vw] h-[5.6vw]" onMouseEnter={() => handleMouseEnter(3)}/>
+                            <div className='w-[8px]'>
+
+                            <Image src={info} alt=""  style={{ width: '100vw'}} onMouseEnter={() => handleMouseEnter(1)}/>
+                            </div>
                         </div>
                         <p className='font-montserrat sm:text-[36px] text-[3.5vw] text-white font-[800]'>123</p>
                     </div>
@@ -152,11 +161,11 @@ useEffect(() => {
             </div>
         </div>
         <div className='sm:mt-[35px] mt-[29px] flex justify-center items-center sm:gap-[24px] gap-[9px]'>
-            <div className='bg-[#111111] sm:w-[482px] w-[200px] shadow-[13.13px_13.13px_45.5px_0px_#0000004F] sm:rounded-[23px] rounded-[9px] text-center sm:py-[25px] py-[10px]'>
+            <div className='bg-[#111111] sm:w-[482px] w-[48vw] shadow-[13.13px_13.13px_45.5px_0px_#0000004F] sm:rounded-[23px] rounded-[9px] text-center sm:py-[25px] py-[10px]'>
                 <p className='capitalize font-bebasneue sm:text-[27px] text-[3vw] text-primary'>claimable zilla tokens  :  <span className='text-white'>1,234,567</span></p>
             </div>
 
-            <div className='bg-primary sm:w-[194px] w-[70px]  rounded-full text-center'>
+            <div className='bg-primary sm:w-[194px] w-[16vw]  rounded-full text-center'>
                 <p className='round font-[500] text-[#262626] sm:leading-[60px] leading-[20px] pt-1 sm:pt-3 sm:text-[50px] text-[4.8vw]'>claim</p>
             </div>
         </div>

@@ -9,12 +9,13 @@ const page = async ({params}) => {
   
   return (
     <>
-    <div className='sticky top-0 z-40'>
+    {/* <div className='sticky top-0 z-40'>
       <TopNavbar/>
-    </div>
+    </div> */}
       <div className='bg-[#111111] p-[20px]'>
         <DetailedTopView token ={params.token}/>
         <DetailedBottomView/>
+        
       </div>
     </>
   )

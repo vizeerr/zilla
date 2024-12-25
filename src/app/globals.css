@@ -84,7 +84,11 @@ margin: 0;
 outline: none;
 }
 
-
+@media only screen and (max-width: 600px) {
+  table th,table td{
+    padding: 9px 0;
+  }
+}
 
 .tranis{
   transition: 0.5s ease-in-out;

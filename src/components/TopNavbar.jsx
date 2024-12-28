@@ -13,35 +13,57 @@ const TopNavbar = () => {
 
   return (
     
-    <div className="">
-      <div className="bg-primary flex items-center justify-between py-3">
-        <div className="px-10">
-          <Link href={"/"}></Link>
-          <Image className=""  src={logo} alt="" />
+    <div className="sticky top-0  z-20">
+      <div className="bg-primary flex items-center justify-between sm:py-3 py-1">
+        <div className="sm:ps-10 ps-[8px] w-[100px] sm:w-auto">
+          <Link href={"/"}>
+            <Image className=""  src={logo} alt="" />
+          </Link>
         </div>
-        <div className="flex items-center gap-4 pe-4">
-          <Link href={"/launch"}>
-          <button className={`${pathname == "/launch" ? 'bg-white text-[#262626]' :"bg-sec text-white"} px-[30px] anim rounded-full font-bebasneue  text-[23px] pt-1 pb-0.5  `}>LAUNCH</button>
+        <div className="flex items-center sm:gap-4 gap-1 sm:pe-4 pe-[8px]">
+          <div className="sm:flex hidden items-center sm:gap-4 gap-1 sm:pe-4 pe-[8px]">
+            <Link href={"/launch"}>
+            <button className={`${pathname == "/launch" ? 'bg-white text-[#262626]' :"bg-sec text-white"} px-[30px] anim rounded-full font-bebasneue  text-[23px] pt-1 pb-0.5  `}>LAUNCH</button>
+            </Link>
+            <Link href={"/zilla-token"}>
+            <button className={`bg-sec text-white px-[30px] anim rounded-full font-bebasneue  text-[23px] pt-1 pb-0.5  `}>$ZILLA</button>
+            </Link>
+            
+            <Link href={"/zilla-token"}>
+            <button className={`bg-sec text-white px-[30px] anim rounded-full font-bebasneue  text-[23px] pt-1 pb-0.5  `}>STAKE</button>
+            </Link>
+            <Link href={"/referral"}>
+            <button className={`bg-sec text-white px-[30px] anim rounded-full font-bebasneue  text-[23px] pt-1 pb-0.5  `}>REFERRAL</button>
+            </Link>
+          </div>
+          <div className="sm:w-[45.73px] anim sm:h-[45.73px] sm:p-3 w-[15.5px] h-[15.5px] bg-sec flex justify-center items-center rounded-full p-1">
+          <Link href ={"/"} >
+           <Image src={xlogo} alt="" />
+          </Link>
+          </div>
+          <div className="sm:w-[45.73px] anim sm:h-[45.73px] sm:p-3 w-[15.5px] h-[15.5px] bg-sec flex justify-center items-center rounded-full p-1">
+            <Link href={""} >
+              <Image src={tlogo} alt="" />
+            </Link>
+          </div>
+          <button className="sm:border-[3px] border-[1px] anim border-sec rounded-full font-montserrat sm:py-[7px] sm:px-[20px] font-[800] bg-white text-tertiary sm:text-[13px] text-[7px] px-[5px] py-[2px] ">CONNECT WALLET</button>
+        </div>
+
+      </div>
+      <div className="py-[5px] sm:hidden flex justify-center gap-[13px] bg-[#3C3C3C]">
+        <Link href={"/launch"}>
+          <button className={`${pathname == "/launch" ? 'bg-white text-[#262626]' :"bg-sec text-white"} px-[18px] anim rounded-full font-bebasneue  text-[12px] pt-1 pb-0.5  `}>LAUNCH</button>
           </Link>
           <Link href={"/zilla-token"}>
-          <button className={`bg-sec text-white px-[30px] anim rounded-full font-bebasneue  text-[23px] pt-1 pb-0.5  `}>$ZILLA</button>
+          <button className={`bg-sec text-white px-[18px] anim rounded-full font-bebasneue  text-[12px] pt-1 pb-0.5  `}>$ZILLA</button>
           </Link>
           
           <Link href={"/zilla-token"}>
-          <button className={`bg-sec text-white px-[30px] anim rounded-full font-bebasneue  text-[23px] pt-1 pb-0.5  `}>STAKE</button>
+          <button className={`bg-sec text-white px-[18px] anim rounded-full font-bebasneue  text-[12px] pt-1 pb-0.5  `}>STAKE</button>
           </Link>
           <Link href={"/referral"}>
-          <button className={`bg-sec text-white px-[30px] anim rounded-full font-bebasneue  text-[23px] pt-1 pb-0.5  `}>REFERRAL</button>
+          <button className={`bg-sec text-white px-[18px] anim rounded-full font-bebasneue  text-[12px] pt-1 pb-0.5  `}>REFERRAL</button>
           </Link>
-          <button className="w-[45.73px] anim h-[45.73px] rounded-full bg-sec p-3">
-            <Image src={xlogo} alt="" />
-          </button>
-          <button className="w-[45.73px] anim h-[45.73px] rounded-full bg-sec p-3">
-            <Image src={tlogo} alt="" />
-          </button>
-          <button className="border-[3px] anim border-sec rounded-full font-montserrat py-[7px] px-[20px] font-[800] bg-white text-tertiary text-[13px] ">CONNECT WALLET</button>
-        </div>
-
       </div>
     </div>
     

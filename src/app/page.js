@@ -11,13 +11,12 @@ export default function Home() {
 
   return (
     <div>
-      <div className='sticky top-0 bg-[#1E1E25] z-20 pb-4'>
-        <TopNavbar/>
-        <TopHeader/>
-        <Tabs/>
+      <div className='sm:sticky sm:top-[84px]  bg-[#1E1E25] sm:z-20'>
+      <TopHeader/>
+      <Tabs/>
       </div>
     <CardGrid/>
-    <Pagination/>
+    {/* <Pagination/> */}
     </div>
   );
 }

@@ -6,9 +6,7 @@ import React from 'react'
 const page = () => {
   return (
     <>
-     {/* <div className='sticky top-0 z-40'>
-      <TopNavbar/>
-    </div> */}
+     
     <div className='py-[70px] sm:px-[79px] bg-[#111111] px-[5.5vw] '>
       <div>
         <p className='font-montserrat font-[900] sm:text-[59px] text-[6vw] text-white w-[70%]'>Earn Together, <span className='text-primary'>Grow Together !</span></p>

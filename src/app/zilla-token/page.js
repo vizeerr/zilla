@@ -8,27 +8,27 @@ const page = () => {
   return (
     <>
     
-    <div className='sticky top-0 z-40'>
-    <TopNavbar/>
-  </div>
-    <div className='text-white font-montserrat bg-[#111111] p-[40px]'>
+    
+    <div className='text-white font-montserrat bg-[#111111] sm:p-[40px] p-[16px]'>
         <div className='font-montserrat'>
-            <h1 className='font-montserrat font-[900] text-[40px]'><span className='text-[60px] text-primary'>Z</span><span className='text-primary'>illa</span> : The Power Behind <span className='text-primary'>PumpZilla</span></h1>
+            <h1 className='font-montserrat font-[900] sm:text-[40px] text-[4.4vw]'><span className='sm:text-[60px] text-[5.2vw] text-primary'>Z</span><span className='text-primary'>illa</span> : The Power Behind <span className='text-primary'>PumpZilla</span></h1>
         </div>
         <div className=' gap-[15px] mt-4 flex '>
             <div className='bg-primary rounded-[5px] w-[6px] '></div>
-            <p className='font-[700] text-white text-opacity-45 font-montserrat text-[20px] m-0 p-0 leading-[45px]'>
+            <p className='font-[700] text-white text-opacity-45 font-montserrat sm:text-[20px] text-[2.8vw] m-0 p-0 sm:leading-[45px] leading-tight'>
             The <span className='text-opacity-100 font-[800] text-white'>
             core of our ecosystem </span>, $Zilla drives innovation with unique mechanisms and rewards.
             Learn more in our <button className='text-opacity-100 text-primary anim'>Documentation</button>.
             </p>
         </div>
-        <div className='w-full '>
+        <div className='w-full sm:block hidden'>
             <div className='mx-auto w-[118px] h-[10px] bg-white rounded-[21px] my-[30px]'></div>
         </div>
-        <div className='mt-12 flex gap-[45px]'>
+        <div className='sm:mt-12 mt-[28px] flex gap-[45px]'>
           <ZillaLeftView/>
-          <ZillaRightView/>
+          <div className='sm:block hidden'>
+            <ZillaRightView/>
+          </div>
         </div>
         <ZillaBottomView/>
     </div>

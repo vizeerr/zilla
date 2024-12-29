@@ -7,7 +7,7 @@ import LaunchFooter from '@/components/LaunchFooter'
 const page = () => {
   return (
     <div className='bg-[#121215]'>
-      <TopNavbar/>
+     
       <LaunchForm/>      
     </div>
   )

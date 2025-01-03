@@ -1,11 +1,8 @@
-"use client"
-import Base64 from "@/components/Base64";
+
 import CardGrid from "@/components/CardGrid";
 import Pagination from "@/components/Pagination";
 import Tabs from "@/components/Tabs";
 import TopHeader from "@/components/TopHeader";
-import TopNavbar from "@/components/TopNavbar";
-import { useState } from "react";
 
 export default function Home() {
  
@@ -18,7 +15,7 @@ export default function Home() {
        </div>
      <CardGrid/>
      <Pagination/>
-     <Base64/>
+  
     </div>
   );
 }

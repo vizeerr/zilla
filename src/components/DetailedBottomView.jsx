@@ -35,10 +35,10 @@ const DetailedBottomView = () => {
   return (
 <div className='relative overflow-hidden'>
 
-    <div className='bg-[#1B1C1E] relative w-full rounded-[9px] sm:hidden  mt-[30px] overflow-hidden'>
+    <div className='bg-[#1B1C1E] relative w-full rounded-[9px] lg:hidden  mt-[30px] overflow-hidden'>
       <div className='flex justify-between w-full'>
-        <p onClick={()=>setTab("cmmt")} className={`${tab=="cmmt"? "bg-primary text-[#262626]":" bg-[#38383F] text-white"}  font-[900] text-[12.5px] font-montserrat   py-1 px-[20px] text-center rounded-[15px_0px]`}> COMMENTS</p>
-        <p onClick={()=>setTab("trade")} className={`${tab=="trade"? "bg-primary text-[#262626]":" bg-[#38383F] text-white"} font-[900] text-[12.5px] font-montserrat   py-1 px-[20px] text-center rounded-[0px_15px]`}> TRADING HISTORY</p>
+        <p onClick={()=>setTab("cmmt")} className={`${tab=="cmmt"? "bg-primary text-[#262626]":" bg-[#38383F] text-white"}  font-[900] text-[12.5px] sm:text-[18px] font-montserrat   py-1 px-[20px] text-center rounded-[15px_0px]`}> COMMENTS</p>
+        <p onClick={()=>setTab("trade")} className={`${tab=="trade"? "bg-primary text-[#262626]":" bg-[#38383F] text-white"} font-[900] text-[12.5px]  sm:text-[18px]  font-montserrat   py-1 px-[20px] text-center rounded-[0px_15px]`}> TRADING HISTORY</p>
       </div>
       <div className='relative'>
 
@@ -80,7 +80,7 @@ const DetailedBottomView = () => {
                   </div>
                   <p className='text-primary font-[800] text-[1.4vw] pe-4 pt-2 font-montserrat'>21 minutes ago</p>
                 </div>
-                <p className='font-[800] text-[2.5vw] leading-[15px] text-white px-3 my-3 font-montserrat'>SOLANAFIGHTS ⚔️🥊 JOIN liE VERY FIRST TAP-SWAP GAME LIKE HAMSTER KOMBAT ON SOLANA 🔥 TELEGRAM GAME/BOT IS ALREADY LIVE ✅ FAIR LAUNCH IS COMING SOON, DONT MISS IT ➡️ https://t.me/solanafights</p>
+                <p className='font-[800] text-[2.5vw] leading-tight text-white px-3 my-3 font-montserrat'>SOLANAFIGHTS ⚔️🥊 JOIN liE VERY FIRST TAP-SWAP GAME LIKE HAMSTER KOMBAT ON SOLANA 🔥 TELEGRAM GAME/BOT IS ALREADY LIVE ✅ FAIR LAUNCH IS COMING SOON, DONT MISS IT ➡️ https://t.me/solanafights</p>
                 
               </div>
 
@@ -97,7 +97,7 @@ const DetailedBottomView = () => {
                   </div>
                   <p className='text-primary font-[800] text-[1.4vw] pe-4 pt-2 font-montserrat'>21 minutes ago</p>
                 </div>
-                <p className='font-[800] text-[2.5vw] leading-[15px] text-white px-3 my-3 font-montserrat'>SOLANAFIGHTS ⚔️🥊 JOIN liE VERY FIRST TAP-SWAP GAME LIKE HAMSTER KOMBAT ON SOLANA 🔥 TELEGRAM GAME/BOT IS ALREADY LIVE ✅ FAIR LAUNCH IS COMING SOON, DONT MISS IT ➡️ https://t.me/solanafights</p>
+                <p className='font-[800] text-[2.5vw] leading-tight text-white px-3 my-3 font-montserrat'>SOLANAFIGHTS ⚔️🥊 JOIN liE VERY FIRST TAP-SWAP GAME LIKE HAMSTER KOMBAT ON SOLANA 🔥 TELEGRAM GAME/BOT IS ALREADY LIVE ✅ FAIR LAUNCH IS COMING SOON, DONT MISS IT ➡️ https://t.me/solanafights</p>
                 
               </div>
               
@@ -113,7 +113,7 @@ const DetailedBottomView = () => {
                   </div>
                   <p className='text-primary font-[800] text-[1.4vw] pe-4 pt-2 font-montserrat'>21 minutes ago</p>
                 </div>
-                <p className='font-[800] text-[2.5vw] leading-[15px] text-white px-3 my-3 font-montserrat'>SOLANAFIGHTS ⚔️🥊 JOIN liE VERY FIRST TAP-SWAP GAME LIKE HAMSTER KOMBAT ON SOLANA 🔥 TELEGRAM GAME/BOT IS ALREADY LIVE ✅ FAIR LAUNCH IS COMING SOON, DONT MISS IT ➡️ https://t.me/solanafights</p>
+                <p className='font-[800] text-[2.5vw] leading-tight text-white px-3 my-3 font-montserrat'>SOLANAFIGHTS ⚔️🥊 JOIN liE VERY FIRST TAP-SWAP GAME LIKE HAMSTER KOMBAT ON SOLANA 🔥 TELEGRAM GAME/BOT IS ALREADY LIVE ✅ FAIR LAUNCH IS COMING SOON, DONT MISS IT ➡️ https://t.me/solanafights</p>
                 
               </div>
               
@@ -129,7 +129,7 @@ const DetailedBottomView = () => {
                   </div>
                   <p className='text-primary font-[800] text-[1.4vw] pe-4 pt-2 font-montserrat'>21 minutes ago</p>
                 </div>
-                <p className='font-[800] text-[2.5vw] leading-[15px] text-white px-3 my-3 font-montserrat'>SOLANAFIGHTS ⚔️🥊 JOIN liE VERY FIRST TAP-SWAP GAME LIKE HAMSTER KOMBAT ON SOLANA 🔥 TELEGRAM GAME/BOT IS ALREADY LIVE ✅ FAIR LAUNCH IS COMING SOON, DONT MISS IT ➡️ https://t.me/solanafights</p>
+                <p className='font-[800] text-[2.5vw] leading-tight text-white px-3 my-3 font-montserrat'>SOLANAFIGHTS ⚔️🥊 JOIN liE VERY FIRST TAP-SWAP GAME LIKE HAMSTER KOMBAT ON SOLANA 🔥 TELEGRAM GAME/BOT IS ALREADY LIVE ✅ FAIR LAUNCH IS COMING SOON, DONT MISS IT ➡️ https://t.me/solanafights</p>
                 
               </div>
 
@@ -146,7 +146,7 @@ const DetailedBottomView = () => {
                   </div>
                   <p className='text-primary font-[800] text-[1.4vw] pe-4 pt-2 font-montserrat'>21 minutes ago</p>
                 </div>
-                <p className='font-[800] text-[2.5vw] leading-[15px] text-white px-3 my-3 font-montserrat'>SOLANAFIGHTS ⚔️🥊 JOIN liE VERY FIRST TAP-SWAP GAME LIKE HAMSTER KOMBAT ON SOLANA 🔥 TELEGRAM GAME/BOT IS ALREADY LIVE ✅ FAIR LAUNCH IS COMING SOON, DONT MISS IT ➡️ https://t.me/solanafights</p>
+                <p className='font-[800] text-[2.5vw] leading-tight text-white px-3 my-3 font-montserrat'>SOLANAFIGHTS ⚔️🥊 JOIN liE VERY FIRST TAP-SWAP GAME LIKE HAMSTER KOMBAT ON SOLANA 🔥 TELEGRAM GAME/BOT IS ALREADY LIVE ✅ FAIR LAUNCH IS COMING SOON, DONT MISS IT ➡️ https://t.me/solanafights</p>
                 
               </div>
               
@@ -163,7 +163,7 @@ const DetailedBottomView = () => {
         className='px-[8px] absolute top-0'>
           <div className=' flex gap-[5px] items-center pb-[15px] '>
                 <div className='bg-[#111111] py-[6px] px-[8px] rounded-[7.5px] flex items-center gap-[7px] shadow-[10px_10px_23px_0px_#0000004D]'>
-                  <p className='uppercase text-white  font-[800]  text-[2.5vw] '>Filter By Size</p>
+                  <p className='uppercase text-white  font-[800]  sm:text-[10px] text-[2.5vw] '>Filter By Size</p>
                   <div onClick={()=>setToogle(!toogle)} className={`${toogle? "bg-primary justify-end" : "bg-[#18191B] justify-start" } tranis w-[27px] flex items-center  rounded-[9px] h-[9px] `}>
                     <div className= {`${toogle?"bg-white":"bg-[#38383F]"} tranis w-[11px] h-[11px] rounded-full`}>
 
@@ -172,10 +172,10 @@ const DetailedBottomView = () => {
                 </div>
                 <div className='bg-[#111111] py-[6px] px-[8px] rounded-[7.5px]  items-center flex gap-[7px] shadow-[10px_10px_23px_0px_#0000004D]'>
                   <div className='flex items-center gap-1'>
-                    <input type='number' className='uppercase text-white bg-transparent font-[800] w-[24px]  text-[2.5vw] ' placeholder='0' value={tradeVale} onChange={(e)=>{
+                    <input type='number' className='uppercase text-white bg-transparent font-[800] w-[24px] sm:text-[10px] text-[2.5vw] ' placeholder='0' value={tradeVale} onChange={(e)=>{
                       setTradeVal(e.target.value)
                     }}/> 
-                    <p className=' uppercase text-white bg-transparent font-[800] text-[2.5vw]'>
+                    <p className=' uppercase text-white bg-transparent font-[800] sm:text-[10px] text-[2.5vw]'>
                     ETH
                     </p>
                   </div>
@@ -242,14 +242,14 @@ const DetailedBottomView = () => {
         </motion.div>
       </AnimatePresence>
     
-    <div className='mt-[22px] sm:hidden flex justify-center'>
+    <div className='mt-[22px] lg:hidden flex justify-center'>
       <button onClick={()=>setTradeOpen(true)} className={`${tradeOpen?"bg-[#666666] text-white":"bg-primary text-[#2C2D30]"} w-[25vw] font-montserrat font-[900] rounded-full`}>TRADE</button>
     </div>
     
-    <div className='sm:flex hidden justify-around mt-[50px] gap-[36px]'>
+    <div className='lg:flex hidden justify-around mt-[50px] gap-[36px]'>
   
     <div className='bg-[#1B1C1E] w-[720px] rounded-[40px] ' >
-      <p className="bg-primary text-[#262626] font-[900] text-[30px] font-montserrat   py-5 w-[349px] text-center rounded-[40px_0px]"> COMMENTS</p>
+      <p className="bg-primary text-[#262626] font-[900] lg:text-[18px] 2xl:text-[30px] font-montserrat   2xl:py-5 py-3 2xl:w-[349px] lg:w-[200px] text-center rounded-[40px_0px]"> COMMENTS</p>
       
         <div className='mt-[60px] h-[758px] overflow-y-auto pb-[40px] px-[30px] flex flex-col gap-[32px]'>
               
@@ -278,7 +278,7 @@ const DetailedBottomView = () => {
                   </div>
                   <p className='text-primary font-[800] text-[14px] pe-8 pt-2 font-montserrat'>21 minutes ago</p>
                 </div>
-                <p className='font-[800] text-[12px] leading-[26px] text-white px-8 my-5 font-montserrat'>SOLANAFIGHTS ⚔️🥊 JOIN liE VERY FIRST TAP-SWAP GAME LIKE HAMSTER KOMBAT ON SOLANA 🔥 TELEGRAM GAME/BOT IS ALREADY LIVE ✅ FAIR LAUNCH IS COMING SOON, DONT MISS IT ➡️ https://t.me/solanafights</p>
+                <p className='font-[800] text-[12px] leading-tight text-white px-8 my-5 font-montserrat'>SOLANAFIGHTS ⚔️🥊 JOIN liE VERY FIRST TAP-SWAP GAME LIKE HAMSTER KOMBAT ON SOLANA 🔥 TELEGRAM GAME/BOT IS ALREADY LIVE ✅ FAIR LAUNCH IS COMING SOON, DONT MISS IT ➡️ https://t.me/solanafights</p>
                 
               </div>
               <div className='bg-[#111111] rounded-[24px] pb-4'>
@@ -290,7 +290,7 @@ const DetailedBottomView = () => {
                   </div>
                   <p className='text-primary font-[800] text-[14px] pe-8 pt-2 font-montserrat'>21 minutes ago</p>
                 </div>
-                <p className='font-[800] text-[12px] leading-[26px] text-white px-8 my-5 font-montserrat'>SOLANAFIGHTS ⚔️🥊 JOIN liE VERY FIRST TAP-SWAP GAME LIKE HAMSTER KOMBAT ON SOLANA 🔥 TELEGRAM GAME/BOT IS ALREADY LIVE ✅ FAIR LAUNCH IS COMING SOON, DONT MISS IT ➡️ https://t.me/solanafights</p>
+                <p className='font-[800] text-[12px] leading-tight text-white px-8 my-5 font-montserrat'>SOLANAFIGHTS ⚔️🥊 JOIN liE VERY FIRST TAP-SWAP GAME LIKE HAMSTER KOMBAT ON SOLANA 🔥 TELEGRAM GAME/BOT IS ALREADY LIVE ✅ FAIR LAUNCH IS COMING SOON, DONT MISS IT ➡️ https://t.me/solanafights</p>
                 
               </div>
 
@@ -303,7 +303,7 @@ const DetailedBottomView = () => {
                   </div>
                   <p className='text-primary font-[800] text-[14px] pe-8 pt-2 font-montserrat'>21 minutes ago</p>
                 </div>
-                <p className='font-[800] text-[12px] leading-[26px] text-white px-8 my-5 font-montserrat'>SOLANAFIGHTS ⚔️🥊 JOIN liE VERY FIRST TAP-SWAP GAME LIKE HAMSTER KOMBAT ON SOLANA 🔥 TELEGRAM GAME/BOT IS ALREADY LIVE ✅ FAIR LAUNCH IS COMING SOON, DONT MISS IT ➡️ https://t.me/solanafights</p>
+                <p className='font-[800] text-[12px] leading-tight text-white px-8 my-5 font-montserrat'>SOLANAFIGHTS ⚔️🥊 JOIN liE VERY FIRST TAP-SWAP GAME LIKE HAMSTER KOMBAT ON SOLANA 🔥 TELEGRAM GAME/BOT IS ALREADY LIVE ✅ FAIR LAUNCH IS COMING SOON, DONT MISS IT ➡️ https://t.me/solanafights</p>
                 
               </div><div className='bg-[#111111] rounded-[24px] pb-4'>
                 <div className='items-center flex justify-between'>
@@ -314,7 +314,7 @@ const DetailedBottomView = () => {
                   </div>
                   <p className='text-primary font-[800] text-[14px] pe-8 pt-2 font-montserrat'>21 minutes ago</p>
                 </div>
-                <p className='font-[800] text-[12px] leading-[26px] text-white px-8 my-5 font-montserrat'>SOLANAFIGHTS ⚔️🥊 JOIN liE VERY FIRST TAP-SWAP GAME LIKE HAMSTER KOMBAT ON SOLANA 🔥 TELEGRAM GAME/BOT IS ALREADY LIVE ✅ FAIR LAUNCH IS COMING SOON, DONT MISS IT ➡️ https://t.me/solanafights</p>
+                <p className='font-[800] text-[12px] leading-tight text-white px-8 my-5 font-montserrat'>SOLANAFIGHTS ⚔️🥊 JOIN liE VERY FIRST TAP-SWAP GAME LIKE HAMSTER KOMBAT ON SOLANA 🔥 TELEGRAM GAME/BOT IS ALREADY LIVE ✅ FAIR LAUNCH IS COMING SOON, DONT MISS IT ➡️ https://t.me/solanafights</p>
                 
               </div><div className='bg-[#111111] rounded-[24px] pb-4'>
                 <div className='items-center flex justify-between'>
@@ -325,7 +325,7 @@ const DetailedBottomView = () => {
                   </div>
                   <p className='text-primary font-[800] text-[14px] pe-8 pt-2 font-montserrat'>21 minutes ago</p>
                 </div>
-                <p className='font-[800] text-[12px] leading-[26px] text-white px-8 my-5 font-montserrat'>SOLANAFIGHTS ⚔️🥊 JOIN liE VERY FIRST TAP-SWAP GAME LIKE HAMSTER KOMBAT ON SOLANA 🔥 TELEGRAM GAME/BOT IS ALREADY LIVE ✅ FAIR LAUNCH IS COMING SOON, DONT MISS IT ➡️ https://t.me/solanafights</p>
+                <p className='font-[800] text-[12px] leading-tight text-white px-8 my-5 font-montserrat'>SOLANAFIGHTS ⚔️🥊 JOIN liE VERY FIRST TAP-SWAP GAME LIKE HAMSTER KOMBAT ON SOLANA 🔥 TELEGRAM GAME/BOT IS ALREADY LIVE ✅ FAIR LAUNCH IS COMING SOON, DONT MISS IT ➡️ https://t.me/solanafights</p>
                 
               </div>
       
@@ -336,31 +336,31 @@ const DetailedBottomView = () => {
     </div>
 
     <div className="bg-[#1B1C1E]   rounded-[40px]">
-      <p className={`bg-primary text-[#262626] font-[900] text-[30px]  font-montserrat  py-5 w-[420px] text-center rounded-[40px_0px]`}> TRADING HISTORY</p>
+      <p className={`bg-primary text-[#262626] font-[900] 2xl:text-[30px] text-[18px]  font-montserrat  2xl:py-5 lg:py-3 2xl:w-[420px] lg:w-[240px] text-center rounded-[40px_0px]`}> TRADING HISTORY</p>
            
       <div className='mt-[60px] h-[758px] overflow-y-auto pb-[1px] px-[40px] flex flex-col gap-[32px]'>
               <div className='flex gap-4 items-center justify-end'>
-                <div className='bg-[#111111] px-[25px] py-[15px] rounded-[14px] flex gap-8 shadow-[10px_10px_23px_0px_#0000004D]'>
-                  <p className='uppercase text-white  font-[800]  text-[13px] '>Filter By Size</p>
-                  <div onClick={()=>setToogle(!toogle)} className={`${toogle? "bg-primary justify-end" : "bg-[#18191B] justify-start" } tranis w-[50px] flex items-center  rounded-[29px] h-[18px] `}>
-                    <div className= {`${toogle?"bg-white":"bg-[#38383F]"} tranis w-[22px] h-[22px] rounded-full`}>
+                <div className='bg-[#111111] 2xl:px-[25px] 2xl:py-[15px] lg:py-[10px] lg:px-[20px] rounded-[14px] flex 2xl:gap-8 gap-2 shadow-[10px_10px_23px_0px_#0000004D]'>
+                  <p className='uppercase text-white  font-[800]  2xl:text-[13px] text-[10px] '>Filter By Size</p>
+                  <div onClick={()=>setToogle(!toogle)} className={`${toogle? "bg-primary justify-end" : "bg-[#18191B] justify-start" } tranis w-[50px] flex items-center  rounded-[29px] 2xl:h-[18px] h-[15px] `}>
+                    <div className= {`${toogle?"bg-white":"bg-[#38383F]"} tranis 2xl:w-[22px] 2xl:h-[22px] w-[15px] h-[15px] rounded-full`}>
 
                     </div>
                   </div>
                 </div>
-                <div className='bg-[#111111] px-[25px] py-[10px]  items-center rounded-[14px] flex gap-4 shadow-[10px_10px_23px_0px_#0000004D]'>
+                <div className='bg-[#111111] 2xl:px-[25px] 2xl:py-[10px] py-[8px] px-[15px]  items-center rounded-[14px] flex gap-4 shadow-[10px_10px_23px_0px_#0000004D]'>
                   <div className='flex items-center gap-1'>
-                    <input type='number' className='uppercase text-white bg-transparent font-[800] w-[25px]  text-[13px] ' placeholder='0' value={tradeVale} onChange={(e)=>{
+                    <input type='number' className='uppercase text-white bg-transparent font-[800] w-[25px]  2xl:text-[13px] text-[10px]' placeholder='0' value={tradeVale} onChange={(e)=>{
                       setTradeVal(e.target.value)
                     }}/> 
-                    <p className=' uppercase text-white bg-transparent font-[800] text-[13px]'>
+                    <p className=' uppercase text-white bg-transparent font-[800] 2xl:text-[13px] text-[10px]'>
                     ETH
                     </p>
                   </div>
-                  <Image src={eth} alt='' className='rounded-full w-[28px]'/>
+                  <Image src={eth} alt='' className='rounded-full 2xl:w-[28px] w-[20px]'/>
                 </div>
-                <div className='border-primary border-s-[6px] ps-2'>
-                  <p className='font-bebasneue  text-[18px] '>
+                <div className='border-primary 2xl:border-s-[6px] border-s-[2px]  ps-2'>
+                  <p className='font-bebasneue  2xl:text-[13px] text-[10px] '>
                   <span className='text-white'>153 </span>
                     <span className='text-opacity-30 text-white'>trades of size greater lian 0.01 ETH</span>
                   </p>
@@ -368,7 +368,7 @@ const DetailedBottomView = () => {
               </div>
               
               <div className=' rounded-[20px_20px_0px_0px] overflow-x-hidden'>
-                <table className="w-full text-[18px] font-montserrat font-[800] border-collapse border-spacing-0">
+                <table className="w-full 2xl:text-[18px] text-[1vw] font-montserrat font-[800] border-collapse border-spacing-0">
                 <thead className="uppercase ">
                   <tr className="text-white text-opacity-40 bg-[#38383F] sticky top-[-1px] m-0 border-none shadow-none">
                     <th className=' w-[180px]'>ACCOUNT</th>

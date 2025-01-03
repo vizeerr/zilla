@@ -20,25 +20,25 @@ const Tabs = () => {
 
 
   return (
-    <div className='bg-[#30313AE0] mt-5 flex sm:flex-row sm:gap-0  gap-[24px] flex-col justify-between items-center py-2 sm:px-10 px-[15px]'>
-        <div className='flex sm:gap-3 gap-[6px]'>
-          <button onClick={()=>selectTab(0)} className={`${selected==0? 'bg-primary  text-[#3F3F41]': 'bg-[#4C4C5A] text-white'} anim sm:px-[30px]  px-[15px] font-[400]  rounded-full font-bebasneue  sm:text-[22px]  text-[3vw] pt-1 pb-0.5`}>LAUNCHED TIME</button>
-          <button onClick={()=>selectTab(1)} className= {`${selected==1?'bg-primary text-[#3F3F41]': 'bg-[#4C4C5A] text-white'} anim sm:px-[30px] px-[15px] font-[400]  rounded-full font-bebasneue   sm:text-[22px]  text-[3vw] pt-1 pb-0.5`}>TRADING VOLUME</button>
-          <button onClick={()=>selectTab(2)} className={`${selected==2?'bg-primary text-[#3F3F41]': 'bg-[#4C4C5A] text-white'} anim sm:px-[30px] px-[15px] font-[400]  rounded-full font-bebasneue   sm:text-[22px]  text-[3vw] pt-1 pb-0.5`}>MARKET CAP</button>
-          <button onClick={()=>selectTab(3)} className={`${selected==3?'bg-primary text-[#3F3F41]': 'bg-[#4C4C5A] text-white'} anim sm:px-[30px] px-[15px] font-[400]  rounded-full font-bebasneue   sm:text-[22px]  text-[3vw] pt-1 pb-0.5`}>24H PRICE INC.</button>
+    <div className='bg-[#30313AE0] mt-5 flex md:flex-row md:gap-0  gap-[24px] flex-col justify-between items-center py-2 md:px-4 2xl:px-20 px-[15px]'>
+        <div className='flex md:gap-3 gap-[6px]'>
+          <button onClick={()=>selectTab(0)} className={`${selected==0? 'bg-primary  text-[#3F3F41]': 'bg-[#4C4C5A] text-white'} anim 2xl:px-[30px] md:px-[14px]  px-[15px] font-[400]  rounded-full font-bebasneue  2xl:text-[22px] md:text-[18px] text-[3vw] pt-1 pb-0.5`}>LAUNCHED TIME</button>
+          <button onClick={()=>selectTab(1)} className= {`${selected==1?'bg-primary text-[#3F3F41]': 'bg-[#4C4C5A] text-white'}  anim 2xl:px-[30px] md:px-[14px]  px-[15px] font-[400]  rounded-full font-bebasneue  2xl:text-[22px] md:text-[18px] text-[3vw] pt-1 pb-0.5`}>TRADING VOLUME</button>
+          <button onClick={()=>selectTab(2)} className={`${selected==2?'bg-primary text-[#3F3F41]': 'bg-[#4C4C5A] text-white'}  anim 2xl:px-[30px] md:px-[14px]  px-[15px] font-[400]  rounded-full font-bebasneue  2xl:text-[22px] md:text-[18px] text-[3vw] pt-1 pb-0.5`}>MARKET CAP</button>
+          <button onClick={()=>selectTab(3)} className={`${selected==3?'bg-primary text-[#3F3F41]': 'bg-[#4C4C5A] text-white'}  anim 2xl:px-[30px] md:px-[14px]  px-[15px] font-[400]  rounded-full font-bebasneue  2xl:text-[22px] md:text-[18px] text-[3vw] pt-1 pb-0.5`}>24H PRICE INC.</button>
           
         </div>
-        <div className=" flex items-center gap-6 relative">
-            <div className="bg-white flex justify-between gap-1 pt-0.5 pb-1 sm:w-[476px] w-[60vw] rounded-full items-center ps-7 pe-5 overflow-hidden ">
+        <div className=" flex items-center md:gap-2 2xl:gap-6 relative">
+            <div className="bg-white flex justify-between gap-1 pt-0.5 pb-1 2xl:w-[476px] md:w-[24vw] w-[60vw] rounded-full items-center md:ps-3 ps-7 pe-5 md:pe-3 overflow-hidden ">
                 
-                <div className="sm:w-auto w-[16px]">
+                <div className="2xl:w-auto md:w-[24px] w-[16px]">
                   <Image src={searchIco} alt="" />
                 </div>
-                <input type="text" placeholder='SEARCH TOKENS' className="focus:border-0 active:border-0 sm:text-[17px] text-[2vw] font-[800] font-montserrat w-full text-center border-0 outline-none " />
+                <input type="text" placeholder='SEARCH TOKENS' className="focus:border-0 active:border-0 2xl:text-[17px] md:text-[15px] text-[2vw] font-[800] font-montserrat w-full text-center border-0 outline-none " />
             </div>
             
-            <button onMouseOver={()=>setOpen(true)} className="sm:px-[25px] px-[19px] anim flex items-center sm:gap-5 gap-[8px] font-[400] rounded-full font-bebasneue bg-[#4C4C5A] text-white  sm:text-[22px]  text-[3vw] sm:pt-1 sm:pb-0.5 py-[2px] ">
-                <div className="sm:w-auto w-[19px]">
+            <button onMouseOver={()=>setOpen(true)} className="2xl:px-[25px] md:px-[14px] px-[19px] anim flex items-center 2xl:gap-5 md:gap-2 gap-[8px] font-[400] rounded-full font-bebasneue bg-[#4C4C5A] text-white  md:text-[18px] 2xl:text-[22px]  text-[3vw] md:pt-1 md:pb-0.5 py-[2px] ">
+                <div className="2xl:w-auto w-[19px]">
 
                 <Image src={sort} alt=""/>
                 </div>

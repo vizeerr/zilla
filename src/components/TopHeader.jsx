@@ -18,21 +18,21 @@ const TopHeader = () => {
     
   return (
     <>
-    <div className=" pt-8 sm:ps-[43px] sm:pe-5 px-[15px] flex items-center justify-between">
+    <div className=" pt-8 2xl:ps-[43px] 2xl:pe-5 px-[15px] lg:px-[24px] flex items-center justify-between">
         <Link href={"/launch"}>
-            <div className='sm:w-[673px] w-[39vw] anim sm:py-5 py-[8px] px-[18px] sm:px-20 font-montserrat bg-[#5B5B6C4F] shadow-[12px_12px_40px_0px_#0000005E] sm:rounded-[120px_0px_120px_0px] rounded-[30px_0px_30px_0px]'>
-                <p className='font-[800] text-white sm:text-[65px] text-[3.5vw] m-0 leading-tight'>LAUNCH YOUR</p>
-                <div className="flex items-center sm:gap-16 gap-[12px]">
-                <p className='font-[800] text-primary sm:text-[65px] text-[3.5vw] leading-tight m-0'>TOKEN</p>
-                <div className="sm:w-full w-[20px]">
+            <div className='2xl:w-[673px] w-[39vw] anim 2xl:py-5 lg:py-[14px] py-[8px] lg:px-[28px] lg:w-[35vw] px-[18px] 2xl:px-20 font-montserrat bg-[#5B5B6C4F] shadow-[12px_12px_40px_0px_#0000005E] 2xl:rounded-[120px_0px_120px_0px] lg:rounded-[60px_0px_60px_0] rounded-[30px_0px_30px_0px]'>
+                <p className='font-[800] text-white 2xl:text-[65px] text-[3.5vw] m-0 leading-tight'>LAUNCH YOUR</p>
+                <div className="flex items-center 2xl:gap-16 gap-[12px]">
+                <p className='font-[800] text-primary 2xl:text-[65px] text-[3.5vw] leading-tight m-0'>TOKEN</p>
+                <div className="2xl:w-full w-[20px]">
                     <Image src={arrowr} alt="" />
                 </div>
                 </div>
                 
             </div>
       </Link>
-      <div className="flex items-center justify-between gap-10">
-        <div className="relative sm:block hidden">
+      <div className="flex items-center justify-between 2xl:gap-10 lg:gap-8">
+        <div className="relative lg:block hidden">
                 <Image  src={pif} width={80} unoptimized={true} className="absolute top-[-30px] start-[-40px]" alt=""  />
             <div className="bg-[#2E2F37]  flex w-[220px] justify-between rounded-[15px]">
             
@@ -86,23 +86,23 @@ const TopHeader = () => {
 
         <div className="flex flex-col items-end">
             <Link href={"/zilla-token"}>
-            <div className="bg-primary anim sm:w-[275px] w-[28vw] sm:border-[6px] border-[4px] border-[#3C3C3C] shadow-[10.16px_13.2px_33.51px_0px_#00000040] sm:rounded-[45px_0px] rounded-[25px_0px] sm:py-3 py-[5px] text-center">
-                <p className="font-[900] font-montserrat sm:text-[21px] text-[2.2vw] text-[#3C3C3C]">$ZILLA TOKEN</p>
+            <div className="bg-primary anim 2xl:w-[275px] lg:w-[22vw] w-[28vw] 2xl:border-[6px] border-[4px] border-[#3C3C3C] shadow-[10.16px_13.2px_33.51px_0px_#00000040] 2xl:rounded-[45px_0px] rounded-[25px_0px] lg:rounded-[40px_0px] 2xl:py-3 py-[5px] text-center">
+                <p className="font-[900] font-montserrat 2xl:text-[21px] text-[2.2vw] text-[#3C3C3C]">$ZILLA TOKEN</p>
             </div>
             </Link>
-            <div onClick={()=>setOpen(true)} className="anim shadow-[12.65px_16.44px_41.74px_0px_#00000040] flex items-center sm:gap-8 gap-[10px] bg-[#36373E] sm:mt-4 mt-2 sm:rounded-full rounded-[20px] sm:px-10 px-[14px] sm:pt-4  sm:py-3 py-[5px] sm:w-[405px] w-[36vw] ">
+            <div onClick={()=>setOpen(true)} className="anim shadow-[12.65px_16.44px_41.74px_0px_#00000040] flex items-center 2xl:gap-8 gap-[10px] bg-[#36373E] 2xl:mt-4 mt-2 2xl:rounded-full rounded-[20px] lg:rounded-[30px] 2xl:px-10 px-[14px] lg:px-[20px] 2xl:pt-4  2xl:py-3 py-[5px] 2xl:w-[405px] lg:w-[32vw] w-[36vw] ">
                 
-                <div className="sm:w-[91px] w-[6.9vw]">
+                <div className="2xl:w-[91px] w-[6.9vw]">
                     <Image width={91} unoptimized={true} src={setico} alt="" />
                 </div>
-                <p className="round text-white font-[500] sm:text-[50px] text-[5vw]">HOW IT <span className="text-primary">WORKS</span></p>
+                <p className="round text-white font-[500] 2xl:text-[50px] text-[5vw]">HOW IT <span className="text-primary">WORKS</span></p>
 
             </div>
         </div>
 
       </div>
     </div>
-    <div className="sm:hidden block">
+    <div className="lg:hidden block">
         <div className="w-[70vw] relative rounded-[19px]  shadow-[5.13px_5.98px_8.16px_0px_#00000040] bg-[#2E2F37]  mx-auto mt-8">
         <Image  src={pif} width={40} unoptimized={true} className="absolute top-[-15px] end-[-15px] " alt=""  />
            <div className="overflow-hidden rounded-[19px]">

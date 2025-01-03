@@ -5,9 +5,9 @@ import DetailedRightView from './DetailedRightView'
 const DetailedTopView = ({token}) => {
   
   return (
-    <div className='flex justify-between mt-10 items-start gap-[32px] text-white font-montserrat'>
+    <div className='flex justify-between mt-10 items-start wxl:gap-[32px] lg:gap-[20px] text-white font-montserrat'>
         <DetailedLefView token={token}/>    
-        <div className='sm:block hidden'>
+        <div className='lg:block hidden'>
           <DetailedRightView/>
         </div>
     </div>

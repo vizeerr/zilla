@@ -26,14 +26,14 @@ const TopNavbar = () => {
             <button className={`${pathname == "/launch" ? 'bg-white text-[#262626]' :"bg-sec text-white"} 2xl:px-[30px] xl:px-[20px] anim rounded-full font-bebasneue xl:text-[15px] 2xl:text-[23px] pt-1 pb-0.5  `}>LAUNCH</button>
             </Link>
             <Link href={"/zilla-token"}>
-            <button className={`bg-sec text-white 2xl:px-[30px] xl:px-[20px] anim rounded-full font-bebasneue  xl:text-[15px] 2xl:text-[23px] pt-1 pb-0.5  `}>$ZILLA</button>
+            <button className={`${pathname == "/zilla-token" ? 'bg-white text-[#262626]' :"bg-sec text-white"} 2xl:px-[30px] xl:px-[20px] anim rounded-full font-bebasneue xl:text-[15px] 2xl:text-[23px] pt-1 pb-0.5  `}>$ZILLA</button>
             </Link>
             
-            <Link href={"/zilla-token"}>
-            <button className={`bg-sec text-white 2xl:px-[30px] xl:px-[20px] anim rounded-full font-bebasneue  xl:text-[15px] 2xl:text-[23px] pt-1 pb-0.5  `}>STAKE</button>
+            <Link href={"/stake"}>
+            <button className={`${pathname == "/stake" ? 'bg-white text-[#262626]' :"bg-sec text-white"} 2xl:px-[30px] xl:px-[20px] anim rounded-full font-bebasneue xl:text-[15px] 2xl:text-[23px] pt-1 pb-0.5  `}>STAKE</button>
             </Link>
             <Link href={"/referral"}>
-            <button className={`bg-sec text-white 2xl:px-[30px] xl:px-[20px] anim rounded-full font-bebasneue  xl:text-[15px] 2xl:text-[23px] pt-1 pb-0.5  `}>REFERRAL</button>
+            <button className={`${pathname == "/referral" ? 'bg-white text-[#262626]' :"bg-sec text-white"} 2xl:px-[30px] xl:px-[20px] anim rounded-full font-bebasneue xl:text-[15px] 2xl:text-[23px] pt-1 pb-0.5  `}>REFERRAL</button>
             </Link>
           </div>
           <div className="2xl:w-[45.73px] anim 2xl:h-[45.73px] 2xl:p-3 xl:p-2 xl:w-[28px] xl:h-[28px] w-[15.5px] h-[15.5px] bg-sec flex justify-center items-center rounded-full p-1">

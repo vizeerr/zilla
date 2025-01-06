@@ -196,57 +196,57 @@ const ZillaRightView = () => {
                 <div className='flex justify-center gap-[30px] w-full items-center'>
                   <p className='font-bebasneue font-[400] 2xl:text-[21px] lg:text-[18px] lg:w-auto w-[50px] text-[2.1vw] text-primary'>TAX STAGE TIMER</p>
                   <div
-        className="relative flex items-center justify-center lg:w-[89px] lg:h-[89px] w-[8vw] h-[8vw]"
-        
-      >
-        {/* Circular Progress Bar */}
-        <svg
-          className="w-full h-full"
-          viewBox="0 0 100 100"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <circle
-            className="text-[#A8FF2F]"
-            strokeWidth="5"
-            stroke="currentColor"
-            fill="transparent"
-            r="45"
-            cx="50"
-            cy="50"
-          />
-          <circle
-            className="text-[#262626]"
-            strokeWidth="6"
-            stroke="currentColor"
-            fill="transparent"
-            r="45"
-            cx="50"
-            cy="50"
-            strokeDasharray="282.6"
-            strokeDashoffset={282.6 - (percentage / 100) * 282.6}
-            style={{
-              transform: "rotate(-90deg)",
-              transformOrigin: "50% 50%",
-              transition: "stroke-dashoffset 0.3s ease",
-            }}
-          />
-        </svg>
+              className="relative flex items-center justify-center lg:w-[89px] lg:h-[89px] w-[8vw] h-[8vw]"
+              
+            >
+              {/* Circular Progress Bar */}
+              <svg
+                className="w-full h-full"
+                viewBox="0 0 100 100"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  className="text-[#A8FF2F]"
+                  strokeWidth="5"
+                  stroke="currentColor"
+                  fill="transparent"
+                  r="45"
+                  cx="50"
+                  cy="50"
+                />
+                <circle
+                  className="text-[#262626]"
+                  strokeWidth="6"
+                  stroke="currentColor"
+                  fill="transparent"
+                  r="45"
+                  cx="50"
+                  cy="50"
+                  strokeDasharray="282.6"
+                  strokeDashoffset={282.6 - (percentage / 100) * 282.6}
+                  style={{
+                    transform: "rotate(-90deg)",
+                    transformOrigin: "50% 50%",
+                    transition: "stroke-dashoffset 0.3s ease",
+                  }}
+                />
+              </svg>
 
-        {/* Centered Text */}
-        <div className="absolute text-center">
-          <p className="lg:text-xs font-bold text-[8px]">{formatTime(timeLeft)}</p>
-        </div>
+              {/* Centered Text */}
+              <div className="absolute text-center">
+                <p className="lg:text-xs font-bold text-[8px]">{formatTime(timeLeft)}</p>
+              </div>
 
-        {/* Circular Button */}
-        <div
-          className="absolute bg-[#A8FF2F] lg:w-3 lg:h-3 w-[1vw] h-[1vw] rounded-full shadow"
-          style={{
-            top: `${y}%`,
-            left: `${x}%`,
-            transform: "translate(-50%, -50%)",
-          }}
-        ></div>
-                </div>
+              {/* Circular Button */}
+              <div
+                className="absolute bg-[#A8FF2F] lg:w-3 lg:h-3 w-[1vw] h-[1vw] rounded-full shadow"
+                style={{
+                  top: `${y}%`,
+                  left: `${x}%`,
+                  transform: "translate(-50%, -50%)",
+                }}
+                ></div>
+                  </div>
  
                 </div>
                 

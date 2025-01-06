@@ -6,6 +6,7 @@ const mockTokens = [
         token_address: "0xdAC17F958D2ee523a2206206994597C13D831ec0",
         pool_address: "0x471557Db259AB97864C521cBb6ecADBD4134f06D",
         name: "Token One",
+        status:"ongoing",
         symbol: "ONE",
         description: "The first token in our mock data he first token in our mock data he first token in our mock data he first token in our mock data he first token in our mock data he first token in our mock data he first token in our mock datahe first token in our mock datahe first token in our mock datahe first token in our mock datahe first token in our mock data he first token in our mock data he first token in our mock data he first token in our mock data he first token in our mock datahe first token in our mock data he first token in our mock data he first token in our mock data he first token in our mock data he first token in our mock data he first token in our mock data he first token in our mock data",
         image: "ipfs:QmYi4RecDM2Z4eTNXNaNeriWd4enupBZSnUkCujaFK6qWH",
@@ -14,12 +15,14 @@ const mockTokens = [
         twitter: "https://twitter.com/token1",
         creator: "0x6F0a4E339AD005DE065acb9Dd6BCd66E9499E331",
         created_at: "2023-12-01T12:00:00Z",
+        activity:"commit",
     },
     {
         token_address: "0xdAC17F958D2ee523a2206206994597C13D831ec1",
         pool_address: "0x471557Db259AB97864C521cBb6ecADBD4134f06D",
         name: "Token Two",
         symbol: "TWO",
+        status:"ended",
         description: "Another example token for testing",
         image: "ipfs:QmYi4RecDM2Z4eTNXNaNeriWd4enupBZSnUkCujaFK6qWH",
         website: "https://token2.com",
@@ -27,12 +30,17 @@ const mockTokens = [
         twitter: "https://twitter.com/token2",
         creator: "0x6F0a4E339AD005DE065acb9Dd6BCd66E9499E331",
         created_at: "2023-12-01T12:10:00Z",
+        activity:"claimed",
+
     },
     {
         token_address: "0xdAC17F958D2ee523a2206206994597C13D831ec2",
         pool_address: "0x471557Db259AB97864C521cBb6ecADBD4134f06D",
         name: "Token Three",
         symbol: "THREE",
+        status:"ongoing",
+        status:"ended",
+
         description: "Third token example",
         image: "ipfs:QmYi4RecDM2Z4eTNXNaNeriWd4enupBZSnUkCujaFK6qWH",
         website: "https://token3.com",
@@ -40,12 +48,17 @@ const mockTokens = [
         twitter: "https://twitter.com/token3",
         creator: "0x6F0a4E339AD005DE065acb9Dd6BCd66E9499E331",
         created_at: "2023-12-01T12:20:00Z",
+        activity:"claim",
+
     },
     {
         token_address: "0xdAC17F958D2ee523a2206206994597C13D831ec3",
         pool_address: "0x471557Db259AB97864C521cBb6ecADBD4134f06D",
         name: "Token Four",
         symbol: "FOUR",
+        status:"ended",
+        activity:"claim",
+
         description: "Another token for the mock API",
         image: "ipfs:QmYi4RecDM2Z4eTNXNaNeriWd4enupBZSnUkCujaFK6qWH",
         website: "https://token4.com",
@@ -58,6 +71,8 @@ const mockTokens = [
         token_address: "0xdAC17F958D2ee523a2206206994597C13D831ec4",
         pool_address: "0x471557Db259AB97864C521cBb6ecADBD4134f06D",
         name: "Token Five",
+        status:"ongoing",
+
         symbol: "FIVE",
         description: "Mock token five",
         image: "ipfs:QmYi4RecDM2Z4eTNXNaNeriWd4enupBZSnUkCujaFK6qWH",
@@ -66,6 +81,8 @@ const mockTokens = [
         twitter: "https://twitter.com/token5",
         creator: "0x6F0a4E339AD005DE065acb9Dd6BCd66E9499E331",
         created_at: "2023-12-01T12:40:00Z",
+        activity:"commit",
+
     },
     {
         token_address: "0xdAC17F958D2ee523a2206206994597C13D831ec5",

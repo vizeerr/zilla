@@ -146,8 +146,24 @@ const StakeCard = ({data,setStakeOpen}) => {
                         )
                     }
 
-{
+                    {
                         data.activity == "claim" && (
+                            <>
+                                <p onClick={()=>setStakeOpen(true)} className='round anim bg-primary text-[#111111] text-[36px] px-[25px] leading-[35px] pt-[10px] rounded-full uppercase'>claim</p>
+                                <div className='flex gap-3 items-center'>
+                                    <div className='bg-[#1B1C1E] rounded-full px-5 py-3'>
+                                        <p className='text-primary text-[14px] font-bebasneue'> 11 Dec, 2024 </p>
+                                    </div>
+                                    <p className='font-montserrat text-[14px] text-[#FFFFFF4F] font-[800]'>To</p>
+                                    <div className='bg-[#1B1C1E] rounded-full px-5 py-3'>
+                                        <p className='text-primary text-[14px] font-bebasneue'> 13 Dec, 2024 </p>
+                                    </div>
+                                </div>
+                            </>
+                        )
+                    }
+                    {
+                        data.activity == null && (
                             <>
                                 <p onClick={()=>setStakeOpen(true)} className='round anim bg-primary text-[#111111] text-[36px] px-[25px] leading-[35px] pt-[10px] rounded-full uppercase'>claim</p>
                                 <div className='flex gap-3 items-center'>

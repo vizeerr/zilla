@@ -5,17 +5,17 @@ import StakeTop from '@/components/StakeTop'
 const page = () => {
   return (
     <div className='bg-[#111111]'>
-        <p className='p-[90px] font-montserrat font-[900] text-[50px] text-white'> Your Gateway to <br/> <span className='text-primary'>PumpZilla Rewards !</span></p>
+        <p className='p-[4.6vw] font-montserrat font-[900] text-[2.6vw] text-white'> Your Gateway to <br/> <span className='text-primary'>PumpZilla Rewards !</span></p>
         
         <StakeTop/>
         <div className='flex justify-center'>
-            <div className='bg-white w-[200px] h-[8px] rounded-full'>
+            <div className='bg-white w-[10vw] h-[0.4vw] rounded-full'>
             </div>
         </div>
-        <div className='px-[90px] flex items-center gap-6 my-16'>
-            <div className='bg-primary w-[12px] rounded-full  h-[5.5vw]'>
+        <div className='px-[4.6vw] flex items-center gap-6 my-16'>
+            <div className='bg-primary w-[0.6vw] rounded-full  h-[5.5vw]'>
             </div>
-            <div className='text-white font-montserrat text-[35px] font-[900] leading-tight'>
+            <div className='text-white font-montserrat text-[1.8vw] font-[900] leading-tight'>
                 <p>Turn your staked points into rewards with our exclusive <span className='text-primary'>Launchpool</span>.<br/> 
                 Read the <span className='text-primary'>Documentation</span> for more details.</p>
             </div>

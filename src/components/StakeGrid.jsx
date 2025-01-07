@@ -30,9 +30,7 @@ const StakeGrid = () => {
                     <p onClick={()=>setFilter(1)} className={`${filter==1?"bg-primary text-[#18191B]" :"bg-[#181818] text-white"}  shadow-[3px_9px_23.1px_0px_#00000040] anim  font-montserrat sm:text-[1vw] text-[2.9vw] font-[800] sm:px-[1vw] px-[2.8vw] sm:py-[0.3vw] py-[0.6vw]  rounded-full `}>Ongoing</p>
                     <p onClick={()=>setFilter(2)} className={`${filter==2?"bg-primary text-[#18191B]" :"bg-[#181818] text-white"}  shadow-[3px_9px_23.1px_0px_#00000040] anim  font-montserrat sm:text-[1vw] text-[2.9vw] font-[800] sm:px-[1vw] px-[2.8vw] sm:py-[0.3vw] py-[0.6vw]  rounded-full `}>Completed</p>
                     <p onClick={()=>setFilter(3)} className={`${filter==3?"bg-primary text-[#18191B]" :"bg-[#181818] text-white"}  shadow-[3px_9px_23.1px_0px_#00000040] anim  font-montserrat sm:text-[1vw] text-[2.9vw] font-[800] sm:px-[1vw] px-[2.8vw] sm:py-[0.3vw] py-[0.6vw] rounded-full `}>Participated</p>
-                    
-                
-                
+            
                 
                 </div>
             </div>

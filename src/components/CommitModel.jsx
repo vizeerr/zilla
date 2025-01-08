@@ -101,39 +101,40 @@ const CommitModel = ({ open, setOpen}) => {
                 id="box"
                 className={`${
                     open ? "block" : "hidden"
-                } bg-[#1B1C1E] w-[41vw] h-min rounded-[2.6vw] p-[3.1vw]`}
+                } bg-[#1B1C1E] sm:w-[41vw] w-[70vw] h-min rounded-[2.6vw] p-[3.1vw]`}
             >
-            <div className="flex gap-4 ">
+            <div className="flex gap-[1vw] ">
                 <div className="w-[0.2vw] bg-white rounded-full"></div>
-                <p className="font-montserrat font-[800] text-[1.6vw] text-white"><span className="text-primary">Commit Points</span> for Rewards</p>
+                <p className="font-montserrat font-[800] sm:text-[1.6vw] text-[2.5vw] text-white"><span className="text-primary">Commit Points</span> for Rewards</p>
             </div>
-     
-            
-            <div className="flex items-center mt-[2vw] justify-between">
-                <p className=" font-montserrat font-[800] text-white text-[0.7vw] bg-[#111111] px-[1.8vw] py-[0.5vw] shadow-lg rounded-full"><span className="text-primary">User</span> Balance : <span className="text-[1.1vw] text-primary">123,456</span></p>
-                <p className=" font-montserrat font-[800] text-white text-[0.7vw] bg-[#111111] px-[1.8vw] py-[0.5vw] shadow-lg rounded-full"><span className="text-primary">Min.</span> Participation points : <span className="text-[1.1vw] text-primary">10</span></p>
-                
+
+            <div className="flex items-center sm:mt-[2vw] mt-[3vw] justify-between">
+              <p className=" font-montserrat font-[800] text-white sm:text-[0.7vw] text-[1.7vw] bg-[#111111] px-[1.8vw] py-[0.5vw] shadow-lg rounded-full"><span className="text-primary">User</span> Balance : <span className="sm:text-[1.1vw] text-[2vw] text-primary">123,456</span></p>
+              <p className=" font-montserrat font-[800] text-white sm:text-[0.7vw] text-[1.7vw] bg-[#111111] px-[1.8vw] py-[0.5vw] shadow-lg rounded-full"><span className="text-primary">Min</span> Participation points : <span className="sm:text-[1.1vw] text-[2vw] text-primary">10</span></p>
+                  
             </div> 
-            <div className="my-[1.3vw] flex items-center justify-between gap-[1.6vw]">
-                <div className="rounded-full  border-2 border-primary py-[1vw] px-[1.6vw] w-full" >
-                    <input type="text" onChange={(e)=>setStakePrice(e.target.value)} className="text-white outline-none text-[1.5vw] bg-transparent w-full font-bebasneue" placeholder="enter tokens to commit" />
+            
+      
+            <div className="sm:my-[1.3vw] my-[3vw] flex items-center justify-between gap-[1.66vw]">
+                <div className="rounded-full  sm:border-2 border-[1px] border-primary sm:py-[1vw]  px-[1.6vw] w-full" >
+                    <input type="text" onChange={(e)=>setStakePrice(e.target.value)} className="text-white outline-none sm:text-[1.5vw] text-[3.5vw] bg-transparent w-full font-bebasneue" placeholder="enter tokens to stake" />
                 </div>
-                <p className="font-montserrat font-[900] anim text-[1.6vw] bg-primary shadow-[19.46px_32.43px_40.38px_0px_#00000040] rounded-[1.2vw] px-[1vw] py-[1vw]">MAX</p>
+                <p className="font-montserrat font-[900] anim sm:text-[1.6vw] text-[2.5vw] bg-primary shadow-[19.46px_32.43px_40.38px_0px_#00000040] rounded-[1.2vw] px-[2vw] py-[1vw]">MAX</p>
             </div>
-            <div className="shadow-2xl bg-[#111111] p-[2vw] rounded-[2vw]">
-                <p className="font-bebasneue text-[0.8vw] text-white">Staking amount</p>
+            <div className="shadow-2xl bg-[#111111] sm:p-[1vw] p-[1.9vw] rounded-[1vw]">
+                <p className="font-bebasneue sm:text-[0.8vw] text-[2vw] text-white">Staking amount</p>
                 <div className="flex justify-between items-center gap-[1vw] ">
                     <div
-                        className="relative w-full h-[0.2vw] bg-[#363940] rounded-full"
+                        className="relative w-full sm:h-[0.2vw] h-[0.7vw] bg-[#363940] rounded-full"
                         ref={sliderRef}
                         onClick={handleTrackClick}
                     >
                         <div
-                        className="absolute top-0 left-0 h-[0.2vw] bg-[#A8FF2F] rounded-full"
+                        className="absolute top-0 left-0 sm:h-[0.2vw] h-[0.7vw] bg-[#A8FF2F] rounded-full"
                         style={{ width: `${value}%` }}
                         ></div>
                         <div
-                        className="absolute top-[-0.3vw] w-[0.9vw] h-[0.9vw] bg-white z-10 shadow-md rounded-full cursor-pointer"
+                        className="absolute sm:top-[-0.3vw] top-[-0.4vw] sm:w-[0.9vw] sm:h-[0.9vw] w-[1.6vw] h-[1.6vw] bg-white z-10 shadow-md rounded-full cursor-pointer"
                         ref={thumbRef}
                         style={{ left: `${value-1}%` }}
                         onMouseDown={handleMouseDown}
@@ -142,19 +143,21 @@ const CommitModel = ({ open, setOpen}) => {
                         {milestones.map((milestone) => (
                         <div
                             key={milestone}
-                            className="absolute top-[0.41vw] shadow-lg -mt-[0.62vw] w-[0.5vw] h-[0.5vw] bg-[#363940] rounded-full"
+                            className="absolute sm:top-[0.41vw] top-[0.3vw] shadow-lg -mt-[0.62vw] sm:w-[0.5vw] sm:h-[0.5vw] w-[1.3vw] h-[1.3vw] bg-[#363940] rounded-full"
                             style={{ left: `${milestone}%` }}
                         ></div>
                         ))}
                     </div>
-                    <p className="font-montserrat font-[800] text-[0.6vw] text-white bg-[#363940] rounded-[0.5vw] px-[0.4vw] py-[0.3vw] shadow-md w-[2.6vw]">{Math.round(value)}%</p>
+                    <p className="font-montserrat font-[800] sm:text-[0.6vw] text-[1.5vw] text-white bg-[#363940] rounded-[0.5vw] px-[0.4vw] py-[0.3vw] shadow-md sm:w-[2.6vw] w-[5vw]">{Math.round(value)}%</p>
                 </div>
                 
             </div>
              
-            <div className={`${stakePrice>0?"bg-primary ":" bg-[#666666]"} text-[#1B1C1E] rounded-full shadow-lg text-center w-[8.1vw] mx-auto mt-[1.5vw]`}>
-                <p className={`round text-[1.8vw] pt-[0.5vw]`}>commit</p>
+            <div className={`${stakePrice>0?"bg-primary ":" bg-[#666666]"} text-[#1B1C1E] rounded-full shadow-lg text-center sm:w-[8.1vw] w-[14vw] mx-auto mt-[1.5vw]`}>
+                <p className={`round sm:text-[1.8vw] text-[4vw] pt-[0.5vw] sm:leading-none leading-[4vw]`}>commit</p>
             </div>
+             
+          
             
             
         </motion.div>

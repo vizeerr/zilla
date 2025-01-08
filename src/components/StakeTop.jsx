@@ -43,11 +43,14 @@ const StakeTop = () => {
                                 <Image src={info} alt="Info Icon" className="w-full" />
                                 {hoveredInfo === 1 && (
                                     <div
-                                    className="absolute font-montserrat italic font-[900] text-[0.6vw] bottom-full left-1/2 transform -translate-x-1/2 mb-2 py-[0.6vw] bg-[#3F3F3F] text-white text-sm shadow-xl w-max rounded-[18px] px-[1.3vw]"
-                                    style={{ maxWidth: "11vw" }}
-                                    >
+                                    className="absolute font-montserrat italic font-[900] bottom-full sm:max-w-[11vw] max-w-[50vw] left-1/2 transform -translate-x-1/2 mb-2 sm:py-[0.6vw] py-[1.4vw] bg-[#3F3F3F] text-white text-sm shadow-xl w-max rounded-[18px] sm:px-[1.3vw] px-[3vw]"
+                                    
+                                    ><p className='sm:text-[0.6vw] text-[2vw] leading-tight'>
+
                                     Total Zilla tokens you have currently staked.
-                                    <div className="bg-[#3F3F3F] w-[1vw] h-[1vw] absolute bottom-[-8px] rotate-45 right-[45%]"></div>
+                                    </p>
+                                        
+                                    <div className="bg-[#3F3F3F] sm:w-[1vw] sm:h-[1vw] w-[3vw] h-[3vw] absolute sm:bottom-[-8px] bottom-[-5px] rotate-45 right-[45%]"></div>
                                     </div>
                                 )}
                             </div>
@@ -70,12 +73,16 @@ const StakeTop = () => {
                                 >
                                 <Image src={info} alt="Info Icon" className="w-full" />
                                 {hoveredInfo === 2 && (
+                                    
                                     <div
-                                    className="absolute font-montserrat italic font-[900] text-[0.6vw] left-1/2 transform -translate-x-1/2 mb-2 py-[0.6vw] bg-[#3F3F3F] text-white text-sm shadow-xl w-max rounded-[0.9vw] px-[1.3vw]"
-                                    style={{ maxWidth: "11.9vw" }}
-                                    >
+                                    className="absolute font-montserrat italic font-[900] bottom-full sm:max-w-[11vw] max-w-[50vw] left-1/2 transform -translate-x-1/2 mb-2 sm:py-[0.6vw] py-[1.4vw] bg-[#3F3F3F] text-white text-sm shadow-xl w-max rounded-[18px] sm:px-[1.3vw] px-[3vw]"
+                                    
+                                    ><p className='sm:text-[0.6vw] text-[2vw] leading-tight'>
+
                                     Points earned per hour for staked Zilla.
-                                    <div className="bg-[#3F3F3F] w-[1vw] h-[1vw] absolute top-[-8px] rotate-45 right-[45%]"></div>
+                                    </p>
+                                        
+                                    <div className="bg-[#3F3F3F] sm:w-[1vw] sm:h-[1vw] w-[3vw] h-[3vw] absolute sm:bottom-[-8px] bottom-[-5px] rotate-45 right-[45%]"></div>
                                     </div>
                                 )}
                             </div>
@@ -88,12 +95,17 @@ const StakeTop = () => {
                                 >
                                 <Image src={info} alt="Info Icon" className="w-full" />
                                 {hoveredInfo === 3 && (
+                                    
+
                                     <div
-                                    className="absolute font-montserrat italic font-[900] text-[0.6vw] left-1/2 transform -translate-x-1/2 mb-2 py-[0.6vw] bg-[#3F3F3F] text-white text-sm shadow-xl w-max rounded-[0.9vw] px-[1.3vw]"
-                                    style={{ maxWidth: "14vw" }}
-                                    >
+                                    className="absolute font-montserrat italic font-[900] bottom-full sm:max-w-[11vw] max-w-[50vw] left-1/2 transform -translate-x-1/2 mb-2 sm:py-[0.6vw] py-[1.4vw] bg-[#3F3F3F] text-white text-sm shadow-xl w-max rounded-[18px] sm:px-[1.3vw] px-[3vw]"
+
+                                    ><p className='sm:text-[0.6vw] text-[2vw] leading-tight'>
+
                                     Bonus multiplier for staking Zilla without withdrawal.
-                                    <div className="bg-[#3F3F3F] w-[1vw] h-[1vw] absolute top-[-0.4vw] rotate-45 right-[45%]"></div>
+                                    </p>
+                                        
+                                    <div className="bg-[#3F3F3F] sm:w-[1vw] sm:h-[1vw] w-[3vw] h-[3vw] absolute sm:bottom-[-8px] bottom-[-5px] rotate-45 right-[45%]"></div>
                                     </div>
                                 )}
                             </div>
@@ -120,13 +132,18 @@ const StakeTop = () => {
                                 >
                                 <Image src={info} alt="Info Icon" className="w-full" />
                                 {hoveredInfo === 4 && (
+                                   
                                     <div
-                                    className="absolute font-montserrat italic font-[900] text-[0.6vw] bottom-full left-1/2 transform -translate-x-1/2 mb-2 py-[0.6vw] bg-[#3F3F3F] text-white text-sm shadow-xl w-max rounded-[0.9vw] px-[1.3vw]"
-                                    style={{ maxWidth:"11vw" }}
-                                    >
+                                    className="absolute font-montserrat italic font-[900] bottom-full sm:max-w-[11vw] max-w-[50vw] left-1/2 transform -translate-x-1/2 mb-2 sm:py-[0.6vw] py-[1.4vw] bg-[#3F3F3F] text-white text-sm shadow-xl w-max rounded-[18px] sm:px-[1.3vw] px-[3vw]"
+                                    
+                                    ><p className='sm:text-[0.6vw] text-[2vw] leading-tight'>
+
                                     Total points earned for launchpool rewards.
-                                    <div className="bg-[#3F3F3F] w-[1vw] h-[1vw] absolute bottom-[-8px] rotate-45 right-[45%]"></div>
+                                    </p>
+                                        
+                                    <div className="bg-[#3F3F3F] sm:w-[1vw] sm:h-[1vw] w-[3vw] h-[3vw] absolute sm:bottom-[-8px] bottom-[-5px] rotate-45 right-[45%]"></div>
                                     </div>
+                                    
                                 )}
                             </div>                  
                     </div>

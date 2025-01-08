@@ -45,12 +45,12 @@ const StakeTop = () => {
                                     <div
                                     className="absolute font-montserrat italic font-[900] bottom-full sm:max-w-[11vw] max-w-[50vw] left-1/2 transform -translate-x-1/2 mb-2 sm:py-[0.6vw] py-[1.4vw] bg-[#3F3F3F] text-white text-sm shadow-xl w-max rounded-[18px] sm:px-[1.3vw] px-[3vw]"
                                     
-                                    ><p className='sm:text-[0.6vw] text-[2vw] leading-tight'>
+                                    ><p className='sm:text-[0.6vw] text-[2vw] leading-tight z-30 relative'>
 
                                     Total Zilla tokens you have currently staked.
                                     </p>
                                         
-                                    <div className="bg-[#3F3F3F] sm:w-[1vw] sm:h-[1vw] w-[3vw] h-[3vw] absolute sm:bottom-[-8px] bottom-[-5px] rotate-45 right-[45%]"></div>
+                                    <div className="bg-[#3F3F3F] sm:w-[1vw] sm:h-[1vw] w-[3vw] h-[3vw] absolute sm:bottom-[-0.4vw] bottom-[-5px] rotate-45 right-[45%]"></div>
                                     </div>
                                 )}
                             </div>
@@ -75,14 +75,14 @@ const StakeTop = () => {
                                 {hoveredInfo === 2 && (
                                     
                                     <div
-                                    className="absolute font-montserrat italic font-[900] bottom-full sm:max-w-[11vw] max-w-[50vw] left-1/2 transform -translate-x-1/2 mb-2 sm:py-[0.6vw] py-[1.4vw] bg-[#3F3F3F] text-white text-sm shadow-xl w-max rounded-[18px] sm:px-[1.3vw] px-[3vw]"
+                                    className="absolute font-montserrat italic font-[900] bottom-full sm:max-w-[11vw] max-w-[50vw] sm:left-1/2 left-[-8vw] transform -translate-x-1/2 mb-2 sm:py-[0.6vw] py-[1.4vw] bg-[#3F3F3F] text-white text-sm shadow-xl w-max rounded-[18px] sm:px-[1.3vw] px-[3vw]"
                                     
-                                    ><p className='sm:text-[0.6vw] text-[2vw] leading-tight'>
+                                    ><p className='sm:text-[0.6vw] text-[2vw] leading-tight z-30 relative'>
 
                                     Points earned per hour for staked Zilla.
                                     </p>
                                         
-                                    <div className="bg-[#3F3F3F] sm:w-[1vw] sm:h-[1vw] w-[3vw] h-[3vw] absolute sm:bottom-[-8px] bottom-[-5px] rotate-45 right-[45%]"></div>
+                                    <div className="bg-[#3F3F3F] sm:w-[1vw] sm:h-[1vw] w-[3vw] h-[3vw] absolute sm:bottom-[-0.4vw]  bottom-[-5px] rotate-45 sm:right-[45%] right-[28%]"></div>
                                     </div>
                                 )}
                             </div>
@@ -98,14 +98,14 @@ const StakeTop = () => {
                                     
 
                                     <div
-                                    className="absolute font-montserrat italic font-[900] bottom-full sm:max-w-[11vw] max-w-[50vw] left-1/2 transform -translate-x-1/2 mb-2 sm:py-[0.6vw] py-[1.4vw] bg-[#3F3F3F] text-white text-sm shadow-xl w-max rounded-[18px] sm:px-[1.3vw] px-[3vw]"
+                                    className="absolute font-montserrat italic font-[900] bottom-full sm:max-w-[11vw] max-w-[50vw] sm:left-1/2 left-[-12vw] transform -translate-x-1/2 mb-2 sm:py-[0.6vw] py-[1.4vw] bg-[#3F3F3F] text-white text-sm shadow-xl w-max rounded-[18px] sm:px-[1.3vw] px-[3vw]"
 
-                                    ><p className='sm:text-[0.6vw] text-[2vw] leading-tight'>
+                                    ><p className='sm:text-[0.6vw] text-[2vw] leading-tight z-30 relative'>
 
                                     Bonus multiplier for staking Zilla without withdrawal.
                                     </p>
                                         
-                                    <div className="bg-[#3F3F3F] sm:w-[1vw] sm:h-[1vw] w-[3vw] h-[3vw] absolute sm:bottom-[-8px] bottom-[-5px] rotate-45 right-[45%]"></div>
+                                    <div className="bg-[#3F3F3F] sm:w-[1vw] sm:h-[1vw] w-[3vw] h-[3vw] absolute sm:bottom-[-0.4vw] bottom-[-5px] rotate-45 sm:right-[45%] right-[21%]"></div>
                                     </div>
                                 )}
                             </div>
@@ -141,7 +141,7 @@ const StakeTop = () => {
                                     Total points earned for launchpool rewards.
                                     </p>
                                         
-                                    <div className="bg-[#3F3F3F] sm:w-[1vw] sm:h-[1vw] w-[3vw] h-[3vw] absolute sm:bottom-[-8px] bottom-[-5px] rotate-45 right-[45%]"></div>
+                                    <div className="bg-[#3F3F3F] sm:w-[1vw] sm:h-[1vw] w-[3vw] h-[3vw] absolute sm:bottom-[-0.4vw]  bottom-[-5px] rotate-45 right-[45%]"></div>
                                     </div>
                                     
                                 )}

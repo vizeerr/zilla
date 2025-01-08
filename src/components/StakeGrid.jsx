@@ -40,7 +40,7 @@ const StakeGrid = () => {
                 ))}
             </div>
             <div className='flex justify-center mb-[3.1vw]'>
-                <p className='round bg-primary anim text-[#18191B] text-[2.2vw] rounded-full px-[1.8vw] pt-[0.6vw] leading-[2.8vw]'>LOAD MORE</p>
+                <p className='round bg-primary anim text-[#18191B] sm:text-[2.2vw] text-[5vw] rounded-full sm:px-[1.8vw] px-[2.4vw] sm:pt-[0.6vw] pt-[1.5vw] sm:leading-[2.8vw] leading-[3.5vw]'>LOAD MORE</p>
             </div>
         </div>
         <CommitModel open={stakeOpen} setOpen={setStakeOpen}/>

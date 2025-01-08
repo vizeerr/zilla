@@ -89,7 +89,7 @@ const StakeCard = ({data,setStakeOpen}) => {
                     {
                         data.activity == "commit" && (
                             <>
-                                <p onClick={()=>setStakeOpen(true)} className='round anim bg-primary text-[#111111] sm:text-[2.4vw] text-[3.6vw] sm:px-[1.3vw] px-[2.2vw] leading-[2.7vw] pt-[1vw] rounded-full'>COMMIT</p>
+                                <p onClick={()=>setStakeOpen(true)} className='round anim bg-primary text-[#111111] sm:text-[2.4vw] text-[3.6vw] sm:px-[1.3vw] px-[2.2vw] sm:leading-[2.2vw] sm:pt-[0.5vw] leading-[2.8vw] pt-[1.1vw] rounded-full'>COMMIT</p>
                                 <div className='bg-[#1B1C1E] rounded-full px-[1.6vw] py-[0.4vw] flex sm:flex-row flex-row-reverse sm:gap-[0.6vw]  gap-[1vw] items-center'>
                         <div className="relative flex items-center justify-center sm:w-[1.5vw] w-[1.9vw]  sm:h-[1.5vw] h-[1.9vw]">
                             {/* Circular Progress Bar */}
@@ -132,7 +132,7 @@ const StakeCard = ({data,setStakeOpen}) => {
                     {
                         data.activity == "claimed" && (
                             <>
-                                <p onClick={()=>setStakeOpen(true)} className='round anim bg-[#6666669C] text-[#FFFFFF82] sm:text-[2.4vw] text-[3.6vw] sm:px-[1.3vw] px-[2.2vw] leading-[2.7vw] pt-[1vw]  rounded-full uppercase'>claimed</p>
+                                <p onClick={()=>setStakeOpen(true)} className='round anim bg-[#6666669C] text-[#FFFFFF82] sm:text-[2.4vw] text-[3.6vw] sm:px-[1.3vw] px-[2.2vw] sm:leading-[2.2vw] sm:pt-[0.5vw] leading-[2.8vw] pt-[1.2vw]  rounded-full uppercase'>claimed</p>
                                 <div className='flex gap-[0.6vw] items-center'>
                                 <div className='bg-[#1B1C1E] rounded-full sm:px-[1vw] px-[1.4vw] sm:py-[0.6vw] py-[0.7vw]'>
                                         <p className='text-primary sm:text-[0.7vw] text-[1.6vw] font-bebasneue'> 11 Dec, 2024 </p>
@@ -149,7 +149,7 @@ const StakeCard = ({data,setStakeOpen}) => {
                     {
                         data.activity == "claim" && (
                             <>
-                                <p onClick={()=>setStakeOpen(true)} className='round anim bg-primary text-[#111111] sm:text-[2.4vw] text-[3.6vw] sm:px-[1.3vw] px-[2.2vw] leading-[2.7vw] pt-[1vw]  rounded-full uppercase'>claim</p>
+                                <p onClick={()=>setStakeOpen(true)} className='round anim bg-primary text-[#111111] sm:text-[2.4vw] text-[3.6vw] sm:px-[1.3vw] px-[2.2vw] sm:leading-[2.2vw] sm:pt-[0.5vw] leading-[2.8vw] pt-[1.2vw]  rounded-full uppercase'>claim</p>
                                 <div className='flex gap-[0.6vw] items-center'>
                                 <div className='bg-[#1B1C1E] rounded-full sm:px-[1vw] px-[1.4vw] sm:py-[0.6vw] py-[0.7vw]'>
                                         <p className='text-primary sm:text-[0.7vw] text-[1.6vw] font-bebasneue'> 11 Dec, 2024 </p>
@@ -165,7 +165,7 @@ const StakeCard = ({data,setStakeOpen}) => {
                     {
                         data.activity == null && (
                             <>
-                                <p onClick={()=>setStakeOpen(true)} className='round anim bg-primary text-[#111111] sm:text-[2.4vw] text-[3.6vw] sm:px-[1.3vw] px-[2.2vw] leading-[2.7vw] pt-[1vw]  rounded-full uppercase'>claim</p>
+                                <p onClick={()=>setStakeOpen(true)} className='round anim bg-primary text-[#111111] sm:text-[2.4vw] text-[3.6vw] sm:px-[1.3vw] px-[2.2vw] sm:leading-[2.2vw] sm:pt-[0.5vw] leading-[2.8vw] pt-[1.2vw]  rounded-full uppercase'>claim</p>
                                 <div className='flex gap-[0.6vw] items-center'>
                                     <div className='bg-[#1B1C1E] rounded-full sm:px-[1vw] px-[1.4vw] sm:py-[0.6vw] py-[0.7vw]'>
                                         <p className='text-primary sm:text-[0.7vw] text-[1.6vw] font-bebasneue'> 11 Dec, 2024 </p>

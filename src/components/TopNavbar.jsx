@@ -58,7 +58,7 @@ const TopNavbar = () => {
           <button className={`bg-sec text-white px-[18px] anim rounded-full font-bebasneue  text-[12px] pt-1 pb-0.5  `}>$ZILLA</button>
           </Link>
           
-          <Link href={"/zilla-token"}>
+          <Link href={"/stake"}>
           <button className={`bg-sec text-white px-[18px] anim rounded-full font-bebasneue  text-[12px] pt-1 pb-0.5  `}>STAKE</button>
           </Link>
           <Link href={"/referral"}>

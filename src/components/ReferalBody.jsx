@@ -137,7 +137,7 @@ const ReferalBody = () => {
             <p className='sm:text-[1.5vw] text-[5vw] text-white font-montserrat font-[800]'>123,456,789</p>
           </div>
           <div className="card-back w-full">
-            <p className='font-montserrat text-white font-[800] text-center sm:text-[0.8vw] text-[1.8vw] w-[100%]' >This is how much ETH you’ve spent using other users' referral links!</p>
+            <p className='font-montserrat text-white font-[800] text-center sm:text-[0.8vw] text-[1.8vw] w-[100%]' >This is how much ETH youve spent using other users referral links!</p>
           </div>
         </motion.div>
       </div>

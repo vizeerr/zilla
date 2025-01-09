@@ -3,29 +3,42 @@ import React, { useEffect, useState } from 'react'
 import info from '@/assets/info.svg'
 import Image from 'next/image';
 const ReferalBody = () => {
-  
-    const initialTime = 24 * 60 * 60; 
-    const [timeRemaining, setTimeRemaining] = useState(initialTime);
-    const [progress, setProgress] = useState(100);
-  
-    useEffect(() => {
-      const timer = setInterval(() => {
-        setTimeRemaining((prevTime) => {
-          const newTime = prevTime - 1;
-          setProgress((newTime / initialTime) * 100); // Update progress based on remaining time
-          return newTime <= 0 ? 0 : newTime; // Stop at 0
-        });
-      }, 1000);
-  
-      return () => clearInterval(timer); // Cleanup interval on component unmount
-    }, []);
-    const formatTime = (seconds) => {
-        const days = Math.floor(seconds / (24 * 60 * 60));
-        const hours = Math.floor((seconds % (24 * 60 * 60)) / 3600);
-        const minutes = Math.floor((seconds % 3600) / 60);
-        const secs = seconds % 60;
-        return `${days}d ${hours}h ${minutes}m ${secs}s`;
+  const [targetDay, setTargetDay] = useState('2025-01-15'); // Set default target date
+  const [timeLeft, setTimeLeft] = useState({});
+
+  const calculateTimeLeft = () => {
+    const now = new Date();
+    const targetDate = new Date(targetDay);
+    const difference = targetDate - now;
+
+    if (difference > 0) {
+      return {
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((difference / (1000 * 60)) % 60),
+        seconds: Math.floor((difference / 1000) % 60),
       };
+    } else {
+      return {
+        days: 0,
+        hours: 0,
+        minutes: 0,
+        seconds: 0,
+      };
+    }
+  };
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, [targetDay]);
+
+  const handleDateChange = (e) => {
+    setTargetDay(e.target.value);
+  };
   return (
     <div className='flex justify-center gap-[3.9vw] mt-[1vw]'>
       <div className='bg-[#1B1C1E] rounded-[2.5vw] shadow-[16.21px_16.21px_56.21px_0px_#0000004F] w-[39vw] p-[1.4vw]'>
@@ -36,17 +49,17 @@ const ReferalBody = () => {
           <div className='flex gap-[2vw] justify-center items-end my-[1vw]'>
             <div>
               <p className='text-[#494949] font-bebasneue text-[1.7vw]'>DAYS</p>
-              <p className='text-white font-montserrat text-[2.7vw] font-[800]'>15</p>
+              <p className='text-white font-montserrat text-[2.7vw] font-[800]'>{timeLeft.days}</p>
             </div>
             <p className='text-white font-montserrat text-[2.7vw] font-[500]'>:</p>
             <div>
               <p className='text-[#494949] font-bebasneue text-[1.7vw]'>HRS</p>
-              <p className='text-white font-montserrat text-[2.7vw] font-[800]'>45</p>
+              <p className='text-white font-montserrat text-[2.7vw] font-[800]'>{timeLeft.hours}</p>
             </div>
             <p className='text-white font-montserrat text-[2.7vw] font-[500]'>:</p>
             <div>
               <p className='text-[#494949] font-bebasneue text-[1.7vw]'>MINS</p>
-              <p className='text-white font-montserrat text-[2.7vw] font-[800]'>30</p>
+              <p className='text-white font-montserrat text-[2.7vw] font-[800]'>{timeLeft.minutes}</p>
             </div>
 
           </div>

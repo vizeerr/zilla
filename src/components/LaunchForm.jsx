@@ -17,7 +17,7 @@ const LaunchForm = () => {
 
       {/* <LaunchFooter/> */}
 
-        <div className='bg-[#222227] font-montserrat w-[38vw] p-[2vw] rounded-[45px] shadow-[26px_25px_51.4px_0px_#00000040] mx-auto my-[0.95vw] '>
+        <div className='bg-[#222227] font-montserrat w-[38vw] p-[2vw] rounded-[2.3vw] shadow-[26px_25px_51.4px_0px_#00000040] mx-auto my-[0.95vw] '>
           <div className='flex justify-between gap-[2.5vw]'>
             <div className='w-full'>
               <div>
@@ -73,10 +73,10 @@ const LaunchForm = () => {
                   <p className='font-bebasneue font-[400] ms-[0.7vw] w-[10vw] text-[1vw] text-white  '>USER BALANCE : <span className='text-primary'>0 ETH</span></p>
                 </div>
               </div>
-              <div className='w-full flex justify-center mt-[1.5vw]'>
+              <div className='w-full flex justify-center mt-[1.7vw]'>
                 <button className='anim border-0 bg-primary shadow-[0px_4px_4px_0px_#00000040] text-[#38383F] mx-auto round font-[500] text-[2vw] w-[9vw] leading-[2.2vw] pt-[0.4vw] rounded-full'>LAUNCH</button>
               </div>
-              <p className="text-[1vw] font-montserrat font-[800] text-white text-center mt-[1.5vw]">Receive <span className='text-primary'>0.1 ETH</span> when your <span className='text-primary'>token completes its bonding curve</span></p>
+              <p className="text-[0.9vw] font-montserrat font-[800] text-white text-center mt-[0.9vw]">Receive <span className='text-primary'>0.1 ETH</span> when your <span className='text-primary'>token completes its bonding curve</span></p>
         </div>
 
       </div>

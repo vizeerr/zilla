@@ -25,7 +25,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${bebasneue.variable}`}>
+      <body className={`${bebasneue.variable} bg-[#111111]`}>
         <TopNavbar/>
         {children}
         <Toaster

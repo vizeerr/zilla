@@ -43,9 +43,9 @@ const ReferalBody = () => {
     setTargetDay(e.target.value);
   };
   return (
-    <div className='flex justify-center gap-[3.9vw] mt-[1vw] sm:flex-row flex-col'>
+    <div className='flex justify-center gap-[3.9vw] mt-[1.4vw] sm:flex-row flex-col'>
       
-      <div className='bg-[#1B1C1E] sm:rounded-[2.5vw] rounded-[5vw] shadow-[16.21px_16.21px_56.21px_0px_#0000004F] sm:w-[39vw] w-[95%] sm:mx-none mx-auto sm:p-[1.4vw] p-[4.2vw]'>
+      <div className='bg-[#1B1C1E] sm:rounded-[2.5vw] rounded-[5vw] shadow-[16.21px_16.21px_56.21px_0px_#0000004F] sm:w-[39vw] w-[95%] sm:mx-0 mx-auto sm:p-[1.4vw] p-[4.2vw]'>
         <motion.div 
           key="1"
           initial={{ rotateX: 0 }}
@@ -92,7 +92,7 @@ const ReferalBody = () => {
         </div>
       </div>
 
-      <div className='bg-[#1B1C1E] sm:rounded-[2.5vw] rounded-[5vw] shadow-[16.21px_16.21px_56.21px_0px_#0000004F] sm:w-[39vw] w-[95%] sm:mx-none mx-auto sm:p-[1.4vw] p-[4.2vw] flex flex-col sm:gap-[1vw] gap-[3vw]'>
+      <div className='bg-[#1B1C1E] sm:rounded-[2.5vw] rounded-[5vw] shadow-[16.21px_16.21px_56.21px_0px_#0000004F] sm:w-[39vw] w-[95%] sm:mx-0 mx-auto sm:p-[1.4vw] p-[4.2vw] flex flex-col sm:gap-[1vw] gap-[3vw]'>
         <div className='bg-[#111111] shadow-[23.71px_23.71px_82.18px_0px_#0000004F] sm:rounded-[1vw]  rounded-[3vw] w-full sm:py-[1.3vw] py-[2.6vw] sm:px-[3vw] px-[7.2vw] flex justify-between items-center'>
           <div className='flex items-start gap-[0.4vw]'>
               <p className='font-bebasneue text-primary sm:text-[1.4vw] text-[4.3vw] '>referral uses </p>

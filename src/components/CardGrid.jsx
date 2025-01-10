@@ -16,7 +16,7 @@ const CardGrid = ({ data }) => {
     },[])
 
     return (
-        <div className="flex flex-wrap 2xl:gap-[53px] md:gap-[20px] gap-[13px] mt-5 justify-center">
+        <div className="bg-[#1E1E25] flex flex-wrap 2xl:gap-[53px] md:gap-[20px] gap-[13px] pt-5 justify-center">
             
             {allTokens.map((data, index) => (
                 <Card key={index} data={data} />

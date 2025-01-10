@@ -15,7 +15,7 @@ const LaunchForm = () => {
       </div>
       <div className='flex lg:flex-row flex-col-reverse md:px-4 justify-center items-center w-full'>
 
-      <LaunchFooter/>
+      {/* <LaunchFooter/> */}
 
         <div className='bg-[#222227] font-montserrat md:w-[793px] w-[86vw] 2xl:p-[60px] md:p-[30px] p-[20px] md:rounded-[48px] rounded-[14px] shadow-[26px_25px_51.4px_0px_#00000040] mx-auto md:my-10 my-[22px]'>
           <div className='flex justify-between md:gap-[89px] gap-[17px]'>
@@ -73,9 +73,10 @@ const LaunchForm = () => {
                   <p className='font-bebasneue font-[400] ms-[15px] md:w-[200px] w-[100px] md:text-[20px] text-[2.1vw] text-white  '>USER BALANCE : <span className='text-primary'>0 ETH</span></p>
                 </div>
               </div>
-              <div className='w-full flex justify-center md:mt-[67px] mt-[30px]'>
-              <button className='anim border-0 bg-primary shadow-[0px_4px_4px_0px_#00000040] text-[#38383F] mx-auto round font-[500] md:text-[45px] text-[5.8vw] md:w-[224px] w-[28vw] md:leading-[50px] leading-[25px] md:pt-3 pt-[5px] rounded-full'>LAUNCH</button>
+              <div className='w-full flex justify-center md:mt-[50px] mt-[30px]'>
+                <button className='anim border-0 bg-primary shadow-[0px_4px_4px_0px_#00000040] text-[#38383F] mx-auto round font-[500] md:text-[45px] text-[5.8vw] md:w-[224px] w-[28vw] md:leading-[50px] leading-[25px] md:pt-3 pt-[5px] rounded-full'>LAUNCH</button>
               </div>
+              <p className="text-[1vw] font-montserrat font-[800] text-white text-center mt-[2.4vw]">Receive <span className='text-primary'>0.1 ETH</span> when your <span className='text-primary'>token completes its bonding curve</span></p>
         </div>
 
       </div>

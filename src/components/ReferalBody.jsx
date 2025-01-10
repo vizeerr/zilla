@@ -121,7 +121,7 @@ const ReferalBody = () => {
             <p className='font-montserrat text-white font-[800] text-center sm:text-[0.8vw] text-[1.8vw] w-[80%] mx-auto' >This is the total ETH spent by people using your referral links. Keep sharing and watch it grow!</p>
           </div>
         </motion.div>
-        <motion.div 
+        <motion.div
         key="3"
         initial={{ rotateX: 0 }}
         animate={hoveredCard === 3 ? { rotateX: 180 } : { rotateX: 0 }}

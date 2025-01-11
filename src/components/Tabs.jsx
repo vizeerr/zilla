@@ -20,27 +20,27 @@ const Tabs = () => {
 
 
   return (
-    <div className='bg-[#30313AE0] mt-5 flex md:flex-row md:gap-0  gap-[24px] flex-col justify-between items-center py-2 md:px-4 2xl:px-20 px-[15px]'>
-        <div className='flex md:gap-3 gap-[6px]'>
-          <button onClick={()=>selectTab(0)} className={`${selected==0? 'bg-primary  text-[#3F3F41]': 'bg-[#4C4C5A] text-white'} anim 2xl:px-[30px] md:px-[14px]  px-[15px] font-[400]  rounded-full font-bebasneue  2xl:text-[22px] md:text-[18px] text-[3vw] pt-1 pb-0.5`}>LAUNCHED TIME</button>
-          <button onClick={()=>selectTab(1)} className= {`${selected==1?'bg-primary text-[#3F3F41]': 'bg-[#4C4C5A] text-white'}  anim 2xl:px-[30px] md:px-[14px]  px-[15px] font-[400]  rounded-full font-bebasneue  2xl:text-[22px] md:text-[18px] text-[3vw] pt-1 pb-0.5`}>TRADING VOLUME</button>
-          <button onClick={()=>selectTab(2)} className={`${selected==2?'bg-primary text-[#3F3F41]': 'bg-[#4C4C5A] text-white'}  anim 2xl:px-[30px] md:px-[14px]  px-[15px] font-[400]  rounded-full font-bebasneue  2xl:text-[22px] md:text-[18px] text-[3vw] pt-1 pb-0.5`}>MARKET CAP</button>
-          <button onClick={()=>selectTab(3)} className={`${selected==3?'bg-primary text-[#3F3F41]': 'bg-[#4C4C5A] text-white'}  anim 2xl:px-[30px] md:px-[14px]  px-[15px] font-[400]  rounded-full font-bebasneue  2xl:text-[22px] md:text-[18px] text-[3vw] pt-1 pb-0.5`}>24H PRICE INC.</button>
+    <div className='bg-[#30313AE0] mt-[1vw] flex md:flex-row md:gap-0  gap-[3vw] flex-col justify-between items-center md:py-[0.6vw] py-[2.1vw] md:px-[1vw] px-[3.3vw]'>
+        <div className='flex md:gap-[0.6vw] gap-[2.4vw]'>
+          <button onClick={()=>selectTab(0)} className={`${selected==0? 'bg-primary  text-[#3F3F41]': 'bg-[#4C4C5A] text-white'} anim md:px-[1.5vw] px-[3.4vw] font-[400]  rounded-full font-bebasneue  md:text-[1.1vw] text-[3.1vw] md:pt-[0.2vw] md:pb-[0.1vw] pt-[0.5vw]`}>LAUNCHED TIME</button>
+          <button onClick={()=>selectTab(1)} className= {`${selected==1?'bg-primary text-[#3F3F41]': 'bg-[#4C4C5A] text-white'}  anim md:px-[1.5vw] px-[3.4vw] font-[400]  rounded-full font-bebasneue  md:text-[1.1vw] text-[3.1vw] md:pt-[0.2vw] md:pb-[0.1vw] pt-[0.5vw]`}>TRADING VOLUME</button>
+          <button onClick={()=>selectTab(2)} className={`${selected==2?'bg-primary text-[#3F3F41]': 'bg-[#4C4C5A] text-white'}  anim md:px-[1.5vw] px-[3.4vw] font-[400]  rounded-full font-bebasneue  md:text-[1.1vw] text-[3.1vw] md:pt-[0.2vw] md:pb-[0.1vw] pt-[0.5vw]`}>MARKET CAP</button>
+          <button onClick={()=>selectTab(3)} className={`${selected==3?'bg-primary text-[#3F3F41]': 'bg-[#4C4C5A] text-white'}  anim md:px-[1.5vw] px-[3.4vw] font-[400]  rounded-full font-bebasneue  md:text-[1.1vw] text-[3.1vw] md:pt-[0.2vw] md:pb-[0.1vw] pt-[0.5vw]`}>24H PRICE INC.</button>
           
         </div>
-        <div className=" flex items-center md:gap-2 2xl:gap-6 relative">
-            <div className="bg-white flex justify-between gap-1 pt-0.5 pb-1 2xl:w-[476px] md:w-[24vw] w-[60vw] rounded-full items-center md:ps-3 ps-7 pe-5 md:pe-3 overflow-hidden ">
+        <div className=" flex items-center md:gap-[1.2vw] gap-[2vw] relative">
+            <div className="bg-white flex justify-between md:gap-[0.2vw] md:pt-[0.1vw] md:pb-[0.2vw] pt-[0.6vw] pb-[0.8vw] md:w-[24vw] w-[62vw] rounded-full items-center md:ps-[0.7vw] md:pe-[0.6vw] ps-[1.5vw] pe-[1.5vw] overflow-hidden ">
                 
-                <div className="2xl:w-auto md:w-[24px] w-[16px]">
-                  <Image src={searchIco} alt="" />
+                <div className="md:w-[2.4vw] w-[4.6vw]">
+                  <Image src={searchIco} alt="" className="w-full" />
                 </div>
-                <input type="text" placeholder='SEARCH TOKENS' className="focus:border-0 active:border-0 2xl:text-[17px] md:text-[15px] text-[2vw] font-[800] font-montserrat w-full text-center border-0 outline-none " />
+                <input type="text" placeholder='SEARCH TOKENS' className="focus:border-0 active:border-0 md:text-[0.8vw] text-[2.1vw] font-[800] font-montserrat w-full text-center border-0 outline-none " />
             </div>
             
-            <button onMouseOver={()=>setOpen(true)} className="2xl:px-[25px] md:px-[14px] px-[19px] anim flex items-center 2xl:gap-5 md:gap-2 gap-[8px] font-[400] rounded-full font-bebasneue bg-[#4C4C5A] text-white  md:text-[18px] 2xl:text-[22px]  text-[3vw] md:pt-1 md:pb-0.5 py-[2px] ">
-                <div className="2xl:w-auto w-[19px]">
+            <button onMouseOver={()=>setOpen(true)} className="md:px-[1.3vw] px-[4.3vw] anim flex items-center md:gap-[1vw] gap-[1.8vw] font-[400] rounded-full font-bebasneue bg-[#4C4C5A] text-white  md:text-[1.1vw]  text-[3vw] md:pt-[0.2vw]  py-[0.4vw] ">
+                <div className="md:w-[1.4vw] w-[4.1vw]">
 
-                <Image src={sort} alt=""/>
+                <Image src={sort} className="w-full" alt=""/>
                 </div>
                 SORT BY
             </button>
@@ -51,7 +51,7 @@ const Tabs = () => {
             animate={{ opacity: open ? 1 : 0}}
             exit={{ opacity: 0}}
             transition={{ duration: 0.3 }}
-            className={`${open?'block':'hidden'} absolute bg-[#35363D] rounded-[27px] w-[190px] px-1 py-1 end-[-30px]`}>
+            className={`${open?'block':'hidden'} absolute bg-[#35363D] rounded-[1.4vw] w-[190px] px-1 py-1 end-[0px]`}>
               {/* <Image src={cross}  className="w-[15px] mt-1 me-2 float-end h-[15px]" onClick={() =>setOpen(false)} alt="" /> */}
               <div onClick={()=>setBtns(!btnS)} className="flex items-center gap-2 mt-3 ps-3">
                 <div className="w-[13.5px] mb-[1.5px] h-[14px] border-[2px] rounded-full border-white bg-transparent flex justify-center items-center">

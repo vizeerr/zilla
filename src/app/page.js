@@ -9,10 +9,10 @@ export default function Home() {
 
   return (
     <div>
-      {/* <div className='md:sticky md:top-[66px] lg:top-[65px] xl:top-[40px] 2xl:top-[84px]  bg-[#1E1E25] md:z-20'>
+      <div className='sticky bg-[#1E1E25] z-20 top-0'>
         <TopHeader/>
         <Tabs/>
-      </div> */}
+      </div>
       <CardGrid/>
       <Pagination/>
   

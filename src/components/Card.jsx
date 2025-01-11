@@ -48,8 +48,8 @@ const Card = ({data}) => {
         
             <div className="md:w-full w-[48vw]">
                 <div className="md:mt-[0.6vw] mt-[0.6vw]">
-                    <p className="font-bebasneue md:text-[1vw] text-[3.34vw] font-[400] text-[#262626]">{data.name} <span className=" font-[800] font-montserrat ">({data.symbol})</span></p>
-                    <p className="font-montserrat text-[#262626B5] font-[700] md:text-[0.6vw] text-[2.4vw]">Created by {shortId(data.creator)}</p>
+                    <p className="font-bebasneue md:text-[1vw] text-[3.8vw] font-[400] text-[#262626]">{data.name} <span className=" font-[800] font-montserrat ">({data.symbol})</span></p>
+                    <p className="font-montserrat text-[#262626B5] font-[700] md:text-[0.6vw] text-[2.2vw]">Created by {shortId(data.creator)}</p>
                 </div>
                 <div className="md:mt-[0.6vw] mt-[1vw]">
                     <div className="bg-[#D9D9D9] md:rounded-[1vw_1vw_0px_0px] rounded-[2.4vw] md:p-[0.6vw] p-[2vw]">

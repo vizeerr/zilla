@@ -51,7 +51,7 @@ const Tabs = () => {
             animate={{ opacity: open ? 1 : 0}}
             exit={{ opacity: 0}}
             transition={{ duration: 0.3 }}
-            className={`${open?'block':'hidden'} absolute bg-[#35363D] rounded-[1.4vw] w-[190px] px-1 py-1 end-[0px]`}>
+            className={`${open?'block':'hidden'} absolute bg-[#35363D] rounded-[27px] w-[190px] px-1 py-1 end-[0px]`}>
               {/* <Image src={cross}  className="w-[15px] mt-1 me-2 float-end h-[15px]" onClick={() =>setOpen(false)} alt="" /> */}
               <div onClick={()=>setBtns(!btnS)} className="flex items-center gap-2 mt-3 ps-3">
                 <div className="w-[13.5px] mb-[1.5px] h-[14px] border-[2px] rounded-full border-white bg-transparent flex justify-center items-center">
@@ -66,7 +66,7 @@ const Tabs = () => {
                   <div className={`${btn==0?'bg-white':'bg-transparent'} w-[7px] h-[7px] rounded-full`}>                    
                   </div>
                 </div>
-                <p className={`${btn==0?'opacity-100':'opacity-30'} text-white font-bebasneue font-[400] text-[17px]`}>ASCENDING</p>
+                <p className={`${btn==0?'opacity-100':'opacity-30'}  text-white font-bebasneue font-[400] text-[17px]`} >ASCENDING</p>
 
               </div>
               <div  onClick={()=>setBtn(1)} className="flex items-center gap-2 my-1 ps-3">

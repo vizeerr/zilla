@@ -83,7 +83,7 @@ const TopHeader = () => {
                 </div>
             </div>
         </div> */}
-
+        
         <div className="flex flex-col items-end">
             <Link href={"/zilla-token"}>
             <div className="bg-primary anim md:w-[14.3vw] w-[25vw] md:border-[0.3vw] border-[0.9vw] border-[#3C3C3C] shadow-[10.16px_13.2px_33.51px_0px_#00000040] md:rounded-[2.3vw_0px] rounded-[4.5vw_0px] md:py-[0.6vw] py-[0.7vw] text-center">
@@ -102,58 +102,7 @@ const TopHeader = () => {
 
       </div>
     </div>
-    {/* <div className="lg:hidden block">
-        <div className="w-[70vw] relative rounded-[19px]  shadow-[5.13px_5.98px_8.16px_0px_#00000040] bg-[#2E2F37]  mx-auto mt-8">
-        <Image  src={pif} width={40} unoptimized={true} className="absolute top-[-15px] end-[-15px] " alt=""  />
-           <div className="overflow-hidden rounded-[19px]">
-           
-            <div className="flex items-center gap-1 pt-[7px] px-[12px]">
-                <div className="flex items-center gap-1 px-[5px] py-[1.8px] bg-[#1B1B21] rounded-full">
-                    <div className="w-[9px]">
-                        <Image src={clock} alt="" style={{"width":"100%"}}/>
-                    </div>
-                    <p className="font-montserrat font-[800] text-[1.6vw] text-white">1 hr 25 mins ago</p>
-                </div>
-                <div className="flex gap-1 items-center">
-                            <div className="bg-[#111111] w-[12px] h-[12px] flex justify-center items-center rounded-full">
-                                <Image src={wlogo} width={5.5} className="" alt="" />
-                            </div>
-                            <div className="bg-[#111111] w-[12px] h-[12px] flex justify-center items-center rounded-full">
-                                <Image src={xlogo} width={5} className="" alt="" />
-                            </div>
-                            <div className="bg-[#111111] w-[12px] h-[12px] flex justify-center items-center rounded-full">
-                                <Image src={tlogo} width={6}  alt="" />
-                            </div>
-                        </div>
-            </div>
-            <div className="flex items-start justify-center gap-[12px] my-[7px] px-[15px]">
-                <div className="w-[17vw] h-[17vw] rounded-[9px] overflow-hidden">   
-                    <Image src={pifico} alt=""/>
-                </div>
-                <div>
-                    <div className="flex items-center justify-center gap-1 mt-1">
-                        <p className="font-bebasneue text-[2.8vw] font-[300] text-white">CAT SWAP PROMOTION </p>
-                        <span className=" font-[800] text-[2.8vw] font-montserrat mb-[4px] text-primary ">(PROMOTION)</span>
-
-                    </div>
-                    <p className="text-white opacity-30 font-[700] font-montserrat text-[8px] mb-2">Created by 0cf7..by68g</p>
-                    
-                    <div className="flex justify-between items-end mt-1.5">
-                        <div className="bg-[#212122] text-center px-2.5 py-1 rounded-[9px] shadow-[3.6px_3.6px_8.27px_0px_#000000C9]  w-full">
-                            <p className="text-primary text-[2.8vw] font-montserrat font-[800]">Market Cap :
-                            <span className="font-montserrat text-[2.8vw] font-[800]  text-white "> 19.99k </span> </p>
-                        </div>
-                        
-                    </div>
-
-                </div>
-            </div>
-            <div className="bg-primary text-center mt-[12px]">
-                <p className="font-montserrat text-[#262626] text-[3vw] font-[900]" >KING OF THE MONSTERS</p>
-            </div>
-            </div>
-        </div>
-    </div> */}
+    
     <Model open={open} setOpen={setOpen}/>
     </>
   )

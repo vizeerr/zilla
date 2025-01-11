@@ -9,7 +9,7 @@ export default function Home() {
 
   return (
     <div>
-      <div className='sticky bg-[#1E1E25] z-20 top-0'>
+      <div className='sticky bg-[#1E1E25] z-20 top-[0]'>
         <TopHeader/>
         <Tabs/>
       </div>

@@ -20,11 +20,11 @@ const TradeModel = () => {
 
             </div>
 
-            <div  className= {`${btnState=="buy"?"justify-between" : "justify-end"} flex  items-center w-full md:mt-[1.6vw] mt-[3.8vw]`}>
+            <div  className= {`${btnState=="buy"?"justify-between" : "justify-end"} flex   items-center w-full md:mt-[1.6vw] mt-[3.8vw]`}>
                 <div onClick={()=>setPromo(!prom)} className={`${btnState=="buy"? "block" : "hidden"} bg-[#66666663]  anim w-[128px] md:w-[6.6vw] text-white text-center rounded-full pt-[0.2vw]`}>
                     <p className='font-bebasneue font-[400] md:text-[0.7vw] text-[14px]'>SWITCH TO <span className='text-primary'>{prom?"ETH":"PROMOTION"}</span></p>
                 </div>
-                <div className='w-full'>
+                <div className='w-full md:w-[1.1vw]'>
                     <Image onClick={()=>{setOpenSet(true)}} src={sett} alt='' className='anim'/>
                 </div>
             </div>

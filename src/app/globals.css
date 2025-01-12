@@ -66,7 +66,7 @@ body{
 
 table th{
   font-weight: 800;
-  padding: 18px 0;
+  padding: 0.9vw 0;
 border-spacing: 0;
 border-collapse: collapse;
 border: none !important;
@@ -76,7 +76,7 @@ outline: none;
 
 table td{
   font-weight: 800;
-  padding: 10px 0;
+  padding: 0.5vw 0;
 border-spacing: 0;
 border-collapse: collapse;
 border: none !important;
@@ -85,9 +85,7 @@ outline: none;
 }
 
 @media only screen and (max-width: 600px) {
-  table th,table td{
-    padding: 9px 0;
-  }
+  
 }
 
 .tranis{

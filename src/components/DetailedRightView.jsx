@@ -19,10 +19,9 @@ const DetailedRightView = () => {
 
   return (
     <>
-        <div className='flex flex-col 2xl:gap-[32px] lg:gap-[20px] '>
-          <div className='bg-[#1B1C1E] text-white 2xl:w-[460px] 2xl:max-w-[460px] lg:max-w-[340px] lg:w-[340px] 2x w-full overflow-x-hidden relative 2xl:p-[32px] lg:p-[15px] p-[23px] shadow-[12.7px_12.7px_44.02px_0px_#0000004F]lg:rounded-[40px] rounded-[16.8px]'>
+        <div className='flex flex-col md:gap-[1.6vw] '>
+          <div className='bg-[#1B1C1E] text-white md:w-[23vw] overflow-x-hidden relative md:p-[1.6vw] p-[23px] shadow-[12.7px_12.7px_44.02px_0px_#0000004F] md:rounded-[2vw]'>
               <TradeModel/>
-            
             <div className='mt-8'>
               <DetailedTrade/>
             </div>
@@ -31,58 +30,58 @@ const DetailedRightView = () => {
    
 
 
-          <div className='bg-[#1B1C1E]  shadow-[12.7px_12.7px_44.02px_0px_#0000004F] rounded-[40px] lg:rounded-[20px] 2xl:rounded-[40px] lg:block hidden'>
-            <p className='font-[900] 2xl:text-[25px] lg:text-[18px] text-[#262626] bg-primary  py-3 w-[384px] 2xl:w-[384px] lg:w-[290px] text-center rounded-[40px_0px]'> HOLDER DISTRIBUTION</p>
-            <div className='bg-[#D9D9D926] mt-8 mb-4'>
-              <p className='font-[900] text-[22px] lg:text-[12px] 2xl:text-[22px] text-center   py-3'> 
+          <div className='bg-[#1B1C1E]  shadow-[12.7px_12.7px_44.02px_0px_#0000004F] rounded-[40px] md:rounded-[2vw] lg:block hidden'>
+            <p className='font-[900] md:text-[1.3vw]  text-[#262626] bg-primary  py-[0.6vw] w-[384px] md:w-[20vw] text-center rounded-[2vw_0px]'> HOLDER DISTRIBUTION</p>
+            <div className='bg-[#D9D9D926] mt-[1.6vw] mb-[0.8vw]'>
+              <p className='font-[900] text-[22px] md:text-[1.1vw] text-center py-[0.6vw]'> 
                 <span className='text-primary '>TOP 10</span> USERS’ HOLDING - <span className='text-primary'>30.54%</span></p>
             </div>
             <div>
-              <ul className='px-8  h-[410px] 2xl:h-[410px] lg:h-[250px] overflow-y-auto mb-5'>
+              <ul className='px-[1.6vw]  h-[410px] md:h-[21vw] overflow-y-auto mb-[1vw]'>
                 <li className='flex items-center justify-between'>
-                  <p className='lg:text-[15px] text-[20px] 2xl:text-[20px] text-primary font-[800] '>034...24RD</p>
-                  <p className='lg:text-[20px] 2xl:text-[29px]  text-[29px] font-bebasneue '> <span className='lg:text-[18px] text-[21px] 2xl:text-[21px]'>(BONDING CURVE)</span>   26.42 %  </p>
+                  <p className='text-[20px] md:text-[1vw] text-primary font-[800] '>034...24RD</p>
+                  <p className='md:text-[1.5vw]  text-[29px] font-bebasneue '> <span className='text-[21px] md:text-[1vw]'>(BONDING CURVE)</span>   26.42 %  </p>
                 </li>
                 <li className='flex items-center justify-between'>
-                  <p className='lg:text-[15px] text-[20px] 2xl:text-[20px] text-primary font-[800]'>034...24RD</p>
-                  <p className='lg:text-[20px] 2xl:text-[29px]  text-[29px] font-bebasneue '> <span className='lg:text-[18px] text-[21px] 2xl:text-[21px]'>(DEV)</span>   26.42 %  </p>
+                  <p className='text-[20px] md:text-[1vw] text-primary font-[800]'>034...24RD</p>
+                  <p className='md:text-[1.5vw]  text-[29px] font-bebasneue '> <span className='lg:text-[18px] text-[21px] 2xl:text-[21px]'>(DEV)</span>   26.42 %  </p>
                 </li>
                 <li className='flex items-center justify-between'>
-                  <p className='lg:text-[15px] text-[20px] 2xl:text-[20px] text-primary font-[800]'>034...24RD</p>
-                  <p className='lg:text-[20px] 2xl:text-[29px]  text-[29px] font-bebasneue '> <span className='lg:text-[18px] text-[21px] 2xl:text-[21px]'>(DEV)</span>   26.42 %  </p>
+                  <p className='text-[20px] md:text-[1vw] text-primary font-[800]'>034...24RD</p>
+                  <p className='md:text-[1.5vw]  text-[29px] font-bebasneue '> <span className='lg:text-[18px] text-[21px] 2xl:text-[21px]'>(DEV)</span>   26.42 %  </p>
                 </li> <li className='flex items-center justify-between'>
-                  <p className='lg:text-[15px] text-[20px] 2xl:text-[20px] text-primary font-[800]'>034...24RD</p>
-                  <p className='lg:text-[20px] 2xl:text-[29px]  text-[29px] font-bebasneue '> <span className='lg:text-[18px] text-[21px] 2xl:text-[21px]'>(DEV)</span>   26.42 %  </p>
+                  <p className='text-[20px] md:text-[1vw] text-primary font-[800]'>034...24RD</p>
+                  <p className='md:text-[1.5vw]  text-[29px] font-bebasneue '> <span className='lg:text-[18px] text-[21px] 2xl:text-[21px]'>(DEV)</span>   26.42 %  </p>
                 </li> <li className='flex items-center justify-between'>
-                  <p className='lg:text-[15px] text-[20px] 2xl:text-[20px] text-primary font-[800]'>034...24RD</p>
-                  <p className='lg:text-[20px] 2xl:text-[29px]  text-[29px] font-bebasneue '> <span className='lg:text-[18px] text-[21px] 2xl:text-[21px]'>(DEV)</span>   26.42 %  </p>
+                  <p className='text-[20px] md:text-[1vw] text-primary font-[800]'>034...24RD</p>
+                  <p className='md:text-[1.5vw]  text-[29px] font-bebasneue '> <span className='lg:text-[18px] text-[21px] 2xl:text-[21px]'>(DEV)</span>   26.42 %  </p>
                 </li> <li className='flex items-center justify-between'>
-                  <p className='lg:text-[15px] text-[20px] 2xl:text-[20px] text-primary font-[800]'>034...24RD</p>
-                  <p className='lg:text-[20px] 2xl:text-[29px]  text-[29px] font-bebasneue '> <span className='lg:text-[18px] text-[21px] 2xl:text-[21px]'>(DEV)</span>   26.42 %  </p>
+                  <p className='text-[20px] md:text-[1vw] text-primary font-[800]'>034...24RD</p>
+                  <p className='md:text-[1.5vw]  text-[29px] font-bebasneue '> <span className='lg:text-[18px] text-[21px] 2xl:text-[21px]'>(DEV)</span>   26.42 %  </p>
                 </li> <li className='flex items-center justify-between'>
-                  <p className='lg:text-[15px] text-[20px] 2xl:text-[20px] text-primary font-[800]'>034...24RD</p>
-                  <p className='lg:text-[20px] 2xl:text-[29px]  text-[29px] font-bebasneue '> <span className='lg:text-[18px] text-[21px] 2xl:text-[21px]'>(DEV)</span>   26.42 %  </p>
+                  <p className='text-[20px] md:text-[1vw] text-primary font-[800]'>034...24RD</p>
+                  <p className='md:text-[1.5vw]  text-[29px] font-bebasneue '> <span className='lg:text-[18px] text-[21px] 2xl:text-[21px]'>(DEV)</span>   26.42 %  </p>
                 </li> <li className='flex items-center justify-between'>
-                  <p className='lg:text-[15px] text-[20px] 2xl:text-[20px] text-primary font-[800]'>034...24RD</p>
-                  <p className='lg:text-[20px] 2xl:text-[29px]  text-[29px] font-bebasneue '> <span className='lg:text-[18px] text-[21px] 2xl:text-[21px]'>(DEV)</span>   26.42 %  </p>
+                  <p className='text-[20px] md:text-[1vw] text-primary font-[800]'>034...24RD</p>
+                  <p className='md:text-[1.5vw]  text-[29px] font-bebasneue '> <span className='lg:text-[18px] text-[21px] 2xl:text-[21px]'>(DEV)</span>   26.42 %  </p>
                 </li> <li className='flex items-center justify-between'>
-                  <p className='lg:text-[15px] text-[20px] 2xl:text-[20px] text-primary font-[800]'>034...24RD</p>
-                  <p className='lg:text-[20px] 2xl:text-[29px]  text-[29px] font-bebasneue '> <span className='lg:text-[18px] text-[21px] 2xl:text-[21px]'>(DEV)</span>   26.42 %  </p>
+                  <p className='text-[20px] md:text-[1vw] text-primary font-[800]'>034...24RD</p>
+                  <p className='md:text-[1.5vw]  text-[29px] font-bebasneue '> <span className='lg:text-[18px] text-[21px] 2xl:text-[21px]'>(DEV)</span>   26.42 %  </p>
                 </li> <li className='flex items-center justify-between'>
-                  <p className='lg:text-[15px] text-[20px] 2xl:text-[20px] text-primary font-[800]'>034...24RD</p>
-                  <p className='lg:text-[20px] 2xl:text-[29px]  text-[29px] font-bebasneue '> <span className='lg:text-[18px] text-[21px] 2xl:text-[21px]'>(DEV)</span>   26.42 %  </p>
+                  <p className='text-[20px] md:text-[1vw] text-primary font-[800]'>034...24RD</p>
+                  <p className='md:text-[1.5vw]  text-[29px] font-bebasneue '> <span className='lg:text-[18px] text-[21px] 2xl:text-[21px]'>(DEV)</span>   26.42 %  </p>
                 </li> <li className='flex items-center justify-between'>
-                  <p className='lg:text-[15px] text-[20px] 2xl:text-[20px] text-primary font-[800]'>034...24RD</p>
-                  <p className='lg:text-[20px] 2xl:text-[29px]  text-[29px] font-bebasneue '> <span className='lg:text-[18px] text-[21px] 2xl:text-[21px]'>(DEV)</span>   26.42 %  </p>
+                  <p className='text-[20px] md:text-[1vw] text-primary font-[800]'>034...24RD</p>
+                  <p className='md:text-[1.5vw]  text-[29px] font-bebasneue '> <span className='lg:text-[18px] text-[21px] 2xl:text-[21px]'>(DEV)</span>   26.42 %  </p>
                 </li> <li className='flex items-center justify-between'>
-                  <p className='lg:text-[15px] text-[20px] 2xl:text-[20px] text-primary font-[800]'>034...24RD</p>
-                  <p className='lg:text-[20px] 2xl:text-[29px]  text-[29px] font-bebasneue '> <span className='lg:text-[18px] text-[21px] 2xl:text-[21px]'>(DEV)</span>   26.42 %  </p>
+                  <p className='text-[20px] md:text-[1vw] text-primary font-[800]'>034...24RD</p>
+                  <p className='md:text-[1.5vw]  text-[29px] font-bebasneue '> <span className='lg:text-[18px] text-[21px] 2xl:text-[21px]'>(DEV)</span>   26.42 %  </p>
                 </li> <li className='flex items-center justify-between'>
-                  <p className='lg:text-[15px] text-[20px] 2xl:text-[20px] text-primary font-[800]'>034...24RD</p>
-                  <p className='lg:text-[20px] 2xl:text-[29px]  text-[29px] font-bebasneue '> <span className='lg:text-[18px] text-[21px] 2xl:text-[21px]'>(DEV)</span>   26.42 %  </p>
+                  <p className='text-[20px] md:text-[1vw] text-primary font-[800]'>034...24RD</p>
+                  <p className='md:text-[1.5vw]  text-[29px] font-bebasneue '> <span className='lg:text-[18px] text-[21px] 2xl:text-[21px]'>(DEV)</span>   26.42 %  </p>
                 </li> <li className='flex items-center justify-between'>
-                  <p className='lg:text-[15px] text-[20px] 2xl:text-[20px] text-primary font-[800]'>034...24RD</p>
-                  <p className='lg:text-[20px] 2xl:text-[29px]  text-[29px] font-bebasneue '> <span className='lg:text-[18px] text-[21px] 2xl:text-[21px]'>(DEV)</span>   26.42 %  </p>
+                  <p className='text-[20px] md:text-[1vw] text-primary font-[800]'>034...24RD</p>
+                  <p className='md:text-[1.5vw]  text-[29px] font-bebasneue '> <span className='lg:text-[18px] text-[21px] 2xl:text-[21px]'>(DEV)</span>   26.42 %  </p>
                 </li>
                 
               </ul>

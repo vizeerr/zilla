@@ -65,8 +65,8 @@ const ZillaRightView = () => {
             </div>
               <p className='font-bebasneue text-[#4E4F54] md:text-[0.9vw] text-[1.8vw]'>user balance : $0</p>
             <div className='bottom-[-2vw] absolute flex justify-center md:w-[90%] w-[6.5vw]'>
-              <div className='bg-primary md:w-[3vw] md:h-[3vw] w-[10px] h-[10px]  rounded-full flex justify-center items-center'>
-                <Image src={arrow} alt=''/>
+              <div className='bg-primary md:w-[3vw] md:h-[3vw] w-[10px] h-[10px] md:p-[0.9vw]  rounded-full flex justify-center items-center'>
+                <Image src={arrow} className='w-full' alt=''/>
               </div>
             </div>
           </div>

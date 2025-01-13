@@ -23,7 +23,7 @@ const page = () => {
               </p>
           </div>
           
-          <div className='md:mt-[2.5vw] mt-[28px] flex md:gap-[2vw] gap-[20px]  justify-center'>
+          <div className='md:mt-[2.5vw] mt-[28px] flex md:gap-[2vw] gap-[4.8vw]  justify-center'>
             <ZillaLeftView/>
             <div className='md:block hidden'>
               <ZillaRightView/>

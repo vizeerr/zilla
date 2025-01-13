@@ -48,53 +48,53 @@ const ZillaRightView = () => {
   
 
   return (
-    <div className='flex lg:flex-col flex-row 2xl:gap-[50px] lg:gap-[20px] gap-[13px]  2xl:w-[558px] w-full lg:w-[100%] '>
+    <div className='flex md:flex-col flex-row md:gap-[2vw] gap-[13px] md:w-[29vw] w-full '>
 
-        <div className='bg-[#1B1C1E] lg:w-full w-[48vw] shadow-[16.21px_16.21px_56.21px_0px_#0000004F] 2xl:rounded-[45px] lg:rounded-[20px] rounded-[16px] 2xl:p-[30px] lg:p-[15px] p-[12px]'>
-          <div className='bg-[#111111]   relative 2xl:rounded-[25px] lg:rounded-[15px] rounded-[9px]  lg:py-[15px] py-[6px] lg:px-[25px] px-[8px] shadow-[12.7px_12.7px_14.6px_0px_#00000040]'>
-              <p className='text-primary font-montserrat font-[800] 2xl:text-[25px] lg:text-[20px] text-[2.8vw]'>Sell</p>
+        <div className='bg-[#1B1C1E] md:w-full w-[48vw] shadow-[16.21px_16.21px_56.21px_0px_#0000004F] md:rounded-[2.3vw] rounded-[16px] md:p-[1.5vw] p-[12px]'>
+          <div className='bg-[#111111]   relative md:rounded-[1.3vw] rounded-[9px]  md:py-[0.7vw] py-[6px] md:px-[1.3vw] px-[8px] shadow-[12.7px_12.7px_14.6px_0px_#00000040]'>
+              <p className='text-primary font-montserrat font-[800] md:text-[1.3vw] text-[2.8vw]'>Sell</p>
             <div className='flex justify-between items-center'>
-              <p className='font-bebasneue 2xl:text-[67px] lg:text-[35px] text-[5.6vw] '>0</p>
-              <div className='bg-[#252729] 2xl:w-[106px] lg:w-[75px] w-[45px] 3xl:ps-2.5 2xl:pe-3 2xl:py-1.5 py-0.5 ps-[5px] flex 2xl:gap-2 lg:gap-1 gap-0.5 items-center rounded-full'>
-                <div className='2xl:w-[28px] lg:w-[20px] w-[10px]'>
+              <p className='font-bebasneue md:text-[3.4vw] text-[5.6vw] '>0</p>
+              <div className='bg-[#252729] md:w-[5.5vw] w-[45px] md:pe-[0.6vw] md:py-[0.3vw] py-0.5 ps-[5px] flex md:gap-[0.4vw] gap-0.5 items-center rounded-full'>
+                <div className='md:w-[1.4vw] w-[10px]'>
                   
-                <Image src={eth} width={28} alt=''/>
+                <Image src={eth} className='w-full' alt=''/>
                 </div>
-                <p className='2xl:text-[16px] lg:text-[12px] text-[9px] font-[800]'>ETH</p>
+                <p className='md:text-[0.8vw] text-[9px] font-[800]'>ETH</p>
               </div>
             </div>
-              <p className='font-bebasneue text-[#4E4F54] 2xl:text-[18px] lg:text-[12px] text-[1.8vw]'>user balance : $0</p>
-            <div className='bottom-[-40px] absolute flex justify-center lg:w-[90%] w-[6.5vw]'>
-              <div className='bg-primary lg:w-[58px] lg:h-[58px] w-[10px] h-[10px]  rounded-full flex justify-center items-center'>
+              <p className='font-bebasneue text-[#4E4F54] md:text-[0.9vw] text-[1.8vw]'>user balance : $0</p>
+            <div className='bottom-[-2vw] absolute flex justify-center md:w-[90%] w-[6.5vw]'>
+              <div className='bg-primary md:w-[3vw] md:h-[3vw] w-[10px] h-[10px]  rounded-full flex justify-center items-center'>
                 <Image src={arrow} alt=''/>
               </div>
             </div>
           </div>
 
-          <div className='bg-[#111111]  2xl:rounded-[25px] lg:rounded-[15px] rounded-[9px] lg:mt-[18px] mt-[6px] lg:py-[15px] py-[6px] lg:px-[25px] px-[8px]  shadow-[12.7px_12.7px_14.6px_0px_#00000040]'>
-              <p className='text-primary font-montserrat font-[800] 2xl:text-[25px] lg:text-[20px] text-[2.8vw]'>Buy</p>
+          <div className='bg-[#111111]  md:rounded-[1.3vw] rounded-[9px] md:mt-[0.9vw] mt-[6px] md:py-[0.7vw] py-[6px] md:px-[1.3vw] px-[8px]  shadow-[12.7px_12.7px_14.6px_0px_#00000040]'>
+              <p className='text-primary font-montserrat font-[800] md:text-[1.3vw] text-[2.8vw]'>Buy</p>
             <div className='flex justify-between items-center'>
-              <p className='font-bebasneue 2xl:text-[67px] lg:text-[35px] text-[5.6vw]'>0</p>
-              <div className='bg-[#252729] 2xl:w-[106px] lg:w-[75px] w-[49px] 2xl:ps-2.5 2xl:pe-3 2xl:py-1.5 py-0.5 ps-[5px] flex 2xl:gap-2 lg:gap-1 gap-0.5 items-center rounded-full'>
-                <div className='2xl:w-[28px] lg:w-[20px] w-[10px]'>
-                  <Image className='bg-primary lg:p-1 p-[2px] rounded-full' src={pizz} width={28} alt=''/>
+              <p className='font-bebasneue md:text-[3.4vw] text-[5.6vw]'>0</p>
+              <div className='bg-[#252729] md:w-[5.5vw]  w-[49px] md:ps-[0.5vw] md:pe-[0.6vw] md:py-[0.3vw] py-0.5 ps-[5px] flex md:gap-[0.4vw] gap-0.5 items-center rounded-full'>
+                <div className='md:w-[1.4vw] w-[10px]'>
+                  <Image className='bg-primary md:p-[0.5vw] p-[2px] rounded-full w-full' src={pizz}  alt=''/>
                 </div>
-                <p className='2xl:text-[16px] lg:text-[12px] text-[9px] font-[800]'>ZILLA</p>
+                <p className='md:text-[0.8vw] text-[9px] font-[800]'>ZILLA</p>
               </div>
             </div>
-            <p className='font-bebasneue text-[#4E4F54] 2xl:text-[18px] lg:text-[12px] text-[1.8vw] opacity-0'>user balance : $0</p>
+            <p className='font-bebasneue text-[#4E4F54] md:text-[0.8vw] text-[1.8vw] opacity-0'>user balance : $0</p>
           </div>
 
-          <p className='2xl:w-[161px] w-[90px] mx-auto 2xl:mt-[25px] mt-[15px] round anim bg-primary 2xl:leading-[40px] leading-[25px] 2xl:pt-[12px] pt-[8px] text-[#262626] 2xl:text-[52px]  text-[30px] text-center  lg:rounded-[15px] rounded-[10px] shadow-[5.21px_5.21px_7.76px_0px_#00000040]'>
+          <p className='md:w-[8.3vw] w-[90px] mx-auto md:mt-[1.3vw] mt-[15px] round anim bg-primary md:leading-[2vw] leading-[25px] md:pt-[0.6vw] pt-[8px] text-[#262626] md:text-[2.7vw]  text-[30px] text-center  md:rounded-[0.7vw] rounded-[10px] shadow-[5.21px_5.21px_7.76px_0px_#00000040]'>
             SWAP
           </p>
 
          
         </div>
 
-        <div className='bg-[#1B1C1E] lg:w-full w-[40vw] overflow-hidden relative 2xl:p-[32px] lg:p-[20px] p-[10px] shadow-[12.7px_12.7px_44.02px_0px_#0000004F] 2xl:rounded-[40px] lg:rounded-[20px] rounded-[16px]'>
-            <p className='font-[900]  2xl:pb-[28px] pb-[15px]  font-montserrat 2xl:text-[35px] lg:text-[20px] text-[3.2vw] text-white'><span className='text-primary'>Tax</span> Mechanism </p>
-            <div className='flex flex-col 2xl:gap-[25px] lg:gap-[10px] gap-[6px]'>
+        <div className='bg-[#1B1C1E] md:w-full w-[40vw] overflow-hidden relative md:p-[1.6vw]  p-[10px] shadow-[12.7px_12.7px_44.02px_0px_#0000004F] md:rounded-[2vw]  rounded-[16px]'>
+            <p className='font-[900]  md:pb-[1.4vw] pb-[15px]  font-montserrat md:text-[1.8vw]  text-[3.2vw] text-white'><span className='text-primary'>Tax</span> Mechanism </p>
+            <div className='flex flex-col md:gap-[1.3vw]  gap-[6px]'>
             {[
             {
               id: 1,
@@ -115,25 +115,25 @@ const ZillaRightView = () => {
               initial={{ rotateX: 0 }}
               animate={hoveredCard === card.id ? { rotateX: 180 } : { rotateX: 0 }}
               transition={{ duration: 0.6 }}
-              className='bg-[#111111] card w-full shadow-[16.21px_16.21px_56.21px_0px_#0000004F] 2xl:rounded-[30px] lg:rounded-[15px] rounded-[7px]'
+              className='bg-[#111111] card w-full shadow-[16.21px_16.21px_56.21px_0px_#0000004F] md:rounded-[1.5vw] rounded-[7px]'
             >
-              <div className='card-front w-full 2xl:ps-[35px] lg:ps-[15px] ps-[9px] 2xl:pe-[25px] lg:pe-[15px] pe-[6px] lg:py-[15px] py-[6px] '>
-                <div className='lg:w-auto w-[5px] h-[6px] float-end'>
+              <div className='card-front w-full md:ps-[1.8vw] ps-[9px] md:pe-[1.3vw] pe-[6px] md:py-[0.7vw] py-[6px] '>
+                <div className='md:w-[0.6vw] md:h-[0.6vw] w-[5px] float-end'>
                   <Image
                     src={info}
                     alt=''
-                    onMouseEnter={() => handleMouseEnter(card.id)}
-                    
+                    onMouseOver={() => handleMouseEnter(card.id)}
+                    className='w-full'
                     />
                 </div>
-                <div className='lg:block flex justify-between w-full items-center'>
-                  <p className='font-bebasneue font-[400] 2xl:text-[21px] lg:text-[18px] lg:w-auto w-[50px] text-[2.1vw] text-primary'>{card.title}</p>
-                  <p className='font-montserrat font-[800] 2xl:text-[25px] lg:text-[18px] text-[2.8vw] text-white'>{card.value}</p>
+                <div className='md:block flex justify-between w-full items-center'>
+                  <p className='font-bebasneue font-[400] md:text-[1vw] md:w-auto w-[50px] text-[2.1vw] text-primary'>{card.title}</p>
+                  <p className='font-montserrat font-[800] md:text-[1.3vw] text-[2.8vw] text-white'>{card.value}</p>
                 </div>
                 
               </div>
-              <div onMouseLeave={handleMouseLeave} className='card-back 2xl:ps-[35px] 2xl:pe-[25px] 2xl:py-[15px] px-[8px]'>
-                <p className='font-montserrat 2xl:leading-[18px] font-[700] 2xl:text-[15px] text-[5px]'>{card.description}</p>
+              <div onMouseLeave={handleMouseLeave} className='card-back md:ps-[1.8vw] md:pe-[1.3vw] md:py-[0.7vw] px-[8px]'>
+                <p className='font-montserrat md:leading-[0.9vw] font-[700] md:text-[0.7vw] text-[5px]'>{card.description}</p>
               </div>
             </motion.div>
           ))}
@@ -143,38 +143,38 @@ const ZillaRightView = () => {
               initial={{ rotateX: 0 }}
               animate={hoveredCard === 3 ? { rotateX: 180 } : { rotateX: 0 }}
               transition={{ duration: 0.6 }}
-              className='bg-[#111111] card 2xl:w-full lg:w-[21vw]  shadow-[16.21px_16.21px_56.21px_0px_#0000004F] 2xl:rounded-[30px] lg:rounded-[15px] rounded-[7px]'
+              className='bg-[#111111] card w-full  shadow-[16.21px_16.21px_56.21px_0px_#0000004F] md:rounded-[1.5vw] rounded-[7px]'
             >
-              <div className='card-front  2xl:ps-[35px] lg:ps-[15px] ps-[9px] 2xl:pe-[25px] lg:pe-[15px] pe-[6px] lg:py-[15px] py-[6px]'>
-                <div className='lg:w-auto w-[5px] float-end'>
+              <div className='card-front  md:ps-[1.8vw] ps-[9px] md:pe-[1.3vw] pe-[6px] md:py-[0.7vw] py-[6px]'>
+                <div className='md:w-[0.6vw] md:h-[0.6vw] w-[5px] float-end'>
 
                 <Image
                   src={info}
                   alt=''
-                  onMouseEnter={() => handleMouseEnter(3)}
-                  
+                  onMouseOver={() => handleMouseEnter(3)}
+                  className='w-full'
                   />
                 </div>
-                <div className='flex justify-between items-center w-[90%]'>
+                <div className='flex justify-between items-center w-[95%]'>
 
-                  <div className='lg:block flex justify-between  items-center w-full'>
+                  <div className='md:block flex justify-between  items-center w-full'>
                     <div className='flex items-center '>
-                      <p className='font-bebasneue font-[400] 2xl:text-[21px] lg:text-[18px] lg:w-auto w-[50px] text-[2.1vw] text-primary'>current Reward Pool</p>
-                      <div className='lg:hidden block lg:w-[45px] w-[16px] pt-2'>
+                      <p className='font-bebasneue font-[400] md:text-[1vw] md:w-auto w-[50px] text-[2.1vw] text-primary'>current Reward Pool</p>
+                      <div className='md:hidden block md:w-[2.3vw] w-[16px] pt-2'>
                         <Image src={pizz2} alt='' unoptimized={true} width={45}/>
                       </div>
                     </div>
-                    <p className='font-montserrat font-[800] 2xl:text-[25px] lg:text-[18px] text-[2.8vw] text-white'>0</p>
+                    <p className='font-montserrat font-[800] md:text-[1.3vw] text-[2.8vw] text-white'>0</p>
                   </div>
-                  <div className='lg:w-[45px] w-[16px] lg:block hidden'>
+                  <div className='md:w-[2.3vw] w-[16px] md:block hidden'>
                     <Image src={pizz2} alt='' unoptimized={true} width={45}/>
                   </div>
                 </div>
                 
               
               </div>
-              <div onMouseLeave={handleMouseLeave} className='card-back  2xl:ps-[35px] 2xl:pe-[25px] 2xl:py-[15px] px-[8px]'>
-                <p className='font-montserrat leading-[18px] font-[700] 2xl:text-[15px] text-[5px]'>Shows total tokens collected from the sell tax during the current stage, distributed as rewards to buyers participating in this period.</p>
+              <div onMouseLeave={handleMouseLeave} className='card-back  md:ps-[1.8vw] md:pe-[1.3vw] md:py-[0.7vw] px-[8px]'>
+                <p className='font-montserrat md:leading-[0.9vw] font-[700] md:text-[0.7vw] text-[5px]'>Shows total tokens collected from the sell tax during the current stage, distributed as rewards to buyers participating in this period.</p>
               </div>
             </motion.div>
             <motion.div
@@ -182,21 +182,21 @@ const ZillaRightView = () => {
               initial={{ rotateX: 0 }}
               animate={hoveredCard === 4 ? { rotateX: 180 } : { rotateX: 0 }}
               transition={{ duration: 0.6 }}
-              className='bg-[#111111] card 2xl:w-full lg:w-[21vw]  shadow-[16.21px_16.21px_56.21px_0px_#0000004F] 2xl:rounded-[30px] lg:rounded-[15px] rounded-[7px]'
+              className='bg-[#111111] card w-full  shadow-[16.21px_16.21px_56.21px_0px_#0000004F] md:rounded-[1.5vw] rounded-[7px]'
             >
-              <div className='card-front w-full 2xl:ps-[35px] lg:ps-[15px] ps-[9px] 2xl:pe-[25px] lg:pe-[15px] pe-[6px] lg:py-[15px] py-[6px] '>
-                <div className='lg:w-auto w-[5px] h-[6px] float-end'>
+              <div className='card-front w-full md:ps-[1.8vw] ps-[9px] md:pe-[1.3vw] pe-[6px] md:py-[0.7vw] py-[6px]'>
+                <div className='md:w-[0.6vw] md:h-[0.6vw] w-[5px] float-end'>
                   <Image
                     src={info}
                     alt=''
-                    onMouseEnter={() => handleMouseEnter(4)}
-                    
+                    onMouseOver={() => handleMouseEnter(4)}
+                    className='w-full'
                     />
                 </div>
-                <div className='flex justify-center gap-[30px] w-full items-center'>
-                  <p className='font-bebasneue font-[400] 2xl:text-[21px] lg:text-[18px] lg:w-auto w-[50px] text-[2.1vw] text-primary'>TAX STAGE TIMER</p>
+                <div className='flex justify-center gap-[1.5vw] w-full items-center'>
+                  <p className='font-bebasneue font-[400] md:text-[1vw] md:w-auto w-[50px] text-[2.1vw] text-primary'>TAX STAGE TIMER</p>
                   <div
-              className="relative flex items-center justify-center lg:w-[89px] lg:h-[89px] w-[8vw] h-[8vw]"
+              className="relative flex items-center justify-center md:w-[4.6vw] md:h-[4.6vw] w-[8vw] h-[8vw]"
               
             >
               {/* Circular Progress Bar */}
@@ -234,12 +234,12 @@ const ZillaRightView = () => {
 
               {/* Centered Text */}
               <div className="absolute text-center">
-                <p className="lg:text-xs font-bold text-[8px]">{formatTime(timeLeft)}</p>
+                <p className="md:text-[0.6vw] font-bold text-[8px]">{formatTime(timeLeft)}</p>
               </div>
 
               {/* Circular Button */}
               <div
-                className="absolute bg-[#A8FF2F] lg:w-3 lg:h-3 w-[1vw] h-[1vw] rounded-full shadow"
+                className="absolute bg-[#A8FF2F] md:w-[0.6vw] md:h-[0.6vw] w-[1vw] h-[1vw] rounded-full shadow"
                 style={{
                   top: `${y}%`,
                   left: `${x}%`,
@@ -251,8 +251,8 @@ const ZillaRightView = () => {
                 </div>
                 
               </div>
-              <div onMouseLeave={handleMouseLeave} className='card-back  2xl:ps-[35px] 2xl:pe-[25px] 2xl:py-[15px] px-[8px]'>
-                <p className='font-montserrat leading-[18px] font-[700] 2xl:text-[15px] text-[5px]'>sssss ssssss sssssss  sss sssss ssss</p>
+              <div onMouseLeave={handleMouseLeave} className='card-back  md:ps-[1.8vw] md:pe-[1.3vw] md:py-[0.7vw] px-[8px]'>
+                <p className='font-montserrat md:leading-[0.9vw] font-[700] md:text-[0.7vw] text-[5px]'>Displays remaining time in the active tax stage, ending if the price recovers to the base or after 30 minutes, whichever comes first.</p>
               </div>
             </motion.div>
             

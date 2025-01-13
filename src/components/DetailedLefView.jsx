@@ -19,10 +19,10 @@ const DetailedLefView = ({token}) => {
   const [tokenData,setTokenData] = useState({});
   const [copiedText,setCopiedText] = useState("AWEBFSOIWGERGE....1423404599349");
 
-  const fetchToken = async() =>{
+  const fetchToken = useCallback(async () => {
     const data = await getToken(token);
-    setTokenData(data)
-  }
+    setTokenData(data);
+  }, [token]);
   
 
   const handleCopy = async () => {
@@ -38,7 +38,7 @@ const DetailedLefView = ({token}) => {
   
   useEffect(()=>{
     fetchToken();
-  },[])
+  },[fetchToken])
 
 
   return (

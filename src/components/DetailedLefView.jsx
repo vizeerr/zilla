@@ -13,6 +13,7 @@ import Link from 'next/link'
 import toast from 'react-hot-toast'
 import DetailedRightView from './DetailedRightView'
 import DetailedTrade from './DetailedTrade'
+import HolderModel from './HolderModel'
 
 const DetailedLefView = ({token}) => {
   const [tokenData,setTokenData] = useState({});
@@ -120,7 +121,7 @@ const DetailedLefView = ({token}) => {
               </div>
           </div>
 
-          <div className='lg:hidden block bg-[#1B1C1E] text-white w-full overflow-x-hidden relative lg:p-[32px] p-[23px] shadow-[12.7px_12.7px_44.02px_0px_#0000004F] rounded-[3.8vw]'>
+          <div className='md:hidden block bg-[#1B1C1E] text-white w-full overflow-x-hidden relative p-[5.5vw] shadow-[12.7px_12.7px_44.02px_0px_#0000004F] rounded-[3.8vw]'>
             <DetailedTrade/>
            </div>
 
@@ -142,6 +143,10 @@ const DetailedLefView = ({token}) => {
             </div>
             <p className='gradientText font-[500] md:text-[2.7vw] text-[4vw] round md:mt-[1.6vw] mt-[2.4vw] text-end md:pe-[2vw] pe-[3.6vw]'>Earn  weekly  PumpZilla  rewards  through  referrals !</p>
 
+          </div>
+
+          <div className='md:hidden block'>
+            <HolderModel/>
           </div>
 
     </div>

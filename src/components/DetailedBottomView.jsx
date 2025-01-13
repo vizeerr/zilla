@@ -35,7 +35,7 @@ const DetailedBottomView = () => {
   return (
 <div className='relative overflow-hidden'>
 
-    <div className='bg-[#1B1C1E] relative w-full rounded-[2.1vw] lg:hidden  mt-[7.2vw] overflow-hidden'>
+    <div className='bg-[#1B1C1E] relative w-full rounded-[2.1vw] md:hidden  mt-[7.2vw] overflow-hidden'>
       <div className='flex justify-between w-full'>
         <p onClick={()=>setTab("cmmt")} className={`${tab=="cmmt"? "bg-primary text-[#262626]":" bg-[#38383F] text-white"}  font-[900] text-[3vw] font-montserrat   py-[0.9vw] px-[4.8vw] text-center rounded-[3.6vw_0px]`}> COMMENTS</p>
         <p onClick={()=>setTab("trade")} className={`${tab=="trade"? "bg-primary text-[#262626]":" bg-[#38383F] text-white"} font-[900] text-[3vw] font-montserrat   py-[0.9vw] px-[4.8vw] text-center rounded-[0px_3.6vw]`}> TRADING HISTORY</p>
@@ -233,8 +233,8 @@ const DetailedBottomView = () => {
         <motion.div 
         
         key="trademodel"
-        initial={{ opacity: 1, y:500}}
-      animate={{ y:tradeOpen?0:500}}
+        initial={{ opacity: 1, y:1000}}
+      animate={{ y:tradeOpen?0:1000}}
       
       transition={{ duration: 0.3 }}
       ref={modalRef} 
@@ -243,17 +243,17 @@ const DetailedBottomView = () => {
               <div className='bg-white bg-opacity-20 h-[5px] rounded-full w-[50px]'>
               </div>
             </div>  
-            <div className='bg-[#1B1C1E] text-white sm:w-[460px] w-full overflow-x-hidden relative sm:p-[32px] p-[23px] shadow-[12.7px_12.7px_44.02px_0px_#0000004F]sm:rounded-[40px] rounded-[16.8px]'>
+            <div className='bg-[#1B1C1E] text-white  w-full overflow-x-hidden relative p-[4.3vw] shadow-[12.7px_12.7px_44.02px_0px_#0000004F]  rounded-[5.3vw]'>
               <TradeModel/>
             </div>
         </motion.div>
       </AnimatePresence>
     
-    <div className='mt-[4vw] lg:hidden flex justify-center'>
+    <div className='mt-[4vw] md:hidden flex justify-center'>
       <button onClick={()=>setTradeOpen(true)} className={`${tradeOpen?"bg-[#666666] text-white":"bg-primary text-[#2C2D30]"} text-[3.6vw] py-[1vw] w-[28vw] font-montserrat font-[900] rounded-full`}>TRADE</button>
     </div>
     
-    <div className='lg:flex hidden justify-around mt-[2.6vw] gap-[1.8vw]'>
+    <div className='md:flex hidden justify-around mt-[2.6vw] gap-[1.8vw]'>
   
     <div className='bg-[#1B1C1E] w-[37.5vw] rounded-[2vw] ' >
       <p className="bg-primary text-[#262626] font-[900]  text-[1.5vw] font-montserrat  py-[1vw]  w-[18.1vw]  text-center rounded-[2vw_0px]"> COMMENTS</p>
@@ -384,7 +384,7 @@ const DetailedBottomView = () => {
                   </div>
                   <Image src={eth} alt='' className='rounded-full w-[1.4vw]'/>
                 </div>
-                <div className='border-primary 2xl:border-s-[6px] border-s-[2px]  ps-[0.4vw]'>
+                <div className='border-primary md:border-s-[6px] border-s-[2px]  ps-[0.4vw]'>
                   <p className='font-bebasneue  text-[0.8vw]'>
                   <span className='text-white'>153 </span>
                     <span className='text-opacity-30 text-white'>trades of size greater lian 0.01 ETH</span>

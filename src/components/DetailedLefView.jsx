@@ -1,7 +1,6 @@
 "use client"
 import Image from 'next/image'
-import React, { useEffect, useState } from 'react'
-import coimg from "@/assets/coimg.svg"
+import React, { useCallback, useEffect, useState } from 'react'
 import linkico from "@/assets/linkico.svg"
 import xlogo from "@/assets/tlogo.svg"
 import tlogo from "@/assets/xlogo.svg"
@@ -10,8 +9,6 @@ import xblack from "@/assets/xblack.svg"
 import { getToken } from '@/helpers/api'
 import { formatTime, imgUrl, shortId } from '@/helpers/helpers'
 import Link from 'next/link'
-import toast from 'react-hot-toast'
-import DetailedRightView from './DetailedRightView'
 import DetailedTrade from './DetailedTrade'
 import HolderModel from './HolderModel'
 
@@ -49,7 +46,14 @@ const DetailedLefView = ({token}) => {
               <div className='flex items-center md:gap-[1.7vw] gap-[2.1vw]'>
                 <div className='md:rounded-[1vw] rounded-[2vw] md:mt-[1.5vw] mt-[1.6vw] relative overflow-hidden md:w-[11.1vw] md:h-[11.1vw] w-[20.8vw] h-[20.3vw]'>
 
-                  <img src={imgUrl(tokenData.image) || ""} className='object-contain ' alt='' className="w-full"/>
+                  {/* <img src={imgUrl(tokenData.image) || ""}  alt='' className="w-full"/> */}
+                  <Image
+                src={imgUrl(tokenData.image) || ""}
+                alt=""
+                layout="fill"
+                objectFit="contain"
+                className='object-contain w-full'
+              />
                   
                   <div className='bg-[#0A0A0B] flex justify-evenly w-full md:py-[0.5vw] py-[0.9vw] absolute bottom-0 z-20'>
                   <Link href={tokenData.website || ""} className='md:w-[1.1vw] w-[2vw]'>

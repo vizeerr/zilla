@@ -62,7 +62,7 @@ const CommitModel = ({ open, setOpen}) => {
 
     // Update the active milestones
     setMilestones(newMilestones);
-  }, [value]);
+  }, [value,milestones]);
 
   // Use effect to re-add removed milestones when slider goes back below them
   useEffect(() => {

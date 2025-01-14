@@ -23,7 +23,7 @@ const LaunchForm = () => {
             <div className='w-full'>
               <div>
                 <p className='text-primary md:text-[1vw] text-[2.1vw] font-[800] '>NAME</p>
-                <input type="text" placeholder='ENTER TOKEN NAME' className='border-0 md:h-[48px] h-[6vw] md:md:mt-[0.2vw] mt-[0.8vw] w-full bg-[#38383F] opacity-60 font-[400] font-bebasneue m-0 text-white md:text-[0.8vw] text-[2.3vw] md:px-[0.9vw] px-[2.4vw] py-[5px] md:rounded-[0.6vw] rounded-[0.9vw] shadow-[20px_20px_33.3px_0px_#00000066]'/>
+                <input type="text" placeholder='ENTER TOKEN NAME' className='border-0 md:h-[2.5vw] h-[6vw] md:md:mt-[0.2vw] mt-[0.8vw] w-full bg-[#38383F] opacity-60 font-[400] font-bebasneue m-0 text-white md:text-[0.8vw] text-[2.3vw] md:px-[0.9vw] px-[2.4vw] py-[5px] md:rounded-[0.6vw] rounded-[0.9vw] shadow-[20px_20px_33.3px_0px_#00000066]'/>
               </div>
               <div>
                 <div className='flex md:mt-[0.8vw] mt-[2vw] items-center md:gap-[0.4vw] gap-[1vw]'>
@@ -54,7 +54,7 @@ const LaunchForm = () => {
             <div className='flex md:flex-row flex-col md:gap-[2vw] w-full'>
               <div className='w-full'>
                 <p className='text-primary md:text-[1vw] text-[2.1vw] font-[800] md:mt-[0.8vw] mt-[2vw]'>TWITTER</p>
-                <input type="text" placeholder='OPTIONAL' className='border-0 md:h-[2.5vw] h-[6vw] md:mt-[0.2vw] mt-[0.8vw] w-full bg-[#38383F] opacity-60 font-[400] font-bebasneue m-0 text-white md:text-[0.8vw] text-[2.3vw] md:px-[0.9vw] px-[2.4vw] py-[2.4vw] md:rounded-[0.6vw] rounded-[0.9vw] shadow-[20px_20px_33.3px_0px_#00000066]'/>
+                <input type="text" placeholder='OPTIONAL' className='border-0 md:h-[2.5vw] h-[6vw] md:mt-[0.2vw] mt-[0.8vw] w-full bg-[#38383F] opacity-60 font-[400] font-bebasneue m-0 text-white md:text-[0.8vw] text-[2.3vw] md:px-[0.9vw] px-[2.4vw] py-[0.2vw] md:rounded-[0.6vw] rounded-[0.9vw] shadow-[20px_20px_33.3px_0px_#00000066]'/>
               </div>
               <div className='w-full'>
                 <p className='text-primary md:text-[1vw] text-[2.1vw] font-[800] md:mt-[0.8vw] mt-[2vw]'>TELEGRAM</p>
@@ -69,7 +69,7 @@ const LaunchForm = () => {
               <div>
                 <p className='text-primary md:text-[1vw] text-[2.1vw] font-[800] md:mt-[0.8vw] mt-[2vw]'>INITIAL BUY</p>
 
-                <div className='flex justify-center items-center md:h-[48px] h-[6vw] md:mt-[0.2vw] mt-[0.8vw] w-full bg-[#38383F] font-[400] font-bebasneue m-0 text-white md:text-[1vw] text-[2.1vw] md:px-[0.8vw] px-[2.4vw] md:py-[0.5vw] py-[0.9vw] md:rounded-[0.6vw] rounded-[0.9vw] shadow-[20px_20px_33.3px_0px_#00000066]'>
+                <div className='flex justify-center items-center md:h-[2.5vw] h-[6vw] md:mt-[0.2vw] mt-[0.8vw] w-full bg-[#38383F] font-[400] font-bebasneue m-0 text-white md:text-[1vw] text-[2.1vw] md:px-[0.8vw] px-[2.4vw] md:py-[0.5vw] py-[0.9vw] md:rounded-[0.6vw] rounded-[0.9vw] shadow-[20px_20px_33.3px_0px_#00000066]'>
                   <input type="text" placeholder='ENTER AMOUNT' className='border-0 w-full bg-[#38383F] opacity-60 font-[400] font-bebasneue text-white md:text-[0.8vw] text-[2.3vw]'/>
                     <span className='md:w-[0.3vw] w-[0.5vw] rounded-full  bg-white opacity-20 h-full'></span>
                   <p className='font-bebasneue font-[400] md:ms-[0.7vw] ms-[2vw] md:w-[10.4vw] w-[18vw] md:text-[1vw] text-[2.1vw] text-white  '>USER BALANCE : <span className='text-primary'>0 ETH</span></p>

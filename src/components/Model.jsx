@@ -18,7 +18,7 @@ const Model = ({ open, setOpen }) => {
             transition={{ duration: 0.3 }}
             className={`${
                 open ? "flex" : "hidden"
-            } bg-[#000000A3] fixed z-30 justify-end w-full h-screen  px-8 top-0`}
+            } bg-[#000000A3] fixed z-30 justify-end w-full h-screen  px-[1.6vw] top-0`}
              onClick={(e)=>handleClose(e)}
             id="background"
              
@@ -31,37 +31,40 @@ const Model = ({ open, setOpen }) => {
                 id="box"
                 className={`${
                     open ? "block" : "hidden"
-                } bg-[rgb(30,30,37)] w-[782px] h-min 2xl:rounded-[47px] rounded-[6vw] py-4 relative top-[85px]`}
+                } bg-[rgb(30,30,37)] md:w-[40vw] w-[62vw] h-min rounded-[2.4vw] md:py-[0.8vw] py-[2vw] relative md:top-[4.4vw] top-[6vw]`}
             >
+                <div className="w-[4vw] float-end me-[0.6vw] mt-[0.2vw] cursor-pointer anim">
+
                 <Image
                     src={cross}
-                    className="float-end me-3 mt-1 cursor-pointer anim w-[4vw] "
+                    className=" w-full "
                     onClick={() => setOpen(false)}
                     alt=""
-                />
-                <h1 className="round ms-12 font-[500] text-center 2xl:text-[64.23px] text-[5vw] text-white">
+                    />
+                </div>
+                <h1 className="round ms-[2.5vw] font-[500] text-center md:text-[3.3vw] text-[5vw] text-white">
                     Pump, <span className="text-primary">Profit</span>, Repeat!
                 </h1>
-                <p className="text-white font-montserrat 2xl:text-[17.53px] text-[2vw] font-[700] leading-[20.81px] w-[72%] mx-auto text-center">
+                <p className="text-white font-montserrat md:text-[0.9vw] text-[1.6vw] font-[700] leading-tight w-[72%] mx-auto text-center">
                     Each token is a fair launch with no presale and no team allocation —
                     <span className="text-primary"> making it all about the community.</span>
                 </p>
-                <Image src={modelmg} className="mt-8 w-[70vw] mx-auto" alt="" />
-                <p className="text-primary font-montserrat font-[700] 2xl:text-[17.53px] text-[2.5vw] leading-[20.81px] w-[78%] mx-auto text-center mt-16">
+                <Image src={modelmg} className="mt-[1.6vw] md:w-[70vw] w-[60vw] mx-auto" alt="" />
+                <p className="text-primary font-montserrat font-[700] md:text-[0.9vw] text-[1.6vw] leading-tight w-[78%] mx-auto text-center mt-[3.3vw]">
                     Want more details?{" "}
                     <span className="text-white font-[700]">Dive into our </span>
-                    <button className="text-[#2B2C36]  py-1 px-1.5 rounded-full bg-primary font-[900] anim">
+                    <button className="text-[#2B2C36]  py-[0.2vw] md:px-[0.3vw] px-[1.4vw] rounded-full bg-primary font-[900] anim">
                         Documentation
                     </button>
                 </p>
-                <p className="bg-[#2B2C36] text-white text-center 2xl:text-[27px] text-[3.5vw] py-1 font-montserrat font-[800] mt-10">
+                <p className="bg-[#2B2C36] text-white text-center md:text-[1.4vw] text-[2.4vw] md:py-[0.2vw] py-[0.8vw] font-montserrat font-[800] mt-[2vw]">
                     Explore <span className="text-primary">PumpZilla Token</span>
                 </p>
-                <p className="font-montserrat text-white font-[700] 2xl:text-[16px] text-[2vw] text-center mx-auto leading-[22px] mt-8">
+                <p className="font-montserrat text-white font-[700] md:text-[0.8vw] text-[1.3vw] text-center mx-auto leading-tight mt-[1.6vw]">
                     Learn more about our exciting PumpZilla Token and how it powers the ecosystem.
                 </p>
-                <div className="flex justify-center my-8 anim">
-                    <button className="font-montserrat font-[900] 2xl:text-[16px] text-[2vw] text-[#2B2C36] bg-primary py-1.5 px-4 rounded-full">
+                <div className="flex justify-center my-[1.6vw] anim">
+                    <button className="font-montserrat font-[900] md:text-[0.8vw] text-[1.7vw] text-[#2B2C36] bg-primary py-[0.3vw] md:px-[0.8vw] px-[1.6vw] rounded-full">
                         GO TO ZILLA TOKEN
                     </button>
                 </div>

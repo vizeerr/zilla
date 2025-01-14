@@ -116,7 +116,7 @@ const CommitModel = ({ open, setOpen}) => {
             
       
             <div className="sm:my-[1.3vw] my-[3vw] flex items-center justify-between gap-[1.66vw]">
-                <div className="rounded-full  sm:border-2 border-[1px] border-primary sm:py-[0.8vw] py-[0.5vw] flex items-center justify-center  px-[1.6vw] w-full" >
+                <div className="rounded-full  sm:border-2 border-[1px] border-primary sm:py-[0.8vw] py-[1vw] flex items-center justify-center  md:px-[1.6vw] px-[2.5vw] w-full" >
                     <input type="text" onChange={(e)=>setStakePrice(e.target.value)} className="text-white outline-none sm:text-[1.5vw] text-[3.5vw] bg-transparent w-full font-bebasneue" placeholder="enter tokens to stake" />
                 </div>
                 <p className="font-montserrat font-[900] anim sm:text-[1.6vw] text-[2.5vw] bg-primary shadow-[19.46px_32.43px_40.38px_0px_#00000040] rounded-[1.2vw] px-[2vw] py-[1vw]">MAX</p>

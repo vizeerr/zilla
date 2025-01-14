@@ -101,38 +101,38 @@ const StakeModel = ({ open, setOpen,option,setOption }) => {
                 id="box"
                 className={`${
                     open ? "block" : "hidden"
-                } bg-[#1B1C1E] sm:w-[41vw] w-[70vw] h-min rounded-[2.6vw] p-[3.1vw]`}
+                } bg-[#1B1C1E] md:w-[41vw] w-[70vw] h-min rounded-[2.6vw] p-[3.1vw]`}
             >
             <div className="flex justify-between">
-                <button onClick={()=>setOption(0)} className={`${option==0?"text-[#1B1C1E] bg-primary":"bg-[#111111] text-white"} sm:anim shadow-xl sm:text-[1.3vw] text-[2.4vw] font-montserrat font-[800]  rounded-full py-[0.6vw] w-[13vw]`}>Stake</button>
-                <button onClick={()=>setOption(1)} className={`${option==1?"text-[#1B1C1E] bg-primary":"bg-[#111111] text-white"} sm:anim shadow-xl sm:text-[1.3vw] text-[2.4vw] font-montserrat font-[800]  rounded-full py-[0.6vw] sm:w-[13vw] w-[19vw]`}>Withdraw</button>               
+                <button onClick={()=>setOption(0)} className={`${option==0?"text-[#1B1C1E] bg-primary":"bg-[#111111] text-white"} md:anim shadow-xl md:text-[1.3vw] text-[2.4vw] font-montserrat font-[800]  rounded-full py-[0.6vw] w-[13vw]`}>Stake</button>
+                <button onClick={()=>setOption(1)} className={`${option==1?"text-[#1B1C1E] bg-primary":"bg-[#111111] text-white"} md:anim shadow-xl md:text-[1.3vw] text-[2.4vw] font-montserrat font-[800]  rounded-full py-[0.6vw] md:w-[13vw] w-[19vw]`}>Withdraw</button>               
             </div>
             {option==0 && (
                 <>
-                <div className="flex items-center sm:mt-[2vw] mt-[3vw] justify-between">
-                    <p className=" font-montserrat font-[800] text-white sm:text-[0.7vw] text-[1.7vw] bg-[#111111] px-[1.8vw] py-[0.5vw] shadow-lg rounded-full"><span className="text-primary">User</span> Balance : <span className="sm:text-[1.1vw] text-[2vw] text-primary">123,456</span></p>
-                    <p className="text-[#42FF91] sm:text-[1vw] text-[2vw] font-bebasneue">stake your zilla tokens to earn rewards !</p>
+                <div className="flex items-center md:mt-[2vw] mt-[3vw] justify-between">
+                    <p className=" font-montserrat font-[800] text-white md:text-[0.7vw] text-[1.7vw] bg-[#111111] px-[1.8vw] py-[0.5vw] shadow-lg rounded-full"><span className="text-primary">User</span> Balance : <span className="md:text-[1.1vw] text-[2vw] text-primary">123,456</span></p>
+                    <p className="text-[#42FF91] md:text-[1vw] text-[2vw] font-bebasneue">stake your zilla tokens to earn rewards !</p>
                 </div> 
-            <div className="sm:my-[1.3vw] my-[3vw] flex items-center justify-between gap-[1.66vw]">
-                <div className="rounded-full  sm:border-2 border-[1px] border-primary sm:py-[0.8vw] py-[1vw] flex items-center justify-center  md:px-[1.6vw] px-[2.5vw] w-full" >
-                    <input type="text" onChange={(e)=>setStakePrice(e.target.value)} className="text-white outline-none sm:text-[1.5vw] text-[3.5vw] bg-transparent w-full font-bebasneue" placeholder="enter tokens to stake" />
+            <div className="md:my-[1.3vw] my-[3vw] flex items-center justify-between gap-[1.66vw]">
+                <div className="rounded-full  md:border-2 border-[1px] border-primary md:py-[0.8vw] py-[1vw] flex items-center justify-center  md:px-[1.6vw] px-[2.5vw] w-full" >
+                    <input type="text" onChange={(e)=>setStakePrice(e.target.value)} className="text-white outline-none md:text-[1.5vw] text-[3.5vw] bg-transparent w-full font-bebasneue" placeholder="enter tokens to stake" />
                 </div>
-                <p className="font-montserrat font-[900] anim sm:text-[1.6vw] text-[2.5vw] bg-primary shadow-[19.46px_32.43px_40.38px_0px_#00000040] rounded-[1.2vw] px-[2vw] py-[1vw]">MAX</p>
+                <p className="font-montserrat font-[900] anim md:text-[1.6vw] text-[2.5vw] bg-primary shadow-[19.46px_32.43px_40.38px_0px_#00000040] rounded-[1.2vw] px-[2vw] py-[1vw]">MAX</p>
             </div>
-            <div className="shadow-2xl bg-[#111111] sm:p-[1vw] p-[1.9vw] rounded-[1vw]">
-                <p className="font-bebasneue sm:text-[0.8vw] text-[2vw] text-white">Staking amount</p>
+            <div className="shadow-2xl bg-[#111111] md:p-[1vw] p-[1.9vw] rounded-[1vw]">
+                <p className="font-bebasneue md:text-[0.8vw] text-[2vw] text-white">Staking amount</p>
                 <div className="flex justify-between items-center gap-[1vw] ">
                     <div
-                        className="relative w-full sm:h-[0.2vw] h-[0.7vw] bg-[#363940] rounded-full"
+                        className="relative w-full md:h-[0.2vw] h-[0.7vw] bg-[#363940] rounded-full"
                         ref={sliderRef}
                         onClick={handleTrackClick}
                     >
                         <div
-                        className="absolute top-0 left-0 sm:h-[0.2vw] h-[0.7vw] bg-[#A8FF2F] rounded-full"
+                        className="absolute top-0 left-0 md:h-[0.2vw] h-[0.7vw] bg-[#A8FF2F] rounded-full"
                         style={{ width: `${value}%` }}
                         ></div>
                         <div
-                        className="absolute sm:top-[-0.3vw] top-[-0.4vw] sm:w-[0.9vw] sm:h-[0.9vw] w-[1.6vw] h-[1.6vw] bg-white z-10 shadow-md rounded-full cursor-pointer"
+                        className="absolute md:top-[-0.3vw] top-[-0.4vw] md:w-[0.9vw] md:h-[0.9vw] w-[1.6vw] h-[1.6vw] bg-white z-10 shadow-md rounded-full cursor-pointer"
                         ref={thumbRef}
                         style={{ left: `${value-1}%` }}
                         onMouseDown={handleMouseDown}
@@ -141,47 +141,47 @@ const StakeModel = ({ open, setOpen,option,setOption }) => {
                         {milestones.map((milestone) => (
                         <div
                             key={milestone}
-                            className="absolute sm:top-[0.41vw] top-[0.3vw] shadow-lg -mt-[0.62vw] sm:w-[0.5vw] sm:h-[0.5vw] w-[1.3vw] h-[1.3vw] bg-[#363940] rounded-full"
+                            className="absolute md:top-[0.41vw] top-[0.3vw] shadow-lg -mt-[0.62vw] md:w-[0.5vw] md:h-[0.5vw] w-[1.3vw] h-[1.3vw] bg-[#363940] rounded-full"
                             style={{ left: `${milestone}%` }}
                         ></div>
                         ))}
                     </div>
-                    <p className="font-montserrat font-[800] sm:text-[0.6vw] text-[1.5vw] text-white bg-[#363940] rounded-[0.5vw] px-[0.4vw] py-[0.3vw] shadow-md sm:w-[2.6vw] w-[5vw]">{Math.round(value)}%</p>
+                    <p className="font-montserrat font-[800] md:text-[0.6vw] text-[1.5vw] text-white bg-[#363940] rounded-[0.5vw] px-[0.4vw] py-[0.3vw] shadow-md md:w-[2.6vw] w-[5vw]">{Math.round(value)}%</p>
                 </div>
                 
             </div>
              
-            <div className={`${stakePrice>0?"bg-primary ":" bg-[#666666]"} text-[#1B1C1E] rounded-full shadow-lg text-center sm:w-[8.1vw] w-[13vw] mx-auto mt-[1.5vw]`}>
-                <p className={`round sm:text-[1.8vw] text-[4vw] pt-[0.5vw] sm:leading-none leading-[5vw]`}>stake</p>
+            <div className={`${stakePrice>0?"bg-primary ":" bg-[#666666]"} text-[#1B1C1E] rounded-full shadow-lg text-center md:w-[8.1vw] w-[13vw] mx-auto mt-[1.5vw]`}>
+                <p className={`round md:text-[1.8vw] text-[4vw] pt-[0.5vw] md:leading-none leading-[5vw]`}>stake</p>
             </div>
                 </>
             )}
             {option==1 && (<>
             
-            <div className="flex items-center sm:mt-[2vw] mt-[3vw] justify-between">
-                    <p className=" font-montserrat font-[800] text-white sm:text-[0.7vw] text-[1.7vw] bg-[#111111] px-[1.8vw] py-[0.5vw] shadow-lg rounded-full"><span className="text-primary">Staked</span> Balance : <span className="sm:text-[1.1vw] text-[2vw] text-primary">123,456</span></p>
-                    <p className="text-[#FF4542] w-1/2 sm:text-[1vw] text-[2vw] font-bebasneue">Withdrawing your zilla tokens will result in a loss of points multiplier</p>
+            <div className="flex items-center md:mt-[2vw] mt-[3vw] justify-between">
+                    <p className=" font-montserrat font-[800] text-white md:text-[0.7vw] text-[1.7vw] bg-[#111111] px-[1.8vw] py-[0.5vw] shadow-lg rounded-full"><span className="text-primary">Staked</span> Balance : <span className="md:text-[1.1vw] text-[2vw] text-primary">123,456</span></p>
+                    <p className="text-[#FF4542] w-1/2 md:text-[1vw] text-[2vw] font-bebasneue">Withdrawing your zilla tokens will result in a loss of points multiplier</p>
                 </div>
-                <div className="sm:my-[1.3vw] my-[3vw] flex items-center justify-between gap-[1.66vw]">
-                <div className="rounded-full  sm:border-2 border-[1px] border-primary sm:py-[0.8vw] py-[1vw] flex items-center justify-center  md:px-[1.6vw] px-[2.5vw] w-full" >
-                    <input type="text" onChange={(e)=>setStakePrice(e.target.value)} className="text-white outline-none sm:text-[1.5vw] text-[3.5vw] bg-transparent w-full font-bebasneue" placeholder="enter tokens to stake" />
+                <div className="md:my-[1.3vw] my-[3vw] flex items-center justify-between gap-[1.66vw]">
+                <div className="rounded-full  md:border-2 border-[1px] border-primary md:py-[0.8vw] py-[1vw] flex items-center justify-center  md:px-[1.6vw] px-[2.5vw] w-full" >
+                    <input type="text" onChange={(e)=>setStakePrice(e.target.value)} className="text-white outline-none md:text-[1.5vw] text-[3.5vw] bg-transparent w-full font-bebasneue" placeholder="enter tokens to stake" />
                 </div>
-                <p className="font-montserrat font-[900] anim sm:text-[1.6vw] text-[2.5vw] bg-primary shadow-[19.46px_32.43px_40.38px_0px_#00000040] rounded-[1.2vw] px-[2vw] py-[1vw]">MAX</p>
+                <p className="font-montserrat font-[900] anim md:text-[1.6vw] text-[2.5vw] bg-primary shadow-[19.46px_32.43px_40.38px_0px_#00000040] rounded-[1.2vw] px-[2vw] py-[1vw]">MAX</p>
             </div>
-            <div className="shadow-2xl bg-[#111111] sm:p-[1vw] p-[1.9vw] rounded-[1vw]">
-                <p className="font-bebasneue sm:text-[0.8vw] text-[2vw] text-white">Withdraw amount</p>
+            <div className="shadow-2xl bg-[#111111] md:p-[1vw] p-[1.9vw] rounded-[1vw]">
+                <p className="font-bebasneue md:text-[0.8vw] text-[2vw] text-white">Withdraw amount</p>
                 <div className="flex justify-between items-center gap-[1vw] ">
                     <div
-                        className="relative w-full sm:h-[0.2vw] h-[0.7vw] bg-[#363940] rounded-full"
+                        className="relative w-full md:h-[0.2vw] h-[0.7vw] bg-[#363940] rounded-full"
                         ref={sliderRef}
                         onClick={handleTrackClick}
                     >
                         <div
-                        className="absolute top-0 left-0 sm:h-[0.2vw] h-[0.7vw] bg-[#A8FF2F] rounded-full"
+                        className="absolute top-0 left-0 md:h-[0.2vw] h-[0.7vw] bg-[#A8FF2F] rounded-full"
                         style={{ width: `${value}%` }}
                         ></div>
                         <div
-                        className="absolute sm:top-[-0.3vw] top-[-0.4vw] sm:w-[0.9vw] sm:h-[0.9vw] w-[1.6vw] h-[1.6vw] bg-white z-10 shadow-md rounded-full cursor-pointer"
+                        className="absolute md:top-[-0.3vw] top-[-0.4vw] md:w-[0.9vw] md:h-[0.9vw] w-[1.6vw] h-[1.6vw] bg-white z-10 shadow-md rounded-full cursor-pointer"
                         ref={thumbRef}
                         style={{ left: `${value-1}%` }}
                         onMouseDown={handleMouseDown}
@@ -190,19 +190,19 @@ const StakeModel = ({ open, setOpen,option,setOption }) => {
                         {milestones.map((milestone) => (
                         <div
                             key={milestone}
-                            className="absolute sm:top-[0.41vw] top-[0.3vw] shadow-lg -mt-[0.62vw] sm:w-[0.5vw] sm:h-[0.5vw] w-[1.3vw] h-[1.3vw] bg-[#363940] rounded-full"
+                            className="absolute md:top-[0.41vw] top-[0.3vw] shadow-lg -mt-[0.62vw] md:w-[0.5vw] md:h-[0.5vw] w-[1.3vw] h-[1.3vw] bg-[#363940] rounded-full"
                             style={{ left: `${milestone}%` }}
                         ></div>
                         ))}
                     </div>
-                    <p className="font-montserrat font-[800] sm:text-[0.6vw] text-[1.5vw] text-white bg-[#363940] rounded-[0.5vw] px-[0.4vw] py-[0.3vw] shadow-md sm:w-[2.6vw] w-[5vw]">{Math.round(value)}%</p>
+                    <p className="font-montserrat font-[800] md:text-[0.6vw] text-[1.5vw] text-white bg-[#363940] rounded-[0.5vw] px-[0.4vw] py-[0.3vw] shadow-md md:w-[2.6vw] w-[5vw]">{Math.round(value)}%</p>
                 </div>
                 
             </div>
              
             
-            <div className={`${stakePrice>0?"bg-primary ":" bg-[#666666]"} text-[#1B1C1E] rounded-full shadow-lg text-center sm:w-[8.1vw] w-[17vw] mx-auto mt-[1.5vw]`}>
-                <p className={`round sm:text-[1.8vw] text-[4vw] pt-[0.5vw] sm:leading-none leading-[5vw]`}>withdraw</p>
+            <div className={`${stakePrice>0?"bg-primary ":" bg-[#666666]"} text-[#1B1C1E] rounded-full shadow-lg text-center md:w-[8.1vw] w-[17vw] mx-auto mt-[1.5vw]`}>
+                <p className={`round md:text-[1.8vw] text-[4vw] pt-[0.5vw] md:leading-none leading-[5vw]`}>withdraw</p>
             </div>
             </>
             )}

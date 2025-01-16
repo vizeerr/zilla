@@ -1,4 +1,3 @@
-
 import CardGrid from "@/components/CardGrid";
 import Pagination from "@/components/Pagination";
 import Tabs from "@/components/Tabs";
@@ -15,6 +14,7 @@ export default function Home() {
       </div>
       <CardGrid/>
       <Pagination/>
+
   
     </div>
   );

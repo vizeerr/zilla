@@ -11,24 +11,20 @@ const StakeCard = ({data,setStakeOpen}) => {
         const [timeLeft, setTimeLeft] = useState(totalDuration); // Time left in seconds
       
         useEffect(() => {
-          const timer = setInterval(() => {
-            setTimeLeft((prev) => Math.max(prev - 1, 0));
-          }, 1000);
-      
-          return () => clearInterval(timer); // Cleanup interval on unmount
-        }, []);
-      
+            // Only set up the interval if `timeLeft` is not 0
+            if (timeLeft === 0) return; // No need to set the interval if the time is already up
+          
+            const timer = setInterval(() => {
+              setTimeLeft((prev) => Math.max(prev - 1, 0)); // Decrement the time
+            }, 1000);
+          
+            // Cleanup function to clear the interval when the component is unmounted
+            return () => clearInterval(timer);
+          }, [timeLeft]); // This effect depends on `timeLeft` but avoids unnecessary updates when it reaches 0
+          
         const percentage = (timeLeft / totalDuration) * 100;
     
-      
-        const calculateTipPosition = (percentage) => {
-          const angle = (percentage / 100) * 360; // Calculate angle based on percentage
-          const radians = (angle - 90) * (Math.PI / 180); // Convert to radians and offset by -90deg for top start
-          const radius = 45; // Radius of the circle
-          const x = 50 + radius * Math.cos(radians); // X position
-          const y = 50 + radius * Math.sin(radians); // Y position
-          return { x, y };
-        };
+
       
   return (
     <>

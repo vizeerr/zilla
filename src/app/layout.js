@@ -29,9 +29,9 @@ export default function RootLayout({ children }) {
         <TopNavbar/>
         {children}
         <Toaster
-  position="top-center"
-  reverseOrder={false}
-/>
+        position="top-center"
+        reverseOrder={false}
+      />
       </body>
     </html>
   );

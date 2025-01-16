@@ -13,7 +13,7 @@ const TopNavbar = () => {
 
   return (
     
-    <div className="sticky top-0  z-20">
+    <div className="sticky top-0  z-50">
       <div className="bg-primary flex items-center justify-between md:py-[0.6vw] py-[1vw]">
         <div className="md:ps-[2vw] ps-[2.1vw] w-[20.9vw] md:w-[13vw]">
           <Link href={"/"}>

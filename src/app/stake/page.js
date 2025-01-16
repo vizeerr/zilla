@@ -7,7 +7,7 @@ const page = () => {
     <div className='bg-[#111111]'>
         <p className='p-[4.6vw] font-montserrat font-[900] md:text-[2.6vw] text-[6vw] text-white'> Your Gateway to <br/> <span className='text-primary'>PumpZilla Rewards !</span></p>
         
-        <StakeTop/>
+          <StakeTop/>
         <div className='md:flex justify-center hidden'>
             <div className='bg-white w-[10vw] h-[0.4vw] rounded-full'>
             </div>

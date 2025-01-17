@@ -30,7 +30,8 @@ const ZillaLeftView  = () =>{
         </div>
         <div className='md:px-[1.6vw] md:pb-[1.8vw] px-[2.4vw] pb-[2.6vw]'>
        
-        <div className='w-full md:h-[21vw] h-[36vw] md:rounded-[1.8vw] rounded-[15px] bg-[#111111] shadow-[16.21px_16.21px_56.21px_0px_#0000004F]'>
+        <div className='w-full md:h-[21vw] overflow-hidden  h-[36vw] md:rounded-[1.8vw] rounded-[15px] bg-[#111111] shadow-[16.21px_16.21px_56.21px_0px_#0000004F]'>
+        <iframe className='w-full h-full' src="https://dexscreener.com/ethereum/0x88e6A0c2dDD26FEEb64F039a2c41296FcB3f5640?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTimeframesToolbar=0&chartTheme=dark&theme=dark&chartStyle=0&chartType=usd&interval=5"></iframe>
         </div>
 
         <div className='md:mt-[1.5vw] mt-[2.4vw] flex justify-between md:gap-[1.5vw] '>

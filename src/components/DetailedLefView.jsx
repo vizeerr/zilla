@@ -118,11 +118,14 @@ const DetailedLefView = ({token}) => {
           </div>
 
          
-          <div className='bg-[#1B1C1E]  md:h-[30.5vw] h-[49.5vw] shadow-[12.7px_12.7px_44.02px_0px_#0000004F] md:rounded-[2vw] rounded-[2.9vw]'>
-          <div className='bg-primary md:w-[18.1vw] w-[35.1vw] text-center md:py-[0.7vw] py-[8px] md:rounded-[2vw_0px] rounded-[20px_0] text-[#1B1C1E] shadow-[6.51px_6.51px_15.63px_0px_#0000005C]'>
+          <div className='bg-[#1B1C1E]   shadow-[12.7px_12.7px_44.02px_0px_#0000004F] md:rounded-[2vw] rounded-[2.9vw]'>
+              <div className='bg-primary md:w-[18.1vw] w-[35.1vw] text-center md:py-[0.7vw] py-[8px] md:rounded-[2vw_0px] rounded-[20px_0] text-[#1B1C1E] shadow-[6.51px_6.51px_15.63px_0px_#0000005C]'>
                 <p className='md:text-[1.3vw] text-[2.9vw] font-[800]'>GRAPHICAL VIEW</p>
                 
               </div>
+              <div className='h-[21.3vw] m-[1.4vw] rounded-[1.2vw] overflow-hidden'>
+                  <iframe className='w-full h-full' src="https://dexscreener.com/ethereum/0x88e6A0c2dDD26FEEb64F039a2c41296FcB3f5640?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTimeframesToolbar=0&chartTheme=dark&theme=dark&chartStyle=0&chartType=usd&interval=5"></iframe>
+                </div>
           </div>
 
           <div className='md:hidden block bg-[#1B1C1E] text-white w-full overflow-x-hidden relative p-[5.5vw] shadow-[12.7px_12.7px_44.02px_0px_#0000004F] rounded-[3.8vw]'>

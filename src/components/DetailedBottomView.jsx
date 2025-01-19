@@ -6,8 +6,6 @@ import eth from "@/assets/eth.svg"
 import Image from 'next/image'
 
 import { AnimatePresence, motion } from "framer-motion";
-import { Anuphan } from 'next/font/google'
-import DetailedTrade from './DetailedTrade'
 import TradeModel from './TradeModel'
 const DetailedBottomView = () => {
 

@@ -8,7 +8,7 @@ export default function Home() {
 
   return (
     <div>
-      <div className='md:sticky bg-[#1E1E25] z-20 md:top-[3.70vw]'>
+      <div className='md:sticky bg-[#1E1E25] z-20 md:top-[3.80vw]'>
         <TopHeader/>
         <Tabs/>
       </div>

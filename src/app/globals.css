@@ -5,7 +5,9 @@
 :root{
   --prim-color : #A8FF2F;
   --mont : 'mont',serif;
+  --zoom: 1;
 }
+
 
 body{
   margin: 0;

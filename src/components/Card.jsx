@@ -15,8 +15,8 @@ const Card = ({data}) => {
     <div className="bg-white anim md:rounded-[1.5vw] rounded-[4.8vw] py-[2.6vw] 2xl:px-3 lg:px-1.5 md:px-1 2xl:py-2.5 lg:py-1 md:py-1 px-[2.6vw] 2xl:w-[19.2rem] lg:w-[12rem] md:w-[10rem] w-[90vw] shadow-[8.55px_9.98px_13.61px_0px_#00000040]">
         <div className="flex items-center justify-between">
 
-            <div className="flex gap-[0.6vw] lg:gap-1.5 md:gap-0.5 2xl:w-28 lg:w-20 md:w-14 w-[20vw] bg-[#262626] rounded-full 2xl:py-1 md:py-0.5 py-[0.6vw] justify-center items-center">
-                <div className=" 2xl:w-5 lg:w-3 md:w-2 w-[2.9vw]">
+            <div className="flex gap-[1vw] lg:gap-1.5 md:gap-0.5 2xl:w-28 lg:w-20 md:w-14 w-[20vw] bg-[#262626] rounded-full 2xl:py-1 md:py-0.5 py-[0.6vw] justify-center items-center">
+                <div className=" 2xl:w-5 lg:w-3 md:w-2 w-[2.1vw]">
                     <Image src={clock2} alt="" className="w-full" />
                 </div>
                 <p className="font-[800] font-montserrat 2xl:text-[0.6rem] lg:text-[0.4rem] md:text-[0.3rem] text-[1.6vw] text-white">{formatTime(data.created_at)} ago </p>

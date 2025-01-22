@@ -20,13 +20,13 @@ const HeaderProfile = () => {
                         </div>
                         <p className="font-montserrat font-[800] 2xl:text-[0.6rem] lg:text-[0.3rem] md:text-[0.25rem] text-[1.4vw] text-white">1 hr 25 mins ago</p>
                     </div>
-                    <div className="2xl:w-5 lg:w-2.5 md:w-2 w-[3.1vw] 2xl:h-5 lg:h-2.5 md:h-2 h-[3.1vw] bg-[#1B1B21] rounded-full 2xl:md-1 lg:p-0.5 md:p-[0.1rem] p-[0.7vw]">
+                    <div className="2xl:w-5 lg:w-2.5 md:w-2 w-[3.1vw] 2xl:h-5 lg:h-2.5 md:h-2 h-[3.1vw] bg-[#1B1B21] rounded-full 2xl:p-1 lg:p-0.5 md:p-[0.1rem] p-[0.7vw]">
                         <Image src={wlogo} className="w-full"/>
                     </div>
-                    <div className="2xl:w-5 lg:w-2.5 md:w-2 w-[3.1vw] 2xl:h-5 lg:h-2.5 md:h-2 h-[3.1vw] bg-[#1B1B21] rounded-full 2xl:md-1 lg:p-0.5 md:p-[0.1rem] p-[0.7vw]">
+                    <div className="2xl:w-5 lg:w-2.5 md:w-2 w-[3.1vw] 2xl:h-5 lg:h-2.5 md:h-2 h-[3.1vw] bg-[#1B1B21] rounded-full 2xl:p-1 lg:p-0.5 md:p-[0.1rem] p-[0.7vw]">
                         <Image src={xlogo} className="w-full"/>
                     </div>
-                    <div className="2xl:w-5 lg:w-2.5 md:w-2 w-[3.1vw] 2xl:h-5 lg:h-2.5 md:h-2 h-[3.1vw] bg-[#1B1B21] rounded-full 2xl:md-1 lg:p-0.5 md:p-[0.1rem] p-[0.7vw]">
+                    <div className="2xl:w-5 lg:w-2.5 md:w-2 w-[3.1vw] 2xl:h-5 lg:h-2.5 md:h-2 h-[3.1vw] bg-[#1B1B21] rounded-full 2xl:p-1 lg:p-0.5 md:p-[0.1rem] p-[0.7vw]">
                         <Image src={tlogo} className="w-full"/>
                     </div>
                 </div>

@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from 'react'
-import copy from "@/assets/copy.svg"
+import copy from "@/assets/copyblack.svg"
+import goto from "@/assets/goto.svg"
 import Image from 'next/image'
 import ZillaRightView from './ZillaRightView'
 
@@ -19,7 +20,7 @@ const ZillaLeftView  = () =>{
   return (
 
     <div className=''>
-      <div className='bg-[#1B1C1E] shadow-[16.21px_16.21px_56.21px_0px_#0000004F] md:rounded-[2.6vw] rounded-[3.8vw]'>
+      {/* <div className='bg-[#1B1C1E] shadow-[16.21px_16.21px_56.21px_0px_#0000004F] md:rounded-[2.6vw] rounded-[3.8vw]'>
         <div className=' flex justify-between items-start'>
           
             <p className='font-[900] md:pt-[1.9vw] pt-[1.9vw] md:pb-[1.4vw] pb-[2.4vw]  md:ps-[2.8vw] ps-[2.9vw]  font-montserrat md:text-[1.8vw] text-[3.3vw] text-white'><span className='text-primary'>Live</span> Price <span className='text-primary'>Chart</span></p>
@@ -62,13 +63,51 @@ const ZillaLeftView  = () =>{
         </div>
        
       
+      </div> */}
+
+      <div className='bg-[#1B1C1E] shadow-[16.21px_16.21px_56.21px_0px_#0000004F] md:rounded-[2.6vw] rounded-[3.8vw] md:px-[1.7vw] md:py-[1.3vw]'>
+        <div className='flex justify-between md:gap-[1.5vw] '>
+      <div className='md:w-[9.1vw] w-[20vw] md:ps-[1.3vw] ps-[1.9vw] md:pt-[1vw] pt-[1.9vw] md:pb-[0.6vw] pb-[1.4vw] bg-[#111111] shadow-[16.21px_16.21px_56.21px_0px_#0000004F] md:rounded-[1vw]  rounded-[1.4vw]'>
+            <p className='font-bebasneue text-primary md:text-[1vw] text-[2.4vw]  font-[400]'>Mcap</p>
+            <p className='font-montserrat font-[800] mt-[0.2vw] md:text-[1vw] text-[2.4vw]  text-white'>19.9k</p>
+          </div>
+          <div className='md:w-[9.1vw] w-[20vw] md:ps-[1.3vw] ps-[1.9vw] md:pt-[1vw] pt-[1.9vw] md:pb-[0.6vw] pb-[1.4vw] bg-[#111111] shadow-[16.21px_16.21px_56.21px_0px_#0000004F] md:rounded-[1vw]  rounded-[1.4vw]'>
+            <p className='font-bebasneue text-primary md:text-[1vw] text-[2.4vw] font-[400]'>PRICE</p>
+            <p className='font-montserrat font-[800] mt-[0.2vw] md:text-[1vw] text-[2.4vw] text-white'>$0.000123</p>
+          </div>
+          <div className='md:w-[9.1vw] w-[17vw] md:ps-[1.3vw] ps-[1.9vw] md:pt-[1vw] pt-[1.9vw] md:pb-[0.6vw] pb-[1.4vw] bg-[#111111] shadow-[16.21px_16.21px_56.21px_0px_#0000004F] md:rounded-[1vw]  rounded-[1.4vw]'>
+            <p className='font-bebasneue text-primary md:text-[1vw] text-[2.4vw]  font-[400]'>24H CHANGE</p>
+            <p className='font-montserrat font-[800] mt-[0.2vw] md:text-[1vw] text-[2.4vw]  text-white'>+5.67%</p>
+          </div>
+          
+          <div className='md:w-[9.1vw] w-[20vw] md:ps-[1.3vw] ps-[1.9vw] md:pt-[1vw] pt-[1.9vw] md:pb-[0.6vw] pb-[1.4vw] bg-[#111111] shadow-[16.21px_16.21px_56.21px_0px_#0000004F] md:rounded-[1vw]  rounded-[1.4vw]'>
+            <p className='font-bebasneue text-primary md:text-[1vw] text-[2.4vw]  font-[400]'>VOLUME</p>
+            <p className='font-montserrat font-[800] mt-[0.2vw] md:text-[1vw] text-[2.4vw]  text-white'>$1,234,567</p>
+          </div>
+          
+          <div className='md:w-[13.2vw] w-[23vw] md:ps-[1.3vw] ps-[1.9vw]  md:pb-[0.6vw] pb-[1.4vw] bg-primary shadow-[16.21px_16.21px_56.21px_0px_#0000004F] md:rounded-[1vw]  rounded-[1.4vw]'>
+            <div className='w-[1.3vw] h-[1.3vw] float-end mt-2 me-2'>
+              <Image src={goto} alt='' className='w-full' unoptimized/>
+            </div>
+            <div className='flex gap-[0.6vw] items-center mt-5'>
+              <p className='font-bebasneue text-[#262626] md:text-[1vw] text-[2.4vw] font-[400]'>Contact Address</p>
+              <div className='md:w-[1.2vw] w-[2.4vw]' >
+                <Image src={copy} alt=''onClick={handleCopy}/>
+              </div>
+            </div>
+            <p className='font-montserrat font-[800] mt-[0.2vw] md:text-[1vw] text-[2.4vw]  text-[#262626]'>{copiedText}</p>
+          </div>
+        </div>
+        <div className='w-full mt-5 md:h-[48vw] overflow-hidden  h-[36vw] md:rounded-[1.8vw] rounded-[15px] bg-[#111111] shadow-[16.21px_16.21px_56.21px_0px_#0000004F]'>
+        <iframe className='w-full h-full' src="https://dexscreener.com/ethereum/0x88e6A0c2dDD26FEEb64F039a2c41296FcB3f5640?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTimeframesToolbar=0&chartTheme=dark&theme=dark&chartStyle=0&chartType=usd&interval=5"></iframe>
+        </div>
       </div>
 
       <div className='md:hidden block mt-[4.3vw]'>
         <ZillaRightView/>
       </div>
 
-      <div className='bg-[#1B1C1E] md:px-[1.7vw] px-[3.6vw] md:mt-[2vw] mt-[4.3vw] md:pb-[1.8vw] pb-[3.6vw] shadow-[16.21px_16.21px_56.21px_0px_#0000004F] md:rounded-[2.6vw] rounded-[3.6vw]'>
+      <div className='bg-[#1B1C1E] md:px-[1.7vw] px-[3.6vw] md:mt-[55px] mt-[4.3vw] md:pb-[1.8vw] pb-[3.6vw] shadow-[16.21px_16.21px_56.21px_0px_#0000004F] md:rounded-[2.6vw] rounded-[3.6vw]'>
         <div className=' flex justify-between items-center'>
               <p className='font-[900] md:pt-[1.9vw] md:pb-[2.5vw] pb-[3.6vw] md:ps-[1vw] pt-[3.6vw]  font-montserrat md:text-[1.8vw] text-[3.2vw] text-white'><span className='text-primary'>Historical</span> Stage <span className='text-primary'>Tracker</span></p>
         </div>

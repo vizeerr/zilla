@@ -48,7 +48,7 @@ const ZillaRightView = () => {
   
 
   return (
-    <div className='flex md:flex-col flex-row md:gap-[2vw] gap-[4.3vw] md:w-[29vw] w-full '>
+    <div className='flex md:flex-col flex-row md:gap-[2.8vw] gap-[4.3vw] md:w-[29vw] w-full '>
 
         <div className='bg-[#1B1C1E] md:w-full w-[48vw] shadow-[16.21px_16.21px_56.21px_0px_#0000004F] md:rounded-[2.3vw] rounded-[3.8vw] md:p-[1.5vw] p-[2.7vw]'>
           <div className='bg-[#111111]   relative md:rounded-[1.3vw] rounded-[2.1vw]  md:py-[0.7vw] py-[1.4vw] md:px-[1.3vw] px-[1.9vw] shadow-[12.7px_12.7px_14.6px_0px_#00000040]'>
@@ -117,7 +117,7 @@ const ZillaRightView = () => {
               initial={{ rotateX: 0 }}
               animate={hoveredCard === card.id ? { rotateX: 180 } : { rotateX: 0 }}
               transition={{ duration: 0.6 }}
-              className='bg-[#111111] card w-full shadow-[16.21px_16.21px_56.21px_0px_#0000004F] md:rounded-[1.5vw] rounded-[1.6vw]'
+              className='bg-[#111111] card w-full shadow-[16.21px_16.21px_56.21px_0px_#0000004F] md:rounded-[1vw] rounded-[1.6vw]'
             >
               <div className='card-front w-full md:ps-[1.8vw] ps-[2.3vw] md:pe-[1.3vw] pe-[1.4vw] md:py-[0.7vw] py-[1vw] '>
                   <div className='md:w-[0.6vw] md:h-[0.6vw] w-[1vw] h-[1vw] float-end' onMouseOver={() => handleMouseEnter(card.id)}>
@@ -145,7 +145,7 @@ const ZillaRightView = () => {
               initial={{ rotateX: 0 }}
               animate={hoveredCard === 3 ? { rotateX: 180 } : { rotateX: 0 }}
               transition={{ duration: 0.6 }}
-              className='bg-[#111111] card w-full shadow-[16.21px_16.21px_56.21px_0px_#0000004F] md:rounded-[1.5vw] rounded-[1.6vw]'
+              className='bg-[#111111] card w-full shadow-[16.21px_16.21px_56.21px_0px_#0000004F] md:rounded-[1vw] rounded-[1.6vw]'
             >
               <div className='card-front  md:ps-[1.8vw] ps-[2.3vw] md:pe-[1.3vw] pe-[1.4vw] md:py-[0.7vw] py-[1vw]'>
                 <div className='md:w-[0.6vw] md:h-[0.6vw] w-[1vw] h-[1vw] float-end'>
@@ -184,9 +184,9 @@ const ZillaRightView = () => {
               initial={{ rotateX: 0 }}
               animate={hoveredCard === 4 ? { rotateX: 180 } : { rotateX: 0 }}
               transition={{ duration: 0.6 }}
-              className='bg-[#111111] card w-full  shadow-[16.21px_16.21px_56.21px_0px_#0000004F] md:rounded-[1.5vw] rounded-[1.6vw]'
+              className='bg-[#111111] card w-full  shadow-[16.21px_16.21px_56.21px_0px_#0000004F] md:rounded-[1vw] rounded-[1.6vw]'
             >
-              <div className='card-front w-full md:ps-[1.8vw] ps-[2.3vw] md:pe-[1.3vw] pe-[1.4vw] md:py-[0.7vw] py-[1vw]'>
+              <div className='card-front w-full md:ps-[1.8vw] ps-[2.3vw] md:pe-[1.3vw] pe-[1.4vw] md:py-[0.4vw] py-[1vw]'>
                 <div className='md:w-[0.6vw] md:h-[0.6vw] w-[1vw] h-[1vw] float-end'>
                   <Image
                     src={info}
@@ -195,13 +195,12 @@ const ZillaRightView = () => {
                     className='w-full'
                     />
                 </div>
-                <div className='flex justify-center gap-[1.5vw] w-full items-center'>
+                <div className='flex justify-center gap-[5vw] w-full items-center'>
                   <p className='font-bebasneue font-[400] md:text-[1vw] md:w-auto w-[14.5vw] text-[2.6vw] text-primary'>TAX STAGE TIMER</p>
-                  <div
+                  {/* <div
               className="relative flex items-center justify-center md:w-[4.6vw] md:h-[4.6vw] w-[9vw] h-[9vw]"
-              
+ 
             >
-              {/* Circular Progress Bar */}
               <svg
                 className="w-full h-full"
                 viewBox="0 0 100 100"
@@ -234,12 +233,12 @@ const ZillaRightView = () => {
                 />
               </svg>
 
-              {/* Centered Text */}
+              
               <div className="absolute text-center">
                 <p className="md:text-[0.6vw] font-[600] text-[1.6vw]">{formatTime(timeLeft)}</p>
               </div>
 
-              {/* Circular Button */}
+            
               <div
                 className="absolute bg-[#A8FF2F] md:w-[0.6vw] md:h-[0.6vw] w-[1vw] h-[1vw] rounded-full shadow"
                 style={{
@@ -248,8 +247,26 @@ const ZillaRightView = () => {
                   transform: "translate(-50%, -50%)",
                 }}
                 ></div>
+                  </div> */}
+                  <div className='w-[10vw] rounded-[0.9vw] py-[1vw] px-[0.8vw] bg-[#252729] flex flex-col justify-center items-center shadow-[8.59px_8.59px_29.78px_0px_#0000004F]'>
+                    <div className='flex items-center gap-[20px]'>
+                      <div>
+                        <p className='font-bebasneue text-primary text-[18px]'>MIN</p>
+                        <p className='font-montserrat font-[800] text-white text-[28px]'>15</p>
+                      </div>
+                      <p className='font-montserrat text-white font-[500] mt-[20px] text-[28px]'>:</p>
+                      <div>
+                        <p className='font-bebasneue text-primary text-[18px]'>SEC</p>
+                        <p className='font-montserrat text-white font-[800] text-[28px]'>15</p>
+                      </div>
+                    </div>
+                    <div className='w-full h-[6px] bg-[#FFFFFF24] rounded-full mt-4'>
+                      <div className='w-[90%] h-full bg-primary rounded-full'>
+
+                      </div>
+                    </div>
                   </div>
- 
+                
                 </div>
                 
               </div>
@@ -264,6 +281,17 @@ const ZillaRightView = () => {
 
             </div>
             
+        </div>
+
+        <div className='bg-[#1B1C1E] shadow-[16.21px_16.21px_56.21px_0px_#0000004F] md:rounded-[2.3vw] overflow-hidden'>
+          <div className='w-[1vw] h-[1vw] float-end mt-[30px] me-[20px]'>
+            <Image src={info} alt='' className='w-full'/>
+          </div>
+          <p className='text-[34px] text-white font-montserrat text-center mt-12 font-[800]'><span className='text-primary'>Accumulated</span> Rewards</p>
+          <p className='text-white text-center text-[55px] mt-5 font-montserrat font-[800]'>12,345,678 <span className='text-primary text-[45px]'>Zilla</span></p>
+          <div className='bg-[#2F3135] text-center pt-5 pb-2 mt-8'>
+            <p className='text-[#FFFFFF4A] round leading-none text-[78px]'>CLAIM REWARDS</p>
+          </div>
         </div>
       
     </div>

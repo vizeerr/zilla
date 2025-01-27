@@ -31,7 +31,7 @@ const Model = ({ open, setOpen }) => {
                 id="box"
                 className={`${
                     open ? "block" : "hidden"
-                } bg-[rgb(30,30,37)] md:w-[40vw] w-[62vw] h-min rounded-[2.4vw] md:py-[0.8vw] py-[2vw] relative md:top-[4.4vw] top-[6vw]`}
+                } bg-[rgb(30,30,37)] md:w-[40vw] w-[62vw] h-min rounded-[2.4vw] md:pt-[0.8vw] pt-[2vw] relative md:top-[4.4vw] top-[6vw] overflow-hidden`}
             >
                 <div className="w-[2vw] float-end me-[0.6vw] mt-[0.2vw] cursor-pointer anim">
 

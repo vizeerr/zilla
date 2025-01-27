@@ -27,7 +27,7 @@ const TopHeader = () => {
             </div>
       </Link>
       <div className="flex items-center justify-between 2xl:gap-10 lg:gap-8 md:gap-2">
-        <div className="md:block hidden me-[2vw]">
+        <div className="md:block hidden me-[2vw] anim">
             <HeaderProfile/>
         </div>
         

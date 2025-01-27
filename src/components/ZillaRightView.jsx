@@ -5,14 +5,22 @@ import eth from "@/assets/eth.png"
 import info from "@/assets/info.svg"
 import pizz from "@/assets/zillablack.svg"
 import pizz2 from "@/assets/pizz.svg"
-
+import setico from "@/assets/sett.svg"
 import arrow from "@/assets/arrow2.svg"
+import arrowdown from "@/assets/arrowdown.svg"
 import CircularSlider from '@fseehawer/react-circular-slider';
 import { motion } from 'framer-motion';
 
 const ZillaRightView = () => {
     const [hoveredCard, setHoveredCard] = useState(null); // Track hovered card
-    
+
+    const [swap,setSwap] = useState(false);
+    const [swapCoin,setSwapCoin] = useState("ETH");
+
+    const handleSwap = () =>{
+      setSwap(!swap);
+    }
+
     const handleMouseEnter = (cardId) => setHoveredCard(cardId);
     const handleMouseLeave = () => setHoveredCard(null);
   
@@ -51,22 +59,36 @@ const ZillaRightView = () => {
     <div className='flex md:flex-col flex-row md:gap-[2.8vw] gap-[4.3vw] md:w-[29vw] w-full '>
 
         <div className='bg-[#1B1C1E] md:w-full w-[48vw] shadow-[16.21px_16.21px_56.21px_0px_#0000004F] md:rounded-[2.3vw] rounded-[3.8vw] md:p-[1.5vw] p-[2.7vw]'>
+          <div className='w-full flex justify-end mb-6'>
+            <div>
+              <Image src={setico} alt=''/>
+            </div>
+          </div>
           <div className='bg-[#111111]   relative md:rounded-[1.3vw] rounded-[2.1vw]  md:py-[0.7vw] py-[1.4vw] md:px-[1.3vw] px-[1.9vw] shadow-[12.7px_12.7px_14.6px_0px_#00000040]'>
               <p className='text-primary font-montserrat font-[800] md:text-[1.3vw] text-[2.8vw]'>Sell</p>
-            <div className='flex justify-between items-center'>
-              <p className='font-bebasneue md:text-[3.4vw] text-[5.6vw] '>0</p>
-              <div className='bg-[#252729] md:w-[5.5vw] w-[10.9vw] md:pe-[0.6vw] md:py-[0.3vw] py-[0.4vw] ps-[1.2vw] flex md:gap-[0.4vw] gap-[0.8vw] items-center rounded-full'>
-                <div className='md:w-[1.4vw] md:h-[1.4vw] w-[2.2vw] h-[2.2vw]'>
-                  
-                <Image src={eth} className='w-full' alt=''/>
+              <div className='flex justify-between items-center'>
+                <p className='font-bebasneue md:text-[3.4vw] text-[5.6vw] '>0</p>
+                <div className='bg-[#252729] md:w-auto w-[10.9vw] md:px-[0.7vw] md:py-[0.3vw] py-[0.4vw] flex md:gap-[0.4vw] gap-[0.8vw] items-center rounded-full'>
+                  <div className='md:w-[1.4vw] md:h-[1.4vw] w-[2.2vw] h-[2.2vw]'>
+                    
+                  <Image src={eth} className='w-full' alt=''/>
+                  </div>
+                  <p className='md:text-[0.8vw] text-[1.8vw] font-[800]'>{swapCoin}</p>
+                  <Image src={arrowdown} alt=''/>
                 </div>
-                <p className='md:text-[0.8vw] text-[1.8vw] font-[800]'>ETH</p>
               </div>
-            </div>
-              <p className='font-bebasneue text-[#4E4F54] md:text-[0.9vw] text-[1.8vw]'>user balance : $0</p>
-            
+              <div className='flex justify-between items-center '>
+                <p className='font-bebasneue text-[#4E4F54] md:text-[1vw] text-[1.8vw]'>$0</p>
+                <div className='flex gap-2'>
+                  <p className='font-bebasneue text-[#4E4F54] md:text-[1vw] text-[1.8vw]'>0 ETH</p>
+                  <div className='bg-[#3F3F3F] px-2.5 rounded-full flex justify-center items-center'>
+                    <p className='font-montserrat text-[#FFFFFF47] font-[800] leading-none md:text-[10px] text-[1.8vw]'>MAX</p>
+                  </div>
+                </div>
+              </div>
+
             <div className='md:bottom-[-2vw] bottom-[-3vw] absolute flex justify-center w-[90%]'>
-              <div className='bg-primary md:w-[3vw] md:h-[3vw] w-[4.8vw] h-[5vw] md:p-[0.9vw] p-[1.4vw] rounded-full flex justify-center items-center'>
+              <div onClick={handleSwap} className='bg-primary md:w-[3vw] md:h-[3vw] w-[4.8vw] h-[5vw] md:p-[0.9vw] p-[1.4vw] rounded-full flex justify-center items-center'>
                 <Image src={arrow} className='w-full' alt=''/>
               </div>
             </div>
@@ -289,9 +311,19 @@ const ZillaRightView = () => {
           </div>
           <p className='text-[34px] text-white font-montserrat text-center mt-12 font-[800]'><span className='text-primary'>Accumulated</span> Rewards</p>
           <p className='text-white text-center text-[55px] mt-5 font-montserrat font-[800]'>12,345,678 <span className='text-primary text-[45px]'>Zilla</span></p>
-          <div className='bg-[#2F3135] text-center pt-5 pb-2 mt-8'>
-            <p className='text-[#FFFFFF4A] round leading-none text-[78px]'>CLAIM REWARDS</p>
-          </div>
+          <motion.div 
+              key={8}
+              initial={{ rotateX: 0 }}
+              animate={hoveredCard === 8 ? { rotateX: 180 } : { rotateX: 0 }}
+              transition={{ duration: 0.6 }}
+              className='bg-[#2F3135] text-center pt-5 pb-2 mt-8 card'>
+            <div className='card-front w-full h-full' onMouseOver={() => handleMouseEnter(8)}>
+              <p className='text-[#FFFFFF4A] round leading-none text-[78px]'>CLAIM REWARDS</p>
+            </div>
+            <div className='card-back w-full text-center h-full' onMouseLeave={handleMouseLeave}>
+              <p className='font-montserrat  font-[800]  w-full text-[55px] text-white'>24 <span className='text-primary font-bebasneue text-[33px]'>HRS</span>       :  60 <span className='text-primary font-bebasneue text-[33px]'>MINS</span></p>
+            </div>
+          </motion.div>
         </div>
       
     </div>

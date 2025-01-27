@@ -53,7 +53,7 @@ const Card = ({data}) => {
                 </div>
                 <div className="2xl:mt-2.5 lg:mt-1.5 mt-[1vw]">
                     <div className="bg-[#D9D9D9] md:rounded-[1vw_1vw_0px_0px] rounded-[2.4vw] 2xl:p-2.5 lg:p-1.5 md:p-1.5 p-[2vw]">
-                        <p className="text-[#262626C2] font-montserrat font-[800] 2xl:text-[0.6rem] lg:text-[0.4rem] md:text-[0.3rem] text-[1.7vw] leading-tight 2xl:h-9 lg:h-8 md:h-5 h-[8vw] overflow-hidden">{data.description.slice(0,150)}...</p>
+                        <p className="text-[#262626C2] font-montserrat font-[800] 2xl:text-[0.5rem] lg:text-[0.4rem] md:text-[0.3rem] text-[1.7vw] leading-tight 2xl:h-12 lg:h-8 md:h-5 h-[8vw] overflow-hidden">{data.description.slice(0,295)}...</p>
 
                     </div>
                     <div className="bg-[#262626] 2xl:pt-2 lg:mt-1.5 md:mt-1 mt-[1.5vw] md:py-0 py-[1.8vw] md:rounded-[0px_0px_1.3vw_1.3vw] rounded-[2.4vw] md:p-2 shadow-[6px_6px_13.8px_0px_#000000C9]">

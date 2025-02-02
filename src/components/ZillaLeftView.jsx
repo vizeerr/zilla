@@ -65,7 +65,7 @@ const ZillaLeftView  = () =>{
       
       </div> */}
 
-      <div className='bg-[#1B1C1E] shadow-[16.21px_16.21px_56.21px_0px_#0000004F] md:rounded-[2.6vw] rounded-[3.8vw] md:px-[1.7vw] md:py-[1.3vw]'>
+      <div className='bg-[#1B1C1E] shadow-[16.21px_16.21px_56.21px_0px_#0000004F] xl:rounded-[2.3rem] md:rounded-[2.6vw] rounded-[3.8vw] xl:px-6 xl:py-5 md:px-[1.7vw] md:py-[1.3vw]'>
         <div className='flex justify-between md:gap-[1.5vw] '>
       <div className='md:w-[9.1vw] w-[20vw] md:ps-[1.3vw] ps-[1.9vw] md:pt-[1vw] pt-[1.9vw] md:pb-[0.6vw] pb-[1.4vw] bg-[#111111] shadow-[16.21px_16.21px_56.21px_0px_#0000004F] md:rounded-[1vw]  rounded-[1.4vw]'>
             <p className='font-bebasneue text-primary md:text-[1vw] text-[2.4vw]  font-[400]'>Mcap</p>

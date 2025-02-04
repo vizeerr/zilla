@@ -3,6 +3,7 @@ import "./globals.css";
 import {Bebas_Neue , Montserrat } from 'next/font/google'
 import localFont from 'next/font/local'
 import TopNavbar from "@/components/TopNavbar";
+import BottomFooter from "@/components/BottomFooter";
 export const bebasneue = Bebas_Neue({
   subsets: ['latin'],
   variable: '--font-bebas',
@@ -32,6 +33,7 @@ export default function RootLayout({ children }) {
         position="top-center"
         reverseOrder={false}
       />
+      <BottomFooter/>
       </body>
     </html>
   );

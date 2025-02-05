@@ -2,12 +2,20 @@
 import logo from "@/assets/logo.svg"
 import xlogo from "@/assets/tlogo.svg"
 import tlogo from "@/assets/xlogo.svg"
+import poly from "@/assets/polygon 1.svg"
+import power from "@/assets/power.svg"
+import profile from "@/assets/profile.svg"
 import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from 'next/navigation'
+import { useState } from "react"
  
 
 const TopNavbar = () => {
+
+  const [connect,setConnect] = useState(false);
+  const [connMenu,setConnMenu] = useState(false);
+
  
   const pathname = usePathname()  
 
@@ -47,7 +55,30 @@ const TopNavbar = () => {
               <Image src={tlogo} alt="" />
             </Link>
           </div>
-          <button className="xl:border-[3px] md:border-[2px] border-[1px] anim border-sec rounded-full font-montserrat lg:py-2 md:py-1 lg:px-5 md:px-4   font-[800] bg-white text-tertiary 2xl:text-sm lg:text-xs md:text-[0.6rem]  text-[1.4vw] px-[1.2vw] py-[0.5vw] ">CONNECT WALLET</button>
+        {!connect?
+          <button onClick={()=>setConnect(true)} className="xl:border-[3px] md:border-[2px] border-[1px] anim border-sec rounded-full font-montserrat lg:py-2 md:py-1 lg:px-5 md:px-4   font-[800] bg-white text-tertiary 2xl:text-sm lg:text-xs md:text-[0.6rem]  text-[1.4vw] px-[1.2vw] py-[0.5vw] ">CONNECT WALLET</button>
+        : <div className="relative flex items-center lg:gap-5 md:gap-3 text-white bg-[#262626] xl:border-[3px] md:border-[2px] border-[1px]  border-sec rounded-full font-montserrat lg:py-1.5 md:py-1 lg:px-7 md:px-6 font-[800] px-[1.2vw] py-[0.5vw]">
+            <p  onClick = {()=>setConnMenu(!connMenu)} className="">0x45...67fr</p>
+            <div onClick = {()=>setConnMenu(!connMenu)} className={`${connMenu? "rotate-180":"rotate-0"} 2xl:text-sm lg:text-xs md:text-[0.6rem]  text-[1.4vw]`}>
+              <Image src={poly} alt="" />
+            </div>
+            {connMenu &&
+            <div className="absolute top-[2.6vw] shadow-lg w-[180px] end-0 flex items-center  bg-sec py-1.5 px-4 rounded-[0.7rem]">
+              <div className="bg-sec w-3 h-3 absolute top-[-0.3vw] end-[45%] rotate-45"></div>
+              <div onClick={()=>setConnect(false)} className="flex flex-col items-center w-1/2 py-1 hover:bg-[#37383A] rounded-md">
+                <div className="w-[26px] h-[26px]">
+                  <Image src={power} alt="" />
+                </div>
+                <p className="text-[0.6rem] mt-1">Disconnect</p>
+              </div>
+              <div className="flex flex-col items-center py-1 hover:bg-[#37383A] w-1/2 rounded-md">
+                <Image src={profile} alt="" />
+                <p className="text-[0.6rem] mt-1">Profile</p>
+              </div>
+            </div>
+            }
+        </div>
+        }
         </div>
 
       </div>

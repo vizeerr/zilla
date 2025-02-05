@@ -2,6 +2,9 @@
 import logo from "@/assets/logo.svg"
 import xlogo from "@/assets/tlogo.svg"
 import tlogo from "@/assets/xlogo.svg"
+import glogo from "@/assets/glogo.svg"
+import dlogo from "@/assets/dlogo.svg"
+
 import poly from "@/assets/polygon1.svg"
 import power from "@/assets/power.svg"
 import profile from "@/assets/profile.svg"
@@ -53,6 +56,16 @@ const TopNavbar = () => {
           <div className="2xl:w-10 lg:w-8 md:w-6 anim 2xl:h-10 lg:h-8 2xl:p-2.5 lg:p-2 md:p-1.5 md:h-6  w-[3.7vw] h-[3.7vw] bg-sec flex justify-center items-center rounded-full p-[0.9vw]">
             <Link href={""} >
               <Image src={tlogo} alt="" />
+            </Link>
+          </div>
+          <div className="2xl:w-10 lg:w-8 md:w-6 anim 2xl:h-10 lg:h-8 2xl:p-2 lg:p-1.5 md:p-1.5 md:h-6 w-[3.7vw] h-[3.7vw] bg-sec flex justify-center items-center rounded-full p-[0.9vw]">
+            <Link href ={"/"} >
+              <Image src={dlogo} alt="" />
+            </Link>
+          </div>
+          <div className="2xl:w-10 lg:w-8 md:w-6 anim 2xl:h-10 lg:h-8 2xl:p-2.5 lg:p-2 md:p-1.5 md:h-6 w-[3.7vw] h-[3.7vw] bg-sec flex justify-center items-center rounded-full p-[0.9vw]">
+            <Link href ={"/"} >
+              <Image src={glogo} alt="" />
             </Link>
           </div>
         {!connect?

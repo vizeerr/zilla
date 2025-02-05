@@ -33,7 +33,6 @@ export default function RootLayout({ children }) {
         position="top-center"
         reverseOrder={false}
       />
-      <BottomFooter/>
       </body>
     </html>
   );

@@ -2,7 +2,7 @@
 import logo from "@/assets/logo.svg"
 import xlogo from "@/assets/tlogo.svg"
 import tlogo from "@/assets/xlogo.svg"
-import poly from "@/assets/polygon 1.svg"
+import poly from "@/assets/polygon1.svg"
 import power from "@/assets/power.svg"
 import profile from "@/assets/profile.svg"
 import Image from "next/image"

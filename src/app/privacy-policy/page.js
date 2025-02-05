@@ -3,11 +3,7 @@ import React from 'react'
 const page = () => {
   return (
     <div>
-    <div className="max-w-4xl mx-auto p-6 font-montserrat text-white">
-      {/* Example header section */}
-      <div className="clear-both">
-        <p className="mt-0 mb-0">&nbsp;</p>
-      </div>
+    <div className="max-w-7xl mt-8 mx-auto p-6 font-montserrat text-white">
 
       <p className="mt-0 mb-3">
         <strong className="block text-3xl">PRIVACY NOTICE</strong>

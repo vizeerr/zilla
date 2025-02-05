@@ -15,10 +15,10 @@ const TopHeader = () => {
     <>
     <div className=" md:pt-[2rem] md:py-0 py-[5vw] md:ps-[2.1vw] md:pe-[1vw] px-[4.1vw] flex items-center justify-between">
         <Link href={"/launch"}>
-            <div className='2xl:w-[40rem] xl:w-[24rem] lg:w-[21rem] md:w-[16rem] w-[39vw] anim 2xl:py-6 lg:py-4 py-[1.6vw] px-[5vw] 2xl:px-20 lg:px-12 md:px-8 font-montserrat bg-[#5B5B6C4F] shadow-[12px_12px_40px_0px_#0000005E] 2xl:rounded-[6rem_0px_6rem_0px]  md:rounded-[4rem_0px_4rem_0px] rounded-[7.2vw_0px_7.2vw_0px]'>
-                <p className='font-[800] text-white 2xl:text-6xl xl:text-4xl lg:text-3xl md:text-2xl text-[3.5vw] m-0 leading-tight'>LAUNCH YOUR</p>
-                <div className="flex items-center 2xl:gap-10 lg:gap-8 gap-[12px] 2xl:mt-5 lg:mt-2">
-                <p className='font-[800] text-primary 2xl:text-6xl xl:text-4xl lg:text-3xl md:text-2xl text-[3.5vw] leading-tight m-0'>TOKEN</p>
+            <div className='2xl:w-[40rem] lg:w-[24rem] md:w-[16rem] w-[39vw] anim 2xl:py-6 lg:py-4 py-[1.6vw] px-[5vw] 2xl:px-20 lg:px-12 md:px-8 font-montserrat bg-[#5B5B6C4F] shadow-[12px_12px_40px_0px_#0000005E] 2xl:rounded-[6rem_0px_6rem_0px]  lg:rounded-[4rem_0px_4rem_0px] md:rounded-[2.5rem_0px_2.5rem_0px] rounded-[6vw_0px_6vw_0px]'>
+                <p className='font-[800] text-white 2xl:text-6xl lg:text-4xl  md:text-2xl text-[3.5vw] m-0 leading-tight'>LAUNCH YOUR</p>
+                <div className="flex items-center 2xl:gap-10 lg:gap-6 gap-[12px] 2xl:mt-5 lg:mt-2">
+                <p className='font-[800] text-primary 2xl:text-6xl lg:text-4xl md:text-2xl text-[3.5vw] leading-tight m-0'>TOKEN</p>
                 <div className="2xl:w-16 lg:w-12 md:w-8 w-[4.8vw]">
                     <Image src={arrowr} alt="" className="w-full" />
                 </div>
@@ -26,8 +26,8 @@ const TopHeader = () => {
                 
             </div>
       </Link>
-      <div className="flex items-center justify-between lg:gap-8">
-        <div className="md:block hidden me-[2vw]">
+      <div className="flex items-center justify-between xl:gap-8 lg:gap-4">
+        <div className="md:block hidden me-[2vw] anim">
             <HeaderProfile/>
         </div>
         

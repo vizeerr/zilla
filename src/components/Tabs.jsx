@@ -48,7 +48,7 @@ const Tabs = () => {
                   <div className={`${btn==0?'bg-primary':'bg-transparent'} w-full h-full rounded-full`}>                    
                   </div>
                 </div>
-                <p className={`${btn==0?'opacity-100':'opacity-30'}  text-white font-bebasneue font-[400] 2xl:text-sm lg:text-xs text-[2.3vw]`} >ASCENDING</p>
+                <p className={`${btn==0?'opacity-100':'opacity-30'}  text-white font-bebasneue font-[400] 2xl:text-sm lg:text-xs text-[2vw]`} >ASCENDING</p>
 
               </div>
               <div onClick={()=>setBtn(1)} className="flex items-center lg:gap-1.5 gap-[1vw]">
@@ -56,7 +56,7 @@ const Tabs = () => {
                   <div className={`${btn==1?'bg-primary':'bg-transparent'} w-full h-full rounded-full`}>                    
                   </div>
                 </div>
-                <p className={`${btn==1?'opacity-100':'opacity-30'}  text-white font-bebasneue font-[400] 2xl:text-sm lg:text-xs text-[2.3vw]`} >DESCENDING</p>
+                <p className={`${btn==1?'opacity-100':'opacity-30'}  text-white font-bebasneue font-[400] 2xl:text-sm lg:text-xs text-[2vw]`} >DESCENDING</p>
 
               </div>
             </div>

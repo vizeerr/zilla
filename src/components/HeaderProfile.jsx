@@ -35,8 +35,8 @@ const HeaderProfile = () => {
                         <Image src={pifico} className="w-full"/>
                     </div>
                     <div>
-                        <p className="font-bebasneue font-[400] 2xl:text-base lg:text-sm md:text-xs text-[3.1vw] text-white leading-none">CAT SWAP PROMOTION <span className="text-primary font-montserrat font-[800] 2xl:text-[0.9rem] lg:text-[0.6rem] md:text-[0.5rem] text-[2.7vw]">($PROMOTION)</span></p>
-                        <p className="font-[700] text-[#6D6D73] 2xl:text-[0.6rem] md:text-[0.5rem] text-[2vw] leading-none md:mt-[0.3rem] mt-[0.8vw]">Created by 0xcb455..4586</p>
+                        <p className="font-bebasneue font-[400] 2xl:text-base lg:text-sm md:text-xs text-[2.8vw] text-nowrap text-white leading-none">CAT SWAP PROMOTION <span className="text-primary font-montserrat font-[800] 2xl:text-[0.9rem] lg:text-[0.6rem] md:text-[0.5rem] text-[2.4vw]">($PROMOTION)</span></p>
+                        <p className="font-[700] text-[#6D6D73] 2xl:text-[0.6rem] md:text-[0.5rem] text-[1.8vw] leading-none md:mt-[0.3rem] mt-[0.8vw]">Created by 0xcb455..4586</p>
                         <div className="bg-[#1B1B21] shadow-[5.2px_5.2px_11.96px_0px_#000000C9] md:py-2 py-[0.8vw] w-full text-center md:rounded-[0.6rem] rounded-[2vw] md:mt-2.5 mt-[1.4vw]">
                             <p className="text-primary 2xl:text-xs lg:text-[0.6rem] md:text-[0.5rem] text-[2.4vw] font-[800] ">MARKET CAP : 19.99K</p>
                         </div>

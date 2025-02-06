@@ -33,19 +33,21 @@ const Model = ({ open, setOpen }) => {
                     open ? "block" : "hidden"
                 } bg-[rgb(30,30,37)] md:w-[40vw] w-[85vw] h-min md:rounded-[2.4vw] rounded-[3.54vw] md:pt-[0.8vw] pt-[2vw] relative md:top-[4.4vw] top-[6vw] overflow-hidden`}
             >
-                <div className="md:w-[2vw] w-[6vw] float-end md:me-[0.6vw] me-[1vw] md:mt-[0.2vw] cursor-pointer anim">
+                <div className="w-full flex justify-end md:pe-[0.6vw] pe-[1vw] md:pt-[0.2vw] ">
+                    <div className="md:w-[2vw] w-[6vw] cursor-pointer anim">
 
-                <Image
-                    src={cross}
-                    className=" w-full "
-                    onClick={() => setOpen(false)}
-                    alt=""
-                    />
+                    <Image
+                        src={cross}
+                        className=" w-full "
+                        onClick={() => setOpen(false)}
+                        alt=""
+                        />
+                    </div>
                 </div>
-                <h1 className="round ms-[2.5vw] font-[500] text-center md:text-[3.3vw] text-[8vw] text-white">
+                <h1 className="round  font-[500] text-center md:text-[3.3vw] text-[8vw] leading-none text-white">
                     Pump, <span className="text-primary">Profit</span>, Repeat!
                 </h1>
-                <p className="text-white font-montserrat md:text-[0.9vw] text-[2.5vw] font-[700] leading-tight md:w-[72%] w-[85%] mx-auto text-center">
+                <p className="text-white font-montserrat md:text-[0.9vw] text-[2.5vw] font-[700] md:mt-[1vw] mt-[1vw] leading-tight md:w-[72%] w-[85%] mx-auto text-center">
                     Each token is a fair launch with no presale and no team allocation —
                     <span className="text-primary"> making it all about the community.</span>
                 </p>

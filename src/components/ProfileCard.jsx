@@ -41,7 +41,7 @@ const ProfileCard = () => {
                             </div>
                         </div>
                         <div className="flex items-center justify-center gap-1 mt-2">
-                            <p className="font-bebasneue text-[12px] font-[300] text-white">CAT SWAP PROMOTION </p>
+                            <p className="font-bebasneue text-[12px] font-[400] text-white">CAT SWAP PROMOTION </p>
                             <span className=" font-[800] text-[12px] font-montserrat mb-[4px] text-primary ">($PROMOTION)</span>
     
                         </div>

@@ -31,9 +31,9 @@ const Model = ({ open, setOpen }) => {
                 id="box"
                 className={`${
                     open ? "block" : "hidden"
-                } bg-[rgb(30,30,37)] md:w-[40vw] w-[62vw] h-min rounded-[2.4vw] md:pt-[0.8vw] pt-[2vw] relative md:top-[4.4vw] top-[6vw] overflow-hidden`}
+                } bg-[rgb(30,30,37)] md:w-[40vw] w-[80vw] h-min rounded-[2.4vw] md:pt-[0.8vw] pt-[4vw] relative md:top-[4.4vw] top-[6vw] overflow-hidden`}
             >
-                <div className="w-[2vw] float-end me-[0.6vw] mt-[0.2vw] cursor-pointer anim">
+                <div className="md:w-[2vw] w-[6vw] float-end me-[0.6vw] mt-[0.2vw] cursor-pointer anim">
 
                 <Image
                     src={cross}
@@ -42,15 +42,15 @@ const Model = ({ open, setOpen }) => {
                     alt=""
                     />
                 </div>
-                <h1 className="round ms-[2.5vw] font-[500] text-center md:text-[3.3vw] text-[5vw] text-white">
+                <h1 className="round ms-[2.5vw] font-[500] text-center md:text-[3.3vw] text-[7vw] text-white">
                     Pump, <span className="text-primary">Profit</span>, Repeat!
                 </h1>
-                <p className="text-white font-montserrat md:text-[0.9vw] text-[1.6vw] font-[700] leading-tight w-[72%] mx-auto text-center">
+                <p className="text-white font-montserrat md:text-[0.9vw] text-[2vw] font-[700] leading-tight w-[72%] mx-auto text-center">
                     Each token is a fair launch with no presale and no team allocation —
                     <span className="text-primary"> making it all about the community.</span>
                 </p>
-                <Image src={modelmg} className="mt-[1.6vw] md:w-[70vw] w-[60vw] mx-auto" alt="" />
-                <p className="bg-[#2B2C36] md:py-[1vw] py-[0.8vw] w-full text-primary font-montserrat font-[700] md:text-[0.9vw] text-[1.6vw] leading-tight mx-auto text-center mt-[3.3vw]">
+                <Image src={modelmg} className="mt-[1.6vw] md:w-[70vw] w-[80vw] mx-auto" alt="" />
+                <p className="bg-[#2B2C36] md:py-[1vw] py-[0.8vw] w-full text-primary font-montserrat font-[700] md:text-[0.9vw] text-[2vw] leading-tight mx-auto text-center mt-[3.3vw]">
                     Want more details?{" "}
                     <span className="text-white font-[700]">Dive into our </span> 
                     <button className="text-[#2B2C36]  py-[0.2vw] md:px-[0.7vw] px-[1.4vw] rounded-full bg-primary font-[900] anim">

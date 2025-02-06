@@ -14,7 +14,7 @@ const HeaderProfile = () => {
             </div>
             <div>
                 <div className="flex items-center gap-[0.4vw] 2xl:px-2.5 md:px-1.5 px-[2vw] 2xl:pt-2.5 md:pt-1 pt-[1.5vw]">
-                    <div className="md:py-1 py-[0.6vw] md:px-1.5 px-[0.9vw] flex md:gap-1 gap-[0.5vw] items-center bg-[#1B1B21] rounded-full">
+                    <div className="md:py-1 py-[0.6vw] md:px-1.5 px-[1.6vw] flex md:gap-1 gap-[0.5vw] items-center bg-[#1B1B21] rounded-full">
                         <div className='lg:w-3.5 md:w-3 w-[2.2vw]'>
                             <Image src={clock} className='w-full'/>
                         </div>
@@ -31,14 +31,14 @@ const HeaderProfile = () => {
                     </div>
                 </div>
                 <div className="md:mt-2.5 mt-[1.8vw] flex items-center lg:gap-3.5 md:gap-2 gap-[3vw] 2xl:px-4 md:px-2 px-[3.3vw]">
-                    <div className="2xl:w-24 lg:w-20 md:w-16 w-[18vw] 2xl:h-24 lg:w-20 md:h-16 h-[18vw] md:rounded-[0.6rem] rounded-[2.1vw] overflow-hidden">
+                    <div className="2xl:w-24 lg:w-20 md:w-16 w-[18vw] 2xl:h-24 lg:h-20 md:h-16 h-[18vw] md:rounded-[0.6rem] rounded-[2.1vw] overflow-hidden">
                         <Image src={pifico} className="w-full"/>
                     </div>
                     <div>
                         <p className="font-bebasneue font-[400] 2xl:text-base lg:text-sm md:text-xs text-[2.8vw] text-nowrap text-white leading-none">CAT SWAP PROMOTION <span className="text-primary font-montserrat font-[800] 2xl:text-[0.9rem] lg:text-[0.6rem] md:text-[0.5rem] text-[2.4vw]">($PROMOTION)</span></p>
-                        <p className="font-[700] text-[#6D6D73] 2xl:text-[0.6rem] md:text-[0.5rem] text-[1.8vw] leading-none md:mt-[0.3rem] mt-[0.8vw]">Created by 0xcb455..4586</p>
-                        <div className="bg-[#1B1B21] shadow-[5.2px_5.2px_11.96px_0px_#000000C9] md:py-2 py-[0.8vw] w-full text-center md:rounded-[0.6rem] rounded-[2vw] md:mt-2.5 mt-[1.4vw]">
-                            <p className="text-primary 2xl:text-xs lg:text-[0.6rem] md:text-[0.5rem] text-[2.4vw] font-[800] ">MARKET CAP : 19.99K</p>
+                        <p className="font-[800] font-montserrat text-[#6D6D73] 2xl:text-[0.6rem] md:text-[0.5rem] text-[1.9vw] leading-none md:mt-[0.3rem] mt-[0.8vw]">Created by 0xcb455..4586</p>
+                        <div className="bg-[#1B1B21] shadow-[5.2px_5.2px_11.96px_0px_#000000C9] md:py-2 py-[0.8vw] w-full text-center md:rounded-[0.6rem] rounded-[2vw] md:mt-2.5 mt-[1.6vw]">
+                            <p className="text-primary 2xl:text-xs font-montserrat lg:text-[0.6rem] md:text-[0.5rem] text-[2.2vw] font-[800] mt-[0.45vw]">MARKET CAP : 19.99K</p>
                         </div>
                     </div>
                     

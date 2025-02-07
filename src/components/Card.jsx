@@ -53,7 +53,7 @@ const Card = ({data}) => {
                 </div>
                 <div className="md:mt-2.5 mt-[1vw] font-montserrat ">
                     <div className="bg-[#D9D9D9] md:rounded-[1vw_1vw_0px_0px] rounded-[2.4vw] 2xl:p-2.5 md:p-1.5 p-[2vw]">
-                        <p className="text-[#303030c2]  mont line-clamp-6  font-[800] 2xl:text-[0.52rem] md:text-[0.4rem] text-[1.7vw] leading-tight 2xl:h-[3.2rem] md:h-10 h-[12.4vw] overflow-hidden">{data.description}</p>
+                        <p className="text-[#303030c2]  font-montserrat line-clamp-6  font-[800] 2xl:text-[0.52rem] md:text-[0.4rem] text-[1.7vw] leading-tight 2xl:h-[3.2rem] md:h-10 h-[12.4vw] overflow-hidden">{data.description}</p>
 
                     </div>
                     <div className="bg-[#262626] mt-2 md:py-0 py-[1.5vw] md:rounded-[0px_0px_1rem_1rem] rounded-[2.4vw] 2xl:p-3 md:p-2 shadow-[6px_6px_13.8px_0px_#000000C9]">

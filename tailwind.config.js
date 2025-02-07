@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         bebasneue: ['var(--font-bebas)'],
-        montserrat:['var(--mont)']
+        montserrat:['var(--font-mont)']
       },
       colors:{
         primary:'#A8FF2F',

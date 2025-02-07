@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-
 :root{
   --prim-color : #A8FF2F;
   --mont : 'mont',serif;

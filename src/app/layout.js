@@ -11,7 +11,7 @@ export const bebasneue = Bebas_Neue({
   display:"swap"
 })
  
-export const montserrat = Montserrat_Alternates({
+export const montserrat = Montserrat({
   subsets: ['latin'],
   variable: '--font-mont',
   weight:['100','200','300','400','500','600','700','800','900'],
@@ -26,7 +26,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${bebasneue.variable} bg-[#111111]`}>
+      <body className={`${bebasneue.variable} ${montserrat.variable} bg-[#111111]`}>
         <TopNavbar/>
         {children}
         <Toaster

@@ -1,6 +1,6 @@
 "use client"
 import cross from "@/assets/cross.png";
-import modelmg from "@/assets/modelmg.svg";
+import modelmg from "@/assets/modelmg.png";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -51,7 +51,7 @@ const Model = ({ open, setOpen }) => {
                     Each token is a fair launch with no presale and no team allocation —
                     <span className="text-primary"> making it all about the community.</span>
                 </p>
-                <Image src={modelmg} className="md:mt-[1.6vw] mt-[6vw] md:w-[70vw] w-[95vw] mx-auto" alt="" />
+                <Image src={modelmg}  className="md:mt-[1.6vw] mt-[6vw] md:w-[70vw] w-[95vw] mx-auto" alt="" />
                 <p className="bg-[#2B2C36] md:py-[1vw] py-[2vw] w-full text-primary font-montserrat font-[700] md:text-[0.9vw] text-[2.5vw] leading-tight mx-auto text-center md:mt-[3.3vw] mt-[7vw]">
                     Want more details?{" "}
                     <span className="text-white font-[700]">Dive into our </span> 

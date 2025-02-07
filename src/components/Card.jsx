@@ -16,15 +16,15 @@ const Card = ({data}) => {
         <div className="flex items-center justify-between">
 
             <div className="flex gap-1.5 md:w-auto w-[21vw] bg-[#262626] rounded-full md:px-2 md:py-1 py-[0.6vw] justify-center items-center">
-                <div className=" 2xl:w-3.5 md:w-2.5 w-[3vw]">
+                <div className=" 2xl:w-3.5 md:w-2.5 w-[2.9vw]">
                     <Image src={clock2} alt="" className="w-full" unoptimized={true} />
                 </div>
                 <p className="font-[700] font-montserrat mont 2xl:text-[0.5rem] md:text-[0.35rem] text-[1.6vw] text-white">{formatTime(data.created_at)} ago </p>
             </div>
             <div className="flex 2xl:gap-1.5 md:gap-1 gap-[1vw] items-start">
                 <Link href={data.website}>
-                <div className="bg-[#262626] anim 2xl:w-6 md:w-5  w-[5vw] 2xl:h-6 md:h-5 h-[5vw] flex justify-center items-center rounded-full 2xl:p-1.5 md:p-[0.3rem] p-[0.8vw]">
-                    <Image src={wlogo}  className="" alt="" quality={100} unoptimized={true}/>
+                <div className="bg-[#262626] anim 2xl:w-6 md:w-5  w-[3.8vw] 2xl:h-6 md:h-5 h-[3.8vw] flex justify-center items-center rounded-full 2xl:p-1.5 md:p-[0.3rem] p-[0.8vw]">
+                    <Image src={wlogo}  className="" alt="" unoptimized={true}/>
                 </div>
                 </Link>
                 <Link href={data.twitter}>
@@ -34,7 +34,7 @@ const Card = ({data}) => {
                 </Link>
                 <Link href={data.telegram}>
                 <div className="bg-[#262626] anim 2xl:w-6 md:w-5  w-[3.8vw] 2xl:h-6 md:h-5 h-[3.8vw] flex justify-center items-center rounded-full 2xl:p-1.5 md:p-1.5 p-[0.8vw]">
-                    <Image src={tlogo}  alt="" />
+                    <Image src={tlogo}  alt="" unoptimized={true}/>
                 </div>
                 </Link>
             </div>

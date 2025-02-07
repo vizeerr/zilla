@@ -1,6 +1,6 @@
 import { Toaster } from "react-hot-toast";
 import "./globals.css";
-import {Bebas_Neue , Montserrat } from 'next/font/google'
+import {Bebas_Neue , Montserrat, Montserrat_Alternates } from 'next/font/google'
 import localFont from 'next/font/local'
 import TopNavbar from "@/components/TopNavbar";
 import BottomFooter from "@/components/BottomFooter";
@@ -11,7 +11,7 @@ export const bebasneue = Bebas_Neue({
   display:"swap"
 })
  
-export const montserrat = Montserrat({
+export const montserrat = Montserrat_Alternates({
   subsets: ['latin'],
   variable: '--font-mont',
   weight:['100','200','300','400','500','600','700','800','900'],

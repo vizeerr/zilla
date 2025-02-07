@@ -31,9 +31,9 @@ const Model = ({ open, setOpen }) => {
                 id="box"
                 className={`${
                     open ? "block" : "hidden"
-                } bg-[rgb(30,30,37)] md:w-[40vw] w-[85vw] h-min md:rounded-[2.4vw] rounded-[3.54vw] md:pt-[0.8vw] pt-[2vw] relative md:top-[4.4vw] top-[6vw] overflow-hidden`}
+                } bg-[rgb(30,30,37)] md:w-[40vw] w-[98vw] h-min md:rounded-[2.4vw] rounded-[3.54vw] md:pt-[0.8vw] pt-[2vw] relative md:top-[4.4vw] top-[6vw] overflow-hidden`}
             >
-                <div className="w-full flex justify-end md:pe-[0.6vw] pe-[1vw] md:pt-[0.2vw] ">
+                <div className="w-full flex justify-end md:pe-[0.6vw] pe-[1.8vw] md:pt-[0.2vw] ">
                     <div className="md:w-[2vw] w-[6vw] cursor-pointer anim">
 
                     <Image
@@ -44,15 +44,15 @@ const Model = ({ open, setOpen }) => {
                         />
                     </div>
                 </div>
-                <h1 className="round  font-[500] text-center md:text-[3.3vw] text-[8vw] leading-none text-white">
+                <h1 className="round  font-[500] text-center md:text-[3.3vw] text-[9vw] leading-none text-white">
                     Pump, <span className="text-primary">Profit</span>, Repeat!
                 </h1>
-                <p className="text-white font-montserrat md:text-[0.9vw] text-[2.5vw] font-[700] md:mt-[1vw] mt-[1vw] leading-tight md:w-[72%] w-[85%] mx-auto text-center">
+                <p className="text-white font-montserrat md:text-[0.9vw] text-[2.9vw] font-[700] md:mt-[1vw] mt-[2vw] leading-tight md:w-[72%] w-[90%] mx-auto text-center">
                     Each token is a fair launch with no presale and no team allocation —
                     <span className="text-primary"> making it all about the community.</span>
                 </p>
-                <Image src={modelmg} className="md:mt-[1.6vw] mt-[4vw] md:w-[70vw] w-[90vw] mx-auto" alt="" />
-                <p className="bg-[#2B2C36] md:py-[1vw] py-[1.5vw] w-full text-primary font-montserrat font-[700] md:text-[0.9vw] text-[2.5vw] leading-tight mx-auto text-center md:mt-[3.3vw] mt-[5vw]">
+                <Image src={modelmg} className="md:mt-[1.6vw] mt-[6vw] md:w-[70vw] w-[95vw] mx-auto" alt="" />
+                <p className="bg-[#2B2C36] md:py-[1vw] py-[2vw] w-full text-primary font-montserrat font-[700] md:text-[0.9vw] text-[2.5vw] leading-tight mx-auto text-center md:mt-[3.3vw] mt-[7vw]">
                     Want more details?{" "}
                     <span className="text-white font-[700]">Dive into our </span> 
                     <button className="text-[#2B2C36]  py-[0.2vw] md:px-[0.7vw] px-[1.4vw] rounded-full bg-primary font-[900] anim">

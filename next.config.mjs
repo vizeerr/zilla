@@ -2,6 +2,7 @@
 const nextConfig = {
     images: {
         domains: ['ipfs.io'],
+        unoptimized: true,
       },
       optimizeFonts:false,
 }

@@ -1,10 +1,10 @@
 import React from 'react'
 import pif from "@/assets/pif.png"
 import pifico from "@/assets/pifico.jpg"
-import xlogo from "@/assets/tlogo.svg"
-import tlogo from "@/assets/xlogo.svg"
-import wlogo from "@/assets/wlogo.svg"
-import clock from "@/assets/clockprim.svg"
+import xlogo from "@/assets/xlogo.png"
+import tlogo from "@/assets/tlogo.png"
+import wlogo from "@/assets/wlogo.png"
+import clock from "@/assets/clock.png"
 import Image from "next/image"
 const HeaderProfile = () => {
   return (

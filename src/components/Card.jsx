@@ -1,7 +1,7 @@
 import clock2 from "@/assets/clock2.png"
-import xlogo from "@/assets/tlogo.svg"
-import tlogo from "@/assets/xlogo.svg"
-import wlogo from "@/assets/wlogo.svg"
+import xlogo from "@/assets/xlogo.png"
+import tlogo from "@/assets/tlogo.png"
+import wlogo from "@/assets/wlogo.png"
 import pifico from "@/assets/pifico.jpg"
 import Image from "next/image"
 import { formatTime, imgUrl, shortId } from "@/helpers/helpers"
@@ -23,17 +23,17 @@ const Card = ({data}) => {
             </div>
             <div className="flex 2xl:gap-1.5 md:gap-1 gap-[1vw] items-start">
                 <Link href={data.website}>
-                <div className="bg-[#262626] anim 2xl:w-6 md:w-5  w-[3.8vw] 2xl:h-6 md:h-5 h-[3.8vw] flex justify-center items-center rounded-full 2xl:p-1.5 md:p-[0.3rem] p-[0.8vw]">
+                <div className="bg-[#262626] anim 2xl:w-6 md:w-5  w-[3.8vw] 2xl:h-6 md:h-5 h-[3.8vw] flex justify-center items-center rounded-full 2xl:p-1.5 md:p-[0.3rem] p-[1vw]">
                     <Image src={wlogo}  className="" alt="" unoptimized={true}/>
                 </div>
                 </Link>
                 <Link href={data.twitter}>
-                <div className="bg-[#262626] anim 2xl:w-6 md:w-5  w-[3.8vw] 2xl:h-6 md:h-5 h-[3.8vw] flex justify-center items-center rounded-full 2xl:p-1.5 md:p-1.5 p-[0.8vw]">
+                <div className="bg-[#262626] anim 2xl:w-6 md:w-5  w-[3.8vw] 2xl:h-6 md:h-5 h-[3.8vw] flex justify-center items-center rounded-full 2xl:p-1.5 md:p-1.5 p-[1vw]">
                     <Image src={xlogo}  className="" alt="" unoptimized={true}/>
                 </div>
                 </Link>
                 <Link href={data.telegram}>
-                <div className="bg-[#262626] anim 2xl:w-6 md:w-5  w-[3.8vw] 2xl:h-6 md:h-5 h-[3.8vw] flex justify-center items-center rounded-full 2xl:p-1.5 md:p-1.5 p-[0.8vw]">
+                <div className="bg-[#262626] anim 2xl:w-6 md:w-5  w-[3.8vw] 2xl:h-6 md:h-5 h-[3.8vw] flex justify-center items-center rounded-full 2xl:p-1.5 md:p-1.5 p-[1vw]">
                     <Image src={tlogo}  alt="" unoptimized={true}/>
                 </div>
                 </Link>

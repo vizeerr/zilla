@@ -1,6 +1,6 @@
 "use client"
 import { useState } from "react"
-import searchIco from "@/assets/search.svg"
+import searchIco from "@/assets/search.png"
 import sort from "@/assets/sort.svg"
 import cross from "@/assets/cross.svg"
 import { AnimatePresence, motion } from "framer-motion";

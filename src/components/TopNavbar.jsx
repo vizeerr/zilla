@@ -1,9 +1,9 @@
 "use client"
-import logo from "@/assets/logo.svg"
-import xlogo from "@/assets/tlogo.svg"
-import tlogo from "@/assets/xlogo.svg"
-import glogo from "@/assets/glogo.svg"
-import dlogo from "@/assets/dlogo.svg"
+import logo from "@/assets/logo.png"
+import xlogo from "@/assets/xlogo.png"
+import tlogo from "@/assets/tlogo.png"
+import glogo from "@/assets/glogo.png"
+import dlogo from "@/assets/dlogo.png"
 
 import poly from "@/assets/polygon1.svg"
 import power from "@/assets/power.svg"
@@ -31,7 +31,7 @@ const TopNavbar = () => {
             <Image className="w-full"  src={logo} alt="" />
           </Link>
         </div>
-        <div className="flex items-center 2xl:gap-4 md:gap-3 gap-[1.2vw] md:pe-4 pe-[2.5vw]">
+        <div className="flex items-center 2xl:gap-4 md:gap-3 gap-[1vw] md:pe-4 pe-[2.5vw]">
           <div className="md:flex hidden items-center  2xl:gap-4 md:gap-3 gap-[1.2vw]">
             <Link href={"/launch"} className={`${pathname == "/launch" ? 'bg-white text-[#262626]' :"bg-sec text-white"} 2xl:px-7 lg:px-6 md:px-5 anim rounded-full font-bebasneue 2xl:text-xl lg:text-lg md:text-base  pt-[0.2vw] pb-[0.1vw]  `}>
             <button href={"/launch"} >LAUNCH</button>
@@ -48,22 +48,22 @@ const TopNavbar = () => {
             </Link>
           </div>
 
-          <div className="2xl:w-10 lg:w-8 md:w-6 anim 2xl:h-10 lg:h-8 2xl:p-2.5 lg:p-2 md:p-1.5 md:h-6 w-[3.7vw] h-[3.7vw] bg-sec flex justify-center items-center rounded-full p-[0.9vw]">
+          <div className="2xl:w-10 lg:w-8 md:w-6 anim 2xl:h-10 lg:h-8 2xl:p-2.5 lg:p-2.5 md:p-1.5 md:h-6 w-[3.5vw] h-[3.5vw] bg-sec flex justify-center items-center rounded-full p-[1.1vw]">
             <Link href ={"/"} >
               <Image src={xlogo} alt="" />
             </Link>
           </div>
-          <div className="2xl:w-10 lg:w-8 md:w-6 anim 2xl:h-10 lg:h-8 2xl:p-2.5 lg:p-2 md:p-1.5 md:h-6  w-[3.7vw] h-[3.7vw] bg-sec flex justify-center items-center rounded-full p-[0.9vw]">
+          <div className="2xl:w-10 lg:w-8 md:w-6 anim 2xl:h-10 lg:h-8 2xl:p-2.5 lg:p-2 md:p-1.5 md:h-6  w-[3.5vw] h-[3.5vw] bg-sec flex justify-center items-center rounded-full p-[1vw]">
             <Link href={""} >
               <Image src={tlogo} alt="" />
             </Link>
           </div>
-          <div className="2xl:w-10 lg:w-8 md:w-6 anim 2xl:h-10 lg:h-8 2xl:p-2 lg:p-1.5 md:p-1.5 md:h-6 w-[3.7vw] h-[3.7vw] bg-sec flex justify-center items-center rounded-full p-[0.9vw]">
+          <div className="2xl:w-10 lg:w-8 md:w-6 anim 2xl:h-10 lg:h-8 2xl:p-2.5 lg:p-2 md:p-1.5 md:h-6 w-[3.5vw] h-[3.5vw] bg-sec flex justify-center items-center rounded-full p-[0.9vw]">
             <Link href ={"/"} >
               <Image src={dlogo} alt="" />
             </Link>
           </div>
-          <div className="2xl:w-10 lg:w-8 md:w-6 anim 2xl:h-10 lg:h-8 2xl:p-2.5 lg:p-2 md:p-1.5 md:h-6 w-[3.7vw] h-[3.7vw] bg-sec flex justify-center items-center rounded-full p-[0.9vw]">
+          <div className="2xl:w-10 lg:w-8 md:w-6 anim 2xl:h-10 lg:h-8 2xl:p-2.5 lg:p-2 md:p-1.5 md:h-6 w-[3.5vw] h-[3.5vw] bg-sec flex justify-center items-center rounded-full p-[1vw]">
             <Link href ={"/"} >
               <Image src={glogo} alt="" />
             </Link>

@@ -4,7 +4,7 @@ import pifico from "@/assets/pifico.jpg"
 import xlogo from "@/assets/xlogo.png"
 import tlogo from "@/assets/tlogo.png"
 import wlogo from "@/assets/wlogo.png"
-import clock from "@/assets/clock.png"
+import clock from "@/assets/clock2.png"
 import Image from "next/image"
 const HeaderProfile = () => {
   return (
@@ -13,20 +13,20 @@ const HeaderProfile = () => {
                 <Image src={pif} className="w-full"/>
             </div>
             <div>
-                <div className="flex items-center gap-[0.4vw] 2xl:px-2.5 md:px-1.5 px-[2vw] 2xl:pt-2.5 md:pt-1 pt-[1.5vw]">
-                    <div className="md:py-1 py-[0.6vw] md:px-1.5 px-[1.6vw] flex md:gap-1 gap-[0.5vw] items-center bg-[#1B1B21] rounded-full">
+                <div className="flex items-center  gap-[0.5vw] 2xl:px-2.5 md:px-1.5 px-[2vw] 2xl:pt-2.5 md:pt-1 pt-[1.5vw]">
+                    <div className="md:py-1 py-[0.6vw] md:px-1.5 px-[1.6vw] flex md:gap-1 gap-[1vw] items-center bg-[#1B1B21] rounded-full">
                         <div className='lg:w-3.5 md:w-3 w-[2.2vw]'>
                             <Image src={clock} className='w-full'/>
                         </div>
-                        <p className="font-montserrat font-[800] 2xl:text-[0.5rem] lg:text-[0.45rem] md:text-[0.38rem]  text-[1.4vw] text-white">1 hr 25 mins ago</p>
+                        <p className="font-montserrat font-[800] 2xl:text-[0.5rem] lg:text-[0.45rem] md:text-[0.38rem] mt-0.5  text-[1.4vw] text-white">1 hr 25 mins ago</p>
                     </div>
-                    <div className="md:w-5 w-[3.1vw] md:h-5 h-[3.1vw] bg-[#1B1B21] rounded-full md:p-1 p-[0.7vw]">
+                    <div className="md:w-4  w-[3.6vw] md:h-4 h-[3.5vw] bg-[#1B1B21] rounded-full md:p-[3px] p-[4px]">
                         <Image src={wlogo} className="w-full"/>
                     </div>
-                    <div className="md:w-5 w-[3.1vw] md:h-5 h-[3.1vw] bg-[#1B1B21] rounded-full md:p-1 p-[0.7vw]">
+                    <div className="md:w-4 w-[3.4vw] md:h-4 h-[3.5vw] bg-[#1B1B21] rounded-full md:p-[4px] p-[4px]">
                         <Image src={xlogo} className="w-full"/>
                     </div>
-                    <div className="md:w-5 w-[3.1vw] md:h-5 h-[3.1vw] bg-[#1B1B21] rounded-full md:p-1 p-[0.7vw]">
+                    <div className="md:w-4 w-[3.5vw] md:h-4 h-[3.5vw] bg-[#1B1B21] rounded-full md:p-[4px] p-[4px]">
                         <Image src={tlogo} className="w-full"/>
                     </div>
                 </div>

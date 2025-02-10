@@ -48,28 +48,28 @@ const TopNavbar = () => {
             </Link>
           </div>
 
-          <div className="2xl:w-10 lg:w-8 md:w-6 anim 2xl:h-10 lg:h-8 2xl:p-2.5 lg:p-2.5 md:p-1.5 md:h-6 w-[3.5vw] h-[3.5vw] bg-sec flex justify-center items-center rounded-full p-[1.1vw]">
+          <div className="2xl:w-10 lg:w-8 md:w-6 anim 2xl:h-10 lg:h-8 2xl:p-2.5 lg:p-2.5 md:p-1.5 md:h-6 w-[5vw] h-[5vw] bg-sec flex justify-center items-center rounded-full p-[5px]">
             <Link href ={"/"} >
               <Image src={xlogo} alt="" />
             </Link>
           </div>
-          <div className="2xl:w-10 lg:w-8 md:w-6 anim 2xl:h-10 lg:h-8 2xl:p-2.5 lg:p-2 md:p-1.5 md:h-6  w-[3.5vw] h-[3.5vw] bg-sec flex justify-center items-center rounded-full p-[1vw]">
+          <div className="2xl:w-10 lg:w-8 md:w-6 anim 2xl:h-10 lg:h-8 2xl:p-2.5 lg:p-2 md:p-1.5 md:h-6  w-[5vw] h-[5vw] bg-sec flex justify-center items-center rounded-full p-[5px]">
             <Link href={""} >
               <Image src={tlogo} alt="" />
             </Link>
           </div>
-          <div className="2xl:w-10 lg:w-8 md:w-6 anim 2xl:h-10 lg:h-8 2xl:p-2.5 lg:p-2 md:p-1.5 md:h-6 w-[3.5vw] h-[3.5vw] bg-sec flex justify-center items-center rounded-full p-[0.9vw]">
+          <div className="2xl:w-10 lg:w-8 md:w-6 anim 2xl:h-10 lg:h-8 2xl:p-2.5 lg:p-2 md:p-1.5 md:h-6 w-[5vw] h-[5vw] bg-sec flex justify-center items-center rounded-full p-[5px]">
             <Link href ={"/"} >
               <Image src={dlogo} alt="" />
             </Link>
           </div>
-          <div className="2xl:w-10 lg:w-8 md:w-6 anim 2xl:h-10 lg:h-8 2xl:p-2.5 lg:p-2 md:p-1.5 md:h-6 w-[3.5vw] h-[3.5vw] bg-sec flex justify-center items-center rounded-full p-[1vw]">
+          <div className="2xl:w-10 lg:w-8 md:w-6 anim 2xl:h-10 lg:h-8 2xl:p-2.5 lg:p-2 md:p-1.5 md:h-6 w-[5vw] h-[5vw] bg-sec flex justify-center items-center rounded-full p-[5px]">
             <Link href ={"/"} >
               <Image src={glogo} alt="" />
             </Link>
           </div>
         {!connect?
-          <button onClick={()=>setConnect(true)} className="xl:border-[3px] md:border-[2px] border-[1px] anim border-sec rounded-full font-montserrat lg:py-2 md:py-1 lg:px-5 md:px-4   font-[800] bg-white anim text-tertiary 2xl:text-sm lg:text-xs md:text-[0.6rem]  text-[1.4vw] px-[1.2vw] py-[0.5vw] ">CONNECT WALLET</button>
+          <button onClick={()=>setConnect(true)} className="xl:border-[3px] md:border-[2px] border-[1px] anim border-sec rounded-full font-montserrat lg:py-2 md:py-1 lg:px-5 md:px-4   font-[800] bg-white anim text-tertiary 2xl:text-sm lg:text-xs md:text-[0.6rem]  text-[1.8vw] px-[1.2vw] py-[0.5vw] ">CONNECT WALLET</button>
         : <div className="relative flex items-center lg:gap-5 md:gap-3 gap-2 text-white bg-[#262626] xl:border-[3px] md:border-[2px] border-[1px]  border-sec rounded-full font-montserrat lg:py-1.5 md:py-1 2xl:px-8 lg:px-7 md:px-[1.7rem] font-[800] px-[2.7vw] py-[0.5vw]">
             <p  onClick = {()=>setConnMenu(!connMenu)} className="2xl:text-sm lg:text-xs md:text-[0.6rem]  text-[1.4vw]">0x45...67fr</p>
             <div onClick = {()=>setConnMenu(!connMenu)} className={`${connMenu? "rotate-180":"rotate-0"} 2xl:w-4 lg:w-3 md:w-2 w-1.5`}>

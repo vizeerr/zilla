@@ -33,8 +33,8 @@ const Card = ({data}) => {
                 </div>
                 </Link>
                 <Link href={data.telegram}>
-                <div className="bg-[#262626] anim 2xl:w-[1.55rem] md:w-5  w-[5vw] 2xl:h-6 md:h-5 h-[5vw] flex justify-center items-center rounded-full 2xl:p-1.5 md:p-1.5 p-[5px]">
-                    <Image src={tlogo}  alt="" unoptimized={true}/>
+                <div className="bg-[#262626] anim 2xl:w-6 md:w-5  w-[5vw] 2xl:h-6 md:h-5 h-[5vw] flex justify-center items-center rounded-full 2xl:p-1.5 md:p-1.5 p-[5px]">
+                    <Image src={tlogo}  alt="" className="me-[0.03rem]" unoptimized={true}/>
                 </div>
                 </Link>
             </div>

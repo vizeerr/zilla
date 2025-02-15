@@ -54,8 +54,8 @@ const TopNavbar = () => {
             </Link>
           </div>
           <div className="2xl:w-10 lg:w-8 md:w-6 anim 2xl:h-10 lg:h-8 2xl:p-2.5 lg:p-2 md:p-1.5 md:h-6  w-[5vw] h-[5vw] bg-sec flex justify-center items-center rounded-full p-[5px]">
-            <Link href={""} >
-              <Image src={tlogo} alt="" />
+            <Link href={""} className="me-[0.02rem]">
+              <Image src={tlogo}  alt="" />
             </Link>
           </div>
           <div className="2xl:w-10 lg:w-8 md:w-6 anim 2xl:h-10 lg:h-8 2xl:p-2.5 lg:p-2 md:p-1.5 md:h-6 w-[5vw] h-[5vw] bg-sec flex justify-center items-center rounded-full p-[5px]">

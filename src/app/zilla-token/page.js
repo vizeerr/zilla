@@ -1,4 +1,3 @@
-import TopNavbar from '@/components/TopNavbar'
 import ZillaBottomView from '@/components/ZillaBottomView'
 import ZillaLeftView from '@/components/ZillaLeftView'
 import ZillaRightView from '@/components/ZillaRightView'
@@ -7,27 +6,28 @@ import React from 'react'
 const page = () => {
   return (
     <>
-      <div className='text-white font-montserrat bg-[#111111] md:p-[2vw] p-[16px]'>
+      <div className='text-white font-montserrat bg-[#111111] 2xl:p-10 md:p-6 p-[16px] relative overflow-hidden'>
           <div className='font-montserrat'>
-              <h1 className='font-montserrat font-[900] md:text-[2vw] text-[4.4vw]'><span className='md:text-[3.1vw] text-[5.2vw] text-primary'>Z</span><span className='text-primary'>illa</span> : The Power Behind <span className='text-primary'>PumpZilla</span></h1>
+              <h1 className='font-montserrat font-[900] 2xl:text-4xl md:text-2xl text-[4.4vw]'><span className='2xl:text-6xl md:text-5xl text-[5.2vw] text-primary'>Z</span><span className='text-primary'>illa</span> : The Power Behind <span className='text-primary'>PumpZilla</span></h1>
           </div>
-          {/* <div className='w-full md:block hidden'>
-              <div className='mx-auto md:w-[6.1vw] md:h-[0.5vw] w-[118px] h-[10px] bg-white rounded-full my-[0.8vw]'></div>
-          </div> */}
-          <div className=' gap-[0.7vw] mt-[0.4vw] flex '>
-              <div className='bg-primary rounded-[0.2vw] w-[0.3vw] '></div>
-              <p className='font-[700] text-white text-opacity-45 font-montserrat md:text-[1vw] text-[2.4vw] m-0 p-0 md:leading-[2.3vw] leading-tight'>
+          
+          <div className=' 2xl:gap-3 md:gap-2 gap-2.5 mt-4 flex '>
+              <div className='bg-primary rounded-full  2xl:w-[0.4rem] md:w-[0.2rem] w-[1.2vw]'></div>
+              <p className='font-[700] text-white text-opacity-45 font-montserrat 2xl:text-xl md:text-sm text-[2.9vw] m-0 p-0 md:leading-loose leading-tight'>
               $Zilla drives innovation with unique mechanisms and rewards. Learn more in our  <button className='text-opacity-100 text-primary anim'>Documentation</button>.
               </p>
           </div>
           
-          <div className='md:mt-[2.5vw] mt-[28px] flex md:gap-[2vw] gap-[4.8vw]  justify-center'>
+          <div className='md:mt-10 mt-[28px] flex 2xl:gap-8 md:gap-6 gap-[4.8vw]  justify-center'>
             <ZillaLeftView/>
-            <div className='md:block hidden'>
+            <div className='xl:block hidden'>
               <ZillaRightView/>
             </div>
           </div>
-          {/* <ZillaBottomView/> */}
+          <div className='block xl:hidden md:mt-8 mt-[4.3vw]'>
+            <ZillaBottomView/>
+          </div>
+
       </div>
     </>
   )

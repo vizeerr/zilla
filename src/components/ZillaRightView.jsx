@@ -170,10 +170,10 @@ const ZillaRightView = () => {
               initial={{ rotateX: 0 }}
               animate={hoveredCard === 3 ? { rotateX: 180 } : { rotateX: 0 }}
               transition={{ duration: 0.6 }}
-              className='bg-[#111111] card w-full shadow-[16.21px_16.21px_56.21px_0px_#0000004F] 2xl:rounded-[1.3rem] md:rounded-[0.9rem]  rounded-[1.6vw]'
+              className='bg-[#111111] card w-full shadow-[16.21px_16.21px_56.21px_0px_#0000004F] 2xl:rounded-[1.3rem] md:rounded-[0.9rem] rounded-[2vw]'
             >
-              <div className='card-front   2xl:ps-8 md:ps-5 ps-[2.3vw] 2xl:pe-6 md:pe-3 pe-[1.4vw] 2xl:py-4 md:py-3 py-[1vw] '>
-                <div className='2xl:w-3 md:w-2.5 2xl:h-3 md:h-2.5 w-[1vw] h-[1vw] float-end'>
+              <div className='card-front   2xl:ps-8 md:ps-5 ps-[4vw] 2xl:pe-6 md:pe-3 pe-[2vw] 2xl:py-4 md:py-3 py-[1vw] md:pb-1.5 pb-[2.4vw] '>
+                <div className='2xl:w-3 md:w-2.5 2xl:h-3 md:h-2.5 w-[2.5vw] h-[2.5vw] float-end'>
 
                 <Image
                   src={info}
@@ -184,14 +184,16 @@ const ZillaRightView = () => {
                 </div>
                 <div className='flex justify-between items-center md:w-[95%] w-full'>
 
-                  <div className='md:block flex justify-between  items-center w-full md:pe-0 pe-[1vw]'>
+                  <div className='md:block flex justify-between  items-center w-full md:pe-0 pe-[5vw]'>
+                    <p className='font-bebasneue font-[400] 2xl:text-lg md:text-xs md:w-auto w-[16vw] text-[3.6vw] text-primary leading-tight'>current Reward Pool</p>
+                    
                     <div className='flex items-center '>
-                      <p className='font-bebasneue font-[400] 2xl:text-lg md:text-xs md:w-auto w-[16vw] text-[3.6vw] text-primary leading-tight'>current Reward Pool</p>
-                      <div className='md:hidden block w-[3.4vw] pt-[1.9vw]'>
+
+                    <p className='font-montserrat font-[800] 2xl:text-2xl md:text-lg text-[4.8vw] text-white'>0</p>
+                    <div className='md:hidden block w-[5.5vw] ps-1.5'>
                         <Image src={pizz2} alt='' unoptimized={true} className='w-full'/>
                       </div>
                     </div>
-                    <p className='font-montserrat font-[800] 2xl:text-2xl md:text-lg text-[4.8vw] text-white'>0</p>
                   </div>
                   <div className='2xl:md:w-12 md:w-8 w-[16px] md:block hidden'>
                     <Image src={pizz2} alt='' unoptimized={true} className='w-full'/>
@@ -201,7 +203,7 @@ const ZillaRightView = () => {
               
               </div>
               <div onMouseLeave={handleMouseLeave} className='card-back 2xl:px-6 md:px-4 2xl:py-5 md:py-2 text-center px-[1.9vw]'>
-                <p className='font-montserrat md:leading-tight font-[700] 2xl:text-sm md:text-[0.6rem] text-[5px]'>Shows total tokens collected from the sell tax during the current stage, distributed as rewards to buyers participating in this period.</p>
+                <p className='font-montserrat md:leading-tight font-[700] 2xl:text-sm md:text-[0.5rem] text-[1.8vw]'>Shows total tokens collected from the sell tax during the current stage, distributed as rewards to buyers participating in this period.</p>
               </div>
             </motion.div>
             <motion.div
@@ -209,10 +211,10 @@ const ZillaRightView = () => {
               initial={{ rotateX: 0 }}
               animate={hoveredCard === 4 ? { rotateX: 180 } : { rotateX: 0 }}
               transition={{ duration: 0.6 }}
-              className='bg-[#111111] card w-full  shadow-[16.21px_16.21px_56.21px_0px_#0000004F] md:rounded-[1.5rem] rounded-[1.6vw]'
+              className='bg-[#111111] card w-full  shadow-[16.21px_16.21px_56.21px_0px_#0000004F] 2xl:rounded-[1.3rem] md:rounded-[0.9rem] rounded-[2vw]'
             >
-              <div className=' card-front w-full 2xl:ps-6 md:ps-3 ps-[2.3vw] 2xl:pe-6 md:pe-3 pe-[1.4vw] md:py-4 py-[1vw]'>
-                <div className='2xl:w-3 md:w-2.5 2xl:h-3 md:h-2.5  w-[1vw] h-[1vw] float-end'>
+              <div className=' card-front w-full 2xl:ps-8 md:ps-5 ps-[4vw] 2xl:pe-6 md:pe-3 pe-[2vw] 2xl:py-4 md:py-3 py-[1vw] md:pb-1.5 pb-[2.4vw]'>
+                <div className='2xl:w-3 md:w-2.5 2xl:h-3 md:h-2.5 w-[2.5vw] h-[2.5vw] float-end'>
                   <Image
                     src={info}
                     alt=''
@@ -220,9 +222,9 @@ const ZillaRightView = () => {
                     className='w-full'
                     />
                 </div>
-                <div className='flex justify-center gap-16 w-full items-center'>
-                  <p className='font-bebasneue font-[400] 2xl:text-lg md:text-xs  md:w-auto w-72 text-[3.6vw] text-primary'>TAX STAGE TIMER</p>
-                  <div className='2xl:w-48 md:w-40 rounded-[1rem] 2xl:py-4 md:py-3 2xl:px-4 md:px-3 bg-[#252729] flex flex-col justify-center items-center shadow-[8.59px_8.59px_29.78px_0px_#0000004F]'>
+                <div className='flex justify-center md:gap-16 gap-8 w-full items-center'>
+                  <p className='font-bebasneue font-[400] 2xl:text-lg md:text-xs md:w-auto w-28 text-[3.6vw] text-primary'>TAX STAGE TIMER</p>
+                  <div className='2xl:w-48 md:w-40  w-36 md:rounded-[1rem] rounded-[0.7rem] 2xl:py-4 md:py-3 py-3 2xl:px-4 md:px-3 px-3 bg-[#252729] flex flex-col justify-center items-center shadow-[8.59px_8.59px_29.78px_0px_#0000004F]'>
                     <div className='flex items-center gap-5'>
                       <div>
                         <p className='font-bebasneue text-primary 2xl:text-lg md:text-xs '>MIN</p>
@@ -234,7 +236,7 @@ const ZillaRightView = () => {
                         <p className='font-montserrat text-white font-[800] 2xl:text-3xl lg:text-xl'>15</p>
                       </div>
                     </div>
-                    <div className='w-full h-1.5 bg-[#FFFFFF24] rounded-full mt-4'>
+                    <div className='w-full md:h-1.5 h-1 bg-[#FFFFFF24] rounded-full md:mt-4 mt-2.5'>
                       <div className='w-[90%] h-full bg-primary rounded-full'>
 
                       </div>
@@ -245,13 +247,9 @@ const ZillaRightView = () => {
                 
               </div>
               <div onMouseLeave={handleMouseLeave} className='card-back   2xl:px-6 md:px-4 2xl:py-5 md:py-2 text-center px-[1.9vw]'>
-                <p className='font-montserrat md:leading-tight font-[700] 2xl:text-sm md:text-[0.6rem] text-[5px]'>Displays remaining time in the active tax stage, ending if the price recovers to the base or after 30 minutes, whichever comes first.</p>
+                <p className='font-montserrat md:leading-tight font-[700] 2xl:text-sm md:text-[0.5rem] text-[1.8vw]'>Displays remaining time in the active tax stage, ending if the price recovers to the base or after 30 minutes, whichever comes first.</p>
               </div>
             </motion.div>
-            
-
-             
-
 
             </div>
             

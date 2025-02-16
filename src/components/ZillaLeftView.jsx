@@ -27,7 +27,7 @@ const ZillaLeftView  = () =>{
             <p className='font-bebasneue text-primary 2xl:text-xl md:text-sm text-[2.4vw]  font-[400]'>Mcap</p>
             <p className='font-montserrat font-[800] md:mt-1 2xl:text-xl md:text-sm text-[2.4vw]  text-white'>19.9k</p>
           </div>
-          <div className='2xl:w-44 lg:w-32 md:w-28 w-[19.4vw]  md:block hidden 2xl:ps-7 md:ps-5 ps-[1.9vw] md:py-4 py-[1.9vw]  bg-[#111111] shadow-[16.21px_16.21px_56.21px_0px_#0000004F] md:rounded-[1.2rem]  rounded-[1.4vw]'>
+          <div className='2xl:w-44 lg:w-32 md:w-28 w-[19.4vw]  2xl:ps-7 md:ps-5 ps-[1.9vw] md:py-4 py-[1.9vw]  bg-[#111111] shadow-[16.21px_16.21px_56.21px_0px_#0000004F] md:rounded-[1.2rem]  rounded-[1.4vw]'>
             <p className='font-bebasneue text-primary 2xl:text-xl md:text-sm text-[2.4vw] font-[400]'>PRICE</p>
             <p className='font-montserrat font-[800] md:mt-1 2xl:text-xl md:text-sm text-[2.4vw] text-white'>$0.000123</p>
           </div>
@@ -36,7 +36,7 @@ const ZillaLeftView  = () =>{
             <p className='font-montserrat font-[800] md:mt-1 2xl:text-xl md:text-sm text-[2.4vw]  text-white'>+5.67%</p>
           </div>
           
-          <div className='2xl:w-44 lg:w-32 md:w-28 w-[20vw] 2xl:ps-7 md:ps-5 ps-[1.9vw] md:py-4 py-[1.9vw]  bg-[#111111] shadow-[16.21px_16.21px_56.21px_0px_#0000004F] md:rounded-[1.2rem]  rounded-[1.4vw]'>
+          <div className='2xl:w-44 lg:w-32 md:w-28 w-[20vw]  md:block hidden 2xl:ps-7 md:ps-5 ps-[1.9vw] md:py-4 py-[1.9vw]  bg-[#111111] shadow-[16.21px_16.21px_56.21px_0px_#0000004F] md:rounded-[1.2rem]  rounded-[1.4vw]'>
             <p className='font-bebasneue text-primary 2xl:text-xl md:text-sm text-[2.4vw]  font-[400]'>VOLUME</p>
             <p className='font-montserrat font-[800] md:mt-1 2xl:text-xl md:text-sm text-[2.4vw]  text-white'>$1,234,567</p>
           </div>
@@ -68,10 +68,10 @@ const ZillaLeftView  = () =>{
               <p className='font-[900] 2xl:pt-8 md:pt-7 2xl:pb-10 md:pb-6 pb-[3.6vw] 2xl:ps-4 md:ps-2 pt-[3.6vw]  font-montserrat 2xl:text-3xl md:text-2xl text-[3.2vw] text-white'><span className='text-primary'>Historical</span> Stage <span className='text-primary'>Tracker</span></p>
         </div>
         <div className='flex justify-around '>
-          <p className='2xl:w-[15rem] md:w-[11rem] w-[24.2vw] bg-slate-200 text-center  font-montserrat font-[700] 2xl:text-2xl md:text-lg text-[2vw] text-white text-opacity-35'>Date & Time (UTC)</p>
-          <p className='2xl:w-[20rem] md:w-[14rem] w-[26.6vw] bg-amber-200 text-center  font-montserrat font-[700] 2xl:text-2xl md:text-lg text-[2vw] text-white text-opacity-35'>Total rewards collected</p>
-          <p className='2xl:w-[5rem] md:w-[3rem]  w-[9.7vw] bg-green-200 text-center font-montserrat font-[700] 2xl:text-2xl md:text-lg text-[2vw] text-white text-opacity-35'>USD</p>
-          <p className='2xl:w-[14rem] md:w-[10rem] w-[24.2vw] bg-red-200 text-center font-montserrat   font-[700] 2xl:text-2xl md:text-lg text-[2vw] text-white text-opacity-35'>Users Rewarded</p>
+          <p className='2xl:w-[15rem] md:w-[11rem] w-[24.2vw]  text-center  font-montserrat font-[700] 2xl:text-2xl md:text-lg text-[2vw] text-white text-opacity-35'>Date & Time (UTC)</p>
+          <p className='2xl:w-[20rem] md:w-[14rem] w-[26.6vw]  text-center  font-montserrat font-[700] 2xl:text-2xl md:text-lg text-[2vw] text-white text-opacity-35'>Total rewards collected</p>
+          <p className='2xl:w-[5rem] md:w-[3rem]  w-[9.7vw]  text-center font-montserrat font-[700] 2xl:text-2xl md:text-lg text-[2vw] text-white text-opacity-35'>USD</p>
+          <p className='2xl:w-[14rem] md:w-[10rem] w-[24.2vw] text-center font-montserrat   font-[700] 2xl:text-2xl md:text-lg text-[2vw] text-white text-opacity-35'>Users Rewarded</p>
         </div>
         <div>
         

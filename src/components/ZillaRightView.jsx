@@ -26,6 +26,36 @@ const ZillaRightView = () => {
     });
 
 
+    const [minutes, setMinutes] = useState(15);
+    const [seconds, setSeconds] = useState(0);
+    const [progress, setProgress] = useState(0);
+
+    useEffect(() => {
+      // Timer logic - counts down every second
+      const interval = setInterval(() => {
+        if (seconds === 0 && minutes === 0) {
+          clearInterval(interval); // Timer ends when 00:00 is reached
+        } else {
+          if (seconds === 0) {
+            setMinutes(prevMinutes => prevMinutes - 1);
+            setSeconds(59);
+          } else {
+            setSeconds(prevSeconds => prevSeconds - 1);
+          }
+        }
+      }, 1000);
+  
+      return () => clearInterval(interval); // Cleanup on component unmount
+    }, [seconds, minutes]);
+  
+    // Update progress bar based on remaining time
+    useEffect(() => {
+      const totalTime = 15 * 60; // 15 minutes in seconds
+      const elapsedTime = (15 * 60) - (minutes * 60 + seconds);
+      const newProgress = 100- ((elapsedTime / totalTime) * 100);
+      setProgress(newProgress);
+    }, [minutes, seconds]);
+
     const handleSwap = () =>{
         setSwap(!swap);
         setExchangeCoin(swapCoin)
@@ -224,27 +254,24 @@ const ZillaRightView = () => {
                     className='w-full'
                     />
                 </div>
-                <div className='flex justify-center md:gap-16 gap-8 w-full items-center'>
-                  <p className='font-bebasneue font-[400] 2xl:text-lg md:text-xs md:w-auto w-28 text-[3.6vw] text-primary'>TAX STAGE TIMER</p>
-                  <div className='2xl:w-48 md:w-40  w-36 md:rounded-[1rem] rounded-[0.7rem] 2xl:py-4 md:py-3 py-3 2xl:px-4 md:px-3 px-3 bg-[#252729] flex flex-col justify-center items-center shadow-[8.59px_8.59px_29.78px_0px_#0000004F]'>
-                    <div className='flex items-center gap-5'>
-                      <div>
-                        <p className='font-bebasneue text-primary 2xl:text-lg md:text-xs '>MIN</p>
-                        <p className='font-montserrat font-[800] text-white 2xl:text-3xl lg:text-xl'>15</p>
+                <div className="flex justify-center md:gap-16 gap-8 w-full items-center">
+                  <p className="font-bebasneue font-[400] 2xl:text-lg md:text-xs md:w-auto w-28 text-[3.6vw] text-primary">TAX STAGE TIMER</p>
+                  <div className="2xl:w-48 md:w-40 w-36 md:rounded-[1rem] rounded-[0.7rem] 2xl:py-4 md:py-3 py-3 2xl:px-4 md:px-3 px-3 bg-[#252729] flex flex-col justify-center items-center shadow-[8.59px_8.59px_29.78px_0px_#0000004F]">
+                    <div className="flex items-center gap-3">
+                      <div className='2xl:w-12 w-7 '>
+                        <p className="font-bebasneue text-primary text-center 2xl:text-lg text-xs">MIN</p>
+                        <p className="font-montserrat text-center font-[800] text-white 2xl:text-3xl text-xl">{String(minutes).padStart(2, '0')}</p>
                       </div>
-                      <p className='font-montserrat text-white font-[500] mt-[20px] 2xl:text-3xl lg:text-xl'>:</p>
-                      <div>
-                        <p className='font-bebasneue text-primary 2xl:text-lg md:text-xs '>SEC</p>
-                        <p className='font-montserrat text-white font-[800] 2xl:text-3xl lg:text-xl'>15</p>
+                      <p className="font-montserrat text-white font-[500] 2xl:mt-[24px] mt-[13px] 2xl:text-3xl text-xl">:</p>
+                      <div className='2xl:w-12 w-7 '>
+                        <p className="font-bebasneue text-primary text-center 2xl:text-lg text-xs">SEC</p>
+                        <p className="font-montserrat text-center text-white font-[800] 2xl:text-3xl text-xl">{String(seconds).padStart(2, '0')}</p>
                       </div>
                     </div>
-                    <div className='w-full md:h-1.5 h-1 bg-[#FFFFFF24] rounded-full md:mt-4 mt-2.5'>
-                      <div className='w-[90%] h-full bg-primary rounded-full'>
-
-                      </div>
+                    <div className="w-full md:h-1.5 h-1 bg-[#FFFFFF24] rounded-full md:mt-4 mt-2.5">
+                      <div className="w-[90%] h-full bg-primary rounded-full" style={{ width: `${progress}%` }}></div>
                     </div>
                   </div>
-                
                 </div>
                 
               </div>

@@ -51,8 +51,9 @@ const ZillaRightView = () => {
           </div>
           <div className='bg-[#111111]  relative 2xl:rounded-[1.8rem] md:rounded-[1.2rem] rounded-[2.5vw]  2xl:py-5 md:py-3 py-[2.8vw] 2xl:px-6 md:px-4 px-[4vw] shadow-[12.7px_12.7px_14.6px_0px_#00000040]'>
               <p className='text-primary font-montserrat font-[800] 2xl:text-2xl md:text-lg text-[3.3vw]'>Sell</p>
-              <div className='flex justify-between items-center 2xl:my-4 md:my-1 my-0'>
-                <p className='font-bebasneue 2xl:text-7xl md:text-5xl text-[7vw] '>0</p>
+              <div className='flex justify-between items-center 2xl:my-2 md:my-1 my-0 gap-6 '>
+                <input type="number" name="" id="" className='bg-transparent font-bebasneue 2xl:text-7xl md:text-5xl text-[7vw] w-full border-none outline-none'placeholder='0' />
+                {/* <p className='font-bebasneue 2xl:text-7xl md:text-5xl text-[7vw] '>0</p> */}
                 <div className='bg-[#252729] w-auto 2xl:px-3 md:px-2 px-[1.3vw] 2xl:py-1.5 md:py-1 py-[0.6vw] flex 2xl:gap-2 md:gap-1.5 gap-[0.8vw] items-center rounded-full'>
                   <div className='2xl:w-7 md:w-4 w-[3.2vw]'>  
                     <Image src={swapCoin.img} className='w-full' alt=''/>
@@ -88,8 +89,9 @@ const ZillaRightView = () => {
 
           <div className='bg-[#111111]  2xl:rounded-[1.8rem] md:rounded-[1.2rem] rounded-[2.5vw]  2xl:py-5 md:py-3 py-[2.8vw] 2xl:px-6 md:px-4 px-[4vw] shadow-[12.7px_12.7px_14.6px_0px_#00000040] 2xl:mt-6 md:mt-4 mt-3'>
               <p className='text-primary font-montserrat font-[800]   2xl:text-2xl md:text-lg text-[3.3vw]'>Buy</p>
-              <div className='flex justify-between items-center 2xl:my-4 md:my-1 my-0'>
-                <p className='font-bebasneue 2xl:text-7xl md:text-5xl text-[7vw] '>0</p>
+              <div className='flex justify-between items-center 2xl:my-2 md:my-1 my-0'>
+              <input type="number" name="" id="" className='bg-transparent font-bebasneue 2xl:text-7xl md:text-5xl text-[7vw] w-full border-none outline-none'placeholder='0' />{
+                /* <p className='font-bebasneue 2xl:text-7xl md:text-5xl text-[7vw] '>0</p> */}
                 <div className='bg-[#252729] w-auto 2xl:px-3 md:px-2 px-[1.3vw] 2xl:py-1.5 md:py-1 py-[0.6vw] flex 2xl:gap-2 md:gap-1.5 gap-[0.8vw] items-center rounded-full'>
                   <div className='2xl:w-7 md:w-4 w-[3.2vw]'>  
                     <Image src={exchangeCoin.img} className='w-full' alt=''/>

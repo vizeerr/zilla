@@ -68,7 +68,7 @@ const ZillaLeftView  = () =>{
               <p className='font-[900] 2xl:pt-8 md:pt-7 2xl:pb-10 md:pb-6 pb-[3.6vw] 2xl:ps-4 md:ps-2 pt-[3.6vw]  font-montserrat 2xl:text-3xl md:text-2xl text-[3.2vw] text-white'><span className='text-primary'>Historical</span> Stage <span className='text-primary'>Tracker</span></p>
         </div>
         <div className='flex justify-around '>
-          <p className='2xl:w-[15rem] md:w-[11rem] w-[24.2vw]  text-center  font-montserrat font-[700] 2xl:text-2xl md:text-lg text-[2vw] text-white text-opacity-35'>Date & Time (UTC)</p>
+          <p className='2xl:w-[15rem] md:w-[11rem] w-[24.2vw]  text-center  font-montserrat font-[700] 2xl:text-2xl md:text-lg text-[2vw] text-white text-opacity-35'>Date & Time <span className='text-primary'>(UTC)</span></p>
           <p className='2xl:w-[20rem] md:w-[14rem] w-[26.6vw]  text-center  font-montserrat font-[700] 2xl:text-2xl md:text-lg text-[2vw] text-white text-opacity-35'>Total rewards collected</p>
           <p className='2xl:w-[5rem] md:w-[3rem]  w-[9.7vw]  text-center font-montserrat font-[700] 2xl:text-2xl md:text-lg text-[2vw] text-white text-opacity-35'>USD</p>
           <p className='2xl:w-[14rem] md:w-[10rem] w-[24.2vw] text-center font-montserrat   font-[700] 2xl:text-2xl md:text-lg text-[2vw] text-white text-opacity-35'>Users Rewarded</p>

@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import smile from "@/assets/smile.png"
 import pin from "@/assets/pin.svg"
 import eth from "@/assets/eth.svg"
+import blkimg from "@/assets/blkimg.png"
 import Image from 'next/image'
 
 import { AnimatePresence, motion } from "framer-motion";
@@ -12,6 +13,7 @@ const DetailedBottomView = () => {
   const [tab,setTab] = useState("cmmt")
   const [toogle,setToogle] = useState(false)
   const [tradeOpen,setTradeOpen] = useState(false)
+  const [sort,setSort] = useState("asc")
 
   const [tradeVale,setTradeVal] = useState(0.01)
   const modalRef = useRef(null);
@@ -254,11 +256,21 @@ const DetailedBottomView = () => {
     <div className='md:flex hidden justify-around mt-[2.6vw] gap-[1.8vw]'>
   
     <div className='bg-[#1B1C1E] w-[37.5vw] rounded-[2vw] ' >
-      <p className="bg-primary text-[#262626] font-[900]  text-[1.5vw] font-montserrat  py-[1vw]  w-[18.1vw]  text-center rounded-[2vw_0px]"> COMMENTS</p>
+      <div className='flex justify-between items-center pe-4'>
+        <p className="bg-primary text-[#262626] font-[900]  text-[1.5vw] font-montserrat  py-[0.6vw]  w-[18.1vw]  text-center rounded-[2vw_0px]"> COMMENTS</p>
+        <div className='flex gap-2'>
+          <div className='rounded-full bg-[#1B1C1E] px-4 py-2' onClick={()=>setSort(sort=="asc"?"desc":"asc")}>
+            <p className='font-montserrat font-[700] text-xs text-white uppercase'>SORT : <span className='font-normal  font-bebasneue'>(TIME)</span> <span className='text-primary'>{sort}</span></p>
+          </div>
+          <button className='bg-primary rounded-full text-[#1B1C1E] font-montserrat font-[800] text-xs px-4 py-2'>
+          POST A REPLY
+          </button>
+        </div>
+      </div>
       
-        <div className='mt-[3.1vw] h-[39.4vw] overflow-y-auto pb-[2vw] px-[1.5vw] flex flex-col gap-[1.6vw]'>
+        <div className='mt-[1.4vw] h-[39.4vw] overflow-y-auto pb-[2vw] px-[1.5vw] flex flex-col gap-[1vw]'>
               
-              <div className='bg-[#111111] rounded-[0.7vw]'>
+              {/* <div className='bg-[#111111] rounded-[0.7vw]'>
                 <p className='font-[900] text-[0.8vw] text-[#111111] bg-white  py-[0.2vw] w-[8.5vw] text-center rounded-[2.6vw_0px]'> Your ID</p>
               
                 <textarea name="" id="" placeholder='WRITE YOUR COMMENTS' className='h-[5.2vw] w-full font-bebasneue font-[400] text-[1vw] p-[1.4vw] outline-none bg-transparent text-white opacity-30'></textarea>
@@ -269,8 +281,31 @@ const DetailedBottomView = () => {
                     <button className='border-0 bg-primary font-montserrat text-[#262626] text-[0.7vw] font-[800] px-[0.8vw] py-[0.2vw] rounded-[1vw]'>SUBMIT</button>
                   </div>
                 </div>
+              </div> */}
+
+              <div className='bg-[#111111] rounded-[1.2vw] pb-[0.8vw]'>
+                <div className='items-center flex justify-between'>
+                  <div className='flex items-center gap-[0.4vw]'>
+                    <p className='font-[900] text-[0.7vw] text-[#111111] bg-white  py-[0.4vw] w-[9.3vw] text-center rounded-[2.6vw_0px]'> TNFv...6GVT</p>
+                    
+                    <div className='flex gap-[0.4vw] items-center'>
+                      <div className='w-[0.4vw]'>
+                        <Image src={pin} alt='' className='w-full'/>
+                      </div>
+                      <p className='font-[800] text-primary text-[0.4vw]'>DEV</p>
+                    </div>
+                  </div>
+                  <p className='text-primary font-[800] text-[0.7vw] pe-[1.6vw] pt-[0.4vw] font-montserrat'>21 minutes ago</p>
+                </div>
+                <div className='flex items-center justify-center px-[1.6vw] my-[1vw] gap-4'>
+                  <div className='w-32 h-auto'>
+                    <Image src={blkimg} alt='' className='w-full'/>
+                  </div>
+                  <p className='w-full font-[800] text-[0.6vw] leading-tight text-white font-montserrat'>SOLANAFIGHTS ⚔️🥊 JOIN liE VERY FIRST TAP-SWAP GAME LIKE HAMSTER KOMBAT ON SOLANA 🔥 TELEGRAM GAME/BOT IS ALREADY LIVE ✅ FAIR LAUNCH IS COMING SOON, DONT MISS IT ➡️ https://t.me/solanafights</p>
+                </div>
+                
               </div>
-      
+
               <div className='bg-[#111111] rounded-[1.2vw] pb-[0.8vw]'>
                 <div className='items-center flex justify-between'>
                   <div className='flex items-center gap-[0.4vw]'>
@@ -359,14 +394,13 @@ const DetailedBottomView = () => {
     </div>
 
     <div className="bg-[#1B1C1E]   rounded-[2vw]">
-      <p className={`bg-primary text-[#262626] font-[900] text-[1.5vw] font-montserrat py-[1vw] w-[21.8vw] text-center rounded-[2vw_0px]`}> TRADING HISTORY</p>
-           
-      <div className='mt-[3.1vw] h-[39vw] overflow-y-auto pb-[1px] px-[2vw] flex flex-col gap-[1.6vw]'>
-              <div className='flex gap-[0.8vw] items-center justify-end'>
+      <div className='flex items-end justify-between pe-7'>
+        <p className={`bg-primary text-[#262626] font-[900] text-[1.5vw] font-montserrat py-[0.6vw] w-[21.8vw] text-center rounded-[2vw_0px]`}> TRADING HISTORY</p>
+        <div className='flex gap-[0.8vw] items-center justify-end'>
                 <div className='bg-[#111111] px-[1.3vw] py-[0.7vw] rounded-[0.7vw] flex gap-[1.6vw] shadow-[10px_10px_23px_0px_#0000004D]'>
                   <p className='uppercase text-white  font-[800]  text-[0.6vw]'>Filter By Size</p>
-                  <div onClick={()=>setToogle(!toogle)} className={`${toogle? "bg-primary justify-end" : "bg-[#18191B] justify-start" } tranis w-[2.6vw] flex items-center  rounded-[1.5vw] h-[0.9vw]`}>
-                    <div className= {`${toogle?"bg-white":"bg-[#38383F]"} tranis w-[1.1vw] h-[1.1vw] rounded-full`}>
+                  <div onClick={()=>setToogle(!toogle)} className={`${toogle? "bg-primary justify-end" : "bg-[#595959] justify-start" } tranis w-[2.6vw] flex items-center  rounded-[1.5vw] h-[0.9vw]`}>
+                    <div className= {`${toogle?"bg-white":"bg-[#8A8A98]"} tranis w-[1.1vw] h-[1.1vw] rounded-full`}>
 
                     </div>
                   </div>
@@ -389,6 +423,10 @@ const DetailedBottomView = () => {
                   </p>
                 </div>
               </div>
+      </div>
+           
+      <div className='mt-7 h-[39vw] overflow-y-auto pb-[1px] px-[2vw] flex flex-col gap-[1.6vw]'>
+              
               
               <div className=' rounded-[1vw_1vw_0px_0px] overflow-x-hidden'>
                 <table className="w-full text-[0.9vw] font-montserrat font-[800] border-collapse border-spacing-0">
@@ -408,7 +446,7 @@ const DetailedBottomView = () => {
                     <td className="font-[700] text-center">TEG3....4efD</td>
                     <td className="text-[#FFFF00]  text-center">SELL</td>
                     <td className="font-[700]  text-center">12,3456</td>
-                    <td className=' font-[400] text-center'>571,201.94</td>
+                    <td className=' font-[700] text-center'>571,201.94</td>
                     <td className="font-[700]  text-center">1 min ago</td>
                     <td className="text-primary font-[700]  text-center">38HFH38RH..5347</td>
                   </tr>

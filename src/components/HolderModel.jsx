@@ -9,7 +9,7 @@ const HolderModel = () => {
                 <span className='text-primary '>TOP 10</span> USERS’ HOLDING - <span className='text-primary'>30.54%</span></p>
             </div>
             <div>
-              <ul className='md:px-[1.6vw] px-[10vw]  h-[70vw] md:h-[21vw] overflow-y-auto md:mb-[1vw] mb-[2vw]'>
+              <ul className='md:px-[1.6vw] px-[10vw]  h-[70vw] md:h-[25vw] overflow-y-auto md:mb-[1vw] mb-[2vw]'>
                 <li className='flex items-center justify-between'>
                   <p className=' md:text-[1vw] text-[3vw] text-primary font-[800] '>034...24RD</p>
                   <p className='md:text-[1.5vw]  text-[6.3vw] font-bebasneue '> <span className='md:text-[1vw] text-[3vw]'>(BONDING CURVE)</span>   26.42 %  </p>

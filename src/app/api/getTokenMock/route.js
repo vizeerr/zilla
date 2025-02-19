@@ -9,7 +9,7 @@ const mockTokens = [
         name: "Token One",
         
         symbol: "ONE",
-        description: "The first token in our mock data he first token in our mock data he first token in our mock data he first token in our mock data he first token in our mock data he first token in our mock data he first token in our mock datahe first token in our mock datahe first token in our mock datahe first token in our mock datahe first token in our mock data he first token in our mock data he first token in our mock data he first token in our mock data he first token in our mock datahe first token in our mock data he first token in our mock data he first token in our mock data he first token in our mock data he first token in our mock data he first token in our mock data he first token in our mock data",
+        description: "The first token in our mock data he first token in our mock data he first token in our mock data he first token in our mock data he first token in our mock data he first token in our mock data he first token in our mock datahe first token in our mock datahe first token in our mock datahe first token in our mock datahe first token in our mock data he first token in our mock data he first token in our mock data he first token in our mock data he first token in our mock datahe first token in our mock data he first token in our mock data he first token in our mock data he first token in our mock data he first token in our mock ",
         image: "ipfs:QmYi4RecDM2Z4eTNXNaNeriWd4enupBZSnUkCujaFK6qWH",
         website: "https://token1.com",
         telegram: "https://t.me/token1",

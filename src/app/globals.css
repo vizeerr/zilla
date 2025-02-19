@@ -100,6 +100,36 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+/* Firefox */
+* {
+  /* Use 'auto' if 'thin' doesn't suit your needs */
+  scrollbar-width: thin;
+  scrollbar-color: #ffffff #000000;
+
+}
+
+/* WebKit browsers (Chrome, Safari, Opera) */
+*::-webkit-scrollbar {
+  width: 4px;   /* vertical scrollbar width */
+  height: 4px;  /* horizontal scrollbar height */
+  border-radius: 1000px;
+
+}
+
+*::-webkit-scrollbar-track {
+  background: #000000;
+  border-radius: 1000px;
+
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border-radius: 1000px;
+  border: 1px solid #ffffff;
+
+}
+
+
 @media only screen and (max-width: 600px) {
   
 }

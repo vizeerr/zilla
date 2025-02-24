@@ -10,8 +10,10 @@ const page = async ({params}) => {
   return (
     <>
     
-      <div className='bg-[#111111] p-[20px]'>
-        <DetailedTopView token ={params.token}/>
+      <div className='bg-[#111111]'>
+        <div className=' p-[20px]'>
+          <DetailedTopView token ={params.token}/>
+        </div>
         <DetailedBottomView/>
         
       </div>

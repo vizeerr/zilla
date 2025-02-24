@@ -21,9 +21,9 @@ const DetailedRightView = () => {
   return (
     <>
         <div className='flex flex-col md:gap-[1.6vw] '>
-          <div className='bg-[#1B1C1E] text-white md:w-[23vw] overflow-x-hidden relative md:p-[1.6vw] p-[23px] shadow-[12.7px_12.7px_44.02px_0px_#0000004F] md:rounded-[2vw]'>
+          <div className='bg-[#1B1C1E] text-white 2xl:w-[26rem] xl:w-[17.5rem] lg:w-[17rem] overflow-x-hidden relative 2xl:p-7 md:p-4 p-[23px] shadow-[12.7px_12.7px_44.02px_0px_#0000004F] 2xl:rounded-[2.2rem]  md:rounded-[1.6rem]'>
               <TradeModel/>
-            <div className='mt-8'>
+            <div className='2xl:mt-8 md:mt-6'>
               <DetailedTrade/>
             </div>
               

@@ -71,7 +71,7 @@ body{
 
 table th{
   font-weight: 800;
-  padding: 0.9vw 0;
+  padding: 1.5vw 0;
 border-spacing: 0;
 border-collapse: collapse;
 border: none !important;
@@ -81,7 +81,7 @@ outline: none;
 
 table td{
   font-weight: 800;
-  padding: 0.5vw 0;
+  padding: 1.5vw 0;
 border-spacing: 0;
 border-collapse: collapse;
 border: none !important;
@@ -104,8 +104,7 @@ input[type=number] {
 * {
   /* Use 'auto' if 'thin' doesn't suit your needs */
   scrollbar-width: thin;
-  scrollbar-color: #ffffff #000000;
-
+  scrollbar-color: #ffffff #00000000;
 }
 
 /* WebKit browsers (Chrome, Safari, Opera) */
@@ -117,20 +116,50 @@ input[type=number] {
 }
 
 *::-webkit-scrollbar-track {
-  background: #000000;
+  background: #00000000;
   border-radius: 1000px;
 
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #000000;
+  background-color: #00000000;
   border-radius: 1000px;
   border: 1px solid #ffffff;
 
 }
 
+::-moz-scrollbar-button, ::-webkit-scrollbar-button {
+  width: 0px;
+}
 
-@media only screen and (max-width: 600px) {
+::-moz-scrollbar-button:decrement,
+::-moz-scrollbar-button:increment,
+::-webkit-scrollbar-button:decrement,
+::-webkit-scrollbar-button:increment {
+  width: 0px;
+}
+
+::webkit-scrollbar-button { 
+  display:none;
+ }
+
+ ::-webkit-scrollbar-button {
+  height: 0;
+  width: 0
+}
+
+
+@media only screen and (max-width: 1024px) and (min-width: 768px)  {
+  table th{ 
+    
+    padding: 1rem 0;
+
+  }
+  
+  table td{
+    padding: 1rem 0;
+  
+  }
   
 }
 

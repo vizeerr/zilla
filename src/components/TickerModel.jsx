@@ -17,7 +17,7 @@ const TickerModel = ({openTic,setOpenTic}) => {
   return (
     <motion.div
           initial={{ opacity: 0 }}
-          animate={{ opacity: open ? 1 : 0 }}
+          animate={{ opacity: openTic ? 1 : 0 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.3 }}
           className={`${

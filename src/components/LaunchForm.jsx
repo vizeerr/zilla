@@ -8,7 +8,7 @@ import TickerModel from './TickerModel'
 
 const LaunchForm = () => {  
     const [ticker,setTicker] = useState("")
-    const [openTic,setOpenTic] =useState(true)
+    const [openTic,setOpenTic] =useState(false)
   
     return (
     <>

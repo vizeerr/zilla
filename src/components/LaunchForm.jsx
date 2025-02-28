@@ -18,7 +18,7 @@ const LaunchForm = () => {
       <div>
         <h1 className='font-montserrat font-[900] text-white 2xl:text-4xl md:text-3xl text-[4.7vw] text-center'>LAUNCH YOUR <span className='text-primary'>TOKEN</span></h1>
        </div>
-      <div className='w-full 2xl:mt-10 mt-8'>
+      <div className='w-full 2xl:mt-10 mt-8 w-'>
 
         <div className='bg-[#222227] font-montserrat 2xl:w-[50rem] md:w-[35rem] w-[88vw] 2xl:p-12 md:p-9 p-[4.8vw] 2xl:rounded-[2.8rem] md:rounded-[2.5rem] rounded-[3.4vw] shadow-[26px_25px_51.4px_0px_#00000040] mx-auto'>
           <div className='flex justify-between 2xl:gap-14 md:gap-9 gap-[4.1vw]'>

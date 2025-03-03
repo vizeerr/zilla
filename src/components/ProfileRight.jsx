@@ -4,6 +4,8 @@ import ProfileTokens from './ProfileTokens'
 import { motion } from 'framer-motion';
 const ProfileRight = () => {
   const[tab, setTab] = useState(0)
+  const[dead, setDead] = useState(false)
+
   return (
     <div className='bg-[#1B1C1E] shadow-[-19px_23px_42.8px_0px_#0000004D] py-7 px-12 w-full rounded-[2.2rem]'>
       <div className='flex items-center justify-between'>
@@ -28,8 +30,8 @@ const ProfileRight = () => {
         </div>
         <div className='bg-[#111111] shadow-[5.91px_5.91px_13.59px_0px_#0000004D] rounded-2xl flex items-center gap-4 px-6 py-3'>
           <p className='text-white mt-1 font-montserrat font-[800] text-base'>DEAD TOKENS</p>
-          <div className='w-14 h-5 bg-[#595959] rounded-full flex items-center'>
-            <div className='bg-[#8A8A98] w-6 h-6 rounded-full'></div>
+          <div onClick={()=>setDead(!dead)} className={`w-14 h-5 ${dead?"bg-primary":"bg-[#595959]"} tranis rounded-full flex ${dead?"justify-end":"justify-start"} items-center `}>
+            <div className={`${dead?"bg-white":"bg-[#8A8A98]"} w-6 h-6 rounded-full shadow-md tranis`}></div>
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div className='flex gap-10 p-9'>
+    <div className='flex gap-10 p-9 items-stretch h-[62rem]'>
         <ProfileLeft />
         <ProfileRight />
       

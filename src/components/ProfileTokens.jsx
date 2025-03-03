@@ -2,32 +2,60 @@ import Image from 'next/image'
 import profcopy from '@/assets/profcopy.png'
 import React from 'react'
 
-const ProfileTokens = () => {
+const ProfileTokens = ({dead,state}) => {
   return (
-    <div className='bg-[#111111] shadow-[10px_10px_32px_0px_#0000004D] rounded-[1rem] w-full'>
-      <div className='flex justify-between items-center px-10 py-9 relative'>
-        <div className='absolute -top-9 flex items-center gap-4'>
-            <div className='bg-[#414141] border-[3px] border-primary w-[4.5rem] h-[4.5rem] rounded-full'>
+    <div className='bg-[#111111] shadow-[10px_10px_32px_0px_#0000004D] 2xl:rounded-[1rem] rounded-[0.8rem] w-full'>
+      <div className='flex justify-between items-center 2xl:px-9 xl:px-6 md:px-4 px-[5vw] 2xl:pt-11 md:pt-8 pt-[6vw] 2xl:pb-8 md:pb-5 pb-[4.5vw] relative'>
+        <div className='absolute 2xl:-top-10 md:-top-7 -top-[5.5vw] flex items-center 2xl:gap-4 md:gap-2 gap-[3vw]'>
+            <div className='bg-[#414141] 2xl:border-[3px] border-2 border-primary 2xl:w-[4.5rem] md:w-[3.5rem] w-[10.5vw] 2xl:h-[4.5rem] md:h-[3.5rem] h-[10.5vw] rounded-full'>
             </div>
-            <p className='bg-[#A8FF2F] font-bebasneue text-lg px-9 pt-1 pb-0.5 rounded-full'>Bal. : 500,000,000</p>
+            {
+              state==0? <p className='bg-[#A8FF2F] font-bebasneue 2xl:text-lg xl:text-sm md:text-xs text-[3vw] 2xl:px-9 md:px-5 px-[5vw] md:pt-1 md:pb-0.5 py-[0.5vw] rounded-full'>Bal. : 500,000,000</p> :
+              <p className='bg-[#A8FF2F] font-bebasneue 2xl:text-lg xl:text-sm md:text-xs text-[3vw] 2xl:px-9 md:px-5 pt-1 pb-0.5 rounded-full'>Mcap : 500,000,000</p>
+            }
+            
         </div>
-        <div>
-            <p className='font-bebasneue text-lg text-white'>CAT SWAP PROMOTION <span className='text-primary font-montserrat font-[800] text-base'> ($PROMOTION)</span></p>
-            <div className='flex items-center gap-4 mt-2'>
-                <p className='text-primary font-[600] font-montserrat text-sm border-s-4 border-white ps-2 py-1'>abs34...3hr93</p>
-                <div className='w-8 mt-1'>
-                    <Image src={profcopy} alt='profcopy' />
+        {/* <div className=' items-center justify-between w-full'> */}
+          <div className=' flex-1'>
+              <p className='font-bebasneue 2xl:text-base xl:text-sm md:text-xs text-[2.9vw] text-white'>CAT SWAP PROMOTION <span className='text-primary font-montserrat font-[800] 2xl:text-sm xl:text-[0.7rem] md:text-[0.6rem] text-[2.5vw]'> ($PROMOTION)</span></p>
+              <div className='flex items-center 2xl:gap-4 md:gap-2 gap-[2vw] mt-0.5'>
+                  <p className='text-primary font-[600] font-montserrat 2xl:text-xs xl:text-[0.6rem] md:text-[0.55rem] text-[2.5vw] 2xl:border-s-4 border-s-2 border-white 2xl:ps-2 ps-1 py-0.5'>abs34...3hr93</p>
+                  <div className='2xl:w-7 md:w-6 w-[5vw] mt-1'>
+                      <Image src={profcopy} alt='profcopy' />
+                  </div>
+              </div>
+          </div>
+          <div className='flex flex-col 2xl:gap-3 gap-2 '>
+              {
+                dead && <div className='bg-[#50555D] rounded-full text-center px-6 py-1'>
+                <p className='text-white  font-bebasneue 2xl:text-sm text-[0.6rem ] uppercase mt-0.5'><span className='text-primary'>Zilla</span> Earned : 10,000,000</p>
+            </div>
+              }
+
+              {
+                !dead && state ==1 && <>
+                <div className='bg-[#50555D] rounded-full text-center px-6 py-1'>
+                    <p className='text-white  font-bebasneue 2xl:text-sm text-[0.6rem ] uppercase mt-0.5'>token <span className='text-primary'>price</span> : $0.00000025</p>
                 </div>
-            </div>
-        </div>
-        <div className='flex flex-col gap-3'>
-            <div className='bg-[#50555D] rounded-full px-8 py-1'>
-                <p className='text-white  font-bebasneue text-base uppercase mt-0.5'>value in <span className='text-primary'>eth</span> : 00.0000</p>
-            </div>
-            <div className='bg-[#50555D] rounded-full px-8 py-1'>
-                <p className='text-white  font-bebasneue text-base uppercase mt-0.5'>value in <span className='text-primary'>eth</span> : 00.0000</p>
-            </div>
-        </div>
+                <div className='bg-[#50555D] rounded-full text-center px-6 py-1'>
+                    <p className='text-white  font-bebasneue text-sm uppercase mt-0.5'>creation <span className='text-primary'>time</span> : 01/01/2025</p>
+                </div>
+              </>
+              }
+              {
+                !dead && state ==0 && <>
+                <div className='bg-[#50555D] rounded-full text-center 2xl:px-6 xl:px-4 md:px-3 px-[5vw] 2xl:py-1 xl:py-0.5 md:py-0 py-[0.5vw]'>
+                    <p className='text-white  font-bebasneue 2xl:text-sm xl:text-xs md:text-[0.65rem] text-[3vw] uppercase mt-0.5'>value in <span className='text-primary'>eth</span> : 00.0000</p>
+                </div>
+                <div className='bg-[#50555D] rounded-full text-center 2xl:px-6 xl:px-4 md:px-3 px-[5vw] 2xl:py-1 xl:py-0.5 md:py-0 py-[0.5vw]'>
+                    <p className='text-white  font-bebasneue 2xl:text-sm xl:text-xs md:text-[0.65rem] text-[3vw] uppercase mt-0.5'>value in <span className='text-primary'>eth</span> : 00.0000</p>
+                </div>
+              </>
+              }
+              
+          </div>
+        {/* </div> */}
+        
       </div>
     </div>
   )

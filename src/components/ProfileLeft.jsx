@@ -16,70 +16,72 @@ const ProfileLeft = () => {
     const[editProfile,setEditProfile]=useState(false)
     const[profileBio,setProfileBio]=useState('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ')
   return (
-    <div className='w-[55%] h-full'>
+    <div className='2xl:w-[55%] xl:w-[45%] w-full h-full'>
         <motion.div 
         key={1}
         initial={{ rotateY: 0 }}
         animate={editProfile ? { rotateY: 180 } : { rotateY: 0 }}
         transition={{ duration: 0.6 }}
-        className='bg-[#1B1C1E] rounded-[2rem] shadow-[-19px_23px_42.8px_0px_#0000004D] card h-full'>
+        className='bg-[#1B1C1E] 2xl:rounded-[2rem] md:rounded-[1.5rem] rounded-[6vw] shadow-[-19px_23px_42.8px_0px_#0000004D] card h-full'>
             
             <div className="profilecard-front ">
-                <div className='w-full h-[14rem]  rounded-t-[2rem] overflow-hidden object-contain'>
+                <div className='w-full 2xl:h-[14rem] md:h-[10rem] h-[44.6vw] 2xl:rounded-t-[2rem] md:rounded-t-[1.5rem] rounded-t-[6vw] overflow-hidden object-contain 2xl:border-b-2 border-b border-primary'>
                     <Image src={profbg} alt="profbg" />
                 </div>
-                <div className='-mt-24 pb-5 relative z-10  px-8'>
+                <div className='2xl:-mt-24 -mt-12 md:pb-5 pb-[4vw] relative z-10  2xl:px-8 md:px-5 px-[4vw]'>
                     <div className='flex items-end justify-between'>
                         <div>
-                            <div className='w-44 h-44 bg-[#1B1C1E] rounded-full overflow-hidden border-4 border-primary p-3 object-contain '>
+                            <div className='2xl:w-44 md:w-24 w-[24vw] 2xl:h-44 md:h-24 h-[24vw] bg-[#1B1C1E] rounded-full flex items-center justify-center overflow-hidden 2xl:border-4 border-2 border-primary 2xl:p-3 md:p-2 p-[2vw] object-contain '>
                                 <Image src={profavtr} alt="profbg" className='w-full h-full rounded-full' />
                             </div>
                         </div>
-                        <div className='flex flex-col gap-4 items-end'>
-                            <div onClick={()=>setEditProfile(true)} className='text-white anim flex gap-3  items-center shadow-[5px_5px_14px_0px_#0000004D] bg-[#0E0E0EC9] backdrop-blur-sm rounded-full px-11 py-3.5'>
-                                <div className='w-7 h-7'>
+                        <div className='flex flex-col 2xl:gap-4 md:gap-3 gap-[3vw] items-end'>
+                            <div onClick={()=>setEditProfile(true)} className='text-white anim flex 2xl:gap-3 md:gap-2 gap-[1.5vw]  items-center shadow-[5px_5px_14px_0px_#0000004D] bg-[#0E0E0EC9] backdrop-blur-sm rounded-full 2xl:px-11 md:px-6 px-[6vw] 2xl:py-3.5 md:py-2 py-[1.5vw]'>
+                                <div className='2xl:w-7 md:w-3 w-[4.4vw]'>
                                     <Image src={pencil} alt="pencil" />
                                 </div>
-                                <p className='font-montserrat font-[800] text-lg'>Edit</p>
+                                <p className='font-montserrat font-[800] 2xl:text-lg md:text-[0.7rem] text-[2.9vw]'>Edit</p>
                             </div>
-                            <div className='flex gap-4 items-center'>
-                                <div className='text-white flex gap-3  anim items-center shadow-[5px_5px_14px_0px_#0000004D] bg-[#0E0E0EC9] backdrop-blur-sm rounded-full px-6 py-2.5'>
-                                    <div className='w-5 h-5'>
+                            <div className='flex md:gap-4 gap-[3vw] items-center'>
+                                <div className='text-white flex 2xl:gap-3 md:gap-2 gap-[1.5vw]   anim items-center shadow-[5px_5px_14px_0px_#0000004D] bg-[#0E0E0EC9] backdrop-blur-sm rounded-full 2xl:px-6 md:px-3.5 px-[3.5vw] 2xl:py-2.5 md:py-1.5 py-[1.5vw]'>
+                                    <div className='2xl:w-5 md:w-3 w-[3.4vw]'>
                                         <Image src={tlogo} alt="pencil" />
                                     </div>
-                                    <p className='font-montserrat font-[800] text-base'>Telegram</p>
+                                    <p className='font-montserrat font-[800] 2xl:text-base md:text-[0.6rem] text-[1.9vw]'>Telegram</p>
                                 </div>
-                                <div className='text-white flex gap-3 anim items-center shadow-[5px_5px_14px_0px_#0000004D] bg-[#0E0E0EC9] backdrop-blur-sm rounded-full px-6 py-2.5'>
-                                    <div className='w-5 h-5'>
+                                <div className='text-white flex 2xl:gap-3 md:gap-2 gap-[1.5vw]   anim items-center shadow-[5px_5px_14px_0px_#0000004D] bg-[#0E0E0EC9] backdrop-blur-sm rounded-full 2xl:px-6 md:px-3.5 px-[3.5vw] 2xl:py-2.5 md:py-1.5 py-[1.5vw]'>
+                                    <div className='2xl:w-5 md:w-3 w-[3.4vw]'>
                                         <Image src={xlogo} alt="pencil" />
                                     </div>
-                                    <p className='font-montserrat font-[800] text-base'>Twitter</p>
+                                    <p className='font-montserrat font-[800] 2xl:text-base md:text-[0.6rem] text-[1.9vw]'>Twitter</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <div className='flex gap-3 items-center mt-9'>
-                            <h1 className='font-montserrat font-[800] text-4xl text-white'> 0xABC...1234</h1>
-                            <div className='w-10 anim'>
+                        <div className='flex md:gap-3 gap-[2vw] items-center md:mt-9 mt-[6vw]'>
+                            <h1 className='font-montserrat font-[800] 2xl:text-4xl md:text-2xl text-[4.4vw] text-white'> 0xABC...1234</h1>
+                            <div className='2xl:w-10 md:w-8 w-[6vw] anim'>
                                 <Image src={primcopy} alt="primcopy" />
                             </div>
                         </div>
-                        <p className='font-montserrat text-[#FFFFFF78] font-[700] text-sm leading-tight mt-5'>{profileBio}</p>
+                        <p className='font-montserrat text-[#FFFFFF78] 2xl:font-[700] font-[500] 2xl:text-sm md:text-[0.55rem] text-[2.5vw] leading-tight 2xl:mt-5 mt-3'>{profileBio}</p>
                     </div>
-                    <div className=' pt-5 mt-10 mb-8 rec2'>
-                        <div className='px-10 flex justify-between items-center'>
+                    <div className=' pt-5 mt-10 mb-8 bg-black border-2  border-primary rounded-[1rem]'>
+                        <div className='2xl:px-10 px-3 flex justify-between items-center'>
                             <div>
-                                <p className='font-montserrat font-[800] text-white text-3xl'>Claimable <span className='text-primary'>Zilla</span> </p>
-                                <p className='font-montserrat font-[800] text-white text-5xl mt-5'>10,000,000 </p>
+                                <p className='font-montserrat font-[800] text-white 2xl:text-3xl text-lg'>Claimable <span className='text-primary'>Zilla</span> </p>
+                                <p className='font-montserrat font-[800] text-white 2xl:text-5xl text-2xl 2xl:mt-5 mt-2'>10,000,000 </p>
                             </div>
-                            <div className='bg-primary rounded-full w-32 h-32 flex justify-center items-center p-6'>
+                            <div className='bg-primary rounded-full 2xl:w-32 w-20 2xl:h-32 h-20 flex justify-center items-center 2xl:p-6 p-4'>
                                 <Image src={pizzdark} alt="primcopy" />
                             </div>
                         </div>
                         <p className='px-10 font-montserrat text-[#FFFFFF6E] font-[700] text-sm leading-tight mt-3'>These Zilla tokens are distributed to you from liquidity removed from dead tokens. </p>
-                        <div className='w-[96%] mt-10 flex justify-end'>
-                            <button className='round anim text-[#262626] bg-primary leading-none text-5xl w-52 rounded-xl pt-3'>Claim</button>
+                        <div className='w-full mt-10 flex justify-end'>
+                            <div className='border-t-2 border-s-2 border-primary ps-2  pt-2 rounded-ss-[1.4rem] '>
+                                <button className='round anim text-[#262626] bg-primary leading-none text-5xl w-52  rounded-ss-[0.8rem] rounded-ee-[0.8rem] pt-3'>Claim</button>
+                            </div>
                         </div>
                     </div>
                     

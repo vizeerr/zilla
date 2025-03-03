@@ -16,7 +16,7 @@ const ProfileLeft = () => {
     const[editProfile,setEditProfile]=useState(false)
     const[profileBio,setProfileBio]=useState('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ')
   return (
-    <div className='2xl:w-[55%] xl:w-[45%] w-full h-full'>
+    <div className='2xl:w-[55%] xl:w-[45%] w-full h-full '>
         <motion.div 
         key={1}
         initial={{ rotateY: 0 }}
@@ -25,10 +25,10 @@ const ProfileLeft = () => {
         className='bg-[#1B1C1E] 2xl:rounded-[2rem] md:rounded-[1.5rem] rounded-[6vw] shadow-[-19px_23px_42.8px_0px_#0000004D] card h-full'>
             
             <div className="profilecard-front ">
-                <div className='w-full 2xl:h-[14rem] md:h-[10rem] h-[44.6vw] 2xl:rounded-t-[2rem] md:rounded-t-[1.5rem] rounded-t-[6vw] overflow-hidden object-contain 2xl:border-b-2 border-b border-primary'>
+                <div className='w-full 2xl:h-[14rem] xl:h-[10rem] lg:h-[7rem] md:h-[10rem] h-[44.6vw] 2xl:rounded-t-[2rem] md:rounded-t-[1.5rem] rounded-t-[6vw] overflow-hidden object-contain 2xl:border-b-2 border-b border-primary'>
                     <Image src={profbg} alt="profbg" />
                 </div>
-                <div className='2xl:-mt-24 -mt-12 md:pb-5 pb-[4vw] relative z-10  2xl:px-8 md:px-5 px-[4vw]'>
+                <div className='2xl:-mt-24 -mt-12 xl:pb-5 md:pb-5 pb-[4vw] relative z-10  2xl:px-8 md:px-5 px-[4vw]'>
                     <div className='flex items-end justify-between'>
                         <div>
                             <div className='2xl:w-44 md:w-24 w-[24vw] 2xl:h-44 md:h-24 h-[24vw] bg-[#1B1C1E] rounded-full flex items-center justify-center overflow-hidden 2xl:border-4 border-2 border-primary 2xl:p-3 md:p-2 p-[2vw] object-contain '>
@@ -59,28 +59,25 @@ const ProfileLeft = () => {
                         </div>
                     </div>
                     <div>
-                        <div className='flex md:gap-3 gap-[2vw] items-center md:mt-9 mt-[6vw]'>
+                        <div className='flex md:gap-3 gap-[2vw] items-center xl:mt-9 md:mt-5 mt-[6vw]'>
                             <h1 className='font-montserrat font-[800] 2xl:text-4xl md:text-2xl text-[4.4vw] text-white'> 0xABC...1234</h1>
                             <div className='2xl:w-10 md:w-8 w-[6vw] anim'>
                                 <Image src={primcopy} alt="primcopy" />
                             </div>
                         </div>
-                        <p className='font-montserrat text-[#FFFFFF78] 2xl:font-[700] font-[500] 2xl:text-sm md:text-[0.55rem] text-[2.5vw] leading-tight 2xl:mt-5 mt-3'>{profileBio}</p>
+                        <p className='font-montserrat text-[#FFFFFF78] 2xl:font-[700] font-[500] 2xl:text-sm xl:text-xs md:text-xs  text-[2.5vw] leading-tight 2xl:mt-5 mt-3'>{profileBio}</p>
                     </div>
-                    <div className=' pt-5 mt-10 mb-8 bg-black border-2  border-primary rounded-[1rem]'>
-                        <div className='2xl:px-10 px-3 flex justify-between items-center'>
-                            <div>
-                                <p className='font-montserrat font-[800] text-white 2xl:text-3xl text-lg'>Claimable <span className='text-primary'>Zilla</span> </p>
-                                <p className='font-montserrat font-[800] text-white 2xl:text-5xl text-2xl 2xl:mt-5 mt-2'>10,000,000 </p>
-                            </div>
-                            <div className='bg-primary rounded-full 2xl:w-32 w-20 2xl:h-32 h-20 flex justify-center items-center 2xl:p-6 p-4'>
-                                <Image src={pizzdark} alt="primcopy" />
-                            </div>
+                    <div className=' 2xl:pt-10 md:pt-6 pt-[5vw] 2xl:mt-10 md:mt-6 mt-[4vw]  bg-black border-2  border-primary rounded-[1rem]'>
+                        <div className='text-center'>
+                            
+                            <p className='2xl:border-x-[12px] border-x-[9px] border-primary font-montserrat font-[800] text-white 2xl:text-3xl xl:text-xl md:text-2xl text-[4vw]'>Claimable Zilla </p>
+                            <p className='font-montserrat font-[800] text-primary 2xl:text-5xl xl:text-2xl md:text-4xl text-[5vw] 2xl:mt-5 md:mt-2 mt-[3vw]'>10,000,000 </p>
+                                                        
                         </div>
-                        <p className='px-10 font-montserrat text-[#FFFFFF6E] font-[700] text-sm leading-tight mt-3'>These Zilla tokens are distributed to you from liquidity removed from dead tokens. </p>
-                        <div className='w-full mt-10 flex justify-end'>
-                            <div className='border-t-2 border-s-2 border-primary ps-2  pt-2 rounded-ss-[1.4rem] '>
-                                <button className='round anim text-[#262626] bg-primary leading-none text-5xl w-52  rounded-ss-[0.8rem] rounded-ee-[0.8rem] pt-3'>Claim</button>
+                        <p className='2xl:mt-8 md:mt-4 mt-[3vw] 2xl:px-10 md:px-4 px-[3vw] text-center font-montserrat text-[#FFFFFF6E] font-[700] 2xl:text-sm xl:text-[0.7rem] md:text-sm text-[2.5vw] leading-tight'>Your share from dead tokens — plus weekly rewards based on your trading volume </p>
+                        <div className='w-full 2xl:mt-8 md:mt-6 mt-[4vw] flex justify-center'>
+                            <div className=''>
+                                <button className='round anim text-[#262626] bg-primary leading-none 2xl:text-5xl xl:text-3xl md:text-4xl text-3xl 2xl:px-20 xl:px-12 md:px-16 px-10  2xl:rounded-t-[1rem] md:rounded-t-[0.8rem] rounded-t-[2.5vw]  2xl:pt-3 md:pt-2 pt-[2vw]'>Claim</button>
                             </div>
                         </div>
                     </div>

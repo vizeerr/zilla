@@ -39,7 +39,7 @@ const ProfileRight = () => {
         </div>
       </div>
 
-      <div className='grid xl:grid-cols-2 lg:grid-cols-3 md:grid-cols-2 2xl:gap-x-8 gap-x-6 2xl:gap-y-14 gap-y-11 2xl:mt-20 mt-16'>
+      <div className='grid xl:grid-cols-2 lg:grid-cols-3 md:grid-cols-2 2xl:gap-x-8 gap-x-6 2xl:gap-y-14 gap-y-11 2xl:mt-24 mt-16'>
         {tab==0 && Array(13).fill().map((_, i) => (
           <ProfileTokens key={i} dead={dead} state={tab}/>
         ))}

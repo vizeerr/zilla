@@ -13,18 +13,18 @@ import stakearr from '@/assets/stakearr.png'
 import Image from 'next/image'
 import { motion } from 'framer-motion';
 const ProfileLeft = () => {
-    const[editProfile,setEditProfile]=useState(true)
+    const[editProfile,setEditProfile]=useState(false)
     const[profileBio,setProfileBio]=useState('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ')
   return (
-    <div className='w-[55%]'>
+    <div className='w-[55%] '>
         <motion.div 
         key={1}
         initial={{ rotateY: 0 }}
         animate={editProfile ? { rotateY: 180 } : { rotateY: 0 }}
         transition={{ duration: 0.6 }}
-        className='bg-[#1B1C1E] rounded-[2rem] shadow-[-19px_23px_42.8px_0px_#0000004D] card'>
+        className='bg-[#1B1C1E] rounded-[2rem] shadow-[-19px_23px_42.8px_0px_#0000004D] card h-[100vh]'>
             
-            <div className="profilecard-front">
+            <div className="profilecard-front ">
                 <div className='w-full h-[30vh]  rounded-t-[2rem] overflow-hidden object-contain'>
                     <Image src={profbg} alt="profbg" />
                 </div>
@@ -67,7 +67,7 @@ const ProfileLeft = () => {
                         </div>
                         <p className='font-montserrat text-[#FFFFFF78] font-[700] text-sm leading-tight mt-5'>{profileBio}</p>
                     </div>
-                    <div className=' pt-5  my-12 rec2'>
+                    <div className=' pt-5 mt-10 rec2'>
                         <div className='px-10 flex justify-between items-center'>
                             <div>
                                 <p className='font-montserrat font-[800] text-white text-3xl'>Claimable <span className='text-primary'>Zilla</span> </p>

@@ -7,7 +7,7 @@ const ProfileRight = () => {
   const[dead, setDead] = useState(false)
 
   return (
-    <div className='bg-[#1B1C1E] shadow-[-19px_23px_42.8px_0px_#0000004D] py-7 px-12 w-full rounded-[2.2rem]'>
+    <div className='bg-[#1B1C1E] shadow-[-19px_23px_42.8px_0px_#0000004D] py-7 px-12 w-full rounded-[2.2rem] h-[100vh] overflow-y-auto'>
       <div className='flex items-center justify-between'>
         <div className='bg-[#111111] rounded-full shadow-[8px_8px_22px_0px_#0000005C] px-10 pt-2.5'>
           
@@ -37,7 +37,7 @@ const ProfileRight = () => {
       </div>
 
       <div className='grid grid-cols-2 gap-x-8 gap-y-14 mt-20'>
-        {tab==0 && Array(6).fill().map((_, i) => (
+        {tab==0 && Array(13).fill().map((_, i) => (
           <ProfileTokens key={i} />
         ))}
          {tab==1 && Array(3).fill().map((_, i) => (

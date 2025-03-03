@@ -22,12 +22,10 @@ const StakeTop = () => {
             setStakeOption(1);
             setStakeOpen(true);
         }
-        
     }
 
     return (
         <>
-        
             <div className='flex 2xl:px-16 xl:px-14 lg:px-10 md:px-6 px-[5vw] 2xl:gap-16 xl:gap-12 lg:gap-8 md:gap-5 gap-[2.6vw] justify-between my-4  md:flex-row flex-col'>
                 <div className='2xl:p-9 xl:p-6 md:p-3.5 p-[5.4vw] w-full shadow-[28.42px_28.42px_56.84px_0px_#00000040] 2xl:rounded-[2.4rem] lg:rounded-[1.6rem] md:rounded-[1rem] rounded-[6vw] bg-[#1B1C1E]'>
                     <div className='flex justify-between items-center'>
@@ -164,3 +162,4 @@ const StakeTop = () => {
 }
 
 export default StakeTop
+

@@ -194,3 +194,34 @@ input[type=number] {
   background-position: center;
   background-size: cover;
 }
+
+.rec2{
+  background-image: url("../assets/profclaimbg.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+}
+
+
+
+.card {
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.profilecard-front,
+.profilecard-back {
+  backface-visibility: hidden;
+}
+
+
+.profilecard-back {
+  display: flex;
+  justify-items:center ;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  transform: rotateY(180deg); 
+}

@@ -25,7 +25,7 @@ const TopNavbar = () => {
   return (
     
     <div className="sticky top-0  z-20">
-      <div className="bg-primary flex items-center justify-between 2xl:py-3 :py-2 py-[1vw]">
+      <div className="bg-primary flex items-center justify-between 2xl:py-3 md:py-2 py-[1vw]">
         <div className="2xl:ps-6 md:ps-4 ps-[2.1vw] w-[20vw] 2xl:w-44 md:w-36">
           <Link href={"/"}>
             <Image className="w-full"  src={logo} alt="" />

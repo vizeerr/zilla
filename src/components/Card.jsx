@@ -86,7 +86,7 @@ const Card = ({data}) => {
         
             <div className="md:w-full w-[48vw]">
                 <div className="md:mt-2.5 mt-[0.6vw]">
-                    <p className="font-bebasneue  2xl:text-base md:text-sm text-[3.3vw] font-[400] text-[#262626]">{data.name} <span className=" font-[800] font-montserrat ">(${data.symbol})</span></p>
+                    <p className="font-bebasneue  2xl:text-base md:text-sm text-[3.3vw] font-[400] text-[#262626]">{data.name} <span className=" font-[800] font-montserrat ">({data.symbol})</span></p>
                     <p className="font-montserrat  text-[#303030b5] font-[700] 2xl:text-[0.6rem] md:text-[0.45rem] text-[1.9vw]">Created by {shortId(data.creator)}</p>
                 </div>
                 <div className="md:mt-2.5 mt-[1vw] font-montserrat ">

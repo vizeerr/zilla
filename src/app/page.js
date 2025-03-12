@@ -14,7 +14,6 @@ export default function Home() {
         <Tabs/>
       </div>
       <CardGrid/>
-      <Pagination/>
       <BottomFooter/>
     </div>
   );

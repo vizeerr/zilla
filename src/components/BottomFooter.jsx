@@ -8,9 +8,9 @@ const BottomFooter = () => {
       <div className="flex w-full justify-center  bg-[#1E1E25]">
             <button className="text-sec font-montserrat font-[800] 2xl:text-2xl md:text-lg text-[2vw] bg-primary rounded-full 2xl:px-6 md:px-5 px-3 2xl:py-2 md:py-1.5 py-1">Load More</button>
       </div>
-      <div className=' text-[#FFFFFF78] w-full flex md:gap-2 gap-1 items-center'>
+      <div className=' text-[#FFFFFF78] w-full flex md:gap-2 gap-1 justify-end items-center'>
         <Link href="/privacy-policy" className='anim md:text-sm  text-[0.4rem] underline font-montserrat font-[600]'>Privacy Policy</Link>
-        <p className='lg:text-sm text-xs '>|</p>
+        <p className='lg:text-sm text-[0.55rem] '>|</p>
         <Link href="/terms-of-services" className='anim md:text-sm  text-[0.4rem] underline font-montserrat font-[600]'>Terms Of Services</Link>
       </div>
     </div>

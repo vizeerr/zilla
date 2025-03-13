@@ -42,15 +42,9 @@ const DetailedLefView = ({token}) => {
   return (
     <div className='flex flex-col lg:gap-[1.6vw] md:gap-6 gap-[3.1vw] w-full'>
           
-          <div className='bg-[#1B1C1E] 2xl:ps-7 md:ps-5 2xl:pb-7 md:pb-5 ps-[1.6vw] pb-[1.6vw] flex flex-col justify-between shadow-[12.7px_12.7px_44.02px_0px_#0000004F] 2xl:rounded-[2.3rem] md:rounded-[1.8rem] rounded-[2.7vw]'>
-              <div className='w-full flex justify-end'>
-                <div className='bg-primary 2xl:w-96 md:w-[13rem] w-[26vw]  2xl:py-4 md:py-1.5 2xl:px-12 md:px-6 py-[1.5vw] px-[2.2vw]  md:rounded-[0_2vw] rounded-[0_2.9vw] text-[#1B1C1E] shadow-[5.29px_5.29px_26.45px_0px_#00000080]'>
-                  <p className='2xl:text-3xl md:text-lg text-[2.5vw] font-[800]'>MCap : 
-                  <span className='font-[900] 2xl:text-4xl md:text-xl text-[2.7vw]'> $ 54,124</span></p>
-                </div>
-              </div>    
-
-              <div className='flex 2xl:-mt-10 lg:-mt-7 md:-mt-5 -mt-5 2xl:gap-9 md:gap-6 gap-[2.1vw]'>
+          <div className='bg-[#1B1C1E] 2xl:p-6 md:p-5 p-[1.6vw] flex flex-col justify-between shadow-[12.7px_12.7px_44.02px_0px_#0000004F] 2xl:rounded-[2rem] md:rounded-[1.5rem] rounded-[2.7vw]'>
+              
+              <div className='flex 2xl:gap-9 md:gap-6 gap-[2.1vw]'>
                 <div className=' bg-[#0A0A0B] 2xl:rounded-[1.5rem] xl:rounded-[1.2rem] md:rounded-[0.8rem] rounded-[2vw] relative overflow-hidden 2xl:w-56 xl:w-48 md:w-40 2xl:h-56 xl:h-48 md:h-40 w-[20.8vw] h-[20.3vw]'>
 
                   <Image

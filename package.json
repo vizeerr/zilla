@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "@fseehawer/react-circular-slider": "^2.7.0",
+    "@privy-io/react-auth": "^2.6.2",
     "@tailwindcss/line-clamp": "^0.4.4",
+    "@uniswap/widgets": "^2.59.0",
     "axios": "^1.7.8",
     "motion": "^11.12.0",
     "next": "14.2.18",

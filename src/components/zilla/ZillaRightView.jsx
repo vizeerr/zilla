@@ -9,7 +9,7 @@ import setico from "@/assets/sett.png"
 import arrow from "@/assets/arrowdown.png"
 import arrowdown from "@/assets/arrow2.png"
 import { motion } from 'framer-motion';
-import SettingModel from './SettingModel'
+import SettingModel from '../SettingModel'
 import ZillaBottomView from './ZillaBottomView'
 
 const ZillaRightView = () => {

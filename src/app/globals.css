@@ -32,10 +32,18 @@ body{
   src:url("../fonts/sh.otf") format("opentype")
 }
 
+@font-face {
+  font-family: 'bad';
+  src: url("../fonts/bad.TTF") format("truetype")
+}
+
 .round{
   font-family: 'round',sans-serif;
 }
 
+.bad{
+  font-family: 'bad',sans-serif;
+}
 
 .mont{
   font-family: 'mont',serif;
@@ -71,7 +79,7 @@ body{
 
 table th{
   font-weight: 800;
-  padding: 1.5vw 0;
+  padding: 12px 0;
 border-spacing: 0;
 border-collapse: collapse;
 border: none !important;
@@ -81,7 +89,7 @@ outline: none;
 
 table td{
   font-weight: 800;
-  padding: 1.5vw 0;
+  padding: 12px 0;
 border-spacing: 0;
 border-collapse: collapse;
 border: none !important;

@@ -3,7 +3,7 @@ import "./globals.css";
 import {Bebas_Neue , Montserrat, Montserrat_Alternates } from 'next/font/google'
 import localFont from 'next/font/local'
 import TopNavbar from "@/components/TopNavbar";
-import BottomFooter from "@/components/BottomFooter";
+import BottomFooter from "@/components/home/BottomFooter";
 export const bebasneue = Bebas_Neue({
   subsets: ['latin'],
   variable: '--font-bebas',

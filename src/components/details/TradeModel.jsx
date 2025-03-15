@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import sett from "@/assets/sett.png"
 import bgwall from "@/assets/bgwall.png"
 import eth from "@/assets/eth.png"
-import SettingModel from './SettingModel'
+import SettingModel from '../SettingModel'
 
 const TradeModel = () => {
      const [btnState,setBtnState] = useState("sell")
@@ -25,7 +25,7 @@ const TradeModel = () => {
                     <p className='font-bebasneue font-[400] 2xl:text-sm lg:text-[0.55rem] md:text-xs text-[3.1vw]'>SWITCH TO <span className='text-primary'>{prom?"ETH":"PROMOTION"}</span></p>
                 </div>
                 <div className='flex items-center 2xl:gap-4 md:gap-2 gap-2'>
-                <p className='text-[#FFFFFF4D] font-[700] 2xl:text-sm lg:text-[0.55rem] md:text-xs text-[2.8vw]'>{btnState == "sell" ? "0.000010 PROMOTION":"0.00 ETH"}</p>
+                <p className='text-[#FFFFFF4D] font-[700] 2xl:text-xs lg:text-[0.55rem] md:text-xs text-[2.8vw]'>{btnState == "sell" ? "0.000010 PROMOTION":"0.00 ETH"}</p>
                 <div className='2xl:w-6 lg:w-4 md:w-5 w-[4vw]'>
                     <Image onClick={()=>{setOpenSet(true)}} src={sett} alt='' className='anim'/>
                 </div>
@@ -70,7 +70,7 @@ const TradeModel = () => {
                             </div>
                         </div>
                     </div>
-                    <p className='2xl:w-40 xl:w-28 lg:w-24 md:w-36 w-[32vw] mx-auto round mt-7 bg-primary anim lg:leading-[2vw] leading-[9vw] lg:pt-[0.6vw] md:pt-2 pt-[2vw] text-[#262626] 2xl:text-[3rem] lg:text-[1.87rem] md:text-4xl  text-[11vw] text-center md:px-[1.8vw] px-[6vw] lg:rounded-[0.7vw] md:rounded-[0.8rem] rounded-[3vw] shadow-[5.21px_5.21px_7.76px_0px_#00000040]'>
+                    <p className='2xl:w-32 xl:w-28 lg:w-24 md:w-36 w-[32vw] mx-auto round mt-7 bg-primary anim lg:leading-[2vw] leading-[9vw] lg:pt-[0.6vw] md:pt-2 pt-[2vw] text-[#262626] 2xl:text-3xl lg:text-[1.87rem] md:text-4xl  text-[11vw] text-center md:px-[1.8vw] px-[6vw] lg:rounded-[0.7vw] md:rounded-[0.8rem] rounded-[3vw] shadow-[5.21px_5.21px_7.76px_0px_#00000040]'>
                     SWAP
                     </p>
                     

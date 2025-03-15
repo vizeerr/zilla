@@ -1,6 +1,6 @@
-import ZillaBottomView from '@/components/ZillaBottomView'
-import ZillaLeftView from '@/components/ZillaLeftView'
-import ZillaRightView from '@/components/ZillaRightView'
+import ZillaBottomView from '@/components/zilla/ZillaBottomView'
+import ZillaLeftView from '@/components/zilla/ZillaLeftView'
+import ZillaRightView from '@/components/zilla/ZillaRightView'
 import React from 'react'
 
 const page = () => {

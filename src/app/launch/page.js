@@ -1,8 +1,8 @@
 import TopNavbar from '@/components/TopNavbar'
 import React from 'react'
 
-import LaunchForm from '@/components/LaunchForm'
-import LaunchFooter from '@/components/LaunchFooter'
+import LaunchForm from '@/components/launch/LaunchForm'
+import LaunchFooter from '@/components/launch/LaunchFooter'
 
 const page = () => {
   return (

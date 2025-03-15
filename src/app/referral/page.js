@@ -1,11 +1,11 @@
-import ReferalBottomView from '@/components/ReferalBottomView'
-import ReferalUse from '@/components/ReferalUse'
+import ReferalBottomView from '@/components/referral/ReferalBottomView'
+import ReferalUse from '@/components/referral/ReferalUse'
 import TopNavbar from '@/components/TopNavbar'
 import React from 'react'
 import ref1 from '@/assets/ref1.svg'
 import ref2 from '@/assets/ref2.svg'
 import Image from 'next/image'
-import ReferalBody from '@/components/ReferalBody'
+import ReferalBody from '@/components/referral/ReferalBody'
 
 const page = () => {
   return ( 

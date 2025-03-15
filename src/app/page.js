@@ -1,8 +1,8 @@
-import BottomFooter from "@/components/BottomFooter";
-import CardGrid from "@/components/CardGrid";
-import Pagination from "@/components/Pagination";
-import Tabs from "@/components/Tabs";
-import TopHeader from "@/components/TopHeader";
+import BottomFooter from "@/components/home/BottomFooter";
+import CardGrid from "@/components/home/CardGrid";
+import Pagination from "@/components/home/Pagination";
+import Tabs from "@/components/home/Tabs";
+import TopHeader from "@/components/home/TopHeader";
 
 export default function Home() {
  

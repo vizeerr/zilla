@@ -1,6 +1,6 @@
 
-import StakeGrid from '@/components/StakeGrid'
-import StakeTop from '@/components/StakeTop'
+import StakeGrid from '@/components/stake/StakeGrid'
+import StakeTop from '@/components/stake/StakeTop'
 
 const page = () => {
   return (

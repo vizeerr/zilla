@@ -1,5 +1,5 @@
-import ProfileLeft from '@/components/ProfileLeft'
-import ProfileRight from '@/components/ProfileRight'
+import ProfileLeft from '@/components/profile/ProfileLeft'
+import ProfileRight from '@/components/profile/ProfileRight'
 import React from 'react'
 
 const page = () => {

@@ -89,7 +89,7 @@ const TopNavbar = () => {
                   <div className="2xl:w-3.5 md:w-3 w-2">
                     <Image src={profile} alt="" />
                   </div>
-                  <p className="2xl:text-[0.5rem] md:text-[0.4rem] text-[0.3rem] md:mt-1.5 mt-0.5">Profile</p>
+                  <Link href={"./profile/"} className="2xl:text-[0.5rem] md:text-[0.4rem] text-[0.3rem] md:mt-1.5 mt-0.5">Profile</Link>
                 </div>
             </div>
             }

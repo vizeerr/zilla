@@ -150,7 +150,7 @@ const DetailedLefView = ({token}) => {
          
           <div className='bg-[#1B1C1E]   shadow-[12.7px_12.7px_44.02px_0px_#0000004F] 2xl:rounded-[2rem] md:rounded-[1.4rem] rounded-[2.9vw]'>
               
-              <div className='2xl:h-[36rem] md:h-[24rem] h-[70vw] 2xl:m-5 md:m-3 2xl:rounded-[1.2rem] rounded-[1rem] overflow-hidden'>
+              <div className='2xl:h-[36rem] md:h-[28.5rem] h-[70vw] 2xl:m-5 md:m-3 2xl:rounded-[1.2rem] rounded-[1rem] overflow-hidden'>
                   <iframe className='w-full h-full' src="https://dexscreener.com/ethereum/0x88e6A0c2dDD26FEEb64F039a2c41296FcB3f5640?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTimeframesToolbar=0&chartTheme=dark&theme=dark&chartStyle=0&chartType=usd&interval=5"></iframe>
                 </div>
           </div>
@@ -167,10 +167,10 @@ const DetailedLefView = ({token}) => {
                 <Image src={glogo} alt='' className='w-full invert'/>
               </div>
             </div>
-            <div className='md:px-7 px-[2.1vw] 2xl:mt-5 md:mt-2  flex 2xl:gap-6 xl:gap-5 md:gap-3 gap-[1.4vw] items-center justify-center'>
-              <div className=' font-[400] anim bg-[#37393D] 2xl:px-12 md:px-8 2xl:py-4  md:py-2.5 px-[1.6vw] py-[0.4vw] 2xl:rounded-[1.2rem] md:rounded-[0.6rem] rounded-[1.4vw] flex items-center 2xl:gap-4 md:gap-2 gap-[0.9vw]' onClick={handleRefCopy}>
-                <p className='font-bebasneue 2xl:text-2xl md:text-sm text-[2.5vw] '> YOUR UNIQUE LINK : </p>   
-                <p className='text-primary font-[700] 2xl:text-xl md:text-[0.6rem] text-[2.7vw]'>{refCopiedText}</p> 
+            <div className='md:px-7 px-[2.1vw] 2xl:mt-5 md:mt-3  flex 2xl:gap-6 xl:gap-5 md:gap-3 gap-[1.4vw] items-center justify-center'>
+              <div className=' font-[400] anim bg-[#37393D] 2xl:px-12 md:px-8 2xl:py-4  md:py-2.5 px-[1.6vw] py-[0.4vw] 2xl:rounded-[1.2rem] md:rounded-[0.8rem] rounded-[1.4vw] flex items-center 2xl:gap-4 md:gap-2 gap-[0.9vw]' onClick={handleRefCopy}>
+                <p className='font-bebasneue 2xl:text-2xl md:text-base text-[2.5vw] '> YOUR UNIQUE LINK : </p>   
+                <p className='text-primary font-[700] 2xl:text-xl md:text-[0.7rem] text-[2.7vw]'>{refCopiedText}</p> 
               </div>
               <div  className='bg-primary anim  2xl:w-16 md:w-10 2xl:h-16 md:h-10 w-[5vw] h-[5vw] 2xl:p-3  md:p-2 p-[1.2vw] 2xl:rounded-[0.9rem]  md:rounded-[0.6rem] rounded-[1.4vw]'>
                 <Image src={xblack} alt=''  className='w-full '/>

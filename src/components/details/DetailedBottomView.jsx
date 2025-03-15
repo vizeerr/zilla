@@ -190,16 +190,16 @@ const DetailedBottomView = () => {
         <button onClick={()=>setTradeOpen(true)} className={`${tradeOpen?"bg-[#666666] text-white":"bg-primary text-[#2C2D30]"} text-[3.6vw] py-[1vw] w-[28vw] font-montserrat font-[900] rounded-full`}>TRADE</button>
       </div>
       
-      <div className='lg:flex hidden justify-around  gap-8'>
+      <div className='lg:flex hidden justify-around  2xl:gap-8 gap-6'>
     
-      <div className='bg-[#1B1C1E] mt-[1.6vw] w-[44%] rounded-[2vw] ' >
+      <div className='bg-[#1B1C1E] mt-[1.6vw] 2xl:w-[44%] w-[50%] rounded-[2vw] ' >
         <div className='flex justify-between items-center pe-4'>
-          <p className="bg-primary text-[#262626] font-[900]  2xl:text-base xl:text-lg text-sm font-montserrat  2xl:py-2 md:py-1.5  2xl:w-[11rem] xl:w-[12rem] w-[9rem]  text-center 2xl:rounded-[2.2rem_0px] rounded-[1.4rem_0]"> COMMENTS</p>
+          <p className="bg-primary text-[#262626] font-[900]  2xl:text-base  text-sm font-montserrat  2xl:py-2 md:py-1.5  2xl:w-[11rem] w-[9rem]  text-center 2xl:rounded-[2.2rem_0px] rounded-[1.4rem_0]"> COMMENTS</p>
           <div className='flex gap-2 mt-2.5'>
-            <div className='rounded-full bg-[#111111] xl:px-4 px-2.5 xl:py-2 py-1.5' onClick={()=>setSort(sort=="asc"?"desc":"asc")}>
+            <div className='rounded-full bg-[#111111] xl:px-4 px-2.5 xl:py-1.5 py-1.5' onClick={()=>setSort(sort=="asc"?"desc":"asc")}>
               <p className='font-montserrat anim font-[700] 2xl:text-xs xl:text-[0.6rem] text-[0.4rem] text-white uppercase'>SORT : <span className='font-normal  font-bebasneue'>(TIME)</span> <span className='text-primary'>{sort}</span></p>
             </div>
-            <button onClick={()=>setOpenCmt(true)} className='bg-primary anim rounded-full text-[#1B1C1E] font-montserrat font-[800] 2xl:text-xs xl:text-[0.6rem] text-[0.4rem]  xl:px-4 px-2 xl:py-2 py-1'>
+            <button onClick={()=>setOpenCmt(true)} className='bg-primary anim rounded-full text-[#1B1C1E] font-montserrat font-[800] 2xl:text-xs xl:text-[0.6rem] text-[0.4rem]  xl:px-4 px-2 xl:py-1.5 py-1'>
             POST A REPLY
             </button>
           </div>
@@ -210,7 +210,7 @@ const DetailedBottomView = () => {
                 <div className='bg-[#111111] rounded-[1.2rem] pb-4]'>
                   <div className='items-center flex justify-between'>
                     <div className='flex items-center gap-2'>
-                      <p className='font-[900] 2xl:text-[0.6rem] text-[0.6rem] text-[#111111] bg-white  2xl:py-1 py-1 2xl:px-5 px-7 text-center 2xl:rounded-[2.3rem_0px] rounded-[1.4rem_0]'> TNFv...6GVT</p>
+                      <p className='font-[900] 2xl:text-[0.6rem] text-[0.55rem] text-[#111111] bg-white  2xl:py-1 py-1 2xl:px-5 px-5 text-center 2xl:rounded-[2.3rem_0px] rounded-[1.4rem_0]'> TNFv...6GVT</p>
                       
                       <div className='flex gap-1 items-center'>
                         <div className='2xl:w-3 w-2'>
@@ -219,10 +219,10 @@ const DetailedBottomView = () => {
                         <p className='font-[800] text-primary 2xl:text-[0.5rem] text-[0.4rem]'>DEV</p>
                       </div>
                     </div>
-                    <p className='text-primary font-[800] 2xl:text-[0.6rem] text-[0.6rem] 2xl:pe-7 pe-5 pt-2 font-montserrat'>21 minutes ago</p>
+                    <p className='text-primary font-[800] 2xl:text-[0.6rem] text-[0.5rem] 2xl:pe-7 pe-5 pt-2 font-montserrat'>21 minutes ago</p>
                   </div>
                   <div className='flex items-center justify-center 2xl:px-7 px-5 2xl:my-5 my-3 2xl:gap-4 gap-3'>
-                    <div className='2xl:w-24 w-24 h-auto'>
+                    <div className='2xl:w-24 w-20 h-auto'>
                       <Image src={blkimg} alt='' className='w-full'/>
                     </div>
                     <p className='w-full font-[800] 2xl:text-[0.6rem] text-[0.5rem] leading-tight text-white font-montserrat'>SOLANAFIGHTS ⚔️🥊 JOIN liE VERY FIRST TAP-SWAP GAME LIKE HAMSTER KOMBAT ON SOLANA 🔥 TELEGRAM GAME/BOT IS ALREADY LIVE ✅ FAIR LAUNCH IS COMING SOON, DONT MISS IT ➡️ https://t.me/solanafights</p>
@@ -237,7 +237,7 @@ const DetailedBottomView = () => {
                     <div className='flex items-center gap-2'>
                       <p className='font-[900] 2xl:text-[0.6rem] text-[0.6rem] text-[#111111] bg-white  2xl:py-1 py-1 2xl:px-5 px-7 text-center 2xl:rounded-[2.3rem_0px] rounded-[1.4rem_0]'> TNFv...6GVT</p>
                     </div>
-                    <p className='text-primary font-[800] 2xl:text-[0.6rem] text-[0.6rem] 2xl:pe-7 pe-5 pt-2 font-montserrat'>21 minutes ago</p>
+                    <p className='text-primary font-[800] 2xl:text-[0.6rem] text-[0.5rem] 2xl:pe-7 pe-5 pt-2 font-montserrat'>21 minutes ago</p>
                   </div>
                   <div className='flex items-center justify-center 2xl:px-7 px-5 2xl:my-5 my-3 2xl:gap-4 gap-3'>
                     <p className='w-full font-[800] 2xl:text-[0.6rem] text-[0.5rem] leading-tight text-white font-montserrat'>SOLANAFIGHTS ⚔️🥊 JOIN liE VERY FIRST TAP-SWAP GAME LIKE HAMSTER KOMBAT ON SOLANA 🔥 TELEGRAM GAME/BOT IS ALREADY LIVE ✅ FAIR LAUNCH IS COMING SOON, DONT MISS IT ➡️ https://t.me/solanafights</p>
@@ -251,29 +251,29 @@ const DetailedBottomView = () => {
 
       <div className="bg-[#1B1C1E]  mt-[1.6vw] w-[56.4vw]  rounded-[2rem]">
         <div className='flex items-start justify-between 2xl:pe-7 pe-5'>
-          <p className={`bg-primary text-[#262626] font-[900] 2xl:text-base xl:text-lg md:text-sm font-montserrat 2xl:py-2 xl:py-2 md:py-1.5 2xl:w-[14rem] xl:w-[16rem] w-[12rem] text-center 2xl:rounded-[2.2rem_0px] rounded-[1.7rem_0px]`}> TRADING HISTORY</p>
+          <p className={`bg-primary text-[#262626] font-[900] 2xl:text-base md:text-sm font-montserrat 2xl:py-2 md:py-1.5 2xl:w-[14rem] w-[12rem] text-center 2xl:rounded-[2.2rem_0px] rounded-[1.7rem_0px]`}> TRADING HISTORY</p>
           <div className='flex mt-2 2xl:gap-4 xl:gap-3 gap-1.5 items-center justify-end'>
                   <div className='bg-[#111111]  2xl:px-4 px-3 2xl:py-3.5 xl:py-2 py-1.5 2xl:rounded-[0.8rem] rounded-[0.5rem] flex 2xl:gap-4 gap-2.5 shadow-[10px_10px_23px_0px_#0000004D]'>
-                    <p className='uppercase text-white  font-[800]  2xl:text-[0.6rem] xl:text-[0.6rem] md:text-[0.5rem]'>Filter By Size</p>
-                    <div onClick={()=>setToogle(!toogle)} className={`${toogle? "bg-primary justify-end" : "bg-[#595959] justify-start" } tranis 2xl:w-10 xl:w-10 w-7 flex items-center  rounded-full 2xl:h-3 xl:h-3 h-2.5`}>
-                      <div className= {`${toogle?"bg-white":"bg-[#8A8A98]"} tranis 2xl:w-4 xl:w-4 w-3 2xl:h-4 xl:h-4 h-3 rounded-full`}>
+                    <p className='uppercase text-white  font-[800]  2xl:text-[0.6rem] md:text-[0.5rem]'>Filter By Size</p>
+                    <div onClick={()=>setToogle(!toogle)} className={`${toogle? "bg-primary justify-end" : "bg-[#595959] justify-start" } tranis 2xl:w-10  w-7 flex items-center  rounded-full 2xl:h-3  h-2.5`}>
+                      <div className= {`${toogle?"bg-white":"bg-[#8A8A98]"} tranis 2xl:w-4 w-3 2xl:h-4  h-3 rounded-full`}>
 
                       </div>
                     </div>
                   </div>
-                  <div className='bg-[#111111] 2xl:px-6 xl:px-4 px-2.5 2xl:py-2.5 xl:py-1.5 py-1 items-center 2xl:rounded-[0.8rem] rounded-[0.5rem] flex 2xl:gap-4 gap-1.5 shadow-[10px_10px_23px_0px_#0000004D]'>
+                  <div className='bg-[#111111] 2xl:px-6  px-2.5 2xl:py-2.5  py-1 items-center 2xl:rounded-[0.8rem] rounded-[0.5rem] flex 2xl:gap-4 gap-1.5 shadow-[10px_10px_23px_0px_#0000004D]'>
                     <div className='flex items-center 2xl:gap-1 gap-1'>
-                      <input type='number' className='uppercase text-white bg-transparent font-[800] 2xl:w-5 w-3  2xl:text-[0.6rem] xl:text-[0.6rem] md:text-[0.5rem]' placeholder='0' value={tradeVale} onChange={(e)=>{
+                      <input type='number' className='uppercase text-white bg-transparent font-[800] 2xl:w-5 w-3  2xl:text-[0.6rem]  md:text-[0.5rem]' placeholder='0' value={tradeVale} onChange={(e)=>{
                         setTradeVal(e.target.value)
                       }}/>
-                      <p className=' uppercase text-white bg-transparent font-[800] 2xl:text-[0.6rem] xl:text-[0.6rem] md:text-[0.5rem]'>
+                      <p className=' uppercase text-white bg-transparent font-[800] 2xl:text-[0.6rem]  md:text-[0.5rem]'>
                       ETH
                       </p>
                     </div>
                     <Image src={eth} alt='' className='rounded-full 2xl:w-5 w-4'/>
                   </div>
-                  <div className='border-primary 2xl:border-s-[3px] border-s-[2px]  2xl:ps-2 ps-1 py-1'>
-                    <p className='font-bebasneue  2xl:text-[0.8rem] xl:text-[0.7rem] text-[0.6rem] '>
+                  <div className='border-primary 2xl:border-s-[3px] border-s-[2px]  2xl:ps-2 ps-1 2xl:py-1 md:py-0.5'>
+                    <p className='font-bebasneue  2xl:text-[0.8rem]  text-[0.6rem] '>
                     <span className='text-white'>153 </span>
                       <span className='text-opacity-30 text-white'>trades of size greater lian 0.01 ETH</span>
                     </p>
@@ -281,7 +281,7 @@ const DetailedBottomView = () => {
                 </div>
         </div>
             
-        <div className='mt-7 2xl:h-[46.5rem] h-[24rem] overflow-y-auto  2xl:px-7 px-5 flex flex-col gap-7'>
+        <div className='2xl:mt-7 md:mt-5 2xl:h-[46.5rem] h-[24rem] overflow-y-auto  2xl:px-7 px-5 flex flex-col gap-7'>
                 
                 
                 <div className=' rounded-[1.4rem_1.4rem_0px_0px] overflow-x-hidden'>

@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image'
 import React, { useCallback, useEffect, useState } from 'react'
-import copyWhite from "@/assets/copyWhite.png"
+import copyWhite from "@/assets/copywhite.png"
 import primcopy from "@/assets/primcopy.png"
 import xlogo from "@/assets/xlogo.png"
 import tlogo from "@/assets/tlogo.png"

@@ -85,12 +85,12 @@ const TopNavbar = () => {
                   </div>
                   <p className="2xl:text-[0.5rem] md:text-[0.4rem] text-[0.3rem] md:mt-1.5 mt-0.5">Disconnect</p>
                 </div>
-                <div className="flex flex-col items-center py-1 hover:bg-[#37383A] w-1/2 rounded-md">
+                <Link href={"./profile/"}  className="flex flex-col items-center py-1 hover:bg-[#37383A] w-1/2 rounded-md">
                   <div className="2xl:w-3.5 md:w-3 w-2">
                     <Image src={profile} alt="" />
                   </div>
-                  <Link href={"./profile/"} className="2xl:text-[0.5rem] md:text-[0.4rem] text-[0.3rem] md:mt-1.5 mt-0.5">Profile</Link>
-                </div>
+                  <p className="2xl:text-[0.5rem] md:text-[0.4rem] text-[0.3rem] md:mt-1.5 mt-0.5">Profile</p>
+                </Link>
             </div>
             }
         </div>

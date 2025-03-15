@@ -9,7 +9,7 @@ const page = async ({params}) => {
   
   return (
     <> 
-      <div className='bg-[#111111] w-[90%] mx-auto'>
+      <div className='bg-[#111111] md:w-[90%] w-[95%] mx-auto'>
         <div className=''>
           <DetailedTopView token ={params.token}/>
         </div>

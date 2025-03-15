@@ -6,6 +6,7 @@ import tlogo from "@/assets/tlogo.png"
 import wlogo from "@/assets/wlogo.png"
 import clock from "@/assets/clock2.png"
 import Image from "next/image"
+import Link from 'next/link'
 const HeaderProfile = () => {
   return (
     <div className="2xl:w-[24rem] lg:w-[18rem] md:w-[15rem] w-[72.5vw] lg:rounded-[1rem] md:rounded-[0.8rem] rounded-[4.4vw] relative bg-[#2E2F37] shadow-[7.41px_8.65px_11.79px_0px_#00000040] mx-auto  ">
@@ -20,15 +21,15 @@ const HeaderProfile = () => {
                         </div>
                         <p className="font-montserrat font-[800] 2xl:text-[0.5rem] lg:text-[0.45rem] md:text-[0.38rem] mt-0.5  text-[1.4vw] text-white">1 hr 25 mins ago</p>
                     </div>
-                    <div className="md:w-5  w-[5vw] md:h-5 h-[5vw] bg-[#1B1B21] rounded-full md:p-[4px] p-[4px]">
+                    <Link href ={"https://x.com/"}  target="_blank" rel="noopener noreferrer"  className="md:w-5 anim  w-[5vw] md:h-5 h-[5vw] bg-[#1B1B21] rounded-full md:p-[4px] p-[4px]">
                         <Image src={wlogo} className="w-full" alt=""/>
-                    </div>
-                    <div className="md:w-5 w-[5vw] md:h-5 h-[5vw] bg-[#1B1B21] rounded-full md:p-[5px] p-[5px]">
+                    </Link>
+                    <Link href ={"https://x.com/"}  target="_blank" rel="noopener noreferrer"  className="md:w-5 anim w-[5vw] md:h-5 h-[5vw] bg-[#1B1B21] rounded-full md:p-[5px] p-[5px]">
                         <Image src={xlogo} className="w-full" alt=""/>
-                    </div>
-                    <div className="md:w-5 w-[5vw] md:h-5 h-[5vw] bg-[#1B1B21] rounded-full md:p-[5px] p-[5px]">
+                    </Link>
+                    <Link href ={"https://x.com/"}  target="_blank" rel="noopener noreferrer"  className="md:w-5 anim w-[5vw] md:h-5 h-[5vw] bg-[#1B1B21] rounded-full md:p-[5px] p-[5px]">
                         <Image src={tlogo} className="w-full" alt=""/>
-                    </div>
+                    </Link>
                 </div>
                 <div className="md:mt-2.5 mt-[1.8vw] flex items-center lg:gap-3.5 md:gap-2 gap-[3vw] 2xl:px-4 md:px-2 px-[3.3vw]">
                     <div className="2xl:w-24 md:w-16 w-[18vw] 2xl:h-24 lg:h-[4rem] md:h-16 h-[18vw] lg:rounded-[0.6rem] md:rounded-[0.4rem] rounded-[2.1vw] overflow-hidden">

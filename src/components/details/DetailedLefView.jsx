@@ -88,7 +88,7 @@ const DetailedLefView = ({token}) => {
                       <h1 className='2xl:text-2xl md:text-base text-[2.9vw]  font-[400] font-bebasneue'>{tokenData.name} </h1>
                       <p className='2xl:text-lg md:text-xs text-[3vw] font-montserrat font-[700] text-primary'>({tokenData.symbol})</p>
                     </div>
-                    <p className='font-[500] md:bg-[#363940] 2xl:py-1.5 md:py-1 2xl:rounded-lg md:rounded-md shadow-lg tracking-wide 2xl:text-xs md:text-[0.45rem] text-[1.6vw] mb-[0.2vw] text-primary'><span className='text-[#FFFFFF4D]'>Created by</span> {shortId(tokenData.creator)}</p>
+                    <p className='font-[500] md:bg-[#363940] 2xl:py-1.5 md:py-1 2xl:rounded-lg md:rounded-md md:px-3 shadow-lg tracking-wide 2xl:text-xs md:text-[0.45rem] text-[1.6vw] mb-[0.2vw] text-primary'><span className='text-[#FFFFFF4D]'>Created by</span> {shortId(tokenData.creator)}</p>
                   </div>
                    
                     <p className='md:flex hidden font-[500] 2xl:h-20 md:h-14 h-[3.8vh] 2xl:mt-3 md:mt-1 opacity-45 2xl:text-xs  md:text-[0.55rem] text-[1.5vw] md:leading-tight leading-tight overflow-y-scroll'>

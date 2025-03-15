@@ -48,27 +48,27 @@ const TopNavbar = () => {
             </Link>
           </div>
 
+          <Link href ={"https://x.com/"}  target="_blank" rel="noopener noreferrer" >
           <div className="2xl:w-8 md:w-6 anim 2xl:h-8 2xl:p-2 md:p-1.5 md:h-6 w-[4vw] h-[4vw] bg-sec flex justify-center items-center rounded-full p-[1vw]">
-            <Link href ={"/"} >
               <Image src={xlogo} alt="" />
-            </Link>
           </div>
+            </Link>
+            <Link href ={"https://t.me/"}  target="_blank" rel="noopener noreferrer">
           <div className="2xl:w-8 md:w-6 anim 2xl:h-8 2xl:p-2 md:p-1.5 md:h-6 w-[4vw] h-[4vw] bg-sec flex justify-center items-center rounded-full p-[1vw]">
-            <Link href ={"/"} >
               <Image src={dlogo} alt="" />
-            </Link>
           </div>
+            </Link>
+            <Link href={"https://discord.com/"} className="me-[0.02rem]"  target="_blank" rel="noopener noreferrer"> 
           <div className="2xl:w-8 md:w-6 anim 2xl:h-8 2xl:p-2 md:p-1.5 md:h-6 w-[4vw] h-[4vw] bg-sec flex justify-center items-center rounded-full p-[1vw]">
-            <Link href={""} className="me-[0.02rem]">
               <Image src={tlogo}  alt="" />
-            </Link>
           </div>
+            </Link>
           
+            <Link href ={"/"}  target="_blank" rel="noopener noreferrer">
           <div className="2xl:w-8 md:w-6 anim 2xl:h-8 2xl:p-2 md:p-1.5 md:h-6 w-[4vw] h-[4vw] bg-sec flex justify-center items-center rounded-full p-[1vw]">
-            <Link href ={"/"} >
               <Image src={glogo} alt="" />
-            </Link>
           </div>
+            </Link>
         {!connect?
           <button onClick={()=>setConnect(true)} className="xl:border-[3px] md:border-[2px] border-[1px] anim border-sec rounded-full font-montserrat 2xl:py-1.5 md:py-1  2xl:px-4 md:px-3   font-[800] bg-white anim text-tertiary 2xl:text-xs  md:text-[0.6rem] text-[1.6vw] px-[1.4vw] pt-[0.6vw] pb-[0.4vw] ">CONNECT WALLET</button>
         : <div className="cursor-pointer relative flex items-center 2xl:gap-4 md:gap-3 gap-3 text-white bg-[#262626] xl:border-[3px] md:border-[2px] border-[1px]  border-sec rounded-full font-montserrat 2xl:py-1.5 md:py-1 2xl:px-7 md:px-6 font-[800] px-[2.7vw] py-[0.5vw]">

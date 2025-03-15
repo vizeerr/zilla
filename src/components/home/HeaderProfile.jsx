@@ -10,7 +10,7 @@ import Link from 'next/link'
 const HeaderProfile = () => {
   return (
     <div className="2xl:w-[24rem] lg:w-[18rem] md:w-[15rem] w-[72.5vw] lg:rounded-[1rem] md:rounded-[0.8rem] rounded-[4.4vw] relative bg-[#2E2F37] shadow-[7.41px_8.65px_11.79px_0px_#00000040] mx-auto  ">
-            <div className="md:w-12 w-[10.2vw] md:h-12 h-[10.2vw] absolute md:top-[-1.5rem] top-[-5vw] md:end-[-1.5rem] end-[-5vw]">
+            <div className="md:w-14 w-[10.2vw] md:h-14 h-[10.2vw] absolute md:top-[-1.5rem] top-[-5vw] md:end-[-1.5rem] end-[-5vw]">
                 <Image src={pif} className="w-full" alt=""/>
             </div>
             <div>

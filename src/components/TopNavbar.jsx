@@ -16,6 +16,13 @@ import { useState } from "react"
 
 const TopNavbar = () => {
 
+  const handleClose = (e) => {
+    if (e.target.id === "background") {
+      setOpenCmt(false);
+    }
+  }
+  
+
   const [connect,setConnect] = useState(false);
   const [connMenu,setConnMenu] = useState(false);
 

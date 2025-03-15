@@ -23,16 +23,16 @@ const Card = ({data}) => {
                     <div className=" 2xl:w-3.5 md:w-2.5 w-[3.6vw]">
                         <Image src={clock2} alt="" className="w-full" unoptimized={true} />
                     </div>
-                    <p className="font-[800] font-montserrat 2xl:text-[0.5rem] md:text-[0.35rem] text-[1.6vw] text-white">{formatTime(data.created_at)} ago </p>
+                    <p className="font-[800] font-montserrat 2xl:text-[0.5rem] md:text-[0.5rem] text-[1.6vw] text-white">{formatTime(data.created_at)} ago </p>
                 </div>
                 <div className="flex 2xl:gap-2 md:gap-1 gap-[1vw] items-start">
                     <Link href={data.website}>
-                        <div className="bg-primary border-2 border-sec anim 2xl:w-7 md:w-6  w-[6vw] 2xl:h-7 md:h-6 h-[6vw] flex justify-center items-center rounded-full 2xl:p-1 md:p-1 p-[3px]">
+                        <div className="bg-primary border-2 border-sec anim 2xl:w-7 md:w-7  w-[6vw] 2xl:h-7 md:h-7 h-[6vw] flex justify-center items-center rounded-full 2xl:p-1 md:p-1 p-[3px]">
                             <Image src={unicornblack}  className="" alt="" unoptimized={true}/>
                         </div>
                     </Link>
                     <Link href={data.twitter}>
-                    <div className="bg-primary border-2 border-sec anim 2xl:w-7 md:w-6  w-[6vw] 2xl:h-7 md:h-6 h-[6vw] flex justify-center items-center rounded-full 2xl:p-1 md:p-1 p-[3px]">
+                    <div className="bg-primary border-2 border-sec anim 2xl:w-7 md:w-7  w-[6vw] 2xl:h-7 md:h-7 h-[6vw] flex justify-center items-center rounded-full 2xl:p-1 md:p-1 p-[3px]">
                         <Image src={komblack}  className="" alt="" unoptimized={true}/>
                     </div>
                     </Link>

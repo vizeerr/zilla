@@ -190,9 +190,9 @@ const DetailedBottomView = () => {
         <button onClick={()=>setTradeOpen(true)} className={`${tradeOpen?"bg-[#666666] text-white":"bg-primary text-[#2C2D30]"} text-[3.6vw] py-[1vw] w-[28vw] font-montserrat font-[900] rounded-full`}>TRADE</button>
       </div>
       
-      <div className='lg:flex hidden justify-around  gap-5'>
+      <div className='lg:flex hidden justify-around  gap-8'>
     
-      <div className='bg-[#1B1C1E] 2xl:my-4 my-1 w-[44%] rounded-[2vw] ' >
+      <div className='bg-[#1B1C1E] mt-[1.6vw] w-[44%] rounded-[2vw] ' >
         <div className='flex justify-between items-center pe-4'>
           <p className="bg-primary text-[#262626] font-[900]  2xl:text-base xl:text-lg text-sm font-montserrat  2xl:py-2 md:py-1.5  2xl:w-[11rem] xl:w-[12rem] w-[9rem]  text-center 2xl:rounded-[2.2rem_0px] rounded-[1.4rem_0]"> COMMENTS</p>
           <div className='flex gap-2 mt-2.5'>
@@ -249,7 +249,7 @@ const DetailedBottomView = () => {
 
       </div>
 
-      <div className="bg-[#1B1C1E] 2xl:my-4 my-1 w-[56.4vw]  rounded-[2rem]">
+      <div className="bg-[#1B1C1E]  mt-[1.6vw] w-[56.4vw]  rounded-[2rem]">
         <div className='flex items-start justify-between 2xl:pe-7 pe-5'>
           <p className={`bg-primary text-[#262626] font-[900] 2xl:text-base xl:text-lg md:text-sm font-montserrat 2xl:py-2 xl:py-2 md:py-1.5 2xl:w-[14rem] xl:w-[16rem] w-[12rem] text-center 2xl:rounded-[2.2rem_0px] rounded-[1.7rem_0px]`}> TRADING HISTORY</p>
           <div className='flex mt-2 2xl:gap-4 xl:gap-3 gap-1.5 items-center justify-end'>

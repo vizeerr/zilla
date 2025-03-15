@@ -14,7 +14,7 @@ const TradeModel = () => {
         const [prom,setPromo] = useState(false)
   return (
     <div className = " w-full">
-      <div className='md:gap-8 gapp-0 flex md:justify-center justify-between'>
+            <div className='md:gap-8 gapp-0 flex md:justify-center justify-between'>
               <button onClick={()=>setBtnState('buy')} className= {`${btnState=="buy"? "bg-primary text-[#1B1C1E]" :"text-[#666666] bg-[#2C2D30]"} border-0  anim md:w-full w-[29vw] md:py-2  py-[8px] shadow-[4.23px_4.23px_11.96px_0px_#00000054] 2xl:rounded-[0.9rem] md:rounded-[0.6rem] rounded-[2.9vw] font-[800] 2xl:text-lg md:text-xs text-[3.4vw]`}> BUY</button>
               <button  onClick={()=>setBtnState('sell')} className= {`${btnState=="sell"? "bg-primary text-[#1B1C1E]" :"text-[#666666] bg-[#2C2D30]"} border-0  anim md:w-full w-[28vw] md:py-2  py-[8px]  shadow-[4.23px_4.23px_11.96px_0px_#00000054] 2xl:rounded-[0.9rem] md:rounded-[0.6rem] rounded-[2.9vw] font-[800] 2xl:text-lg md:text-xs text-[3.4vw]`}> SELL</button>
 
@@ -70,7 +70,7 @@ const TradeModel = () => {
                             </div>
                         </div>
                     </div>
-                    <p className='2xl:w-32 xl:w-28 lg:w-24 md:w-36 w-[32vw] mx-auto round mt-7 bg-primary anim lg:leading-[2vw] leading-[9vw] lg:pt-[0.6vw] md:pt-2 pt-[2vw] text-[#262626] 2xl:text-3xl lg:text-[1.87rem] md:text-4xl  text-[11vw] text-center md:px-[1.8vw] px-[6vw] lg:rounded-[0.7vw] md:rounded-[0.8rem] rounded-[3vw] shadow-[5.21px_5.21px_7.76px_0px_#00000040]'>
+                    <p className='2xl:w-28 xl:w-28 lg:w-24 md:w-36 w-[32vw] mx-auto round mt-7 bg-primary anim lg:leading-[2vw] leading-none  md:pt-2 pt-[2vw] text-[#262626] 2xl:text-3xl lg:text-[1.87rem] md:text-4xl  text-[11vw] text-center md:px-[1.8vw] px-[6vw] lg:rounded-[0.6rem] md:rounded-[0.8rem] rounded-[3vw] shadow-[5.21px_5.21px_7.76px_0px_#00000040]'>
                     SWAP
                     </p>
                     

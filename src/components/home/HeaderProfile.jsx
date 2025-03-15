@@ -20,13 +20,13 @@ const HeaderProfile = () => {
                         </div>
                         <p className="font-montserrat font-[800] 2xl:text-[0.5rem] lg:text-[0.45rem] md:text-[0.38rem] mt-0.5  text-[1.4vw] text-white">1 hr 25 mins ago</p>
                     </div>
-                    <div className="md:w-4  w-[5vw] md:h-4 h-[5vw] bg-[#1B1B21] rounded-full md:p-[3px] p-[4px]">
+                    <div className="md:w-5  w-[5vw] md:h-5 h-[5vw] bg-[#1B1B21] rounded-full md:p-[4px] p-[4px]">
                         <Image src={wlogo} className="w-full"/>
                     </div>
-                    <div className="md:w-4 w-[5vw] md:h-4 h-[5vw] bg-[#1B1B21] rounded-full md:p-[4px] p-[5px]">
+                    <div className="md:w-5 w-[5vw] md:h-5 h-[5vw] bg-[#1B1B21] rounded-full md:p-[5px] p-[5px]">
                         <Image src={xlogo} className="w-full"/>
                     </div>
-                    <div className="md:w-4 w-[5vw] md:h-4 h-[5vw] bg-[#1B1B21] rounded-full md:p-[4px] p-[5px]">
+                    <div className="md:w-5 w-[5vw] md:h-5 h-[5vw] bg-[#1B1B21] rounded-full md:p-[5px] p-[5px]">
                         <Image src={tlogo} className="w-full"/>
                     </div>
                 </div>
@@ -40,8 +40,7 @@ const HeaderProfile = () => {
                         <div className="bg-[#1B1B21] shadow-[5.2px_5.2px_11.96px_0px_#000000C9] md:py-2 py-[0.8vw] w-full text-center md:rounded-[0.6rem] rounded-[2vw] md:mt-2.5 mt-[1.6vw]">
                             <p className="text-primary 2xl:text-xs font-montserrat lg:text-[0.6rem] md:text-[0.5rem] text-[2.2vw] font-[800] md:mt-0 mt-[0.45vw]">MARKET CAP : 19.99K</p>
                         </div>
-                    </div>
-                    
+                    </div>                    
                 </div>
             </div>
             <div className="bg-primary py-[0.15vw] text-center md:mt-2.5 mt-[2vw] md:rounded-b-[1.3rem] rounded-b-[4.4vw]">

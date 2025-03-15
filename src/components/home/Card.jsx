@@ -70,7 +70,7 @@ const Card = ({data}) => {
                             </div>
                         </Link>
                         <Link href={data.twitter}>
-                        <div className="bg-[#262626] brightness-75 anim 2xl:w-6 md:w-5  w-[5vw] 2xl:h-6 md:h-5 h-[5vw] flex justify-center items-center rounded-full 2xl:p-1.5 md:p-1.5 p-[5px]">
+                        <div className="bg-[#262626] brightness-75 anim 2xl:w-6 md:w-5  w-[5vw]  flex justify-center items-center rounded-full 2xl:p-1.5 md:p-1.5 p-[5px]">
                             <Image src={xlogo}  className="" alt="" unoptimized={true}/>
                         </div>
                         </Link>

@@ -23,7 +23,7 @@ const Card = ({data}) => {
                     <div className=" 2xl:w-3.5 md:w-2.5 w-[3.6vw]">
                         <Image src={clock2} alt="" className="w-full" unoptimized={true} />
                     </div>
-                    <p className="font-[800] font-montserrat 2xl:text-[0.5rem] md:text-[0.5rem] text-[1.6vw] text-white">{formatTime(data.created_at)} ago </p>
+                    <p className="font-[800] font-montserrat 2xl:text-[0.7rem] md:text-[0.6rem] text-[1.6vw] text-white">{formatTime(data.created_at)} ago </p>
                 </div>
                 <div className="flex 2xl:gap-2 md:gap-1 gap-[1vw] items-start">
                     <Link href={data.website}>

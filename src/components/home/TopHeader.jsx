@@ -27,9 +27,9 @@ const TopHeader = () => {
             </div>
       </Link>
       <div className="flex items-center justify-between xl:gap-8 lg:gap-4">
-        <Link href={"./details/0xdAC17F958D2ee523a2206206994597C13D831ec0"} className="md:block hidden me-[2vw] anim">
+        <div href={"./details/0xdAC17F958D2ee523a2206206994597C13D831ec0"} className="md:block hidden me-[2vw] anim">
             <HeaderProfile/>
-        </Link>
+        </div>
         
         <div className="flex flex-col items-end">
             <Link href={"/zilla-token"}>
@@ -49,9 +49,9 @@ const TopHeader = () => {
 
       </div>
     </div>
-    <Link href={"./details/0xdAC17F958D2ee523a2206206994597C13D831ec0"} className="md:hidden block my-[4.8vw]">
+    <div href={"./details/0xdAC17F958D2ee523a2206206994597C13D831ec0"} className="md:hidden block my-[4.8vw]">
         <HeaderProfile/>
-    </Link>
+    </div>
     <Model open={open} setOpen={setOpen}/>
     </>
   )

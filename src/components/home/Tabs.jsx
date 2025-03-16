@@ -26,11 +26,11 @@ const Tabs = () => {
           <button onClick={()=>selectTab(4)} className={`${selected==4?'bg-primary text-[#3F3F41]': 'bg-[#4C4C5A] text-white'}  anim lg:px-4 px-[2vw] font-[400]  rounded-full font-bebasneue  2xl:text-xl lg:text-sm text-[2.5vw] lg:pt-1 lg:pb-0.5 pt-[0.5vw]`}>graduating soon</button>
         </div>
         <div className=" flex items-center 2xl:gap-4 lg:gap-3 gap-[2vw] relative">
-            <div className="bg-white flex justify-between lg:gap-1 lg:pt-0.5 lg:pb-1.5 pt-[0.5vw] pb-[0.8vw] 2xl:w-[28rem] xl:w-[18rem] lg:w-[14rem] w-[44vw] rounded-full items-center lg:ps-4 lg:pe-2.5 ps-[1.5vw] pe-[1.5vw] overflow-hidden ">
-                <div className="2xl:w-9 lg:w-5 w-[4.2vw]">
+            <div className="bg-white flex justify-between lg:gap-1 lg:pt-[0.4rem] lg:pb-1.5 pt-[0.5vw] pb-[0.8vw] 2xl:w-[28rem] xl:w-[18rem] lg:w-[14rem] w-[44vw] rounded-full items-center lg:ps-4 lg:pe-2.5 ps-[1.5vw] pe-[1.5vw] overflow-hidden ">
+                <div className="2xl:w-8 lg:w-5 w-[4.2vw]">
                   <Image src={searchIco} alt="" className="w-full" />
                 </div>
-                <input type="text" placeholder='SEARCH TOKENS' className="focus:border-0 active:border-0 2xl:text-sm lg:text-[0.6rem] text-[2vw] font-[800] font-montserrat w-full text-center border-0 outline-none " />
+                <input type="text" placeholder='SEARCH TOKENS' className="focus:border-0 leading-none active:border-0 2xl:text-sm lg:text-[0.6rem] text-[2vw] font-[800] font-montserrat w-full text-center border-0 outline-none " />
             </div>
 
             <div className="lg:w-auto 2xl:px-6 lg:px-4 w-[28vw] bg-[#1E1E25] shadow-[5px_4px_9.8px_0px_#00000040] rounded-full flex lg:gap-2.5  gap-[2.5vw] items-center justify-center lg:py-1.5 py-[1.5vw]">

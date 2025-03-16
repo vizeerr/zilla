@@ -94,7 +94,7 @@ const Card = ({data}) => {
                         <p className="text-[#303030c2]  font-montserrat line-clamp-6  font-[800] 2xl:text-[0.52rem] md:text-[0.4rem] text-[1.7vw] leading-tight 2xl:h-[3.2rem] md:h-10 h-[12.4vw] overflow-hidden">{data.description}</p>
 
                     </div>
-                    <div className="bg-[#262626] mt-2 md:py-0 py-[1.5vw] 2xl:rounded-[0px_0px_1rem_1rem] md:rounded-[0px_0px_0.8rem_0.8rem] rounded-[2.4vw] 2xl:p-3 md:p-2 shadow-[6px_6px_13.8px_0px_#000000C9]">
+                    <div className="bg-[#262626] mt-2 md:py-0 py-[1.5vw] 2xl:rounded-[0px_0px_1rem_1rem] md:rounded-[0px_0px_0.8rem_0.8rem] rounded-[2.4vw] 2xl:p-2 md:p-2 shadow-[6px_6px_13.8px_0px_#000000C9]">
                         <p className="font-montserrat font-[900] text-primary text-center 2xl:text-[1rem] md:text-xs 2xl:py-2 md:py-2.5 text-[2.4vw]">MARKET CAP : 19.99K</p>
 
                     </div>

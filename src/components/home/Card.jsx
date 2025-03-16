@@ -7,7 +7,7 @@ import pifico from "@/assets/pifico.jpg"
 import unicornblack from "@/assets/unicornblack.png"
 import komblack from "@/assets/komblack.png"
 import Image from "next/image"
-import { formatTime, imgUrl, shortId } from "@/helpers/helpers"
+import { formatTime, imgUrl, shortenString, shortId } from "@/helpers/helpers"
 import Link from "next/link"
 
 const Card = ({data}) => {
@@ -15,7 +15,7 @@ const Card = ({data}) => {
   return (
     <Link href={`/details/${data.token_address}`}>
     
-    <div className="bg-white anim md:rounded-[1.3rem] rounded-[4.8vw] py-[2.4vw] 2xl:px-2.5 md:px-2 2xl:py-2 md:py-1 px-[2.5vw] 2xl:w-[19rem] md:w-[15rem] w-[92vw] shadow-[8.55px_9.98px_13.61px_0px_#00000040]">
+    <div className="bg-white anim md:rounded-[1.3rem] rounded-[4.8vw] py-[2.4vw] 2xl:px-2.5 md:px-2 2xl:py-2 md:py-1.5 px-[2.5vw] 2xl:w-[19rem] md:w-[15rem] w-[92vw] shadow-[8.55px_9.98px_13.61px_0px_#00000040]">
         <div className="flex items-center justify-between">
             
             <div className="flex items-center md:justify-between md:gap-0 gap-2 w-full">
@@ -87,14 +87,14 @@ const Card = ({data}) => {
             <div className="md:w-full w-[48vw]">
                 <div className="md:mt-2.5 mt-[0.6vw]">
                     <p className="font-bebasneue  2xl:text-base md:text-sm text-[3.3vw] font-[400] text-[#262626]">{data.name} <span className=" font-[800] font-montserrat ">({data.symbol})</span></p>
-                    <p className="font-montserrat  text-[#303030b5] font-[700] 2xl:text-[0.6rem] md:text-[0.45rem] text-[1.9vw]">Created by {shortId(data.creator)}</p>
+                    <p className="font-montserrat  text-[#303030b5] font-[700] 2xl:text-[0.6rem] md:text-[0.45rem] text-[1.9vw]">Created by {shortenString(data.creator,4)}</p>
                 </div>
                 <div className="md:mt-2.5 mt-[1vw] font-montserrat ">
-                    <div className="bg-[#D9D9D9] md:rounded-[1vw_1vw_0px_0px] rounded-[2.4vw] 2xl:p-2.5 md:p-1.5 p-[2vw]">
+                    <div className="bg-[#D9D9D9] 2xl:rounded-[1rem_1rem_0px_0px] md:rounded-[0.8rem_0.8rem_0px_0px] rounded-[2.4vw] 2xl:p-2.5 md:p-2 p-[2vw]">
                         <p className="text-[#303030c2]  font-montserrat line-clamp-6  font-[800] 2xl:text-[0.52rem] md:text-[0.4rem] text-[1.7vw] leading-tight 2xl:h-[3.2rem] md:h-10 h-[12.4vw] overflow-hidden">{data.description}</p>
 
                     </div>
-                    <div className="bg-[#262626] mt-2 md:py-0 py-[1.5vw] md:rounded-[0px_0px_1rem_1rem] rounded-[2.4vw] 2xl:p-3 md:p-2 shadow-[6px_6px_13.8px_0px_#000000C9]">
+                    <div className="bg-[#262626] mt-2 md:py-0 py-[1.5vw] md:rounded-[0px_0px_0.8rem_0.8rem] rounded-[2.4vw] 2xl:p-3 md:p-2 shadow-[6px_6px_13.8px_0px_#000000C9]">
                         <p className="font-montserrat font-[900] text-primary text-center 2xl:text-[1rem] md:text-xs 2xl:py-2 md:py-2.5 text-[2.4vw]">MARKET CAP : 19.99K</p>
 
                     </div>

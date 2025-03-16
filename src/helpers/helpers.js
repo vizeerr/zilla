@@ -34,7 +34,15 @@ export function formatTime(dateString) {
       return 'Just now';
     }
   }
+
   
+export function shortenString(str, chars) {
+    // If the string is already short enough, return it unchanged.
+    if (str.length <= (chars*2)) {
+      return str;
+    }
+    return str.slice(0, chars) + '...' + str.slice(-chars);
+  }
 
 export function imgUrl(url) {
   if(!url){

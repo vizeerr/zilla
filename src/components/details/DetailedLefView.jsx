@@ -23,6 +23,8 @@ const DetailedLefView = ({token}) => {
 
   const fetchToken = useCallback(async () => {
     const data = await getToken(token);
+    console.log(token);
+    
     setTokenData(data);
   }, [token]);
   

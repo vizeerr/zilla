@@ -30,7 +30,7 @@ export async function POST(req) {
 
     return NextResponse.json({
       message: 'Data successfully forwarded to Google Apps Script.',
-      scriptResponse,
+      data:scriptResponse.data,
     });
 
   } catch (err) {

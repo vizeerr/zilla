@@ -6,17 +6,11 @@ export async function POST(req) {
   try {
     // Step 1: Parse the incoming JSON body
     const body = await req.json();
-    const { userId } = body;
-
-    if (!userId) {
-      return NextResponse.json({ error: 'Missing userId in request body' }, { status: 400 });
-    }
+    const { senderMessage } = body;
 
     // Step 2: Fetch data based on userId (this can be replaced with real logic)
     const fetchedData = {
-      name: 'Jane Doe',
-      email: 'jane.doe@example.com',
-      userId,
+      senderMessage
     };
 
     // Step 3: Forward data to Google Apps Script API

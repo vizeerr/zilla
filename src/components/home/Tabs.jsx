@@ -25,7 +25,7 @@ const Tabs = () => {
           <button onClick={()=>selectTab(3)} className={`${selected==3?'bg-primary text-[#3F3F41]': 'bg-[#4C4C5A] text-white'}  anim lg:px-4 px-[2vw] font-[400]  rounded-full font-bebasneue  2xl:text-xl lg:text-sm text-[2.5vw] lg:pt-1 lg:pb-0.5 pt-[0.5vw]`}>24H PRICE INC.</button>
           <button onClick={()=>selectTab(4)} className={`${selected==4?'bg-primary text-[#3F3F41]': 'bg-[#4C4C5A] text-white'}  anim lg:px-4 px-[2vw] font-[400]  rounded-full font-bebasneue  2xl:text-xl lg:text-sm text-[2.5vw] lg:pt-1 lg:pb-0.5 pt-[0.5vw]`}>graduating soon</button>
         </div>
-        <div className=" flex items-center 2xl:gap-4 lg:gap-3 gap-[2vw] relative">
+        <div className=" flex items-center 2xl:gap-4 mt-1 lg:gap-3 gap-[2vw] relative">
             <div className="bg-white flex justify-between lg:gap-1 lg:pt-[0.4rem] lg:pb-1.5 pt-[0.5vw] pb-[0.8vw] 2xl:w-[28rem] xl:w-[18rem] lg:w-[14rem] w-[44vw] rounded-full items-center lg:ps-4 lg:pe-2.5 ps-[1.5vw] pe-[1.5vw] overflow-hidden ">
                 <div className="2xl:w-8 lg:w-5 w-[4.2vw]">
                   <Image src={searchIco} alt="" className="w-full" />

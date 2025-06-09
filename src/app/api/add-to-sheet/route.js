@@ -10,7 +10,8 @@ export async function POST(req) {
 
     // Step 2: Fetch data based on userId (this can be replaced with real logic)
     const fetchedData = {
-      senderMessage
+      senderMessage,
+      formType:"payment"
     };
 
     // Step 3: Forward data to Google Apps Script API

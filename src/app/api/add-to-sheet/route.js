@@ -13,6 +13,10 @@ export async function POST(req) {
       senderMessage,
       formType:"payment"
     };
+    return NextResponse.json({
+      message: 'Data successfully forwarded to Google Apps Script.',
+      data:scriptResponse.data,
+    });
 
     // Step 3: Forward data to Google Apps Script API
     const appScriptUrl = 'https://script.google.com/macros/s/AKfycbwUZKiOUMiqD1_rku7A_MVsNnPexjEGR_qgnoEjxjnrw63oo_9iB2S03jBknugoC4NwWA/exec';
@@ -28,10 +32,7 @@ export async function POST(req) {
 
     const scriptResponse = await response.json();
 
-    return NextResponse.json({
-      message: 'Data successfully forwarded to Google Apps Script.',
-      data:scriptResponse.data,
-    });
+    
 
   } catch (err) {
     console.error('Error in POST /api/forward-data:', err);
